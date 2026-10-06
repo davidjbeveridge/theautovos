@@ -1,0 +1,126 @@
+name: Copy Auto Vos site once
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/copy-auto-vos-once.yml]
+
+permissions:
+  contents: write
+  pages: read
+
+jobs:
+  copy:
+    if: github.repository == 'davidjbeveridge/theautovos'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out destination
+        uses: actions/checkout@v5
+      - name: Fetch exact source snapshot without modifying source
+        run: |
+          git fetch --no-tags --depth=1 https://github.com/davidjbeveridge/makelark-demos.git 293b278b161223e853534c7d269a04875879b1ce
+          test "$(git rev-parse FETCH_HEAD:auto-vos)" = "3eec7274872d808b489155a26aadbd10a3999d93"
+      - name: Copy and verify every source file
+        run: |
+          python3 - <<'PY'
+          import hashlib, pathlib, subprocess
+          source = '293b278b161223e853534c7d269a04875879b1ce:auto-vos'
+          expected = {
+              'app.js': '081fc6b1157f535095d365b29eb7fd19fc842e11',
+              'assets/audi-glass.webp': '4fb4a0454b482c62bf1501e7687101df10353cd2',
+              'assets/auto-vos-logo-black.svg': '1bc3f4ed8979f69b445e4dc64d3baaec8f9426f0',
+              'assets/auto-vos-logo.svg': '3c37356653db9b1e2056c978cbd307b03e4be5c4',
+              'assets/ceramic-application.webp': '45da45d87ed93e82a280ac92fd2aad2a8bc0ba01',
+              'assets/favicon.svg': 'e26d8d1394df56564ebd3d7d302adc3a5ed097dc',
+              'assets/hero-poster.webp': '5ab2b92b36f7d64a8247d7a42e1d385bafb44c3a',
+              'assets/porsche-silver.webp': '9af98e63dccdd306dcbd640e03a884d65f115bdd',
+              'assets/porsche-yellow.webp': '9a796510f84690c3ae5f5ad534d4b23523f4435f',
+              'assets/ppf-installation.webp': '2a56b71f2d3c8698132455d787e57314f6ebfac6',
+              'assets/precision-install.webp': '19d315b80bcaedb5481ddfb6d19f82deb00719a2',
+              'assets/shop-film-mobile.mp4': '7f25fa3b9b6753eb0dca0e44a2a64f76bfb52301',
+              'assets/shop-film.mp4': '9b53ef99502d3092d82e151b9eb62123494ab19f',
+              'index.html': '421196a470e02f341c813c279474434e15408fc0',
+              'styles.css': '8ca621ff31891a5cec9453bc08c4c9b066b76d25',
+          }
+          def git(*args):
+              return subprocess.check_output(['git', *args])
+          actual = {}
+          for record in git('ls-tree', '-r', '-z', source).split(b'\0'):
+              if not record:
+                  continue
+              meta, name = record.split(b'\t', 1)
+              mode, kind, sha = meta.decode().split()
+              if mode != '100644' or kind != 'blob':
+                  raise SystemExit('Source contains an unexpected file type')
+              actual[name.decode()] = sha
+          if actual != expected:
+              raise SystemExit('Source differs from inspected snapshot; nothing copied')
+          payload = {name: git('cat-file', 'blob', sha) for name, sha in expected.items()}
+          payload['.nojekyll'] = b''
+          payload['robots.txt'] = b'User-agent: *\nDisallow: /\n'
+          payload['README.md'] = '''# Auto Vos
+
+          Standalone copy of the approved Auto Vos static homepage. The site is at the repository root: `index.html`, `styles.css`, `app.js`, and `assets/`.
+
+          ## Source
+
+          Copied from `davidjbeveridge/makelark-demos/auto-vos/` at commit `293b278b161223e853534c7d269a04875879b1ce`. All 15 website files are byte-for-byte unchanged, including the traced original logo, images, and desktop/mobile video. The existing demo remains in its original repository.
+
+          ## Preview locally
+
+          Open `index.html`, or run `python3 -m http.server 8000` from this directory. No installation or build step is required.
+
+          ## GitHub Pages
+
+          Use Settings > Pages > Deploy from a branch > `main` > `/ (root)`. Normal pushes then update the site; no custom deployment workflow is needed. `.nojekyll` is included. Copying the files does not itself activate Pages or change a custom domain.
+
+          Expected address after Pages activation: https://davidjbeveridge.github.io/theautovos/
+
+          This remains a preview: `noindex,nofollow` metadata and robots exclusion are retained. Quote/contact/service links still use the existing business website. No form backend or custom domain changes are included.
+          '''.encode()
+          for name, data in payload.items():
+              path = pathlib.Path(name)
+              if path.is_symlink() or any(p.is_symlink() for p in path.parents):
+                  raise SystemExit('Refusing a symlink: ' + name)
+              if path.exists() and (not path.is_file() or path.read_bytes() != data):
+                  raise SystemExit('Refusing to overwrite changed destination file: ' + name)
+          for name, data in payload.items():
+              path = pathlib.Path(name)
+              path.parent.mkdir(parents=True, exist_ok=True)
+              path.write_bytes(data)
+          for name, expected_sha in expected.items():
+              data = pathlib.Path(name).read_bytes()
+              actual_sha = hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()
+              if actual_sha != expected_sha:
+                  raise SystemExit('Copied file checksum mismatch: ' + name)
+              print('VERIFIED', name, len(data), actual_sha)
+          print('All 15 source files copied exactly to destination root.')
+          PY
+      - name: Commit copied site without rewriting history
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- index.html styles.css app.js assets .nojekyll robots.txt README.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add exact Auto Vos homepage, logo, images and videos at repository root'
+            git push origin HEAD:main
+          fi
+          git log -1 --format='COPIED_COMMIT %H'
+      - name: Report existing Pages configuration without changing it
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.error, urllib.request
+          url = 'https://api.github.com/repos/davidjbeveridge/theautovos/pages'
+          request = urllib.request.Request(url, headers={'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json', 'User-Agent': 'Auto-Vos-Copy'})
+          try:
+              with urllib.request.urlopen(request, timeout=20) as response:
+                  data = json.load(response)
+              print('PAGES', json.dumps({key: data.get(key) for key in ('status', 'html_url', 'cname', 'build_type', 'source')}))
+          except urllib.error.HTTPError as exc:
+              print('PAGES_READ_STATUS', exc.code)
+          except Exception as exc:
+              print('PAGES_READ_UNAVAILABLE', type(exc).__name__)
+          PY
