@@ -177,3 +177,6 @@ dialog{color:var(--text);background:var(--ink);border:1px solid #ffffff26;paddin
 }
 @media(prefers-reduced-motion:reduce){.service-photo img,.service-more .icon,.nav-services summary>.icon{transition:none}.service-photo:hover img,.service-photo:focus-visible img{transform:none}}
 .motion-paused .service-photo img,.motion-paused .service-more .icon{transition:none}
+
+/* Owner preview cross-link. */
+.concept-reference{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding:24px var(--gutter,4vw);border-top:1px solid #ffffff33;font-size:13px}.concept-reference a{text-decoration:underline;text-underline-offset:4px}.concept-reference span{opacity:.7}

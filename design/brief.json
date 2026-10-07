@@ -1,0 +1,242 @@
+{
+  "version": "1.0",
+  "artifact": {
+    "name": "Auto Vos web system",
+    "surface": "Static web catalog and rebuild templates",
+    "platform": "web",
+    "scope": "system-extension",
+    "required_states": [
+      "default",
+      "empty",
+      "invalid",
+      "loading",
+      "error",
+      "local confirmation",
+      "reduced motion"
+    ]
+  },
+  "product_truth": {
+    "audience": "Colorado Springs car owners comparing protection services; visitors exploring automotive culture and merchandise.",
+    "primary_job": "Understand the service, see real craft, and start a quote.",
+    "required_content": [
+      "PPF, ceramic coating, window tint",
+      "Gallery and event stories",
+      "Studio/team and art",
+      "Quote/contact",
+      "Commerce fixture and policy shells"
+    ],
+    "fixed_strings": [
+      "Auto Vos",
+      "DRIVE IT. LOVE IT. PROTECT IT."
+    ],
+    "prohibited_inventions": [
+      "Testimonials",
+      "Service prices",
+      "Warranties",
+      "Staff biography",
+      "Actual order/lead confirmation"
+    ],
+    "functional_requirements": [
+      "Accessible native navigation",
+      "Quote validation and recovery",
+      "Gallery filtering",
+      "Demo cart editing"
+    ]
+  },
+  "creative_direction": {
+    "mode": "system-extension",
+    "core_idea": "The studio as evidence: large real images, decisive type, quiet explanatory space.",
+    "emotional_target": [
+      "Care for a vehicle",
+      "Confidence in visible craft"
+    ],
+    "composition": "Oversized left-aligned headings, full-bleed imagery, white reading chapters, open rows and hairlines.",
+    "geometry": "Square corners; 1440px frame; 8px spacing rhythm.",
+    "material": "Flat white and near-black surfaces; texture comes from photographs.",
+    "typography": "Arial/Helvetica; tight 48\u2013112px display; readable 16\u201320px body.",
+    "color_strategy": "Monochrome interface; color in real vehicles; semantic feedback only.",
+    "image_language": "Actual shop film stills and audited photography, no generated customer proof.",
+    "density": "Spacious marketing chapters; compact labeled form and specification rows."
+  },
+  "signature_moves": [
+    "Oversized imperative headlines",
+    "Full-bleed authentic shop images",
+    "Hairline editorial rows"
+  ],
+  "experience_composition": {
+    "identity_fidelity": "strict",
+    "experience_freedom": "constrained",
+    "medium": "",
+    "exposure_frequency": "",
+    "task_criticality": "",
+    "production_budget": "",
+    "score_path": "",
+    "craft_plan_path": "",
+    "selected_archive": "",
+    "protected_qualities": []
+  },
+  "signature_experience": {
+    "ambition_level": "standard",
+    "experience_promise": "",
+    "defining_moment": "",
+    "design_integration": "",
+    "must_survive_simplification": [],
+    "may_simplify": [],
+    "first_proof": "",
+    "temporal_evidence_required": false
+  },
+  "anti_patterns": [
+    "Tailwind or utility-class strings",
+    "Floating rounded card walls",
+    "Invented trust badges",
+    "Dead forms",
+    "Fake order receipts"
+  ],
+  "existing_system": {
+    "token_sources": [
+      "index.html",
+      "styles.css",
+      "design/presentation.yaml"
+    ],
+    "reusable_components": [
+      "Brand logo",
+      "Primary quote invitation",
+      "Service card",
+      "Photo grid",
+      "Native FAQ"
+    ],
+    "platform_conventions": [
+      "Native forms and disclosure controls"
+    ],
+    "allowed_deviations": [
+      "Add semantic feedback colors for form states",
+      "New templates have explicit controlled video rather than auto playback"
+    ]
+  },
+  "imagery": {
+    "roles": [
+      "Demonstrate installation",
+      "Show actual vehicle work",
+      "Product/staff specimens"
+    ],
+    "generation_allowed": false,
+    "prohibited_regions": [
+      "Customer proof",
+      "Staff identity"
+    ],
+    "asset_constraints": [
+      "Keep authentic source credits",
+      "Confirm rights before public release",
+      "Never label a car photo as an unverified completed service"
+    ]
+  },
+  "motion": {
+    "roles": [
+      "Feedback",
+      "Optional shop playback"
+    ],
+    "generated_video_allowed": false,
+    "reduced_motion": "Static poster and no transitions; controls work without animation.",
+    "performance_constraints": [
+      "No autoplay in new templates",
+      "No offscreen video downloads until play"
+    ]
+  },
+  "copy": {
+    "voice": [
+      "Direct",
+      "Specific",
+      "Helpful"
+    ],
+    "avoid": [
+      "Unsupported superlatives",
+      "Manufactured urgency"
+    ],
+    "character_constraints": [
+      "Headlines wrap without clipping",
+      "Labels remain visible"
+    ],
+    "legal_or_exact_copy": [
+      "All policies are explicitly unpublished templates."
+    ]
+  },
+  "responsive_and_accessibility": {
+    "content_priority": [
+      "Title",
+      "Explanation",
+      "Primary action",
+      "Evidence"
+    ],
+    "viewports": [
+      "360x800",
+      "390x844",
+      "768x1024",
+      "1024x900",
+      "1440x1000"
+    ],
+    "keyboard_and_focus": [
+      "Native controls",
+      "Visible focus",
+      "Linked error summary"
+    ],
+    "contrast_and_text": [
+      "WCAG AA target",
+      "No essential text in images",
+      "200% text test"
+    ],
+    "touch_and_pointer": [
+      "48px controls",
+      "No hover-only content"
+    ]
+  },
+  "implementation": {
+    "repository_constraints": [
+      "Preserve root homepage",
+      "No runtime libraries",
+      "Strict-simple policy"
+    ],
+    "technology": [
+      "Static HTML",
+      "Node build script",
+      "Semantic CSS",
+      "Vanilla JS"
+    ],
+    "performance": [
+      "System fonts",
+      "Lazy images below fold",
+      "No commerce network calls"
+    ],
+    "out_of_scope": [
+      "Deployment",
+      "Live checkout",
+      "CRM integration",
+      "Final legal drafting"
+    ]
+  },
+  "acceptance": {
+    "rendered_states": [
+      "Every page family desktop and mobile",
+      "Form invalid/error/completion",
+      "Cart empty/populated",
+      "Gallery empty",
+      "Reduced motion"
+    ],
+    "core_workflow": [
+      "Service to quote",
+      "Gallery filter reset",
+      "Product to demo cart"
+    ],
+    "critic_threshold": 9,
+    "deterministic_checks": [
+      "JACQUES fast checks",
+      "Build repeatability",
+      "HTML/link verification",
+      "Browser behavior tests"
+    ],
+    "build_and_test_commands": [
+      "node scripts/build.mjs",
+      "node scripts/verify.mjs",
+      "node scripts/browser-proof.mjs"
+    ]
+  }
+}

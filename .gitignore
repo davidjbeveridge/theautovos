@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+design-artifacts/
+!assets/caleb-brown.webp
+!assets/lunar-tee.webp
+!assets/porsche-918.webp
+!assets/porsche-art.webp
+!design-system/previews/*.png
+
+dist/
+.jacques/
+reports/

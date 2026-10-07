@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "jacques-component-contract",
+  "id": "faq",
+  "version": "0.1.0",
+  "semanticName": "Question disclosure",
+  "ownership": "shared",
+  "layer": "interactive-primitive",
+  "purpose": "Show and hide one answer using native semantics.",
+  "contentSlots": [
+    {
+      "id": "content",
+      "semanticKind": "label",
+      "required": true,
+      "overflowPolicy": "wrap"
+    }
+  ],
+  "behavior": {
+    "variants": [
+      "primary"
+    ],
+    "sizes": [
+      "default"
+    ],
+    "polymorphism": "forbidden"
+  },
+  "states": [
+    {
+      "id": "closed",
+      "kind": "ready"
+    },
+    {
+      "id": "open",
+      "kind": "ready"
+    }
+  ],
+  "events": [
+    {
+      "id": "activate",
+      "intent": "Perform the explicitly labeled action."
+    }
+  ],
+  "accessibility": {
+    "requirements": [
+      "keyboard-navigation",
+      "visible-focus",
+      "correct-semantics",
+      "programmatic-labels",
+      "practical-hit-areas"
+    ]
+  },
+  "responsive": {
+    "capabilityProfiles": [
+      "authoring",
+      "compact"
+    ],
+    "collapseOrder": [
+      "preserve-primary-content",
+      "preserve-critical-context",
+      "preserve-primary-action",
+      "preserve-accessible-names"
+    ]
+  },
+  "platformBehavior": [
+    {
+      "platform": "web",
+      "behaviors": [
+        "native-focus"
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "faq-specimen",
+      "stressModes": [
+        "normal",
+        "empty",
+        "long",
+        "missing",
+        "pseudo-localized",
+        "unbroken-long",
+        "unusual-punctuation",
+        "zero",
+        "large-negative",
+        "large-positive",
+        "long-decimal",
+        "long-word"
+      ],
+      "states": [
+        "closed",
+        "open"
+      ]
+    }
+  ],
+  "presentationVariables": [
+    "color.ink",
+    "color.canvas",
+    "control.height"
+  ],
+  "implementations": [
+    {
+      "surfaceId": "web",
+      "status": "implemented"
+    }
+  ],
+  "consumers": [],
+  "deprecation": {
+    "status": "active"
+  },
+  "x-autovos": {
+    "note": "Static source: src/components.mjs, src/pages.mjs, src/interactions.js. Specimen: templates/service-ppf.html. Verification: scripts/browser-proof.mjs. No framework adapter conformance claimed."
+  }
+}

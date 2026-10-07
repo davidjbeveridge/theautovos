@@ -1,0 +1,60 @@
+{
+  "canonical_system": "DESIGN.md",
+  "constraints": [],
+  "decisions": {
+    "confirmed": [
+      "Homepage-derived identity",
+      "Canonical design reference",
+      "Owner-facing component rules",
+      "Shareable preview deployment"
+    ],
+    "deferred": [
+      "Live forms and commerce",
+      "Final business content and launch"
+    ],
+    "open": []
+  },
+  "project": {
+    "ambition": {
+      "status": "open",
+      "value": null
+    },
+    "approval": {
+      "status": "confirmed",
+      "value": "User designated canonical and authorized commit, merge and owner-preview publication on 2026-10-07."
+    },
+    "editable_formats": [],
+    "gates": {
+      "privacy": {
+        "status": "unapproved",
+        "value": null
+      },
+      "publication": {
+        "status": "approved",
+        "value": "Separate owner-review preview only; not replacement of business website."
+      },
+      "spend": {
+        "status": "unapproved",
+        "value": null
+      }
+    },
+    "identity_approach": {
+      "status": "open",
+      "value": null
+    },
+    "modalities": [],
+    "name": "Auto Vos web system",
+    "provider_override_link": null,
+    "purpose": "extension"
+  },
+  "readiness": {
+    "rendered": "Local Chrome evidence; rerun at release",
+    "live": "Pending owner-preview deployment"
+  },
+  "schema_version": 1,
+  "status": {
+    "authenticated": "unknown",
+    "installed": "unknown",
+    "tested": "unknown"
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "snapshot": "2026-10-07",
+  "source": "reports/audit-2026-10-07/crawl/pages.jsonl",
+  "routes": [
+    {
+      "source": "https://www.theautovos.com/",
+      "path": "/",
+      "template": "home",
+      "proposedDestination": "/",
+      "decision": "rebuild"
+    },
+    {
+      "source": "https://www.theautovos.com/sluftgekuhlt-6",
+      "path": "/sluftgekuhlt-6",
+      "template": "story",
+      "proposedDestination": "/sluftgekuhlt-6",
+      "decision": "retain gallery/event slug; replace template; verify credits"
+    },
+    {
+      "source": "https://www.theautovos.com/irstrip-attack-2019",
+      "path": "/irstrip-attack-2019",
+      "template": "story",
+      "proposedDestination": "/irstrip-attack-2019",
+      "decision": "retain gallery/event slug; replace template; verify credits"
+    },
+    {
+      "source": "https://www.theautovos.com/drive-oz-2019",
+      "path": "/drive-oz-2019",
+      "template": "story",
+      "proposedDestination": "/drive-oz-2019",
+      "decision": "retain gallery/event slug; replace template; verify credits"
+    },
+    {
+      "source": "https://www.theautovos.com/pikes-peak-hill-climb-2019",
+      "path": "/pikes-peak-hill-climb-2019",
+      "template": "story",
+      "proposedDestination": "/pikes-peak-hill-climb-2019",
+      "decision": "retain gallery/event slug; replace template; verify credits"
+    },
+    {
+      "source": "https://www.theautovos.com/pikes-peak-hill-climb-2019-porsche",
+      "path": "/pikes-peak-hill-climb-2019-porsche",
+      "template": "story",
+      "proposedDestination": "/pikes-peak-hill-climb-2019-porsche",
+      "decision": "retain gallery/event slug; replace template; verify credits"
+    },
+    {
+      "source": "https://www.theautovos.com/porsche-918-flash-photography",
+      "path": "/porsche-918-flash-photography",
+      "template": "story",
+      "proposedDestination": "/porsche-918-flash-photography",
+      "decision": "retain gallery/event slug; replace template; verify credits"
+    },
+    {
+      "source": "https://www.theautovos.com/porsche-356-sc-flash-photography",
+      "path": "/porsche-356-sc-flash-photography",
+      "template": "story",
+      "proposedDestination": "/porsche-356-sc-flash-photography",
+      "decision": "retain gallery/event slug; replace template; verify credits"
+    },
+    {
+      "source": "https://www.theautovos.com/porsche-safari-day-in-the-dirt",
+      "path": "/porsche-safari-day-in-the-dirt",
+      "template": "story",
+      "proposedDestination": "/porsche-safari-day-in-the-dirt",
+      "decision": "retain gallery/event slug; replace template; verify credits"
+    },
+    {
+      "source": "https://www.theautovos.com/pikes-peak-hill-climb-paul-kolinski",
+      "path": "/pikes-peak-hill-climb-paul-kolinski",
+      "template": "story",
+      "proposedDestination": "/pikes-peak-hill-climb-paul-kolinski",
+      "decision": "retain gallery/event slug; replace template; verify credits"
+    },
+    {
+      "source": "https://www.theautovos.com/new-dropdown-1",
+      "path": "/new-dropdown-1",
+      "template": "not-found",
+      "proposedDestination": null,
+      "decision": "retire demo or empty container; confirm traffic before 410/redirect"
+    },
+    {
+      "source": "https://www.theautovos.com/studio-info",
+      "path": "/studio-info",
+      "template": "studio",
+      "proposedDestination": "/studio/",
+      "decision": "consolidate; keep team content and confirm identity"
+    },
+    {
+      "source": "https://www.theautovos.com/team",
+      "path": "/team",
+      "template": "studio",
+      "proposedDestination": "/studio/",
+      "decision": "consolidate; keep team content and confirm identity"
+    },
+    {
+      "source": "https://www.theautovos.com/art",
+      "path": "/art",
+      "template": "art",
+      "proposedDestination": "/art/",
+      "decision": "rebuild"
+    },
+    {
+      "source": "https://www.theautovos.com/what-we-do-bedford",
+      "path": "/what-we-do-bedford",
+      "template": "services",
+      "proposedDestination": "/services/",
+      "decision": "consolidate; candidate 301 after content review"
+    },
+    {
+      "source": "https://www.theautovos.com/xpel-ppf-window-tint-colorado-springs-auto-vos",
+      "path": "/xpel-ppf-window-tint-colorado-springs-auto-vos",
+      "template": "services",
+      "proposedDestination": "/services/",
+      "decision": "consolidate; candidate 301 after content review"
+    },
+    {
+      "source": "https://www.theautovos.com/contact-bedford",
+      "path": "/contact-bedford",
+      "template": "contact",
+      "proposedDestination": "/contact/",
+      "decision": "candidate 301"
+    },
+    {
+      "source": "https://www.theautovos.com/paint-protection-film-colorado-springs",
+      "path": "/paint-protection-film-colorado-springs",
+      "template": "service",
+      "proposedDestination": "/paint-protection-film-colorado-springs",
+      "decision": "retain SEO slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/colorado-springs-ceramic-coating-auto-vos",
+      "path": "/colorado-springs-ceramic-coating-auto-vos",
+      "template": "service",
+      "proposedDestination": "/colorado-springs-ceramic-coating-auto-vos",
+      "decision": "retain SEO slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/colorado-springs-window-tinting-auto-vos",
+      "path": "/colorado-springs-window-tinting-auto-vos",
+      "template": "service",
+      "proposedDestination": "/colorado-springs-window-tinting-auto-vos",
+      "decision": "retain SEO slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/get-a-quote-auto-vos",
+      "path": "/get-a-quote-auto-vos",
+      "template": "quote",
+      "proposedDestination": "/get-a-quote-auto-vos",
+      "decision": "retain conversion route"
+    },
+    {
+      "source": "https://www.theautovos.com/read-me-bedford",
+      "path": "/read-me-bedford",
+      "template": "not-found",
+      "proposedDestination": null,
+      "decision": "retire demo or empty container; confirm traffic before 410/redirect"
+    },
+    {
+      "source": "https://www.theautovos.com/projects-bedford",
+      "path": "/projects-bedford",
+      "template": "not-found",
+      "proposedDestination": null,
+      "decision": "retire demo or empty container; confirm traffic before 410/redirect"
+    },
+    {
+      "source": "https://www.theautovos.com/new-page-1",
+      "path": "/new-page-1",
+      "template": "not-found",
+      "proposedDestination": null,
+      "decision": "retire demo or empty container; confirm traffic before 410/redirect"
+    },
+    {
+      "source": "https://www.theautovos.com/shop",
+      "path": "/shop",
+      "template": "shop",
+      "proposedDestination": "/shop/",
+      "decision": "rebuild"
+    },
+    {
+      "source": "https://www.theautovos.com/shop/auto-vos-performance-crew-socks-vertical-logo-mid-length-socks",
+      "path": "/shop/auto-vos-performance-crew-socks-vertical-logo-mid-length-socks",
+      "template": "product",
+      "proposedDestination": "/shop/auto-vos-performance-crew-socks-vertical-logo-mid-length-socks",
+      "decision": "retain slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/shop/auto-vos-20oz-matte-water-bottle",
+      "path": "/shop/auto-vos-20oz-matte-water-bottle",
+      "template": "product",
+      "proposedDestination": "/shop/auto-vos-20oz-matte-water-bottle",
+      "decision": "retain slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/shop/auto-vos-black-ceramic-logo-mug",
+      "path": "/shop/auto-vos-black-ceramic-logo-mug",
+      "template": "product",
+      "proposedDestination": "/shop/auto-vos-black-ceramic-logo-mug",
+      "decision": "retain slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/shop/autovos-racing-flag-double-sided-winged-fox-logo-display-flag",
+      "path": "/shop/autovos-racing-flag-double-sided-winged-fox-logo-display-flag",
+      "template": "product",
+      "proposedDestination": "/shop/autovos-racing-flag-double-sided-winged-fox-logo-display-flag",
+      "decision": "retain slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/shop/auto-vos-classic-snapback-cap",
+      "path": "/shop/auto-vos-classic-snapback-cap",
+      "template": "product",
+      "proposedDestination": "/shop/auto-vos-classic-snapback-cap",
+      "decision": "retain slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/shop/auto-vos-performance-crew-socks-mid-length-socks",
+      "path": "/shop/auto-vos-performance-crew-socks-mid-length-socks",
+      "template": "product",
+      "proposedDestination": "/shop/auto-vos-performance-crew-socks-mid-length-socks",
+      "decision": "retain slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/shop/auto-vos-lunar-gt3rs-hoodie",
+      "path": "/shop/auto-vos-lunar-gt3rs-hoodie",
+      "template": "product",
+      "proposedDestination": "/shop/auto-vos-lunar-gt3rs-hoodie",
+      "decision": "retain slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/shop/auto-vos-astronauts-strike-gold-tee",
+      "path": "/shop/auto-vos-astronauts-strike-gold-tee",
+      "template": "product",
+      "proposedDestination": "/shop/auto-vos-astronauts-strike-gold-tee",
+      "decision": "retain slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/shop/auto-vos-in-search-of-fusion-plus-tee",
+      "path": "/shop/auto-vos-in-search-of-fusion-plus-tee",
+      "template": "product",
+      "proposedDestination": "/shop/auto-vos-in-search-of-fusion-plus-tee",
+      "decision": "retain slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/shop/auto-vos-lunar-gt3rs-tee",
+      "path": "/shop/auto-vos-lunar-gt3rs-tee",
+      "template": "product",
+      "proposedDestination": "/shop/auto-vos-lunar-gt3rs-tee",
+      "decision": "retain slug; replace template"
+    },
+    {
+      "source": "https://www.theautovos.com/shop/auto-vos-914-gt-strikes-back-tee",
+      "path": "/shop/auto-vos-914-gt-strikes-back-tee",
+      "template": "product",
+      "proposedDestination": "/shop/auto-vos-914-gt-strikes-back-tee",
+      "decision": "retain slug; replace template"
+    }
+  ],
+  "newFamilies": [
+    "work",
+    "cart",
+    "checkout",
+    "policy",
+    "confirmation",
+    "not-found"
+  ],
+  "releaseNote": "Redirects are recommendations only. Do not redirect all retired content to the homepage."
+}

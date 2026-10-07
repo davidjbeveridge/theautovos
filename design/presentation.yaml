@@ -1,0 +1,326 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "jacques-presentation-registry",
+  "id": "auto-vos-presentation",
+  "version": "0.1.0",
+  "defaultMode": "base",
+  "modes": [
+    {
+      "id": "base"
+    }
+  ],
+  "variables": [
+    {
+      "id": "color.canvas",
+      "type": "color",
+      "values": {
+        "base": "#ffffff"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-canvas"
+        }
+      }
+    },
+    {
+      "id": "color.ink",
+      "type": "color",
+      "values": {
+        "base": "#121212"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-ink"
+        }
+      }
+    },
+    {
+      "id": "color.muted",
+      "type": "color",
+      "values": {
+        "base": "#5c5c5c"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-muted"
+        }
+      }
+    },
+    {
+      "id": "color.surface",
+      "type": "color",
+      "values": {
+        "base": "#f1f1ee"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-surface"
+        }
+      }
+    },
+    {
+      "id": "color.line",
+      "type": "color",
+      "values": {
+        "base": "#cececa"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-line"
+        }
+      }
+    },
+    {
+      "id": "color.inverse",
+      "type": "color",
+      "values": {
+        "base": "#ffffff"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-inverse"
+        }
+      }
+    },
+    {
+      "id": "color.inverse-muted",
+      "type": "color",
+      "values": {
+        "base": "#bdbdbd"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-inverse-muted"
+        }
+      }
+    },
+    {
+      "id": "color.error",
+      "type": "color",
+      "values": {
+        "base": "#a52c25"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-error"
+        }
+      }
+    },
+    {
+      "id": "color.success",
+      "type": "color",
+      "values": {
+        "base": "#24553b"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-success"
+        }
+      }
+    },
+    {
+      "id": "color.focus",
+      "type": "color",
+      "values": {
+        "base": "#155ab6"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-focus"
+        }
+      }
+    },
+    {
+      "id": "type.family",
+      "type": "fontFamily",
+      "values": {
+        "base": "Arial, Helvetica, sans-serif"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-type-family"
+        }
+      }
+    },
+    {
+      "id": "type.mono",
+      "type": "fontFamily",
+      "values": {
+        "base": "ui-monospace, SFMono-Regular, Menlo, monospace"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-type-mono"
+        }
+      }
+    },
+    {
+      "id": "space.xs",
+      "type": "dimension",
+      "values": {
+        "base": "8px"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-space-xs"
+        }
+      }
+    },
+    {
+      "id": "space.sm",
+      "type": "dimension",
+      "values": {
+        "base": "16px"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-space-sm"
+        }
+      }
+    },
+    {
+      "id": "space.md",
+      "type": "dimension",
+      "values": {
+        "base": "24px"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-space-md"
+        }
+      }
+    },
+    {
+      "id": "space.lg",
+      "type": "dimension",
+      "values": {
+        "base": "40px"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-space-lg"
+        }
+      }
+    },
+    {
+      "id": "space.xl",
+      "type": "dimension",
+      "values": {
+        "base": "64px"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-space-xl"
+        }
+      }
+    },
+    {
+      "id": "space.section",
+      "type": "dimension",
+      "values": {
+        "base": "96px"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-space-section"
+        }
+      }
+    },
+    {
+      "id": "layout.max",
+      "type": "dimension",
+      "values": {
+        "base": "1440px"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-layout-max"
+        }
+      }
+    },
+    {
+      "id": "control.height",
+      "type": "dimension",
+      "values": {
+        "base": "48px"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-control-height"
+        }
+      }
+    },
+    {
+      "id": "shape.radius",
+      "type": "dimension",
+      "values": {
+        "base": "0px"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-shape-radius"
+        }
+      }
+    },
+    {
+      "id": "color.catalog",
+      "type": "color",
+      "values": {
+        "base": "#fafaf8"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-catalog"
+        }
+      }
+    },
+    {
+      "id": "color.error-surface",
+      "type": "color",
+      "values": {
+        "base": "#fff3f1"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-error-surface"
+        }
+      }
+    },
+    {
+      "id": "color.control-border",
+      "type": "color",
+      "values": {
+        "base": "#828282"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-control-border"
+        }
+      }
+    }
+  ]
+}
