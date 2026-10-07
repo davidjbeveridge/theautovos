@@ -1,0 +1,66 @@
+{
+  "stage": "prototype",
+  "generatedBy": "scripts/build.mjs",
+  "pages": [
+    {
+      "path": "templates/home.html"
+    },
+    {
+      "path": "templates/services.html"
+    },
+    {
+      "path": "templates/service-ppf.html"
+    },
+    {
+      "path": "templates/service-ceramic.html"
+    },
+    {
+      "path": "templates/service-tint.html"
+    },
+    {
+      "path": "templates/work.html"
+    },
+    {
+      "path": "templates/story.html"
+    },
+    {
+      "path": "templates/studio.html"
+    },
+    {
+      "path": "templates/art.html"
+    },
+    {
+      "path": "templates/contact.html"
+    },
+    {
+      "path": "templates/quote.html"
+    },
+    {
+      "path": "templates/shop.html"
+    },
+    {
+      "path": "templates/product.html"
+    },
+    {
+      "path": "templates/cart.html"
+    },
+    {
+      "path": "templates/checkout.html"
+    },
+    {
+      "path": "templates/policy.html"
+    },
+    {
+      "path": "templates/policy-shipping.html"
+    },
+    {
+      "path": "templates/policy-terms.html"
+    },
+    {
+      "path": "templates/confirmation.html"
+    },
+    {
+      "path": "templates/not-found.html"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "auto-vos-web-system",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/verify.mjs",
+    "test:browser": "node scripts/browser-proof.mjs",
+    "preview": "python3 -m http.server 8787 --bind 127.0.0.1",
+    "test:a11y": "node scripts/accessibility-proof.mjs",
+    "package:preview": "node scripts/build.mjs && node scripts/verify.mjs && node scripts/package-preview.mjs",
+    "test:preview": "node scripts/owner-preview-proof.mjs"
+  }
+}

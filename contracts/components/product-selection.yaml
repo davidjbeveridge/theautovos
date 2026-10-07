@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "jacques-component-contract",
+  "id": "product-selection",
+  "version": "0.1.0",
+  "semanticName": "Product selection",
+  "ownership": "shared",
+  "layer": "application-pattern",
+  "purpose": "Choose a size and quantity for a demo bag.",
+  "contentSlots": [
+    {
+      "id": "content",
+      "semanticKind": "label",
+      "required": true,
+      "overflowPolicy": "wrap"
+    }
+  ],
+  "behavior": {
+    "variants": [
+      "primary"
+    ],
+    "sizes": [
+      "default"
+    ],
+    "polymorphism": "forbidden"
+  },
+  "states": [
+    {
+      "id": "ready",
+      "kind": "ready"
+    },
+    {
+      "id": "selected",
+      "kind": "ready"
+    },
+    {
+      "id": "confirmation",
+      "kind": "success"
+    }
+  ],
+  "events": [
+    {
+      "id": "activate",
+      "intent": "Perform the explicitly labeled action."
+    }
+  ],
+  "accessibility": {
+    "requirements": [
+      "keyboard-navigation",
+      "visible-focus",
+      "correct-semantics",
+      "programmatic-labels",
+      "practical-hit-areas"
+    ]
+  },
+  "responsive": {
+    "capabilityProfiles": [
+      "authoring",
+      "compact"
+    ],
+    "collapseOrder": [
+      "preserve-primary-content",
+      "preserve-critical-context",
+      "preserve-primary-action",
+      "preserve-accessible-names"
+    ]
+  },
+  "platformBehavior": [
+    {
+      "platform": "web",
+      "behaviors": [
+        "native-focus"
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "product-selection-specimen",
+      "stressModes": [
+        "normal",
+        "empty",
+        "long",
+        "missing",
+        "pseudo-localized",
+        "unbroken-long",
+        "unusual-punctuation",
+        "zero",
+        "large-negative",
+        "large-positive",
+        "long-decimal",
+        "long-word"
+      ],
+      "states": [
+        "ready",
+        "selected",
+        "confirmation"
+      ]
+    }
+  ],
+  "presentationVariables": [
+    "color.ink",
+    "color.canvas",
+    "control.height"
+  ],
+  "implementations": [
+    {
+      "surfaceId": "web",
+      "status": "implemented"
+    }
+  ],
+  "consumers": [],
+  "deprecation": {
+    "status": "active"
+  },
+  "x-autovos": {
+    "note": "Static source: src/components.mjs, src/pages.mjs, src/interactions.js. Specimen: templates/product.html. Verification: scripts/browser-proof.mjs. No framework adapter conformance claimed."
+  }
+}

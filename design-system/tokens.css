@@ -1,0 +1,27 @@
+/* Generated from design/presentation.yaml. Do not edit. */
+:root {
+  --av-color-canvas: #ffffff;
+  --av-color-ink: #121212;
+  --av-color-muted: #5c5c5c;
+  --av-color-surface: #f1f1ee;
+  --av-color-line: #cececa;
+  --av-color-inverse: #ffffff;
+  --av-color-inverse-muted: #bdbdbd;
+  --av-color-error: #a52c25;
+  --av-color-success: #24553b;
+  --av-color-focus: #155ab6;
+  --av-type-family: Arial, Helvetica, sans-serif;
+  --av-type-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --av-space-xs: 8px;
+  --av-space-sm: 16px;
+  --av-space-md: 24px;
+  --av-space-lg: 40px;
+  --av-space-xl: 64px;
+  --av-space-section: 96px;
+  --av-layout-max: 1440px;
+  --av-control-height: 48px;
+  --av-shape-radius: 0px;
+  --av-color-catalog: #fafaf8;
+  --av-color-error-surface: #fff3f1;
+  --av-color-control-border: #828282;
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "jacques-component-registry",
+  "id": "auto-vos-components",
+  "version": "0.1.0",
+  "components": [
+    {
+      "id": "site-shell",
+      "contractPath": "contracts/components/site-shell.yaml",
+      "contractVersion": "0.1.0",
+      "status": "active",
+      "ownership": "shared",
+      "layer": "application-pattern",
+      "consumers": [],
+      "impactRoots": [
+        "color",
+        "space",
+        "control"
+      ]
+    },
+    {
+      "id": "page-intro",
+      "contractPath": "contracts/components/page-intro.yaml",
+      "contractVersion": "0.1.0",
+      "status": "active",
+      "ownership": "shared",
+      "layer": "application-pattern",
+      "consumers": [],
+      "impactRoots": [
+        "color",
+        "space",
+        "control"
+      ]
+    },
+    {
+      "id": "service-card",
+      "contractPath": "contracts/components/service-card.yaml",
+      "contractVersion": "0.1.0",
+      "status": "active",
+      "ownership": "shared",
+      "layer": "application-pattern",
+      "consumers": [],
+      "impactRoots": [
+        "color",
+        "space",
+        "control"
+      ]
+    },
+    {
+      "id": "gallery-filter",
+      "contractPath": "contracts/components/gallery-filter.yaml",
+      "contractVersion": "0.1.0",
+      "status": "active",
+      "ownership": "shared",
+      "layer": "application-pattern",
+      "consumers": [],
+      "impactRoots": [
+        "color",
+        "space",
+        "control"
+      ]
+    },
+    {
+      "id": "faq",
+      "contractPath": "contracts/components/faq.yaml",
+      "contractVersion": "0.1.0",
+      "status": "active",
+      "ownership": "shared",
+      "layer": "interactive-primitive",
+      "consumers": [],
+      "impactRoots": [
+        "color",
+        "space",
+        "control"
+      ]
+    },
+    {
+      "id": "inquiry-form",
+      "contractPath": "contracts/components/inquiry-form.yaml",
+      "contractVersion": "0.1.0",
+      "status": "active",
+      "ownership": "shared",
+      "layer": "application-pattern",
+      "consumers": [],
+      "impactRoots": [
+        "color",
+        "space",
+        "control"
+      ]
+    },
+    {
+      "id": "product-selection",
+      "contractPath": "contracts/components/product-selection.yaml",
+      "contractVersion": "0.1.0",
+      "status": "active",
+      "ownership": "shared",
+      "layer": "application-pattern",
+      "consumers": [],
+      "impactRoots": [
+        "color",
+        "space",
+        "control"
+      ]
+    },
+    {
+      "id": "demo-bag",
+      "contractPath": "contracts/components/demo-bag.yaml",
+      "contractVersion": "0.1.0",
+      "status": "active",
+      "ownership": "shared",
+      "layer": "application-pattern",
+      "consumers": [],
+      "impactRoots": [
+        "color",
+        "space",
+        "control"
+      ]
+    }
+  ]
+}

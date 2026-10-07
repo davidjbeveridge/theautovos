@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "jacques-manifest",
+  "id": "auto-vos",
+  "version": "0.1.0",
+  "repository": {
+    "role": "application-system",
+    "topology": "embedded"
+  },
+  "design": {
+    "entryPoints": [
+      "DESIGN.md"
+    ],
+    "registry": "design/presentation.yaml"
+  },
+  "policy": {
+    "profile": "jacques",
+    "releaseChannel": "preview"
+  },
+  "surfaces": [
+    {
+      "id": "web",
+      "path": ".",
+      "adapter": {
+        "id": "autovos/static-html",
+        "version": "0.1.0"
+      },
+      "capabilityProfile": "web-default"
+    }
+  ],
+  "generated": [
+    {
+      "path": "templates",
+      "owner": "web"
+    },
+    {
+      "path": "design-system",
+      "owner": "web"
+    }
+  ],
+  "validation": {
+    "commands": [
+      {
+        "id": "build",
+        "argv": [
+          "node",
+          "scripts/build.mjs"
+        ]
+      },
+      {
+        "id": "verify",
+        "argv": [
+          "node",
+          "scripts/verify.mjs"
+        ]
+      }
+    ]
+  },
+  "x-jacques": {
+    "policyProfile": "strict-simple",
+    "adoptionMode": "set-new-standards",
+    "adapterLimit": "Static HTML uses project verification; the installed JACQUES UI runner has no static HTML adapter. Fast checks validate governance only."
+  }
+}
