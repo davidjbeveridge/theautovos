@@ -347,6 +347,123 @@
           "customProperty": "--av-color-link-inverse"
         }
       }
+    },
+    {
+      "id": "motion.fast",
+      "type": "duration",
+      "values": {
+        "base": "180ms"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-motion-fast"
+        }
+      }
+    },
+    {
+      "id": "motion.enter",
+      "type": "duration",
+      "values": {
+        "base": "420ms"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-motion-enter"
+        }
+      }
+    },
+    {
+      "id": "motion.distance",
+      "type": "dimension",
+      "values": {
+        "base": "12px"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-motion-distance"
+        }
+      }
+    },
+    {
+      "id": "motion.ease",
+      "type": "string",
+      "values": {
+        "base": "cubic-bezier(0.2, 0.7, 0.3, 1)"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-motion-ease"
+        }
+      }
+    },
+    {
+      "id": "color.review-card",
+      "type": "color",
+      "values": {
+        "base": "#202124"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-review-card"
+        }
+      }
+    },
+    {
+      "id": "color.review-muted",
+      "type": "color",
+      "values": {
+        "base": "#bdc1c6"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-review-muted"
+        }
+      }
+    },
+    {
+      "id": "color.review-stars",
+      "type": "color",
+      "values": {
+        "base": "#fbbc04"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-review-stars"
+        }
+      }
+    },
+    {
+      "id": "color.review-border",
+      "type": "color",
+      "values": {
+        "base": "#45474b"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-review-border"
+        }
+      }
+    },
+    {
+      "id": "shape.review-radius",
+      "type": "dimension",
+      "values": {
+        "base": "12px"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-review-radius"
+        }
+      }
     }
   ]
 }
