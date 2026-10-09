@@ -29,3 +29,6 @@ Owner verifies facts, rights, policies and product data; connect forms/commerce;
 
 ## Canonical owner preview
 The user designated this design system canonical and authorized commit, merge and publication. The visual catalog contains component examples and usage rules without tool names, source paths or build commands. Main is authoritative; the Pages workflow publishes an allowlisted artifact. Live leads and commerce remain outside this preview.
+
+## Media correction — October 8
+Removed the withdrawn hood-installation photograph from all concept, storyboard, component and template uses. Replaced it with existing vehicle photography and matching alt text. Removed the same scene, including surrounding transitions, from desktop and mobile films; retired the old files and regenerated template thumbnails. The separate service-site source receives the same photo correction without importing its unfinished rebuild into this release.

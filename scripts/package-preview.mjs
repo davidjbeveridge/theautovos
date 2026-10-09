@@ -15,6 +15,8 @@ const walk = dir => fs.readdirSync(dir, {withFileTypes: true}).flatMap(entry => 
   return entry.isDirectory() ? walk(file) : [file];
 });
 const files = walk(destination);
+const retired = new Set(['ppf-installation.webp', 'shop-film.mp4', 'shop-film-mobile.mp4']);
+assert.ok(!files.some(file => retired.has(path.basename(file))), 'Retired media must not be published');
 for (const file of files.filter(file => file.endsWith('.html'))) {
   const html = fs.readFileSync(file, 'utf8');
   assert.ok(!/\b(?:jacques|xenia|strict-simple)\b/i.test(html), `Internal tooling leaked into ${file}`);
