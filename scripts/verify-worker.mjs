@@ -1,0 +1,8 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+const base=process.env.WORKER_URL||'http://127.0.0.1:8791',m=JSON.parse(fs.readFileSync('design-artifacts/production-manifest.json'));const checks=[];
+for(const p of m.pages){const r=await fetch(base+p.path,{redirect:'manual'});assert.equal(r.status,200,p.path);assert((await r.text()).includes('content="index,follow"'));checks.push({path:p.path,status:200});}
+for(const p of m.redirects){const r=await fetch(base+p.from,{redirect:'manual'});assert.equal(r.status,301,p.from);assert.equal(r.headers.get('location'),p.to);checks.push({path:p.from,status:301,to:p.to});}
+for(const p of [...m.retire,'/does-not-exist']){const r=await fetch(base+p,{redirect:'manual'});assert.equal(r.status,404,p);checks.push({path:p,status:404});}
+const inquiry=await fetch(base+'/api/inquiry',{method:'POST',headers:{origin:'https://www.theautovos.com','content-type':'application/json'},body:JSON.stringify({name:'Synthetic test',reply:'email',email:'test@example.com',service:'general',message:'Local test',consent:true,token:'not-real'})});assert.equal(inquiry.status,503);checks.push({path:'/api/inquiry',status:503,meaning:'Fails closed without live provider secrets'});
+for(const p of ['/llms.txt','/robots.txt','/sitemap.xml']){const r=await fetch(base+p);assert.equal(r.status,200);checks.push({path:p,status:200});}
+fs.writeFileSync('design-artifacts/site/worker-proof.json',JSON.stringify({runtime:'Local Cloudflare workerd through Wrangler 4.148.0',checks,noDeployment:true},null,2));console.log(`${checks.length} local Worker routing/configuration checks passed.`);

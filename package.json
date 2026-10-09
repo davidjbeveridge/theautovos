@@ -10,6 +10,13 @@
     "preview": "python3 -m http.server 8787 --bind 127.0.0.1",
     "test:a11y": "node scripts/accessibility-proof.mjs",
     "package:preview": "node scripts/build.mjs && node scripts/verify.mjs && node scripts/package-preview.mjs",
-    "test:preview": "node scripts/owner-preview-proof.mjs"
+    "test:preview": "node scripts/owner-preview-proof.mjs",
+    "build:site": "node scripts/build-site.mjs",
+    "build:production": "node scripts/build-site.mjs --production",
+    "demo": "node scripts/serve-site.mjs",
+    "check:site": "node scripts/verify-site.mjs",
+    "test:inquiry": "node --test tests/inquiry.test.mjs",
+    "test:site": "node scripts/site-browser-proof.mjs",
+    "check:qa-digest": "python3 scripts/build-qa-digest.py --check --require-synced"
   }
 }

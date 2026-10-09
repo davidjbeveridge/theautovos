@@ -7,7 +7,7 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const write=(p,s)=>{fs.mkdirSync(path.dirname(path.join(root,p)),{recursive:true});fs.writeFileSync(path.join(root,p),s);};
 const registry=JSON.parse(fs.readFileSync(path.join(root,'design/presentation.yaml'),'utf8'));
 write('design-system/tokens.css','/* Generated from design/presentation.yaml. Do not edit. */\n:root {\n'+registry.variables.map(v=>`  ${v.projections.css.customProperty}: ${v.values.base};`).join('\n')+'\n}\n');
-for(const name of ['system.css','interactions.js'])write('design-system/'+name,fs.readFileSync(path.join(root,'src',name),'utf8'));
+for(const name of ['system.css','interactions.js','inline-links.css'])write('design-system/'+name,fs.readFileSync(path.join(root,'src',name),'utf8')+(name==='system.css'?'\n'+fs.readFileSync(path.join(root,'src/inline-links.css'),'utf8'):''));
 for(const [name,html] of Object.entries(pages))write('templates/'+name,html);
 write('design-system/index.html',catalog());
 write('design-system/catalog.css',fs.readFileSync(path.join(root,'src/catalog.css'),'utf8'));

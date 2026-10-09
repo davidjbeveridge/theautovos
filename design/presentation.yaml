@@ -321,6 +321,32 @@
           "customProperty": "--av-color-control-border"
         }
       }
+    },
+    {
+      "id": "color.link",
+      "type": "color",
+      "values": {
+        "base": "#155ab6"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-link"
+        }
+      }
+    },
+    {
+      "id": "color.link-inverse",
+      "type": "color",
+      "values": {
+        "base": "#8cc4ff"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-link-inverse"
+        }
+      }
     }
   ]
 }

@@ -1,0 +1,322 @@
+{
+  "retrieved_at": "2026-10-08",
+  "business": "Auto Vos",
+  "listing": {
+    "place_id": "ChIJ8_wKDA1bE4cR2t0X4b81mzQ",
+    "address": "2130 Spectra Dr #100, Colorado Springs, CO 80904",
+    "rating_observed": 5,
+    "review_count_observed": 43,
+    "listing_url": "https://www.google.com/maps/search/?api=1&query=Auto%20Vos&query_place_id=ChIJ8_wKDA1bE4cR2t0X4b81mzQ",
+    "contributor_url": "https://maps.google.com/maps/contrib/107467116982198483448",
+    "source_record": "reports/audit-2026-10-07/raw/providers/2f505ba70652ce11f302ae72.json",
+    "review_retrieval_record": "/Users/davidjbeveridge/.local/share/analyze-website/runs/audit-2026-10-07/raw/providers/cc593812cad119b19e0b43b0-result-17c926dba6594b8d8c0d8dea6953e4b9.json"
+  },
+  "notes": [
+    "The guarded DataForSEO Google reviews collection returned full public review text, exact timestamps, ratings, per-review URLs, author profile URLs, and representative associated image URLs for all five requested authors.",
+    "2026-10-09: David confirmed selected reviews/photo reuse already approved and instructed direct retrieval. Full review content retained from original Google provider records; associated photos downloaded directly from Google source URLs. No paid lookup repeated."
+  ],
+  "reviews": [
+    {
+      "author": "Christopher Jones, MD",
+      "rating": 5,
+      "date": "2026-06-22",
+      "source_timestamp": "2026-06-22 23:58:07 +00:00",
+      "date_displayed": "Jun 22, 2026",
+      "text_visible_exact": "Auto Vos is amazing. Caleb and his team are perfectionists and very reasonably priced. They always want to make sure their work is without the slightest blemish. They did a full wrap on my GT3 Touring and you can\u2019t tell it is protected. Just the way it should be!!  HIGHLY RECOMMEND!!",
+      "text_status": "complete_provider_record",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25JeVIyZFJaVWQxZFdKcmJHdEtkblU1U2w5T1RFRRAB!2m1!1s0x0:0x349b35bfe117ddda!3m1!1s2@1:CAIQACodChtycF9oOnIyR2dRZUd1dWJrbGtKdnU5Sl9OTEE%7C%7C?hl=en-US",
+      "author_profile_url": "https://www.google.com/maps/contrib/113134367553784197561/reviews?hl=en-US",
+      "author_profile_review_count": 29,
+      "author_profile_photo_count": 81,
+      "associated_image_urls": [
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLd7MotAgZh4R_aUwgV4p8SxVnTBJsI_3UkYaBXXpIH-qa1Lxeo02pAwA-Oe4RU0nQj6lOb5peHP5Q1Fm07mp7p6-xCs1kPBKZhWSThw47xtT-MZSrNCb9m0_daERcvQD_TmDSk61cGfXmI=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLfbJhBusuOKIKjDU12ggLzBwsDuztdqkNLVTkF_9pfBeZO7RqTysui-fMSgRLTbrnYhJZ1n98X4gtLxFy7H9BD6uSd0sOZ56K2D1jf3tXpELm0gSLZw4OkYq7sei0IYTkg4Hyi_1MwIWfo=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLf1vEuNUyMBYgwTfWRvrJjbUdlZOWzkJ8wis3tFw33qnRgWdjoFmXsQ9SR3E5asHpjkKpbxaqASOAlP9HOJkt-vwTV-IniHUebBAKq0REzUIhVWy1kF8AGEp6ONaii96l-7GeoHNhNUS4MN=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLc8pzDPu2JORmu3tCp7cGqa72FR62Kc4i1lY19a-1bIkDsVgHOxAFBKAzHSP0U1p7OiM0ICNHZUm1nfuGnqhax-F--0NIac8le9QMIvd-vnGJxAT__9UE7EpC306aBXa0-AlPsPGvl2G7s=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLe5bmMlrCgxVeTCRSkdGbZtWiFdEfbvldg6Syjp87s-59MpMSGmr2n8sGYqMwxD7TusCJRiz_lQa23GAzb1vsUzzqINXGtsjJcjPrNpCkG7GywiUD_wCOIeY22ZYNg1qVW2z78KLV9uKIQ=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLfVwUnuG35Fv9X1y3az24CkHN8m5tuTggX9mTG2yBZHJ1XrATelh0CEAsca0-DPzk7I7f8X-G3AkiAgJdusYn_uUBYIeXUynuQxkf4zAcNohvlkRc_vuRe8LQhC-Uqkm213lrk7eskGek19=k-no"
+      ],
+      "photo_count_displayed": 81,
+      "photo_count_scope": "author_profile_total",
+      "photo_association_status": "provider_returned_representative_images",
+      "rights_status": "confirmed_by_user_2026-10-09",
+      "evidence": [
+        "/var/folders/qy/_1qh1jk50qq32qjfr7dnkmvm0000gn/T/codex-clipboard-64aa53cc-c4ec-45fd-8e3e-fe9c87e20daf.png",
+        "/Users/davidjbeveridge/.local/share/analyze-website/runs/audit-2026-10-07/raw/providers/cc593812cad119b19e0b43b0-result-17c926dba6594b8d8c0d8dea6953e4b9.json"
+      ],
+      "local_photos": [
+        {
+          "path": "assets/reviews/christopher-jones-md-1.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLd7MotAgZh4R_aUwgV4p8SxVnTBJsI_3UkYaBXXpIH-qa1Lxeo02pAwA-Oe4RU0nQj6lOb5peHP5Q1Fm07mp7p6-xCs1kPBKZhWSThw47xtT-MZSrNCb9m0_daERcvQD_TmDSk61cGfXmI=k-no",
+          "sha256": "f6156d4f9ba12d4364d5933435dded40473fecda109e477480f3eafbcdc8d3ef",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLd7MotAgZh4R_aUwgV4p8SxVnTBJsI_3UkYaBXXpIH-qa1Lxeo02pAwA-Oe4RU0nQj6lOb5peHP5Q1Fm07mp7p6-xCs1kPBKZhWSThw47xtT-MZSrNCb9m0_daERcvQD_TmDSk61cGfXmI=s0",
+          "dimensions": [
+            5712,
+            4284
+          ]
+        },
+        {
+          "path": "assets/reviews/christopher-jones-md-2.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfbJhBusuOKIKjDU12ggLzBwsDuztdqkNLVTkF_9pfBeZO7RqTysui-fMSgRLTbrnYhJZ1n98X4gtLxFy7H9BD6uSd0sOZ56K2D1jf3tXpELm0gSLZw4OkYq7sei0IYTkg4Hyi_1MwIWfo=k-no",
+          "sha256": "cba37193477e0cbba2b8d18cfdbad4cc9f53874931ac2071fd9247437e4a63f1",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfbJhBusuOKIKjDU12ggLzBwsDuztdqkNLVTkF_9pfBeZO7RqTysui-fMSgRLTbrnYhJZ1n98X4gtLxFy7H9BD6uSd0sOZ56K2D1jf3tXpELm0gSLZw4OkYq7sei0IYTkg4Hyi_1MwIWfo=s0",
+          "dimensions": [
+            5712,
+            4284
+          ]
+        },
+        {
+          "path": "assets/reviews/christopher-jones-md-3.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLf1vEuNUyMBYgwTfWRvrJjbUdlZOWzkJ8wis3tFw33qnRgWdjoFmXsQ9SR3E5asHpjkKpbxaqASOAlP9HOJkt-vwTV-IniHUebBAKq0REzUIhVWy1kF8AGEp6ONaii96l-7GeoHNhNUS4MN=k-no",
+          "sha256": "4b40f9548f0b6235e10e8dbdbe00d7fd92b26f59ec617ee231ef2ce2401bba1f",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLf1vEuNUyMBYgwTfWRvrJjbUdlZOWzkJ8wis3tFw33qnRgWdjoFmXsQ9SR3E5asHpjkKpbxaqASOAlP9HOJkt-vwTV-IniHUebBAKq0REzUIhVWy1kF8AGEp6ONaii96l-7GeoHNhNUS4MN=s0",
+          "dimensions": [
+            3159,
+            4284
+          ]
+        },
+        {
+          "path": "assets/reviews/christopher-jones-md-4.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLc8pzDPu2JORmu3tCp7cGqa72FR62Kc4i1lY19a-1bIkDsVgHOxAFBKAzHSP0U1p7OiM0ICNHZUm1nfuGnqhax-F--0NIac8le9QMIvd-vnGJxAT__9UE7EpC306aBXa0-AlPsPGvl2G7s=k-no",
+          "sha256": "1d33a87df93079815c9d09ffe979211d36e6d072afe984e0ec8fe9387e2a8baf",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLc8pzDPu2JORmu3tCp7cGqa72FR62Kc4i1lY19a-1bIkDsVgHOxAFBKAzHSP0U1p7OiM0ICNHZUm1nfuGnqhax-F--0NIac8le9QMIvd-vnGJxAT__9UE7EpC306aBXa0-AlPsPGvl2G7s=s0",
+          "dimensions": [
+            5712,
+            4284
+          ]
+        },
+        {
+          "path": "assets/reviews/christopher-jones-md-5.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLe5bmMlrCgxVeTCRSkdGbZtWiFdEfbvldg6Syjp87s-59MpMSGmr2n8sGYqMwxD7TusCJRiz_lQa23GAzb1vsUzzqINXGtsjJcjPrNpCkG7GywiUD_wCOIeY22ZYNg1qVW2z78KLV9uKIQ=k-no",
+          "sha256": "a835e073e3aa2e6ced6cde27a8dfa102e63ba04de40fe523bc401ea4f9737ce3",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLe5bmMlrCgxVeTCRSkdGbZtWiFdEfbvldg6Syjp87s-59MpMSGmr2n8sGYqMwxD7TusCJRiz_lQa23GAzb1vsUzzqINXGtsjJcjPrNpCkG7GywiUD_wCOIeY22ZYNg1qVW2z78KLV9uKIQ=s0",
+          "dimensions": [
+            5712,
+            4284
+          ]
+        },
+        {
+          "path": "assets/reviews/christopher-jones-md-6.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfVwUnuG35Fv9X1y3az24CkHN8m5tuTggX9mTG2yBZHJ1XrATelh0CEAsca0-DPzk7I7f8X-G3AkiAgJdusYn_uUBYIeXUynuQxkf4zAcNohvlkRc_vuRe8LQhC-Uqkm213lrk7eskGek19=k-no",
+          "sha256": "092711e9c54b72a18073e6c6e747d90f5507097bf650cee029eb65230ca797a6",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfVwUnuG35Fv9X1y3az24CkHN8m5tuTggX9mTG2yBZHJ1XrATelh0CEAsca0-DPzk7I7f8X-G3AkiAgJdusYn_uUBYIeXUynuQxkf4zAcNohvlkRc_vuRe8LQhC-Uqkm213lrk7eskGek19=s0",
+          "dimensions": [
+            5712,
+            4284
+          ]
+        }
+      ]
+    },
+    {
+      "author": "Tim!",
+      "rating": 5,
+      "date": "2026-06-16",
+      "source_timestamp": "2026-06-16 21:21:12 +00:00",
+      "date_displayed": "Jun 16, 2026",
+      "text_visible_exact": "I took my Porsche Cayman to Auto Vos for a full XPEL PPF and Porsche decal replacement in May 2026.  Caleb and his team's attention to detail with there PPF is 2nd to none.  Caleb goes the extra mile to ensure the cornering, tucks, cuts and seems are meticulously done.  I was impressed and the car looks fantastic!  Caleb stands behind his company's work and corrects any imperfections that arise.  Caleb was very kind, friendly, easy to work with, dependable, and honest (very important to me doing business). I will refer friends, family, and be returning myself.",
+      "text_status": "complete_provider_record",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sa2FUVlpSalJtT1hWUk1HeHViVVpOY1VoYVptYxAB!2m1!1s0x0:0x349b35bfe117ddda!3m1!1s2@1:CAIQACodChtycF9oOnlkaTVZRjRmOXVRMGxubUZNcUhaZmc%7C%7C?hl=en-US",
+      "author_profile_url": "https://www.google.com/maps/contrib/100656581558955763465/reviews?hl=en-US",
+      "author_profile_review_count": 3,
+      "author_profile_photo_count": 2,
+      "associated_image_urls": [
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLeRGnhro75v0SdgbX2XHKwhFG1Zv6yq4p-dKbeH1CDRSE87fUk8BdmyaIdZbv4fEvL9RUUUrLj3OejNukiAMp5oPYM3RLNE3JL7rM7GC1S9sTDy0hYMPdhZgEDq-aEdVatS6SxPL_zEy6o=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLfeFjRNwirRRi10DFZSP-aSK_PTZmxS27Nnwpq-7SfJgE4RWoPgsuM2b4elopyb5C-2HFiTg5ozVV3rXSGafMky-oTEtdbw-yrsEc4JABy_v7iDArqToxxa59--WP00TqNrIXdRXvh7779S=k-no"
+      ],
+      "photo_count_displayed": 2,
+      "photo_count_scope": "author_profile_total",
+      "photo_association_status": "provider_returned_representative_images",
+      "rights_status": "confirmed_by_user_2026-10-09",
+      "evidence": [
+        "/var/folders/qy/_1qh1jk50qq32qjfr7dnkmvm0000gn/T/codex-clipboard-27722594-1e61-4683-869c-82d9e6e8e3b5.png",
+        "/Users/davidjbeveridge/.local/share/analyze-website/runs/audit-2026-10-07/raw/providers/cc593812cad119b19e0b43b0-result-17c926dba6594b8d8c0d8dea6953e4b9.json"
+      ],
+      "local_photos": [
+        {
+          "path": "assets/reviews/tim-1.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLeRGnhro75v0SdgbX2XHKwhFG1Zv6yq4p-dKbeH1CDRSE87fUk8BdmyaIdZbv4fEvL9RUUUrLj3OejNukiAMp5oPYM3RLNE3JL7rM7GC1S9sTDy0hYMPdhZgEDq-aEdVatS6SxPL_zEy6o=k-no",
+          "sha256": "953dd54ff6f936ff7a2d7c4767bab1c3ddd86782dc29c0ece840db35ec8aebc8",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLeRGnhro75v0SdgbX2XHKwhFG1Zv6yq4p-dKbeH1CDRSE87fUk8BdmyaIdZbv4fEvL9RUUUrLj3OejNukiAMp5oPYM3RLNE3JL7rM7GC1S9sTDy0hYMPdhZgEDq-aEdVatS6SxPL_zEy6o=s0",
+          "dimensions": [
+            480,
+            640
+          ]
+        },
+        {
+          "path": "assets/reviews/tim-2.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfeFjRNwirRRi10DFZSP-aSK_PTZmxS27Nnwpq-7SfJgE4RWoPgsuM2b4elopyb5C-2HFiTg5ozVV3rXSGafMky-oTEtdbw-yrsEc4JABy_v7iDArqToxxa59--WP00TqNrIXdRXvh7779S=k-no",
+          "sha256": "c1c3203f886e1cb17d8e46973fa7a05cedb3140faab612aec7cce54152d49f19",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfeFjRNwirRRi10DFZSP-aSK_PTZmxS27Nnwpq-7SfJgE4RWoPgsuM2b4elopyb5C-2HFiTg5ozVV3rXSGafMky-oTEtdbw-yrsEc4JABy_v7iDArqToxxa59--WP00TqNrIXdRXvh7779S=s0",
+          "dimensions": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "author": "Jonathan",
+      "rating": 5,
+      "date": "2026-04-10",
+      "source_timestamp": "2026-04-10 13:20:36 +00:00",
+      "date_displayed": "Apr 10, 2026",
+      "text_visible_exact": "Caleb at Auto Vos set me up right with a fully body stealth ppf for my M8. During the whole process he would take the time to update me with pictures/videos. It honestly came out great! I would highly recommend them to anyone wanting this type of work done to their vehicle",
+      "text_status": "complete_provider_record",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKc1ZETnFibEZpYXpkdlJqbHdjVXh0VXkxTE5WRRAB!2m1!1s0x0:0x349b35bfe117ddda!3m1!1s2@1:CAIQACodChtycF9oOkJsVDNqblFiazdvRjlwcUxtUy1LNVE%7C%7C?hl=en-US",
+      "author_profile_url": "https://www.google.com/maps/contrib/104923753286921641281/reviews?hl=en-US",
+      "author_profile_review_count": 11,
+      "author_profile_photo_count": 11,
+      "associated_image_urls": [
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLe7CM_rYrSHNKzJmErwplraa08yodbcm6XLjR-lOKaKxtmPDaI1EtJayZOgQwWJuPAhUSHgr3PQ92e_JEh61sU62yhsLt3MnCutL6RAS18GvhYF0mrbPjX5c9Jdo1llGRLn9pY8oILvcl9x=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLe-CV9xbAs6AfSd0lYnCTj4JR646-Tuur5hvrkfnuyX4o7L185Kzqx_7yZX256sdnNmAe0AVG_4FsQGMTpIMuDza3Jj0SK0qxxNO2hzyhEvUxtNPI_3_2KzpB0F5IiulObtfPdBELP6K7Wh=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLfFV5MjRsbktB1lVcNOcZdUp1iwngm4OtxJdYWZpbAlIu2WcjZ36WeSJbQ5A95k9nYGLW7ea7zCQL9x1BEpKOxHwc31k4WwOs2SF7vKMHfX7Gwv1y2-Tt9Aiy8r7gWC3OPreZh1GpwYq5k=k-no"
+      ],
+      "photo_count_displayed": 11,
+      "photo_count_scope": "author_profile_total",
+      "photo_association_status": "provider_returned_representative_images",
+      "rights_status": "confirmed_by_user_2026-10-09",
+      "evidence": [
+        "/var/folders/qy/_1qh1jk50qq32qjfr7dnkmvm0000gn/T/codex-clipboard-24fea171-8551-4c70-9e79-4292bc616f3a.png",
+        "/Users/davidjbeveridge/.local/share/analyze-website/runs/audit-2026-10-07/raw/providers/cc593812cad119b19e0b43b0-result-17c926dba6594b8d8c0d8dea6953e4b9.json"
+      ],
+      "local_photos": [
+        {
+          "path": "assets/reviews/jonathan-1.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLe7CM_rYrSHNKzJmErwplraa08yodbcm6XLjR-lOKaKxtmPDaI1EtJayZOgQwWJuPAhUSHgr3PQ92e_JEh61sU62yhsLt3MnCutL6RAS18GvhYF0mrbPjX5c9Jdo1llGRLn9pY8oILvcl9x=k-no",
+          "sha256": "7abafaf6ceeb51ee615861e2933712a43b2f97db7546e8382caa6c271901a249",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLe7CM_rYrSHNKzJmErwplraa08yodbcm6XLjR-lOKaKxtmPDaI1EtJayZOgQwWJuPAhUSHgr3PQ92e_JEh61sU62yhsLt3MnCutL6RAS18GvhYF0mrbPjX5c9Jdo1llGRLn9pY8oILvcl9x=s0",
+          "dimensions": [
+            5712,
+            4284
+          ]
+        },
+        {
+          "path": "assets/reviews/jonathan-2.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLe-CV9xbAs6AfSd0lYnCTj4JR646-Tuur5hvrkfnuyX4o7L185Kzqx_7yZX256sdnNmAe0AVG_4FsQGMTpIMuDza3Jj0SK0qxxNO2hzyhEvUxtNPI_3_2KzpB0F5IiulObtfPdBELP6K7Wh=k-no",
+          "sha256": "1123c8679614e8b1ba3739c5aa952d830d9225501f975c0181b30ff1e1c5d47f",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLe-CV9xbAs6AfSd0lYnCTj4JR646-Tuur5hvrkfnuyX4o7L185Kzqx_7yZX256sdnNmAe0AVG_4FsQGMTpIMuDza3Jj0SK0qxxNO2hzyhEvUxtNPI_3_2KzpB0F5IiulObtfPdBELP6K7Wh=s0",
+          "dimensions": [
+            3857,
+            2579
+          ]
+        },
+        {
+          "path": "assets/reviews/jonathan-3.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfFV5MjRsbktB1lVcNOcZdUp1iwngm4OtxJdYWZpbAlIu2WcjZ36WeSJbQ5A95k9nYGLW7ea7zCQL9x1BEpKOxHwc31k4WwOs2SF7vKMHfX7Gwv1y2-Tt9Aiy8r7gWC3OPreZh1GpwYq5k=k-no",
+          "sha256": "af086347b1f9dc05b4fa84c4917e3b0b1f2bbed2a47a52936f0b035caae203bb",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfFV5MjRsbktB1lVcNOcZdUp1iwngm4OtxJdYWZpbAlIu2WcjZ36WeSJbQ5A95k9nYGLW7ea7zCQL9x1BEpKOxHwc31k4WwOs2SF7vKMHfX7Gwv1y2-Tt9Aiy8r7gWC3OPreZh1GpwYq5k=s0",
+          "dimensions": [
+            1221,
+            966
+          ]
+        }
+      ]
+    },
+    {
+      "author": "Jonny Noll",
+      "rating": 5,
+      "date": "2025-09-25",
+      "source_timestamp": "2025-09-25 03:47:23 +00:00",
+      "date_displayed": "Sep 24, 2025 (screenshot); Sep 25, 2025 UTC (provider timestamp)",
+      "text_visible_exact": "Awesome experience with a custom vinyl job. Beautiful shop, friendly, and professional service.  Highly recommended!",
+      "text_status": "complete_provider_record",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205UlRHaEdMVmRUTmtGek5VNDJWMEp2Vm14UlFuYxAB!2m1!1s0x0:0x349b35bfe117ddda!3m1!1s2@1:CAIQACodChtycF9oOm9RTGhGLVdTNkFzNU42V0JvVmxRQnc%7C%7C?hl=en-US",
+      "author_profile_url": "https://www.google.com/maps/contrib/105237550908756316651/reviews?hl=en-US",
+      "author_profile_review_count": 17,
+      "author_profile_photo_count": 8,
+      "associated_image_urls": [
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLfrFgzlkExRqzlpbjjtIyn5Ro1Rga9MtI4h40RJ8qf1fhDDynl1VWl5aUe-HrHBOO6QClmEqg5ZZeNztsgZqU6ixws0w3QstHtSdOn_DlsQIlp7vbRvCKROcFBV5-SufsiSPDM7kh4leWLy=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLctKc-1RHUUnIJVzLewaaC2lxlWe5YlS7fDQNmCFcXorJ5NT8NtTsG5lGDofyT8_5HN59pwcdL3GYXeETWsi4W0uVcSBqJ9oN6rz3uhN4B3peFKGBjUrghYW42_JfqpaMuiFs1FRxdcBdUE=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLfrFgzlkExRqzlpbjjtIyn5Ro1Rga9MtI4h40RJ8qf1fhDDynl1VWl5aUe-HrHBOO6QClmEqg5ZZeNztsgZqU6ixws0w3QstHtSdOn_DlsQIlp7vbRvCKROcFBV5-SufsiSPDM7kh4leWLy=k-no"
+      ],
+      "photo_count_displayed": 8,
+      "photo_count_scope": "author_profile_total",
+      "photo_association_status": "provider_returned_representative_images",
+      "rights_status": "confirmed_by_user_2026-10-09",
+      "evidence": [
+        "/var/folders/qy/_1qh1jk50qq32qjfr7dnkmvm0000gn/T/codex-clipboard-c71da208-3f72-44f2-9fbd-eccd68f29006.png",
+        "/Users/davidjbeveridge/.local/share/analyze-website/runs/audit-2026-10-07/raw/providers/cc593812cad119b19e0b43b0-result-17c926dba6594b8d8c0d8dea6953e4b9.json"
+      ],
+      "local_photos": [
+        {
+          "path": "assets/reviews/jonny-noll-1.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfrFgzlkExRqzlpbjjtIyn5Ro1Rga9MtI4h40RJ8qf1fhDDynl1VWl5aUe-HrHBOO6QClmEqg5ZZeNztsgZqU6ixws0w3QstHtSdOn_DlsQIlp7vbRvCKROcFBV5-SufsiSPDM7kh4leWLy=k-no",
+          "sha256": "dfc17e8f2ebc46d90f8c705c3b3eb1b3d84a5eff6aa5aa305beb16ea2fe70fd5",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfrFgzlkExRqzlpbjjtIyn5Ro1Rga9MtI4h40RJ8qf1fhDDynl1VWl5aUe-HrHBOO6QClmEqg5ZZeNztsgZqU6ixws0w3QstHtSdOn_DlsQIlp7vbRvCKROcFBV5-SufsiSPDM7kh4leWLy=s0",
+          "dimensions": [
+            3263,
+            1834
+          ]
+        },
+        {
+          "path": "assets/reviews/jonny-noll-2.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLctKc-1RHUUnIJVzLewaaC2lxlWe5YlS7fDQNmCFcXorJ5NT8NtTsG5lGDofyT8_5HN59pwcdL3GYXeETWsi4W0uVcSBqJ9oN6rz3uhN4B3peFKGBjUrghYW42_JfqpaMuiFs1FRxdcBdUE=k-no",
+          "sha256": "54933b0ad0bedb9945debc0afa0255a2294879819d60678d87e955f3aaa645e5",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLctKc-1RHUUnIJVzLewaaC2lxlWe5YlS7fDQNmCFcXorJ5NT8NtTsG5lGDofyT8_5HN59pwcdL3GYXeETWsi4W0uVcSBqJ9oN6rz3uhN4B3peFKGBjUrghYW42_JfqpaMuiFs1FRxdcBdUE=s0",
+          "dimensions": [
+            3334,
+            1853
+          ]
+        }
+      ]
+    },
+    {
+      "author": "Vincenzo Reyes",
+      "rating": 5,
+      "date": "2025-08-23",
+      "source_timestamp": "2025-08-23 18:27:51 +00:00",
+      "date_displayed": "Aug 23, 2025",
+      "text_visible_exact": "This is an absolute killer shop, and professional operation. Caleb and team are super attentive to detail and very willing to work with you to meet your needs. I had them PPF the front end of my WRX years ago, and just recently my Honda(tank, trim, and headlight). I'm a fairly obsessive person when it comes to my vehicles and I'd be very hard pressed to find flaws. Edges are well hidden and seams are near perfect. If Caleb can wrap a naked bike tank and the front bumper of a VA WRX this nicely, he can probably do most anything to perfection.",
+      "text_status": "complete_provider_record",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSa1RuaExXblJVV2sxaWFtZENla2wzY0hsVmVWRRAB!2m1!1s0x0:0x349b35bfe117ddda!3m1!1s2@1:CAIQACodChtycF9oOlRkTnhLWnRUWk1iamdCekl3cHlVeVE%7C%7C?hl=en-US",
+      "author_profile_url": "https://www.google.com/maps/contrib/109320082656555500597/reviews?hl=en-US",
+      "author_profile_review_count": 5,
+      "author_profile_photo_count": 6,
+      "associated_image_urls": [
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLfD3ZNFTM4UfStA7D3WujTkkmCLwbqC3FFxn8L9VKUg2esWduv51e7Jyak2H-O3SqAxP5OnqwVzIwrOd0596pEnjJvhaLo3fOu5IbdfsU02nFRmcgLntTVijEw6LRahtAfsjINBg41tPcI=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLeRlD_No6OYkGjdUatanFyeNjsogkgbCC2doVtHXxr9PRMgBfraP92LtJx0dWaQVJ94EQdEn_mP7mShcg0FadB_jt7pQ3Fa1eKEk7ptkLMfU5LfiARVzSGnsSHZYg_H0g5Z_fJURvj-JOzG=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLesIrl-ffIFyQRYDYG1M0NXoE0xg5k3P-Q5uyACOoZpIpSC_Nf54f5Y6rwbb0PoFAlV9tNhzYOXk2c1qi1MCjh9KhL3fals0WJyK-JtuozUhv0yL3ij1e8kolMsl5DuAkFrYgAmiZ064-m1=k-no"
+      ],
+      "photo_count_displayed": 6,
+      "photo_count_scope": "author_profile_total",
+      "photo_association_status": "provider_returned_representative_images",
+      "rights_status": "confirmed_by_user_2026-10-09",
+      "evidence": [
+        "/var/folders/qy/_1qh1jk50qq32qjfr7dnkmvm0000gn/T/codex-clipboard-5272ed25-2bc1-4a67-b303-ec12bc76c973.png",
+        "/Users/davidjbeveridge/.local/share/analyze-website/runs/audit-2026-10-07/raw/providers/cc593812cad119b19e0b43b0-result-17c926dba6594b8d8c0d8dea6953e4b9.json"
+      ],
+      "local_photos": [
+        {
+          "path": "assets/reviews/vincenzo-reyes-1.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfD3ZNFTM4UfStA7D3WujTkkmCLwbqC3FFxn8L9VKUg2esWduv51e7Jyak2H-O3SqAxP5OnqwVzIwrOd0596pEnjJvhaLo3fOu5IbdfsU02nFRmcgLntTVijEw6LRahtAfsjINBg41tPcI=k-no",
+          "sha256": "186e5e95b9fdd1462c7fac84feadf3ba4325c974688aaa85b05fa4521a53c6a8",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLfD3ZNFTM4UfStA7D3WujTkkmCLwbqC3FFxn8L9VKUg2esWduv51e7Jyak2H-O3SqAxP5OnqwVzIwrOd0596pEnjJvhaLo3fOu5IbdfsU02nFRmcgLntTVijEw6LRahtAfsjINBg41tPcI=s0",
+          "dimensions": [
+            6048,
+            4032
+          ]
+        },
+        {
+          "path": "assets/reviews/vincenzo-reyes-2.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLeRlD_No6OYkGjdUatanFyeNjsogkgbCC2doVtHXxr9PRMgBfraP92LtJx0dWaQVJ94EQdEn_mP7mShcg0FadB_jt7pQ3Fa1eKEk7ptkLMfU5LfiARVzSGnsSHZYg_H0g5Z_fJURvj-JOzG=k-no",
+          "sha256": "c8b1dae670826ba289639321290989cce26c4dc4cc46ce7ae3a433325521f49d",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLeRlD_No6OYkGjdUatanFyeNjsogkgbCC2doVtHXxr9PRMgBfraP92LtJx0dWaQVJ94EQdEn_mP7mShcg0FadB_jt7pQ3Fa1eKEk7ptkLMfU5LfiARVzSGnsSHZYg_H0g5Z_fJURvj-JOzG=s0",
+          "dimensions": [
+            6048,
+            4032
+          ]
+        },
+        {
+          "path": "assets/reviews/vincenzo-reyes-3.jpg",
+          "source_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLesIrl-ffIFyQRYDYG1M0NXoE0xg5k3P-Q5uyACOoZpIpSC_Nf54f5Y6rwbb0PoFAlV9tNhzYOXk2c1qi1MCjh9KhL3fals0WJyK-JtuozUhv0yL3ij1e8kolMsl5DuAkFrYgAmiZ064-m1=k-no",
+          "sha256": "7f46b89404b11e8a784451bf039af9edcb6f87e261c2c3238188dce053d6c5a9",
+          "retrieval_url": "https://lh3.googleusercontent.com/grass-cs/AABkmLesIrl-ffIFyQRYDYG1M0NXoE0xg5k3P-Q5uyACOoZpIpSC_Nf54f5Y6rwbb0PoFAlV9tNhzYOXk2c1qi1MCjh9KhL3fals0WJyK-JtuozUhv0yL3ij1e8kolMsl5DuAkFrYgAmiZ064-m1=s0",
+          "dimensions": [
+            4032,
+            6048
+          ]
+        }
+      ]
+    }
+  ]
+}
