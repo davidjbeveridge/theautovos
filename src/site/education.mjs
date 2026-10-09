@@ -229,7 +229,7 @@ export const education={
   "windshield": {
     "name": "windshield protection film",
     "heading": "Is exterior film suitable for your windshield?",
-    "definition": "Windshield protection film is a clear layer fitted to the outside of the windshield. It takes some of the wear from road debris before it reaches the glass. It is different from interior window tint. Contact us about current availability; Auto Vos’s offering is still being confirmed.",
+    "definition": "Windshield protection film is a clear layer fitted to the outside of the windshield. It takes some of the wear from road debris before it reaches the glass. It is different from interior window tint. Auto Vos installs windshield protection film in Colorado Springs. We’ll check your glass and driving needs before recommending a product.",
     "steps": [
       [
         "Check the glass and product",
@@ -256,7 +256,7 @@ export const education={
       ],
       [
         "Does Auto Vos install windshield protection film?",
-        "Please contact us about current availability. This service is still being confirmed for the website, so this preview is not a booking offer."
+        "Yes. We install exterior windshield protection film at our Colorado Springs studio. Send us your vehicle’s year, make and model, and tell us about any existing chips or cracks so we can discuss the work."
       ],
       [
         "Can windshield film fix a chip or crack?",
@@ -280,11 +280,11 @@ export const education={
       ],
       [
         "How long does windshield protection film last?",
-        "Wiper use, grit, weather and cleaning all cause wear. We need to confirm the product before giving a lifespan or replacement recommendation."
+        "Wiper use, grit, weather and cleaning all cause wear. Ask us about the expected service life and replacement signs for the film quoted for your car."
       ],
       [
         "How much does windshield protection film cost?",
-        "We need your vehicle details and the selected product to price the job. Please contact us about availability first; we are not advertising a price while the offering is being confirmed."
+        "The cost depends on your vehicle, the film and any preparation the glass needs. Send us your year, make and model for a windshield protection film quote. We’ll explain the product, installation and price before you book."
       ],
       [
         "Does windshield film have the same warranty as PPF?",

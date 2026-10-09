@@ -2,7 +2,7 @@ import {readFileSync} from 'node:fs';
 export const inventory=JSON.parse(readFileSync(new URL('../../design/page-inventory.json',import.meta.url)));
 export const routeRegistry=inventory.plannedPages;
 export const paths={quote:'/get-a-quote/',studio:'/about/',care:'/care-and-warranty/',gallery:'/gallery/',resources:'/resources/',tint:'/services/window-tint/',ppf:'/services/paint-protection-film/',ceramic:'/services/ceramic-coating/'};
-export const blockedPaths=new Set(['/services/windshield-protection-film/','/work/tesla/','/work/bmw/','/work/paint-protection-film/bmw/','/reviews/']);
+export const blockedPaths=new Set(['/work/tesla/','/work/bmw/','/work/paint-protection-film/bmw/','/reviews/']);
 export function eligible(path,config){return config.demo||!blockedPaths.has(path);}
 export function canonicalPath(path){return inventory.plannedRedirects.find(r=>r.from===path)?.to||path;}
 export function redirects(config,pages){const active=new Set(pages.map(p=>p.path));const result=new Map();

@@ -1,6 +1,6 @@
 // Worker-compatible handler. No persistence, logging, client-controlled recipient or retries.
 export const RECIPIENT='theautovos@gmail.com';
-export const SERVICE_IDS=['tint','ppf','ceramic','choose','general'];
+export const SERVICE_IDS=['tint','ppf','ceramic','windshield','choose','general'];
 const json=(status,data)=>new Response(JSON.stringify(data),{status,headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'}});
 const clean=(v,max)=>typeof v==='string'?v.trim().slice(0,max):'';
 export function validate(data){

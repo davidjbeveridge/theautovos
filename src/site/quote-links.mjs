@@ -2,7 +2,7 @@ import {paths} from './routes.mjs';
 const topic=/\b(?:pric(?:e[ds]?|ing)|costs?|quotes?|budgets?|estimates?|fees?|how much (?:does|is|will|would|should))\b/i;
 const text=html=>html.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ');
 export function quoteContext(page){
- const path=page.path;const service=page.service||(/window-tint|tint-cost|targa|ceramic-vs-carbon/.test(path)?'tint':/paint-protection|ppf/.test(path)?'ppf':/ceramic-coating/.test(path)?'ceramic':'');
+ const path=page.path;const service=page.service||(/windshield-protection/.test(path)?'windshield':/window-tint|tint-cost|targa|ceramic-vs-carbon/.test(path)?'tint':/paint-protection|ppf/.test(path)?'ppf':/ceramic-coating/.test(path)?'ceramic':'');
  const make=/\/porsche\//.test(path)?'Porsche':/\/bmw\//.test(path)?'BMW':/\/tesla\//.test(path)?'Tesla':'';
  const params=new URLSearchParams();if(service)params.set('service',service);if(make)params.set('make',make);
  return paths.quote+(params.size?'?'+params.toString().replaceAll('&','&amp;'):'');
