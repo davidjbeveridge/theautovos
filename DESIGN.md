@@ -61,3 +61,5 @@ The current task extends this identity into a registry-driven service site (52 d
 Run the original build/verification plus site source, inquiry, Chrome and local Worker checks before service-site completion. Source-bound current results and pending owner approvals are in `design/implementation-verification.md`. Do not claim static-adapter conformance or live integration from these local checks.
 
 The shared XPEL banner closes every service-site page before the footer. Use the approved logo on a light surface, three product photographs with manufacturer attribution, and direct product links. Product imagery is manufacturer evidence, not an Auto Vos portfolio claim.
+
+Repeated side-by-side content uses shared grid rows for media, headings, descriptions and actions. Wrapped headings must not stagger the start of adjacent body text. Use CSS subgrid at each component's multi-column breakpoint, with natural content height and independent rows for wrapped collections; restore ordinary flow when stacked. This applies to services, galleries, benefits, process/installation steps, guides, comparisons and XPEL products.

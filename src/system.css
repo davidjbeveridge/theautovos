@@ -1647,3 +1647,41 @@ h1,h2,h3 {
 .av-xpel-product:hover .av-xpel-product-link{border-bottom-width:2px}
 .av-xpel-credit{margin-top:32px}
 @media(max-width:640px){.av-xpel-heading{grid-template-columns:1fr;gap:24px}.av-xpel-logo{max-width:160px}.av-xpel-products{grid-template-columns:1fr;gap:40px}}
+
+/* Shared rows align related headings and prose; each wrapped row sizes itself.
+   Single-column layouts retain natural document flow. No fixed text heights. */
+@media(min-width:601px){
+ .av-service-grid,.av-work-grid{row-gap:16px}
+ .av-service-card,.av-work-item:has(>p){display:grid;grid-template-rows:subgrid;grid-row:span 3}
+ .av-service-card>a,.av-work-item:has(>p)>a{display:grid;grid-template-rows:subgrid;grid-row:span 2}
+ .av-service-card .av-card-heading,.av-work-item:has(>p) .av-card-heading{margin-top:8px}
+ .av-service-card>p,.av-work-item>p{margin-top:0}
+ .av-steps--horizontal{row-gap:12px}
+ .av-steps--horizontal>li{display:grid;grid-template-rows:subgrid;grid-row:span 2;margin-bottom:0;align-content:start}
+ .av-steps--horizontal>li>p{margin-top:0}
+ .av-benefit-grid{row-gap:16px}
+ .av-benefit-grid>article{display:grid;grid-template-rows:subgrid;grid-row:span 3}
+ .av-benefit-grid .av-number,.av-benefit-grid h3{margin-bottom:0}
+ .site-education-steps{row-gap:16px}
+ .site-education-steps>li{display:grid;grid-template-rows:subgrid;grid-row:span 3}
+ .site-education-steps>li::before,.site-education-steps h4{margin-bottom:0}
+ .site-story-grid{row-gap:20px}
+ .site-story-grid>article{display:grid;grid-template-rows:subgrid;grid-row:span 2}
+ .site-story-grid>article:has(>.site-story-preview){grid-row:span 4}
+ .site-story-grid h2,.site-story-grid h3,.site-story-grid p,.site-story-preview{margin-bottom:0}
+ .site-story-grid>article>.site-text-link{align-self:start}
+}
+@media(min-width:641px){
+ .av-xpel-products{row-gap:16px}
+ .av-xpel-product{display:grid;grid-template-rows:subgrid;grid-row:span 5}
+ .av-xpel-product img,.av-xpel-product .av-eyebrow,.av-xpel-product h3,.av-xpel-product p{margin:0}
+ .av-xpel-product-link{margin-top:0;justify-self:start;align-self:start}
+}
+@media(min-width:901px){
+ .site-comparison{row-gap:16px}
+ .site-comparison>article{display:grid;grid-template-rows:subgrid;grid-row:span 9}
+ .site-comparison>article>dl{display:grid;grid-template-rows:subgrid;grid-row:span 6;margin:0}
+ .site-comparison>article>:is(h2,p),.site-comparison dt,.site-comparison dd{margin:0}
+ .site-comparison>section{display:grid;grid-template-rows:subgrid;grid-row:span 3}
+ .site-comparison>section>:is(h2,ul,p){margin-block:0}
+}
