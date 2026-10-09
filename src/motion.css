@@ -17,4 +17,3 @@
 }
 @keyframes av-backdrop-enter{from{opacity:0}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-.av-media-viewer{margin:auto;max-width:95vw;max-height:94vh;padding:24px;border:0;background:var(--av-color-canvas);color:var(--av-color-ink)}.av-media-viewer::backdrop{background:rgb(0 0 0/.85)}.av-media-viewer img{display:block;max-width:100%;max-height:72vh;object-fit:contain;margin-top:16px}.av-media-viewer button{min-height:48px;padding:12px 20px;background:var(--av-color-ink);color:var(--av-color-inverse);border:0}

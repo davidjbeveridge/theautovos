@@ -12,12 +12,28 @@
  document.addEventListener('click',ev=>{const a=ev.target.closest('a');if(!a)return;const href=a.getAttribute('href');if(href.startsWith('tel:'))event('phone_click');else if(href.startsWith('mailto:'))event('email_click');else if(href.startsWith('/get-a-quote/'))event('quote_click');else if(a.hasAttribute('data-shop')||/^https:\/\/(shop\.|www\.)theautovos\.com(?:\/shop|\/$)/.test(href))event('shop_click');});
  document.querySelectorAll('.av-mobile-menu').forEach(menu=>{menu.addEventListener('keydown',ev=>{if(ev.key==='Escape'){menu.open=false;menu.querySelector('summary').focus();}});});
 
- const viewer=document.querySelector('#photo-viewer');let photoTrigger;
- document.querySelectorAll('[data-lightbox],.site-gallery figure>a').forEach(a=>a.addEventListener('click',ev=>{if(!viewer?.showModal)return;ev.preventDefault();photoTrigger=a;const source=a.querySelector('img')||a.closest('figure')?.querySelector('img');viewer.querySelector('img').hidden=false;viewer.querySelector('img').src=a.href;viewer.querySelector('img').alt=source?.alt||'Selected photograph';viewer.querySelector('p').textContent=a.closest('figure')?.querySelector('figcaption')?.textContent||source?.alt||'';viewer.showModal();}));
- viewer?.addEventListener('keydown',ev=>{if(ev.key!=='Tab')return;const controls=[...viewer.querySelectorAll('button,a[href],input,select,textarea,[tabindex]:not([tabindex="-1"])')].filter(el=>!el.disabled&&!el.hidden);const first=controls[0],last=controls.at(-1);if(!first)return;if(ev.shiftKey&&document.activeElement===first){ev.preventDefault();last.focus();}else if(!ev.shiftKey&&document.activeElement===last){ev.preventDefault();first.focus();}});
- viewer?.querySelector('[data-close-photo]').addEventListener('click',()=>viewer.close());viewer?.addEventListener('close',()=>{viewer.querySelector('img').hidden=true;viewer.querySelector('img').removeAttribute('src');photoTrigger?.focus();});
  document.querySelectorAll('[data-map]').forEach(b=>b.addEventListener('click',()=>{const target=document.getElementById(b.dataset.map),frame=document.createElement('iframe');frame.title='Auto Vos location in Colorado Springs';frame.src='https://maps.google.com/maps?q=Auto%20Vos%202130%20Spectra%20Drive%20Colorado%20Springs&output=embed';frame.loading='lazy';frame.referrerPolicy='no-referrer';target.replaceChildren(frame);event('map_open');}));
  document.querySelectorAll('[data-load-video]').forEach(b=>b.addEventListener('click',()=>{const id=b.dataset.loadVideo;if(!/^[a-zA-Z0-9_-]{11}$/.test(id))return;const frame=document.createElement('iframe');frame.title='Auto Vos installation video';frame.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1';frame.allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';frame.allowFullscreen=true;b.closest('.site-video').replaceChildren(frame);event('video_play',{video_id:id});}));
+
+ const hero=document.querySelector('#site-hero-video'),heroToggle=document.querySelector('[data-hero-toggle]');
+ if(hero&&heroToggle){
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)');let userPaused=false,userEnabled=false,visible=true;
+  const saveData=Boolean(navigator.connection?.saveData);
+  const allowed=()=>!userPaused&&(!reduced.matches&&!saveData||userEnabled);
+  const label=()=>{heroToggle.textContent=hero.paused?'Play background video':'Pause background video';};
+  function syncHero(){
+   if(!allowed()||!visible||document.hidden){hero.pause();if(!allowed())hero.classList.remove('is-playing');label();return;}
+   if(!hero.getAttribute('src')){hero.src=matchMedia('(max-width:700px)').matches?hero.dataset.mobileSrc:hero.dataset.desktopSrc;hero.load();}
+   hero.muted=true;hero.play().catch(()=>{hero.classList.remove('is-playing');label();});
+  }
+  heroToggle.hidden=false;
+  heroToggle.addEventListener('click',()=>{if(!hero.paused){userPaused=true;userEnabled=false;}else{userPaused=false;userEnabled=true;}syncHero();});
+  hero.addEventListener('playing',()=>{if(!allowed()||!visible||document.hidden){hero.pause();return;}hero.classList.add('is-playing');label();});
+  hero.addEventListener('pause',label);hero.addEventListener('error',()=>{hero.classList.remove('is-playing');heroToggle.textContent='Retry background video';});
+  reduced.addEventListener('change',()=>{userEnabled=false;syncHero();});document.addEventListener('visibilitychange',syncHero);
+  if('IntersectionObserver' in window)new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;syncHero();},{threshold:0}).observe(hero.closest('.av-home-hero'));
+  syncHero();
+ }
  const form=document.querySelector('#inquiry');if(!form)return;
  form.querySelectorAll('fieldset').forEach(f=>f.disabled=false);const send=document.querySelector('#send');send.disabled=false;
  const query=new URLSearchParams(location.search);const make=query.get('make');if(make&&['Porsche','BMW','Tesla','Porsche 911 Targa'].includes(make))form.elements.vehicle.value=make;const prefill=query.get('service');if(serviceIds.includes(prefill))form.elements.service.value=prefill;

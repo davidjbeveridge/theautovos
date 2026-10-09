@@ -11,3 +11,5 @@
 @media(max-width:640px){.site-review-grid{grid-template-columns:1fr}.site-review{padding:20px}}
 
 .site-review-text[open]{display:flex;flex-direction:column}.site-review-text[open] summary{order:2}
+
+.site-review .site-review-text summary,.site-review .site-review-text summary:hover,.site-review .site-review-excerpt{text-decoration:none}.site-review-expand{text-decoration:none}
