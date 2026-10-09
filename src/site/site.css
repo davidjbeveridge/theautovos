@@ -77,4 +77,4 @@
 
 .site-customer-project .site-review{max-width:720px;margin-top:32px}
 
-#site-hero-video{opacity:0;transition:opacity var(--av-motion-enter) ease}#site-hero-video.is-playing{opacity:1}.site-hero-toggle{background:transparent;color:inherit;border:1px solid currentColor;font:inherit;font-size:13px;padding:12px 16px;min-height:48px;cursor:pointer}.site-hero-toggle[hidden]{display:none}.av-home-bottom{flex-wrap:wrap;gap:16px}
+#site-hero-video{opacity:0;transition:opacity var(--av-motion-enter) ease}#site-hero-video.is-playing{opacity:1}.site-hero-toggle{display:inline-flex;align-items:center;justify-content:center;background:transparent;color:inherit;border:0;padding:14px;width:48px;height:48px;flex:0 0 48px;cursor:pointer}.site-hero-toggle svg{display:block;width:20px;height:20px}.site-hero-toggle svg [hidden]{display:none}.site-hero-toggle[hidden]{display:none}.av-home-bottom{flex-wrap:wrap;gap:16px}
