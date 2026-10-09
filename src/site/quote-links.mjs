@@ -12,6 +12,7 @@ export function addQuoteLinks(html,page){
  if(page.path===paths.quote)return html;
  const href=quoteContext(page),link=`<a class="site-inline-quote" href="${href}">Get a quote</a>`;
  const protectedParts=[];
+ html=html.replace(/<article\b[^>]*class="site-review"[^>]*>[\s\S]*?<\/article>/gi,part=>`<!--quote-protected-${protectedParts.push(part)-1}-->`);
  html=html.replace(/<(blockquote|form)\b[^>]*>[\s\S]*?<\/\1>/gi,part=>`<!--quote-protected-${protectedParts.push(part)-1}-->`);
  // One action inside each relevant disclosure, including questions whose answer has no pricing keyword.
  html=html.replace(/<details\b[^>]*>[\s\S]*?<\/details>/gi,part=>{
@@ -24,5 +25,6 @@ export function addQuoteLinks(html,page){
   if(!topic.test(text(body))||body.includes('href="'+paths.quote)||/<(?:p|ul|ol|blockquote)\b/.test(body))return all;
   return `<${tag}${attrs}>${body} ${link}.</${tag}>`;
  });
- return html.replace(/<!--quote-protected-(\d+)-->/g,(_,i)=>protectedParts[Number(i)]);
+ for(let i=protectedParts.length-1;i>=0;i--)html=html.replaceAll(`<!--quote-protected-${i}-->`,protectedParts[i]);
+ return html;
 }

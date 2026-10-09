@@ -1651,3 +1651,38 @@ h1,h2,h3 {
   outline: 3px solid currentColor;
   outline-offset: 4px;
 }
+
+/* Shared motion: content is visible before JavaScript and never depends on an entrance. */
+@keyframes av-enter {from{opacity:.65;transform:translateY(var(--av-motion-distance))}to{opacity:1;transform:none}}
+@keyframes av-dialog-enter {from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:no-preference){
+ .av-motion-enter{animation:av-enter var(--av-motion-enter) var(--av-motion-ease) both}
+ :where(.av-button,.av-text-button,.site-review,summary){transition:background-color var(--av-motion-fast) ease,border-color var(--av-motion-fast) ease,color var(--av-motion-fast) ease}
+ :where(.av-button,.av-text-button,.av-card-heading) .av-icon{transition:transform var(--av-motion-fast) var(--av-motion-ease)}
+ :where(.av-button,.av-text-button):is(:hover,:focus-visible) .av-icon,.av-work-item a:is(:hover,:focus-visible) .av-icon{transform:translateX(3px)}
+ :where([data-lightbox],.site-gallery figure>a,.av-work-item>a,.site-story-preview,.av-service-card>a,.ds-scene>a){display:block;overflow:hidden}
+ :where([data-lightbox],.site-gallery figure>a,.av-work-item>a,.site-story-preview,.av-service-card>a,.ds-scene>a) img{transition:transform var(--av-motion-enter) var(--av-motion-ease)}
+ dialog[open]{animation:av-dialog-enter var(--av-motion-fast) var(--av-motion-ease)}
+ dialog[open]::backdrop{animation:av-backdrop-enter var(--av-motion-fast) ease}
+ details[open]>:not(summary){animation:av-enter var(--av-motion-fast) var(--av-motion-ease)}
+ @media(hover:hover) and (pointer:fine){
+ :where([data-lightbox],.site-gallery figure>a,.av-work-item>a,.site-story-preview,.av-service-card>a,.ds-scene>a):hover img{transform:scale(1.02)}
+ }
+}
+@keyframes av-backdrop-enter{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.av-media-viewer{margin:auto;max-width:95vw;max-height:94vh;padding:24px;border:0;background:var(--av-color-canvas);color:var(--av-color-ink)}.av-media-viewer::backdrop{background:rgb(0 0 0/.85)}.av-media-viewer img{display:block;max-width:100%;max-height:72vh;object-fit:contain;margin-top:16px}.av-media-viewer button{min-height:48px;padding:12px 20px;background:var(--av-color-ink);color:var(--av-color-inverse);border:0}
+
+/* Selected Google reviews: recognizable review anatomy, not an aggregate widget. */
+.site-reviews .av-section-heading p{color:var(--av-color-review-muted)}
+.site-review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start}
+.site-review{background:var(--av-color-review-card);border:1px solid var(--av-color-review-border);border-radius:var(--av-review-radius);padding:24px;min-width:0;color:#e8eaed}
+.site-review-person{display:flex;gap:12px;align-items:center}.site-review-person>div{min-width:0;flex:1}.site-review-person h3{font-size:16px;line-height:1.4;letter-spacing:0;margin:0}.site-review-person h3 a{color:inherit;text-decoration:none}.site-review-person h3 a:hover{text-decoration:underline}.site-review-person p{font-size:12px;color:var(--av-color-review-muted);margin:4px 0 0}.site-review-avatar{display:grid;place-items:center;width:40px;height:40px;flex-shrink:0;border-radius:50%;background:#3c4043;color:#e8eaed;font-size:16px}.site-review-source{font-size:12px;color:var(--av-color-review-muted)}
+.site-review-rating{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0 12px;font-size:12px;color:var(--av-color-review-muted)}.site-review-stars{color:var(--av-color-review-stars);font-size:18px;letter-spacing:1px}
+.site-review blockquote,.site-review-text{font-size:16px;line-height:1.6;margin:0;font-weight:400;letter-spacing:0}.site-review-text summary{list-style:none;cursor:pointer;display:block;font-size:16px;font-weight:400;padding:0;border:0}.site-review-text summary::-webkit-details-marker{display:none}.site-review-text summary::after{content:none}.site-review-expand{display:block;color:var(--av-color-link-inverse);font-weight:700;text-decoration:underline;padding-block:12px;min-height:48px}.site-review-less,.site-review-text[open] .site-review-more,.site-review-text[open] .site-review-excerpt{display:none}.site-review-text[open] .site-review-less{display:inline}
+.site-review-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:16px}.site-review-photos a{display:block;border-radius:6px;overflow:hidden}.site-review-photos img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover}.site-review-original{display:inline-block;font-size:14px;min-height:48px;padding-top:18px}
+
+@media(max-width:1100px){.site-review-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.site-review-grid{grid-template-columns:1fr}.site-review{padding:20px}}
+
+.site-review-text[open]{display:flex;flex-direction:column}.site-review-text[open] summary{order:2}

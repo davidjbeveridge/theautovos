@@ -815,3 +815,5 @@
 .ds-index {
   flex-shrink: 0;
 }
+
+.ds-review-specimen{padding:24px}.ds-review-specimen .site-review{max-width:440px}.ds-review-specimen .site-review-person h3{font-size:16px}

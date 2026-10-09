@@ -1,0 +1,20 @@
+/* Shared motion: content is visible before JavaScript and never depends on an entrance. */
+@keyframes av-enter {from{opacity:.65;transform:translateY(var(--av-motion-distance))}to{opacity:1;transform:none}}
+@keyframes av-dialog-enter {from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:no-preference){
+ .av-motion-enter{animation:av-enter var(--av-motion-enter) var(--av-motion-ease) both}
+ :where(.av-button,.av-text-button,.site-review,summary){transition:background-color var(--av-motion-fast) ease,border-color var(--av-motion-fast) ease,color var(--av-motion-fast) ease}
+ :where(.av-button,.av-text-button,.av-card-heading) .av-icon{transition:transform var(--av-motion-fast) var(--av-motion-ease)}
+ :where(.av-button,.av-text-button):is(:hover,:focus-visible) .av-icon,.av-work-item a:is(:hover,:focus-visible) .av-icon{transform:translateX(3px)}
+ :where([data-lightbox],.site-gallery figure>a,.av-work-item>a,.site-story-preview,.av-service-card>a,.ds-scene>a){display:block;overflow:hidden}
+ :where([data-lightbox],.site-gallery figure>a,.av-work-item>a,.site-story-preview,.av-service-card>a,.ds-scene>a) img{transition:transform var(--av-motion-enter) var(--av-motion-ease)}
+ dialog[open]{animation:av-dialog-enter var(--av-motion-fast) var(--av-motion-ease)}
+ dialog[open]::backdrop{animation:av-backdrop-enter var(--av-motion-fast) ease}
+ details[open]>:not(summary){animation:av-enter var(--av-motion-fast) var(--av-motion-ease)}
+ @media(hover:hover) and (pointer:fine){
+ :where([data-lightbox],.site-gallery figure>a,.av-work-item>a,.site-story-preview,.av-service-card>a,.ds-scene>a):hover img{transform:scale(1.02)}
+ }
+}
+@keyframes av-backdrop-enter{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.av-media-viewer{margin:auto;max-width:95vw;max-height:94vh;padding:24px;border:0;background:var(--av-color-canvas);color:var(--av-color-ink)}.av-media-viewer::backdrop{background:rgb(0 0 0/.85)}.av-media-viewer img{display:block;max-width:100%;max-height:72vh;object-fit:contain;margin-top:16px}.av-media-viewer button{min-height:48px;padding:12px 20px;background:var(--av-color-ink);color:var(--av-color-inverse);border:0}

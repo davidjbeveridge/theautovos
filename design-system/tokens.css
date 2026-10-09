@@ -26,4 +26,13 @@
   --av-color-control-border: #828282;
   --av-color-link: #155ab6;
   --av-color-link-inverse: #8cc4ff;
+  --av-motion-fast: 180ms;
+  --av-motion-enter: 420ms;
+  --av-motion-distance: 12px;
+  --av-motion-ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --av-color-review-card: #202124;
+  --av-color-review-muted: #bdc1c6;
+  --av-color-review-stars: #fbbc04;
+  --av-color-review-border: #45474b;
+  --av-review-radius: 12px;
 }
