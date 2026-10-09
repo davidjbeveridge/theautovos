@@ -1637,8 +1637,7 @@ h1,h2,h3 {
 :root { --av-inline-color: var(--av-color-link); }
 :where(.av-dark,.av-footer,.ds-inline-dark,.legacy-home) { --av-inline-color: var(--av-color-link-inverse); }
 :where(.av-surface,.section-light,.ds-inline-light) { --av-inline-color: var(--av-color-link); }
-:is(.av-inline-link,.site-text-link,.inline-link),
-:where(p,li,dd,figcaption,address,label,td) a:not(.av-button,.button):not(nav a):not(:has(img)) {
+:where(p,figcaption) a:not(.av-button,.button):not(:is(nav,header,footer,li,h1,h2,h3,h4,h5,h6) a):not(:has(img)) {
   color: var(--av-inline-color);
   font-weight: 700;
   text-decoration-line: underline;
@@ -1646,12 +1645,10 @@ h1,h2,h3 {
   text-underline-offset: .18em;
   text-decoration-skip-ink: auto;
 }
-:is(.av-inline-link,.site-text-link,.inline-link):hover,
-:where(p,li,dd,figcaption,address,label,td) a:not(.av-button,.button):not(nav a):not(:has(img)):hover {
+:where(p,figcaption) a:not(.av-button,.button):not(:is(nav,header,footer,li,h1,h2,h3,h4,h5,h6) a):not(:has(img)):hover {
   text-decoration-thickness: .14em;
 }
-:is(.av-inline-link,.site-text-link,.inline-link):focus-visible,
-:where(p,li,dd,figcaption,address,label,td) a:not(.av-button,.button):not(nav a):not(:has(img)):focus-visible {
+:where(p,figcaption) a:not(.av-button,.button):not(:is(nav,header,footer,li,h1,h2,h3,h4,h5,h6) a):not(:has(img)):focus-visible {
   outline: 3px solid currentColor;
   outline-offset: 4px;
 }
