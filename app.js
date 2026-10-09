@@ -176,7 +176,7 @@
 
   function seekFilm(time) {
     const seek = () => {
-      shopPlayer.currentTime = Math.min(Math.max(time, 0), Math.max(0, (shopPlayer.duration || 24) - 0.05));
+      shopPlayer.currentTime = Math.min(Math.max(time, 0), Math.max(0, (shopPlayer.duration || 18) - 0.05));
       const attempt = shopPlayer.play();
       if (attempt && typeof attempt.catch === 'function') attempt.catch(() => {});
     };
@@ -220,9 +220,9 @@
     "caption": "Two technicians fitting clear film around a vehicle’s bumper."
   },
   {
-    "src": "assets/ppf-installation.webp",
-    "alt": "Paint protection film being fitted to a vehicle’s hood",
-    "caption": "Paint protection film being fitted to a vehicle’s hood."
+    "src": "assets/porsche-silver.webp",
+    "alt": "Silver Porsche in the Auto Vos studio",
+    "caption": "Silver Porsche in the Auto Vos studio."
   },
   {
     "src": "assets/ceramic-application.webp",
