@@ -141,5 +141,12 @@
     "time": "35:22",
     "use": "Actual 1920x1080 video frame; no upscaling or AI editing.",
     "sha256": "d2cca46b776c781ec6a178103af9b07a02073c6539154c30c3816cec5cbcce19"
+  },
+  {
+    "path": "assets/diagrams/windshield-protection-photo-v2.png",
+    "source": "Built-in imagegen edit of assets/porsche-silver.webp",
+    "use": "Educational exterior film and adhesive overlay; not installation evidence; U.S. left-hand-drive original car reference.",
+    "prompt": "design/windshield-diagram-prompt.md",
+    "sha256": "d8965ed72864794ef7610397bbecca9a59a2fc36faf0e15b5a22a73af6a3affc"
   }
 ]

@@ -1,6 +1,6 @@
 (() => {
  const demo=document.body.dataset.mode==='demo',analyticsId=document.body.dataset.analytics;
- const serviceIds=['tint','ppf','ceramic','choose','general'];
+ const serviceIds=['tint','ppf','ceramic','windshield','choose','general'];
  const store={get(k){try{return sessionStorage.getItem(k);}catch{return null;}},set(k,v){try{sessionStorage.setItem(k,v);}catch{}}};
  let source={};try{source=JSON.parse(store.get('av-source')||'null')||{};}catch{}
  if(!source.landing){source={landing:location.pathname};const search=new URLSearchParams(location.search);for(const k of ['utm_source','utm_medium','utm_campaign','utm_content','utm_term']){const v=search.get(k);if(v&&/^[a-zA-Z0-9_-]{1,64}$/.test(v))source[k]=v;}try{const host=new URL(document.referrer).hostname;if(host!==location.hostname)source.referrer=host;}catch{}store.set('av-source',JSON.stringify(source));}

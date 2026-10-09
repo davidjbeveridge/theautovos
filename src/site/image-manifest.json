@@ -125,6 +125,24 @@
       }
     ]
   },
+  "/assets/diagrams/windshield-protection-photo-v2.png": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "src": "/assets/responsive/diagrams--windshield-protection-photo-v2-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/diagrams--windshield-protection-photo-v2-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/diagrams--windshield-protection-photo-v2-1448.webp",
+        "width": 1448
+      }
+    ]
+  },
   "/assets/gallery/00276bcff7127432.jpg": {
     "width": 1500,
     "height": 1000,
