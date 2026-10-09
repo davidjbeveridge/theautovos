@@ -148,5 +148,86 @@
     "use": "Educational exterior film and adhesive overlay; not installation evidence; U.S. left-hand-drive original car reference.",
     "prompt": "design/windshield-diagram-prompt.md",
     "sha256": "d8965ed72864794ef7610397bbecca9a59a2fc36faf0e15b5a22a73af6a3affc"
+  },
+  {
+    "path": "assets/xpel/prime-xr-plus.webp",
+    "source": "https://brand.xpel.com/transform/9675c2fc-eb22-42e2-b0a2-85e1ffeab6e6/2023-Porsche-911-Carrera-Black-HTX-XRP-WC-22-png?io=transform:fill,width:800,height:640&format=webp&quality=90",
+    "sourcePage": "https://www.xpel.com/products/automotive-window-tint",
+    "use": "Manufacturer product photography in credited shared XPEL banner; not Auto Vos installation evidence.",
+    "sha256": "e1e7aeccc92c7edec9213693e27f925ab051a0f6a5c879313910d0071a78a952"
+  },
+  {
+    "path": "assets/xpel/paint-protection-film.webp",
+    "source": "https://brand.xpel.com/transform/7ca8802b-4f9d-4bd8-ab0e-f8ac60f1a46d/paint-protection-film-installation-jpg?io=transform:fill,width:800,height:640&format=webp&quality=90",
+    "sourcePage": "https://www.xpel.com/products/ultimate-plus",
+    "use": "Manufacturer product photography in credited shared XPEL banner; not Auto Vos installation evidence.",
+    "sha256": "0afe1ac962a43b1fb8520ad5bfd11f1ef77b05bf28a4f9cd5d77c0920b0d7314"
+  },
+  {
+    "path": "assets/xpel/fusion-plus.webp",
+    "source": "https://brand.xpel.com/transform/957f465e-c03b-4529-9876-b4dd957a891f/xpel-Fusion-Plus-Ceramic-Coating-lite-premium-satin-jpg?io=transform:fill,width:800,height:640&format=webp&quality=90",
+    "sourcePage": "https://www.xpel.com/products/automotive-ceramic-coating",
+    "use": "Manufacturer product photography in credited shared XPEL banner; not Auto Vos installation evidence.",
+    "sha256": "5a838f67bd69db33e263b01d2773293ff42cffe83e6927300f3e4cc35c6971c2"
+  },
+  {
+    "path": "assets/targa-guide/step-01-graded.jpg",
+    "source": "assets/targa-guide/step-01.jpg",
+    "use": "User-authorized conventional color, tone and sharpening correction. Reproduce with scripts/grade-targa-images.py. Original framing and all people, tools, film and water preserved; no AI generation or upscaling.",
+    "sha256": "c047d729ffe35434a28f50b717ffbae96ffca619a4ff1f758badb42e04987aaf"
+  },
+  {
+    "path": "assets/targa-guide/step-02-graded.jpg",
+    "source": "assets/targa-guide/step-02.jpg",
+    "use": "User-authorized conventional color, tone and sharpening correction. Reproduce with scripts/grade-targa-images.py. Original framing and all people, tools, film and water preserved; no AI generation or upscaling.",
+    "sha256": "a85157a6859d525bb438a640785e0f9e1cb4a22b729846614a64caee9861b83c"
+  },
+  {
+    "path": "assets/targa-guide/step-03-graded.jpg",
+    "source": "assets/targa-guide/step-03.jpg",
+    "use": "User-authorized conventional color, tone and sharpening correction. Reproduce with scripts/grade-targa-images.py. Original framing and all people, tools, film and water preserved; no AI generation or upscaling.",
+    "sha256": "cce6a8447d9020a40dc0c0423ecbb6c7ac1b594a2788c8713dc888bc05c183b9"
+  },
+  {
+    "path": "assets/targa-guide/step-04-graded.jpg",
+    "source": "assets/targa-guide/step-04.jpg",
+    "use": "User-authorized conventional color, tone and sharpening correction. Reproduce with scripts/grade-targa-images.py. Original framing and all people, tools, film and water preserved; no AI generation or upscaling.",
+    "sha256": "f358e3eccbef508bf81e955a898be98cd9fe8ed35527eb9c013fc2082e4529df"
+  },
+  {
+    "path": "assets/targa-guide/step-05-graded.jpg",
+    "source": "assets/targa-guide/step-05.jpg",
+    "use": "User-authorized conventional color, tone and sharpening correction. Reproduce with scripts/grade-targa-images.py. Original framing and all people, tools, film and water preserved; no AI generation or upscaling.",
+    "sha256": "87fa80efe2a05a947c3bffb85c2f73d9ca4f1dcab163fb8b025c8ab167939092"
+  },
+  {
+    "path": "assets/targa-guide/step-06-graded.jpg",
+    "source": "assets/targa-guide/step-06.jpg",
+    "use": "User-authorized conventional color, tone and sharpening correction. Reproduce with scripts/grade-targa-images.py. Original framing and all people, tools, film and water preserved; no AI generation or upscaling.",
+    "sha256": "d7d81e7c4399843f9c189ae3110b31d990785ccc9520e90314af408c13e0572e"
+  },
+  {
+    "path": "assets/targa-guide/step-07-graded.jpg",
+    "source": "assets/targa-guide/step-07.jpg",
+    "use": "User-authorized conventional color, tone and sharpening correction. Reproduce with scripts/grade-targa-images.py. Original framing and all people, tools, film and water preserved; no AI generation or upscaling.",
+    "sha256": "99c2965279283091c165e551a06ad8fc1ca5eaded11d5a10fd0b24dbece22e54"
+  },
+  {
+    "path": "assets/targa-guide/step-08-graded.jpg",
+    "source": "assets/targa-guide/step-08.jpg",
+    "use": "User-authorized conventional color, tone and sharpening correction. Reproduce with scripts/grade-targa-images.py. Original framing and all people, tools, film and water preserved; no AI generation or upscaling.",
+    "sha256": "5af295184e03286d9f64370b01e5215127a8e9fc51bb06a191bd909b3872c7a6"
+  },
+  {
+    "path": "assets/targa-guide/step-09-graded.jpg",
+    "source": "assets/targa-guide/step-09.jpg",
+    "use": "User-authorized conventional color, tone and sharpening correction. Reproduce with scripts/grade-targa-images.py. Original framing and all people, tools, film and water preserved; no AI generation or upscaling.",
+    "sha256": "2425098e4b9c9dd72de231fe525a494154afd04fac93fbd6367068b3e1ac37aa"
+  },
+  {
+    "path": "assets/targa-guide/step-10-graded.jpg",
+    "source": "assets/targa-guide/step-10.jpg",
+    "use": "User-authorized conventional color, tone and sharpening correction. Reproduce with scripts/grade-targa-images.py. Original framing and all people, tools, film and water preserved; no AI generation or upscaling.",
+    "sha256": "d4b2744a0bc86cafcfb63e0dc5852d66d77fa951c4bb11652a2b8307119c8bbd"
   }
 ]
