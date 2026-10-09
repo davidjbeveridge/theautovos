@@ -13,12 +13,3 @@
  }
  preference.addEventListener('change',start);start();
 })();
-/* Catalog/template image inspection; the full site supplies its own viewer. */
-(()=>{
- if(document.getElementById('photo-viewer'))return;
- const links=[...document.querySelectorAll('[data-lightbox]')];if(!links.length||!('HTMLDialogElement' in window))return;
- const dialog=document.createElement('dialog');dialog.className='av-media-viewer';dialog.setAttribute('aria-label','Enlarged photograph');
- const close=document.createElement('button');close.type='button';close.textContent='Close photograph';const image=document.createElement('img');image.alt='';dialog.append(close,image);document.body.append(dialog);let trigger;
- links.forEach(a=>a.addEventListener('click',ev=>{ev.preventDefault();trigger=a;image.src=a.href;image.alt=a.querySelector('img')?.alt||'Selected photograph';dialog.showModal();}));
- close.addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>{image.removeAttribute('src');trigger?.focus();});dialog.addEventListener('keydown',ev=>{if(ev.key==='Tab'){ev.preventDefault();close.focus();}});
-})();

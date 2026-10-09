@@ -464,6 +464,32 @@
           "customProperty": "--av-review-radius"
         }
       }
+    },
+    {
+      "id": "color.selection-background",
+      "type": "color",
+      "values": {
+        "base": "#121212"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-selection-background"
+        }
+      }
+    },
+    {
+      "id": "color.selection-text",
+      "type": "color",
+      "values": {
+        "base": "#ffffff"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-selection-text"
+        }
+      }
     }
   ]
 }

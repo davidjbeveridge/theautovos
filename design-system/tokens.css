@@ -35,4 +35,6 @@
   --av-color-review-stars: #fbbc04;
   --av-color-review-border: #45474b;
   --av-review-radius: 12px;
+  --av-selection-background: #121212;
+  --av-selection-text: #ffffff;
 }

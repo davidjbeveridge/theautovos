@@ -2,7 +2,7 @@ import http from 'node:http';import fs from 'node:fs';import path from 'node:pat
 import {handleInquiry} from '../server/inquiry.mjs';
 const prod=process.argv.includes('--production'),port=Number(process.env.PORT||8790),root=path.resolve(prod?'dist-production':'dist-demo');
 const loadManifest=()=>JSON.parse(fs.readFileSync(`design-artifacts/${prod?'production':'demo'}-manifest.json`));
-const mimes={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.json':'application/json','.svg':'image/svg+xml','.webp':'image/webp','.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png','.txt':'text/plain; charset=utf-8','.xml':'application/xml'};
+const mimes={'.mp4':'video/mp4','.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.json':'application/json','.svg':'image/svg+xml','.webp':'image/webp','.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png','.txt':'text/plain; charset=utf-8','.xml':'application/xml'};
 const server=http.createServer(async(req,res)=>{const origin=`http://127.0.0.1:${port}`;let url;try{url=new URL(req.url,origin);}catch{res.writeHead(400);res.end();return;}
  if(url.pathname==='/api/inquiry'){
   const request=new Request(origin+req.url,{method:req.method,headers:req.headers,...(['GET','HEAD'].includes(req.method)?{}:{body:req,duplex:'half'})});

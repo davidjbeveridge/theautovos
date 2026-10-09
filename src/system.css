@@ -1628,3 +1628,7 @@ h1,h2,h3 {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+/* Monochrome text selection, inverted within dark chapters. */
+::selection{background:var(--av-selection-background);color:var(--av-selection-text)}
+:where(.av-dark,.av-footer,.av-header,.ds-inline-dark) ::selection{background:var(--av-selection-text);color:var(--av-selection-background)}

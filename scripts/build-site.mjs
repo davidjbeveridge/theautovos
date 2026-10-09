@@ -18,8 +18,8 @@ const pages=pageData(config);const planned=routeRegistry.filter(p=>eligible(p.pa
 for(const page of [...pages,notFound()]){const file=page.path==='/'?'index.html':page.path==='/404.html'?'404.html':page.path.endsWith('/')?page.path.slice(1)+'index.html':page.path.slice(1)+'.html';write(file,render(page,config));}
 const registry=JSON.parse(fs.readFileSync('design/presentation.yaml','utf8'));
 write('site/tokens.css',':root{'+registry.variables.map(v=>v.projections?.css?`${v.projections.css.customProperty}:${v.values.base};`:'').join('')+'}\n');
-write('site/style.css',fs.readFileSync('src/system.css','utf8')+'\n'+fs.readFileSync('src/site/site.css','utf8')+'\n'+fs.readFileSync('src/inline-links.css','utf8')+'\n'+fs.readFileSync('src/motion.css','utf8')+'\n'+fs.readFileSync('src/reviews.css','utf8'));
-write('site/client.js',fs.readFileSync('src/site/client.js','utf8')+'\n'+fs.readFileSync('src/motion.js','utf8'));
+write('site/style.css',fs.readFileSync('src/system.css','utf8')+'\n'+fs.readFileSync('src/site/site.css','utf8')+'\n'+fs.readFileSync('src/inline-links.css','utf8')+'\n'+fs.readFileSync('src/motion.css','utf8')+'\n'+fs.readFileSync('src/reviews.css','utf8')+'\n'+fs.readFileSync('src/photo-viewer.css','utf8'));
+write('site/client.js',fs.readFileSync('src/site/client.js','utf8')+'\n'+fs.readFileSync('src/motion.js','utf8')+'\n'+fs.readFileSync('src/photo-viewer.js','utf8'));
 // Only referenced public assets are packaged. No proposal, audit, catalog or secrets.
 const html=[...pages,notFound()].map(p=>render(p,config)).join('');const assets=new Set([...html.matchAll(/(?:src|href)="(\/assets\/[^"?#]+)"/g)].map(m=>m[1]));assets.add('/assets/hero-poster.webp');for(const m of html.matchAll(/srcset="([^"]+)"/g))for(const candidate of m[1].split(','))assets.add(candidate.trim().split(' ')[0]);
 for(const asset of assets){const source=asset.slice(1);if(!fs.existsSync(source))throw Error('Missing '+source);write(source,fs.readFileSync(source));}
