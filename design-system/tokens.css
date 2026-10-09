@@ -24,4 +24,6 @@
   --av-color-catalog: #fafaf8;
   --av-color-error-surface: #fff3f1;
   --av-color-control-border: #828282;
+  --av-color-link: #155ab6;
+  --av-color-link-inverse: #8cc4ff;
 }

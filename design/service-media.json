@@ -1,0 +1,145 @@
+[
+  {
+    "path": "assets/services/bmw-side-glass.jpg",
+    "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1712522143066-J3CZC1LUXIHPF1VH2F43/Auto+Vos+Paint+Protection+Film+Window+Tint+Ceramic+Coating+Porsche+Ford+Tesla+Colorado+Springs+Caleb+Brown77.jpg",
+    "sourcePage": "Auto Vos existing tint service page",
+    "use": "Existing Auto Vos library; no alteration, original dimensions retained.",
+    "sha256": "9e35b98ee8f8ec8c05741e08b9849fc239b0059a1220e408ee3cc54a0a6073dd"
+  },
+  {
+    "path": "assets/services/cabin-side-glass.jpg",
+    "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1712522249142-26WUAV4BYKIK62GHX54R/Auto+Vos+Paint+Protection+Film+Window+Tint+Ceramic+Coating+Porsche+Ford+Tesla+Colorado+Springs+Caleb+Brown13.jpg",
+    "sourcePage": "Auto Vos existing tint service page",
+    "use": "Existing Auto Vos library; no alteration, original dimensions retained.",
+    "sha256": "82233d7c0673d82a7ae2e5b36074fa670a7f694bea52a540c6dae38dd99cf4c2"
+  },
+  {
+    "path": "assets/services/side-glass-detail.jpg",
+    "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1712522146100-H3FL8OXDJ0FZWCFZK5JV/Auto+Vos+Paint+Protection+Film+Window+Tint+Ceramic+Coating+Porsche+Ford+Tesla+Colorado+Springs+Caleb+Brown31.jpg",
+    "sourcePage": "Auto Vos existing tint service page",
+    "use": "Existing Auto Vos library; no alteration, original dimensions retained.",
+    "sha256": "24e9c3909586c4f9cf2c2eaca1f32f9900e1606e0ec6699c63690231a92c57af"
+  },
+  {
+    "path": "assets/services/fusion-plus-kit.jpg",
+    "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1712521380562-F3GLY0A9WRU00XIVGZM4/Auto+Vos+Paint+Protection+Film+Window+Tint+Ceramic+Coating+Porsche+Ford+Tesla+Colorado+Springs+Caleb+Brown11.jpeg",
+    "sourcePage": "Auto Vos existing ceramic service page",
+    "use": "Existing Auto Vos library; no alteration, original dimensions retained.",
+    "sha256": "208d97611da6fa29fe3df69e9fd9a6c360278aee6967b3c33f1a4e232b45e09a"
+  },
+  {
+    "path": "assets/services/porsche-finish.jpg",
+    "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1712520971873-8N342V8G9L8R2JOJGXQO/Auto+Vos+Paint+Protection+Film+Window+Tint+Ceramic+Coating+Porsche+Ford+Tesla+Colorado+Springs+Caleb+Brown48.jpg",
+    "sourcePage": "Auto Vos existing ceramic service page",
+    "use": "Existing Auto Vos library; no alteration, original dimensions retained.",
+    "sha256": "58507815c7f535f5b2a7d79acae14f03a750d3b5efdbf99640e2a33e983464f7"
+  },
+  {
+    "path": "assets/services/tesla-ppf.jpg",
+    "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1712520343080-JWI2UYUCJR7AK7OX8IHS/Auto+Vos+Paint+Protection+Film+Window+Tint+Ceramic+Coating+Porsche+Ford+Tesla+Colorado+Springs+Caleb+Brown20.jpg",
+    "sourcePage": "Auto Vos existing ppf service page",
+    "use": "Existing Auto Vos library; no alteration, original dimensions retained.",
+    "sha256": "9a494c760b1e1197ae82f07d7fdd6906269a75dd11b57a6811b595c0f6b0882b"
+  },
+  {
+    "path": "assets/services/studio-interior.jpg",
+    "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1712523461181-RCHF0QNJI4J6MSIA78HZ/Auto+Vos+Paint+Protection+Film+Window+Tint+Ceramic+Coating+Porsche+Ford+Tesla+Colorado+Springs+Caleb+Brown17.jpg",
+    "sourcePage": "Auto Vos existing ppf service page",
+    "use": "Existing Auto Vos library; no alteration, original dimensions retained.",
+    "sha256": "27c6364f15c8fda0cb5c5f8cb886bc564f4713f15270292bb24bac14192663b9"
+  },
+  {
+    "path": "assets/diagrams/ppf-layers.png",
+    "source": "User-supplied diagram, browser comment 4",
+    "use": "Educational illustration, not an installation photograph. Caption must explain exaggerated separated layers.",
+    "sha256": "221ba381cf9ab1607eed9466d26d08c7b6e77a9a23300819db1dec9829ec7586"
+  },
+  {
+    "path": "assets/diagrams/tint-layers.png",
+    "source": "User-supplied diagram, browser comment 5",
+    "use": "Educational illustration, not an installation photograph. Caption must explain exaggerated separated layers.",
+    "sha256": "e9fff403dcba70b1b709d905dff12264ca57447223be832ad99ad2410cfc2de3"
+  },
+  {
+    "path": "assets/diagrams/ceramic-layers.png",
+    "source": "User-supplied diagram, browser comment 6",
+    "use": "Educational illustration, not an installation photograph. Caption must explain exaggerated separated layers.",
+    "sha256": "7f64aff6b1ee70016320e5cb84449d541c95ae6617f2c40313c80b34fe182357"
+  },
+  {
+    "path": "assets/diagrams/ceramic-over-ppf.png",
+    "source": "User-supplied combined ceramic coating and PPF diagram, October 9, 2026",
+    "use": "Educational illustration, not an installation photograph. Caption must explain exaggerated separated layers.",
+    "sha256": "e0b547dd41516926cc8ac3038ad972cbb6e2c0435376b2ea3b627c25fe452a03"
+  },
+  {
+    "path": "assets/targa-guide/step-01.jpg",
+    "source": "https://www.youtube.com/watch?v=5cyZbLkMrrU",
+    "time": "00:45",
+    "use": "Actual 1920x1080 video frame; no upscaling or AI editing.",
+    "sha256": "e5cd54e8373f217ddac00fb886f43f4305bfabdd31c0b7adf21737502323d778"
+  },
+  {
+    "path": "assets/targa-guide/step-02.jpg",
+    "source": "https://www.youtube.com/watch?v=5cyZbLkMrrU",
+    "time": "01:30",
+    "use": "Actual 1920x1080 video frame; no upscaling or AI editing.",
+    "sha256": "ea84c4aa07f1feb94cfdad2a99f8704e7b324fd0e78fe92283c93e1baf2cfc51"
+  },
+  {
+    "path": "assets/targa-guide/step-03.jpg",
+    "source": "https://www.youtube.com/watch?v=5cyZbLkMrrU",
+    "time": "02:49",
+    "use": "Actual 1920x1080 video frame; no upscaling or AI editing.",
+    "sha256": "ccbfedef48f57de85acb9fdc7f0bbfec1a486f9532867f0f50658ad1e4b6cf4b"
+  },
+  {
+    "path": "assets/targa-guide/step-04.jpg",
+    "source": "https://www.youtube.com/watch?v=5cyZbLkMrrU",
+    "time": "09:14",
+    "use": "Actual 1920x1080 video frame; no upscaling or AI editing.",
+    "sha256": "976d9336ddb2c2604558570c6c523e631cd93eaad24a078bce7b4c6638d71d18"
+  },
+  {
+    "path": "assets/targa-guide/step-05.jpg",
+    "source": "https://www.youtube.com/watch?v=5cyZbLkMrrU",
+    "time": "11:45",
+    "use": "Actual 1920x1080 video frame; no upscaling or AI editing.",
+    "sha256": "42b031d7c37fbeb22577aa55071dd4d1a096335d5ae1eddc24f59db03670f181"
+  },
+  {
+    "path": "assets/targa-guide/step-06.jpg",
+    "source": "https://www.youtube.com/watch?v=5cyZbLkMrrU",
+    "time": "15:32",
+    "use": "Actual 1920x1080 video frame; no upscaling or AI editing.",
+    "sha256": "2fb23d4f4403f287e6b5ffbc95f10f9c1c90eb7b72a53ac29131f50ac0c68ac7"
+  },
+  {
+    "path": "assets/targa-guide/step-07.jpg",
+    "source": "https://www.youtube.com/watch?v=5cyZbLkMrrU",
+    "time": "22:16",
+    "use": "Actual 1920x1080 video frame; no upscaling or AI editing.",
+    "sha256": "b6b5f5cf4ccc0d83a5fc4b4df885d54be94b935294e2352d5f2a6c83f06915a3"
+  },
+  {
+    "path": "assets/targa-guide/step-08.jpg",
+    "source": "https://www.youtube.com/watch?v=5cyZbLkMrrU",
+    "time": "24:04",
+    "use": "Actual 1920x1080 video frame; no upscaling or AI editing.",
+    "sha256": "daa441960bd77de72eb88e26da8154815a2a9fcd5d5d2a34f48901ff315214be"
+  },
+  {
+    "path": "assets/targa-guide/step-09.jpg",
+    "source": "https://www.youtube.com/watch?v=5cyZbLkMrrU",
+    "time": "28:00",
+    "use": "Actual 1920x1080 video frame; no upscaling or AI editing.",
+    "sha256": "149e1eb61771c70ca1a2d102f1d26f3adc5a2f82b61049f5a46c8fabc76108f2"
+  },
+  {
+    "path": "assets/targa-guide/step-10.jpg",
+    "source": "https://www.youtube.com/watch?v=5cyZbLkMrrU",
+    "time": "35:22",
+    "use": "Actual 1920x1080 video frame; no upscaling or AI editing.",
+    "sha256": "d2cca46b776c781ec6a178103af9b07a02073c6539154c30c3816cec5cbcce19"
+  }
+]

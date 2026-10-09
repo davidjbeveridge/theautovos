@@ -7,252 +7,288 @@
       "path": "/",
       "template": "home",
       "proposedDestination": "/",
-      "decision": "rebuild"
+      "decision": "rebuild",
+      "productionAction": "rebuild"
     },
     {
       "source": "https://www.theautovos.com/sluftgekuhlt-6",
       "path": "/sluftgekuhlt-6",
       "template": "story",
-      "proposedDestination": "/sluftgekuhlt-6",
-      "decision": "retain gallery/event slug; replace template; verify credits"
+      "proposedDestination": "/gallery/sluftgekuhlt-6/",
+      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/irstrip-attack-2019",
       "path": "/irstrip-attack-2019",
       "template": "story",
-      "proposedDestination": "/irstrip-attack-2019",
-      "decision": "retain gallery/event slug; replace template; verify credits"
+      "proposedDestination": "/gallery/irstrip-attack-2019/",
+      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/drive-oz-2019",
       "path": "/drive-oz-2019",
       "template": "story",
-      "proposedDestination": "/drive-oz-2019",
-      "decision": "retain gallery/event slug; replace template; verify credits"
+      "proposedDestination": "/gallery/drive-oz-2019/",
+      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/pikes-peak-hill-climb-2019",
       "path": "/pikes-peak-hill-climb-2019",
       "template": "story",
-      "proposedDestination": "/pikes-peak-hill-climb-2019",
-      "decision": "retain gallery/event slug; replace template; verify credits"
+      "proposedDestination": "/gallery/pikes-peak-hill-climb-2019/",
+      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/pikes-peak-hill-climb-2019-porsche",
       "path": "/pikes-peak-hill-climb-2019-porsche",
       "template": "story",
-      "proposedDestination": "/pikes-peak-hill-climb-2019-porsche",
-      "decision": "retain gallery/event slug; replace template; verify credits"
+      "proposedDestination": "/gallery/pikes-peak-hill-climb-2019-porsche/",
+      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/porsche-918-flash-photography",
       "path": "/porsche-918-flash-photography",
       "template": "story",
-      "proposedDestination": "/porsche-918-flash-photography",
-      "decision": "retain gallery/event slug; replace template; verify credits"
+      "proposedDestination": "/gallery/porsche-918-flash-photography/",
+      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/porsche-356-sc-flash-photography",
       "path": "/porsche-356-sc-flash-photography",
       "template": "story",
-      "proposedDestination": "/porsche-356-sc-flash-photography",
-      "decision": "retain gallery/event slug; replace template; verify credits"
+      "proposedDestination": "/gallery/porsche-356-sc-flash-photography/",
+      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/porsche-safari-day-in-the-dirt",
       "path": "/porsche-safari-day-in-the-dirt",
       "template": "story",
-      "proposedDestination": "/porsche-safari-day-in-the-dirt",
-      "decision": "retain gallery/event slug; replace template; verify credits"
+      "proposedDestination": "/gallery/porsche-safari-day-in-the-dirt/",
+      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/pikes-peak-hill-climb-paul-kolinski",
       "path": "/pikes-peak-hill-climb-paul-kolinski",
       "template": "story",
-      "proposedDestination": "/pikes-peak-hill-climb-paul-kolinski",
-      "decision": "retain gallery/event slug; replace template; verify credits"
+      "proposedDestination": "/gallery/pikes-peak-hill-climb-paul-kolinski/",
+      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/new-dropdown-1",
       "path": "/new-dropdown-1",
       "template": "not-found",
       "proposedDestination": null,
-      "decision": "retire demo or empty container; confirm traffic before 410/redirect"
+      "decision": "candidate 410/404 after confirming no valid business content; redirect only to a true equivalent; never blanket-home redirect",
+      "productionAction": "retire_pending_review"
     },
     {
       "source": "https://www.theautovos.com/studio-info",
       "path": "/studio-info",
       "template": "studio",
-      "proposedDestination": "/studio/",
-      "decision": "consolidate; keep team content and confirm identity"
+      "proposedDestination": "/about/",
+      "decision": "October 8 approved planned URL change; permanent redirect to the same content intent; implementation pending",
+      "productionAction": "consolidate"
     },
     {
       "source": "https://www.theautovos.com/team",
       "path": "/team",
       "template": "studio",
-      "proposedDestination": "/studio/",
-      "decision": "consolidate; keep team content and confirm identity"
+      "proposedDestination": "/about/",
+      "decision": "October 8 approved planned URL change; permanent redirect to the same content intent; implementation pending",
+      "productionAction": "consolidate"
     },
     {
       "source": "https://www.theautovos.com/art",
       "path": "/art",
       "template": "art",
-      "proposedDestination": "/art/",
-      "decision": "rebuild"
+      "proposedDestination": "404",
+      "decision": "Remove automotive art per explicit user instruction; /art and /art/ return 404",
+      "productionAction": "retire_approved"
     },
     {
       "source": "https://www.theautovos.com/what-we-do-bedford",
       "path": "/what-we-do-bedford",
       "template": "services",
-      "proposedDestination": "/services/",
-      "decision": "consolidate; candidate 301 after content review"
+      "proposedDestination": null,
+      "decision": "candidate 410/404 after confirming no valid business content; redirect only to a true equivalent; never blanket-home redirect",
+      "productionAction": "retire_pending_review"
     },
     {
       "source": "https://www.theautovos.com/xpel-ppf-window-tint-colorado-springs-auto-vos",
       "path": "/xpel-ppf-window-tint-colorado-springs-auto-vos",
       "template": "services",
       "proposedDestination": "/services/",
-      "decision": "consolidate; candidate 301 after content review"
+      "decision": "rebuild real services overview; 301 old URL",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/contact-bedford",
       "path": "/contact-bedford",
       "template": "contact",
       "proposedDestination": "/contact/",
-      "decision": "candidate 301"
+      "decision": "rebuild contact page; 301 old URL; reuse shared quote form workflow",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/paint-protection-film-colorado-springs",
       "path": "/paint-protection-film-colorado-springs",
       "template": "service",
-      "proposedDestination": "/paint-protection-film-colorado-springs",
-      "decision": "retain SEO slug; replace template"
+      "proposedDestination": "/services/paint-protection-film/",
+      "decision": "retain SEO slug; replace template",
+      "productionAction": "rebuild"
     },
     {
       "source": "https://www.theautovos.com/colorado-springs-ceramic-coating-auto-vos",
       "path": "/colorado-springs-ceramic-coating-auto-vos",
       "template": "service",
-      "proposedDestination": "/colorado-springs-ceramic-coating-auto-vos",
-      "decision": "retain SEO slug; replace template"
+      "proposedDestination": "/services/ceramic-coating/",
+      "decision": "October 8 approved planned URL change; permanent redirect to the same content intent; implementation pending",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/colorado-springs-window-tinting-auto-vos",
       "path": "/colorado-springs-window-tinting-auto-vos",
       "template": "service",
-      "proposedDestination": "/colorado-springs-window-tinting-auto-vos",
-      "decision": "retain SEO slug; replace template"
+      "proposedDestination": "/services/window-tint/",
+      "decision": "October 8 approved planned URL change; permanent redirect to the same content intent; implementation pending",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/get-a-quote-auto-vos",
       "path": "/get-a-quote-auto-vos",
       "template": "quote",
-      "proposedDestination": "/get-a-quote-auto-vos",
-      "decision": "retain conversion route"
+      "proposedDestination": "/get-a-quote/",
+      "decision": "October 8 approved planned URL change; permanent redirect to the same content intent; implementation pending",
+      "productionAction": "rebuild_redirect"
     },
     {
       "source": "https://www.theautovos.com/read-me-bedford",
       "path": "/read-me-bedford",
       "template": "not-found",
       "proposedDestination": null,
-      "decision": "retire demo or empty container; confirm traffic before 410/redirect"
+      "decision": "candidate 410/404 after confirming no valid business content; redirect only to a true equivalent; never blanket-home redirect",
+      "productionAction": "retire_pending_review"
     },
     {
       "source": "https://www.theautovos.com/projects-bedford",
       "path": "/projects-bedford",
       "template": "not-found",
       "proposedDestination": null,
-      "decision": "retire demo or empty container; confirm traffic before 410/redirect"
+      "decision": "candidate 410/404 after confirming no valid business content; redirect only to a true equivalent; never blanket-home redirect",
+      "productionAction": "retire_pending_review"
     },
     {
       "source": "https://www.theautovos.com/new-page-1",
       "path": "/new-page-1",
       "template": "not-found",
       "proposedDestination": null,
-      "decision": "retire demo or empty container; confirm traffic before 410/redirect"
+      "decision": "candidate 410/404 after confirming no valid business content; redirect only to a true equivalent; never blanket-home redirect",
+      "productionAction": "retire_pending_review"
     },
     {
       "source": "https://www.theautovos.com/shop",
       "path": "/shop",
       "template": "shop",
-      "proposedDestination": "/shop/",
-      "decision": "rebuild"
+      "proposedDestination": "https://shop.theautovos.com/",
+      "decision": "retain existing Squarespace commerce; main-host 301 to verified shop-host equivalent; no static commerce rebuild",
+      "productionAction": "retain_external"
     },
     {
       "source": "https://www.theautovos.com/shop/auto-vos-performance-crew-socks-vertical-logo-mid-length-socks",
       "path": "/shop/auto-vos-performance-crew-socks-vertical-logo-mid-length-socks",
       "template": "product",
-      "proposedDestination": "/shop/auto-vos-performance-crew-socks-vertical-logo-mid-length-socks",
-      "decision": "retain slug; replace template"
+      "proposedDestination": "https://shop.theautovos.com/shop/auto-vos-performance-crew-socks-vertical-logo-mid-length-socks",
+      "decision": "retain existing Squarespace commerce; main-host 301 to verified shop-host equivalent; no static commerce rebuild",
+      "productionAction": "retain_external"
     },
     {
       "source": "https://www.theautovos.com/shop/auto-vos-20oz-matte-water-bottle",
       "path": "/shop/auto-vos-20oz-matte-water-bottle",
       "template": "product",
-      "proposedDestination": "/shop/auto-vos-20oz-matte-water-bottle",
-      "decision": "retain slug; replace template"
+      "proposedDestination": "https://shop.theautovos.com/shop/auto-vos-20oz-matte-water-bottle",
+      "decision": "retain existing Squarespace commerce; main-host 301 to verified shop-host equivalent; no static commerce rebuild",
+      "productionAction": "retain_external"
     },
     {
       "source": "https://www.theautovos.com/shop/auto-vos-black-ceramic-logo-mug",
       "path": "/shop/auto-vos-black-ceramic-logo-mug",
       "template": "product",
-      "proposedDestination": "/shop/auto-vos-black-ceramic-logo-mug",
-      "decision": "retain slug; replace template"
+      "proposedDestination": "https://shop.theautovos.com/shop/auto-vos-black-ceramic-logo-mug",
+      "decision": "retain existing Squarespace commerce; main-host 301 to verified shop-host equivalent; no static commerce rebuild",
+      "productionAction": "retain_external"
     },
     {
       "source": "https://www.theautovos.com/shop/autovos-racing-flag-double-sided-winged-fox-logo-display-flag",
       "path": "/shop/autovos-racing-flag-double-sided-winged-fox-logo-display-flag",
       "template": "product",
-      "proposedDestination": "/shop/autovos-racing-flag-double-sided-winged-fox-logo-display-flag",
-      "decision": "retain slug; replace template"
+      "proposedDestination": "https://shop.theautovos.com/shop/autovos-racing-flag-double-sided-winged-fox-logo-display-flag",
+      "decision": "retain existing Squarespace commerce; main-host 301 to verified shop-host equivalent; no static commerce rebuild",
+      "productionAction": "retain_external"
     },
     {
       "source": "https://www.theautovos.com/shop/auto-vos-classic-snapback-cap",
       "path": "/shop/auto-vos-classic-snapback-cap",
       "template": "product",
-      "proposedDestination": "/shop/auto-vos-classic-snapback-cap",
-      "decision": "retain slug; replace template"
+      "proposedDestination": "https://shop.theautovos.com/shop/auto-vos-classic-snapback-cap",
+      "decision": "retain existing Squarespace commerce; main-host 301 to verified shop-host equivalent; no static commerce rebuild",
+      "productionAction": "retain_external"
     },
     {
       "source": "https://www.theautovos.com/shop/auto-vos-performance-crew-socks-mid-length-socks",
       "path": "/shop/auto-vos-performance-crew-socks-mid-length-socks",
       "template": "product",
-      "proposedDestination": "/shop/auto-vos-performance-crew-socks-mid-length-socks",
-      "decision": "retain slug; replace template"
+      "proposedDestination": "https://shop.theautovos.com/shop/auto-vos-performance-crew-socks-mid-length-socks",
+      "decision": "retain existing Squarespace commerce; main-host 301 to verified shop-host equivalent; no static commerce rebuild",
+      "productionAction": "retain_external"
     },
     {
       "source": "https://www.theautovos.com/shop/auto-vos-lunar-gt3rs-hoodie",
       "path": "/shop/auto-vos-lunar-gt3rs-hoodie",
       "template": "product",
-      "proposedDestination": "/shop/auto-vos-lunar-gt3rs-hoodie",
-      "decision": "retain slug; replace template"
+      "proposedDestination": "https://shop.theautovos.com/shop/auto-vos-lunar-gt3rs-hoodie",
+      "decision": "retain existing Squarespace commerce; main-host 301 to verified shop-host equivalent; no static commerce rebuild",
+      "productionAction": "retain_external"
     },
     {
       "source": "https://www.theautovos.com/shop/auto-vos-astronauts-strike-gold-tee",
       "path": "/shop/auto-vos-astronauts-strike-gold-tee",
       "template": "product",
-      "proposedDestination": "/shop/auto-vos-astronauts-strike-gold-tee",
-      "decision": "retain slug; replace template"
+      "proposedDestination": "https://shop.theautovos.com/shop/auto-vos-astronauts-strike-gold-tee",
+      "decision": "retain existing Squarespace commerce; main-host 301 to verified shop-host equivalent; no static commerce rebuild",
+      "productionAction": "retain_external"
     },
     {
       "source": "https://www.theautovos.com/shop/auto-vos-in-search-of-fusion-plus-tee",
       "path": "/shop/auto-vos-in-search-of-fusion-plus-tee",
       "template": "product",
-      "proposedDestination": "/shop/auto-vos-in-search-of-fusion-plus-tee",
-      "decision": "retain slug; replace template"
+      "proposedDestination": "https://shop.theautovos.com/shop/auto-vos-in-search-of-fusion-plus-tee",
+      "decision": "retain existing Squarespace commerce; main-host 301 to verified shop-host equivalent; no static commerce rebuild",
+      "productionAction": "retain_external"
     },
     {
       "source": "https://www.theautovos.com/shop/auto-vos-lunar-gt3rs-tee",
       "path": "/shop/auto-vos-lunar-gt3rs-tee",
       "template": "product",
-      "proposedDestination": "/shop/auto-vos-lunar-gt3rs-tee",
-      "decision": "retain slug; replace template"
+      "proposedDestination": "https://shop.theautovos.com/shop/auto-vos-lunar-gt3rs-tee",
+      "decision": "retain existing Squarespace commerce; main-host 301 to verified shop-host equivalent; no static commerce rebuild",
+      "productionAction": "retain_external"
     },
     {
       "source": "https://www.theautovos.com/shop/auto-vos-914-gt-strikes-back-tee",
       "path": "/shop/auto-vos-914-gt-strikes-back-tee",
       "template": "product",
-      "proposedDestination": "/shop/auto-vos-914-gt-strikes-back-tee",
-      "decision": "retain slug; replace template"
+      "proposedDestination": "https://shop.theautovos.com/shop/auto-vos-914-gt-strikes-back-tee",
+      "decision": "retain existing Squarespace commerce; main-host 301 to verified shop-host equivalent; no static commerce rebuild",
+      "productionAction": "retain_external"
     }
   ],
   "newFamilies": [
@@ -263,5 +299,2198 @@
     "confirmation",
     "not-found"
   ],
-  "releaseNote": "Redirects are recommendations only. Do not redirect all retired content to the homepage."
+  "releaseNote": "39 included planned pages after explicit exclusion of Lexus, Mercedes, truck/SUV and paint correction. Current deployed baseline stays 21 until implemented/verified. $1,000 paid by one check; no installment plan. Two optional supplied installation stories remain. Raw 36-URL crawl unchanged.",
+  "productionAdditions": [
+    {
+      "path": "/protection-options/",
+      "purpose": "new protection comparison and approved packages"
+    },
+    {
+      "path": "/work/",
+      "purpose": "index with separate installation work and photography/events sections"
+    },
+    {
+      "path": "/care/",
+      "purpose": "service-specific care and FAQs"
+    },
+    {
+      "path": "/privacy/",
+      "purpose": "approved production privacy information"
+    }
+  ],
+  "conditionalAdditions": [
+    {
+      "path": "/work/<approved-project-slug>/",
+      "count": 2,
+      "purpose": "up to two genuinely new supplied installation case studies; not a cap on migrating existing nine galleries"
+    }
+  ],
+  "utilitySurfaces": [
+    "404 response/page",
+    "accepted/error/pending quote states; optional nonindexable thank-you route",
+    "robots.txt",
+    "sitemap.xml",
+    "llms.txt",
+    "static assets and production redirects"
+  ],
+  "externalFunctionalSurfaces": [
+    "Squarespace storefront and11product URLs",
+    "variants/availability",
+    "cart and checkout",
+    "shipping/tax/payment behavior",
+    "order confirmation and notification",
+    "existing account/login/recovery if enabled",
+    "shop policies/search/category routes if present"
+  ],
+  "reconciliation": {
+    "checked_at": "2026-10-07T23:45:47.242414+00:00",
+    "method": "CLI GET public sitemap.xml compared with existing36URL inventory",
+    "sitemap_page_count": 35,
+    "additional_homepage": 1,
+    "new_sitemap_paths": [],
+    "known_url_count": 36,
+    "static_content_source_urls": 18,
+    "distinct_rebuilt_static_destinations": 17,
+    "new_static_pages": 4,
+    "baseline_static_pages": 21,
+    "conditional_new_installation_stories": 2,
+    "retained_commerce_urls": 12,
+    "retirement_candidates": 5,
+    "limit": "Sitemap and previous crawl are a baseline, not proof of all unlisted URLs or transactional states.",
+    "approved_retirements": 1
+  },
+  "plannedBaselinePages": 52,
+  "plannedPages": [
+    {
+      "title": "Home",
+      "path": "/",
+      "section": "Foundation",
+      "primaryKeyword": "auto vos",
+      "supportingKeywords": [
+        "auto vos colorado springs",
+        "vehicle protection colorado springs"
+      ],
+      "purpose": "Core service choices, selected galleries/reviews/video, approved XPEL identity and quote/call actions.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "auto vos",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 30,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 9.11,
+          "sourceId": "src-provider-f4a10b42b8d74cec71f09557",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/f4a10b42b8d74cec71f09557.json",
+          "capturedAt": "2026-10-07T20:24:47+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "auto vos colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-f4a10b42b8d74cec71f09557",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/f4a10b42b8d74cec71f09557.json",
+          "capturedAt": "2026-10-07T20:24:47+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "vehicle protection colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Services overview",
+      "path": "/services/",
+      "section": "Foundation",
+      "primaryKeyword": "car protection services colorado springs",
+      "supportingKeywords": [
+        "window tint ppf ceramic coating colorado springs"
+      ],
+      "purpose": "Primary services, sub-services and all six vehicle service pages; keep this useful overview.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "car protection services colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "window tint ppf ceramic coating colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Window tint",
+      "path": "/services/window-tint/",
+      "section": "Core services",
+      "primaryKeyword": "window tint colorado springs",
+      "supportingKeywords": [
+        "car window tinting colorado springs",
+        "window tint near me",
+        "tint shop near me"
+      ],
+      "purpose": "Film choices, price factors, heat/UV/privacy limitations, legal context, process, care, proof and inquiry.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "window tint colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 880,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 11.34,
+          "sourceId": "src-provider-f4a10b42b8d74cec71f09557",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/f4a10b42b8d74cec71f09557.json",
+          "capturedAt": "2026-10-07T20:24:47+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "car window tinting colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 70,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 10.36,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "window tint near me",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 590,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 10.9,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "tint shop near me",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 170,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 13.17,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        }
+      ]
+    },
+    {
+      "title": "Paint protection film",
+      "path": "/services/paint-protection-film/",
+      "section": "Core services",
+      "primaryKeyword": "ppf colorado springs",
+      "supportingKeywords": [
+        "paint protection film colorado springs",
+        "clear bra colorado springs",
+        "ppf near me"
+      ],
+      "purpose": "Verified coverage packages, installed film, self-healing limits, price factors, care, warranty and genuine examples.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "ppf colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 40,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 9.38,
+          "sourceId": "src-provider-f4a10b42b8d74cec71f09557",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/f4a10b42b8d74cec71f09557.json",
+          "capturedAt": "2026-10-07T20:24:47+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "paint protection film colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 40,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 9.38,
+          "sourceId": "src-provider-f4a10b42b8d74cec71f09557",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/f4a10b42b8d74cec71f09557.json",
+          "capturedAt": "2026-10-07T20:24:47+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "clear bra colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 21.11,
+          "sourceId": "src-provider-f4a10b42b8d74cec71f09557",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/f4a10b42b8d74cec71f09557.json",
+          "capturedAt": "2026-10-07T20:24:47+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "ppf near me",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 70,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 4.75,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        }
+      ]
+    },
+    {
+      "title": "Ceramic coating",
+      "path": "/services/ceramic-coating/",
+      "section": "Core services",
+      "primaryKeyword": "ceramic coating colorado springs",
+      "supportingKeywords": [
+        "ceramic coating near me",
+        "xpel fusion plus colorado springs"
+      ],
+      "purpose": "Actual coating/preparation choices, durability and maintenance, approved price factors, proof and inquiry.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "ceramic coating colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 50,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 16.84,
+          "sourceId": "src-provider-f4a10b42b8d74cec71f09557",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/f4a10b42b8d74cec71f09557.json",
+          "capturedAt": "2026-10-07T20:24:47+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "ceramic coating near me",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 40,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 5.76,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "xpel fusion plus colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Ceramic window tint",
+      "path": "/services/window-tint/ceramic/",
+      "section": "Sub-services",
+      "primaryKeyword": "ceramic tint colorado springs",
+      "supportingKeywords": [
+        "ceramic window tint",
+        "ceramic window tint near me",
+        "xpel xr plus colorado springs",
+        "ceramic tint heat rejection"
+      ],
+      "purpose": "Installed ceramic film choices, verified manufacturer data, comfort versus darkness and links to tint/comparison guide.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "ceramic tint colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 9.57,
+          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
+          "capturedAt": "2026-10-07T21:11:42+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "ceramic window tint",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 70,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 5.79,
+          "sourceId": "src-provider-f4a10b42b8d74cec71f09557",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/f4a10b42b8d74cec71f09557.json",
+          "capturedAt": "2026-10-07T20:24:47+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "ceramic window tint near me",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "xpel xr plus colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
+          "capturedAt": "2026-10-07T21:11:42+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "ceramic tint heat rejection",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
+          "capturedAt": "2026-10-07T21:11:42+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        }
+      ]
+    },
+    {
+      "title": "Windshield protection film",
+      "path": "/services/windshield-protection-film/",
+      "section": "Sub-services",
+      "primaryKeyword": "windshield tint colorado springs",
+      "supportingKeywords": [
+        "windshield protection film colorado springs",
+        "windshield protection film",
+        "windshield visor strip"
+      ],
+      "purpose": "Explain exterior windshield film only after confirmation; distinguish it from interior tint.",
+      "status": "included; current product and service confirmation required",
+      "keywordEvidence": [
+        {
+          "keyword": "windshield tint colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
+          "capturedAt": "2026-10-07T21:11:42+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "windshield protection film colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "windshield protection film",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 30,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 3.05,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08",
+          "nationalContext": {
+            "monthlyEstimate": 6600,
+            "metricStatus": "positive_estimate",
+            "sourceId": "src-provider-89e306a9af24f67659d29605",
+            "scope": "United States; not local demand"
+          }
+        },
+        {
+          "keyword": "windshield visor strip",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08",
+          "nationalContext": {
+            "monthlyEstimate": 170,
+            "metricStatus": "positive_estimate",
+            "sourceId": "src-provider-89e306a9af24f67659d29605",
+            "scope": "United States; not local demand"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Porsche Targa rear-window tint",
+      "path": "/services/window-tint/porsche/911-targa/",
+      "section": "Targa bonus",
+      "primaryKeyword": "porsche targa rear window tint",
+      "supportingKeywords": [
+        "porsche 911 targa window tint colorado springs",
+        "targa rear glass tint"
+      ],
+      "purpose": "Complimentary service subpage under Porsche: specialized rear glass, model/year suitability, scope and quote; links to installation guide.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "porsche targa rear window tint",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null,
+          "nationalContext": {
+            "monthlyEstimate": null,
+            "metricStatus": "unavailable",
+            "sourceId": "src-provider-89e306a9af24f67659d29605",
+            "scope": "United States; not local demand"
+          }
+        },
+        {
+          "keyword": "porsche 911 targa window tint colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "targa rear glass tint",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null,
+          "nationalContext": {
+            "monthlyEstimate": null,
+            "metricStatus": "unavailable",
+            "sourceId": "src-provider-89e306a9af24f67659d29605",
+            "scope": "United States; not local demand"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Work overview",
+      "path": "/work/",
+      "section": "Work & proof",
+      "primaryKeyword": "auto vos work",
+      "supportingKeywords": [
+        "auto vos installation portfolio"
+      ],
+      "purpose": "Index genuine installation examples and dedicated Porsche/BMW/Tesla Work pages; link the separate archive/gallery index.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "auto vos work",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "auto vos installation portfolio",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Porsche work",
+      "path": "/work/porsche/",
+      "section": "Work & proof",
+      "primaryKeyword": "auto vos porsche work",
+      "supportingKeywords": [
+        "porsche ppf installation photos colorado springs",
+        "porsche tint before and after"
+      ],
+      "purpose": "Separate proof page under Work: verified vehicle/service/coverage captions, original project media and relevant reviews; link to Porsche Services and quote. Do not duplicate the sales page or present event photos as installations.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "auto vos porsche work",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "porsche ppf installation photos colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "porsche tint before and after",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "BMW work",
+      "path": "/work/bmw/",
+      "section": "Work & proof",
+      "primaryKeyword": "auto vos bmw work",
+      "supportingKeywords": [
+        "bmw ppf installation photos colorado springs",
+        "bmw tint before and after"
+      ],
+      "purpose": "Separate proof page under Work: verified vehicle/service/coverage captions, original project media and relevant reviews; link to BMW Services and quote. Do not duplicate the sales page or present event photos as installations.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "auto vos bmw work",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "bmw ppf installation photos colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "bmw tint before and after",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Tesla work",
+      "path": "/work/tesla/",
+      "section": "Work & proof",
+      "primaryKeyword": "auto vos tesla work",
+      "supportingKeywords": [
+        "tesla ppf installation photos colorado springs",
+        "tesla tint before and after"
+      ],
+      "purpose": "Separate proof page under Work: verified vehicle/service/coverage captions, original project media and relevant reviews; link to Tesla Services and quote. Do not duplicate the sales page or present event photos as installations.",
+      "status": "included; publication blocked on genuine Tesla project evidence",
+      "keywordEvidence": [
+        {
+          "keyword": "auto vos tesla work",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "tesla ppf installation photos colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "tesla tint before and after",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Project gallery",
+      "path": "/gallery/",
+      "section": "Work & proof",
+      "primaryKeyword": "auto vos gallery",
+      "supportingKeywords": [
+        "auto vos installation photos"
+      ],
+      "purpose": "Curated installation photos plus clearly separated links to all nine retained automotive/event archives; responsive viewer and captions.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "auto vos gallery",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "auto vos installation photos",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Reviews & testimonials",
+      "path": "/reviews/",
+      "section": "Work & proof",
+      "primaryKeyword": "auto vos reviews",
+      "supportingKeywords": [
+        "auto vos testimonials"
+      ],
+      "purpose": "Up to six verified selected Google reviews with accurate attribution, original links and approved expandable photos; reuse relevant excerpts elsewhere.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "auto vos reviews",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "auto vos testimonials",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "About & team",
+      "path": "/about/",
+      "section": "Trust & conversion",
+      "primaryKeyword": "about auto vos",
+      "supportingKeywords": [
+        "auto vos team",
+        "auto vos colorado springs shop"
+      ],
+      "purpose": "Caleb/Mason, verified background, location and current team; legacy studio/team redirects here.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "about auto vos",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "auto vos team",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "auto vos colorado springs shop",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Contact",
+      "path": "/contact/",
+      "section": "Trust & conversion",
+      "primaryKeyword": "auto vos contact",
+      "supportingKeywords": [
+        "auto vos phone",
+        "auto vos directions"
+      ],
+      "purpose": "Verified phone/address/hours, directions and request-appointment action; existing scheduler link only if supplied and verified.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "auto vos contact",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "auto vos phone",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "auto vos directions",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Request a quote",
+      "path": "/get-a-quote/",
+      "section": "Trust & conversion",
+      "primaryKeyword": "auto vos quote",
+      "supportingKeywords": [
+        "window tint quote colorado springs",
+        "ppf quote colorado springs"
+      ],
+      "purpose": "One working form to theautovos@gmail.com, year/make/model and requested scope, validation/spam/delivery proof; no uploads or booking engine.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "auto vos quote",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "window tint quote colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "ppf quote colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Protection options",
+      "path": "/protection-options/",
+      "section": "Owner guidance",
+      "primaryKeyword": "car protection options colorado springs",
+      "supportingKeywords": [
+        "window tint vs ppf vs ceramic coating"
+      ],
+      "purpose": "Concise three-service decision hub, scope/coverage choices and Help me choose; route detailed PPF/coating comparison to its resource guide.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "car protection options colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "window tint vs ppf vs ceramic coating",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Care and warranty",
+      "path": "/care-and-warranty/",
+      "section": "Owner guidance",
+      "primaryKeyword": "ceramic coating maintenance",
+      "supportingKeywords": [
+        "ppf aftercare",
+        "window tint aftercare"
+      ],
+      "purpose": "Product-specific care, warranty coverage/exclusions and the confirmed two-week check-in. Written terms from Caleb required; no universal ten-year promise.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "ceramic coating maintenance",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
+          "capturedAt": "2026-10-07T21:11:42+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "ppf aftercare",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "window tint aftercare",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        }
+      ]
+    },
+    {
+      "title": "Privacy",
+      "path": "/privacy/",
+      "section": "Owner guidance",
+      "primaryKeyword": "auto vos privacy",
+      "supportingKeywords": [],
+      "purpose": "Accurate form, hosting, analytics and activated video/embed disclosures; policy content, not a keyword landing page.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "auto vos privacy",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Colorado tint laws & percentage chart",
+      "path": "/resources/colorado-window-tint-laws/",
+      "section": "Resources",
+      "primaryKeyword": "colorado window tint laws",
+      "supportingKeywords": [
+        "colorado legal tint percentage",
+        "is 20 percent tint legal in colorado",
+        "colorado windshield tint law"
+      ],
+      "purpose": "Current official legal sources, dated review and a qualified percentage chart; do not infer legality from the supplied roadmap. This is one of six included launch articles, not a recurring publishing retainer.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "colorado window tint laws",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 1.5,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "colorado legal tint percentage",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "is 20 percent tint legal in colorado",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "colorado windshield tint law",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        }
+      ]
+    },
+    {
+      "title": "Window tint cost in Colorado Springs",
+      "path": "/resources/window-tint-cost-colorado-springs/",
+      "section": "Resources",
+      "primaryKeyword": "window tint cost colorado springs",
+      "supportingKeywords": [
+        "car window tint prices",
+        "ceramic tint cost colorado springs"
+      ],
+      "purpose": "Explain vehicle/film/coverage/removal factors, owner-approved minimums or ranges and how to request an actual quote. This is one of six included launch articles, not a recurring publishing retainer.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "window tint cost colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
+          "capturedAt": "2026-10-07T21:11:42+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "car window tint prices",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 3.64,
+          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
+          "capturedAt": "2026-10-07T21:11:42+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "ceramic tint cost colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "PPF cost guide",
+      "path": "/resources/ppf-cost-guide/",
+      "section": "Resources",
+      "primaryKeyword": "ppf cost colorado springs",
+      "supportingKeywords": [
+        "full front ppf cost",
+        "full body ppf cost",
+        "paint protection film cost"
+      ],
+      "purpose": "Partial/full-front/track/full-body only if sold; distinguish coverage and preparation; approved price context and quote links. This is one of six included launch articles, not a recurring publishing retainer.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "ppf cost colorado springs",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
+          "capturedAt": "2026-10-07T21:11:42+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "full front ppf cost",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-f4a10b42b8d74cec71f09557",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/f4a10b42b8d74cec71f09557.json",
+          "capturedAt": "2026-10-07T20:24:47+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "full body ppf cost",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
+          "capturedAt": "2026-10-07T21:11:42+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "paint protection film cost",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 7.25,
+          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
+          "capturedAt": "2026-10-07T21:11:42+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        }
+      ]
+    },
+    {
+      "title": "PPF vs ceramic coating",
+      "path": "/resources/ppf-vs-ceramic-coating/",
+      "section": "Resources",
+      "primaryKeyword": "ppf vs ceramic coating",
+      "supportingKeywords": [
+        "paint protection film vs ceramic coating",
+        "ppf and ceramic coating together"
+      ],
+      "purpose": "Impact versus cleaning/chemical benefits and limits; explain when combining is appropriate and link both services. This is one of six included launch articles, not a recurring publishing retainer.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "ppf vs ceramic coating",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
+          "capturedAt": "2026-10-07T21:11:42+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "paint protection film vs ceramic coating",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "ppf and ceramic coating together",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        }
+      ]
+    },
+    {
+      "title": "Ceramic vs carbon tint",
+      "path": "/resources/ceramic-vs-carbon-tint/",
+      "section": "Resources",
+      "primaryKeyword": "ceramic vs carbon tint",
+      "supportingKeywords": [
+        "ceramic tint vs regular tint",
+        "ceramic tint vs dyed tint"
+      ],
+      "purpose": "Compare supported film properties using attributable product data; do not imply every compared film is sold. This is one of six included launch articles, not a recurring publishing retainer.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "ceramic vs carbon tint",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 20,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": 2.75,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08",
+          "nationalContext": {
+            "monthlyEstimate": 9900,
+            "metricStatus": "positive_estimate",
+            "sourceId": "src-provider-89e306a9af24f67659d29605",
+            "scope": "United States; not local demand"
+          }
+        },
+        {
+          "keyword": "ceramic tint vs regular tint",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
+          "capturedAt": "2026-10-07T21:11:42+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        },
+        {
+          "keyword": "ceramic tint vs dyed tint",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08"
+        }
+      ]
+    },
+    {
+      "title": "Does PPF protect against hail?",
+      "path": "/resources/does-ppf-protect-against-hail/",
+      "section": "Resources",
+      "primaryKeyword": "does ppf protect against hail",
+      "supportingKeywords": [
+        "ppf hail protection",
+        "paint protection film hail damage"
+      ],
+      "purpose": "Answer honestly using product evidence: no dent-prevention or insurance guarantee; explain limits and relevant protection choices. This is one of six included launch articles, not a recurring publishing retainer.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "does ppf protect against hail",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": 10,
+          "metricStatus": "positive_estimate",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": "2025-09",
+          "historyEnd": "2026-08",
+          "nationalContext": {
+            "monthlyEstimate": 40,
+            "metricStatus": "positive_estimate",
+            "sourceId": "src-provider-89e306a9af24f67659d29605",
+            "scope": "United States; not local demand"
+          }
+        },
+        {
+          "keyword": "ppf hail protection",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        },
+        {
+          "keyword": "paint protection film hail damage",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null
+        }
+      ]
+    },
+    {
+      "title": "Targa rear-glass installation guide",
+      "path": "/resources/porsche-targa-rear-window-tint-installation/",
+      "section": "Targa bonus",
+      "primaryKeyword": "porsche targa rear window tint installation",
+      "supportingKeywords": [
+        "how to tint porsche targa rear glass",
+        "911 targa rear window tint"
+      ],
+      "purpose": "Complimentary conversion of one supplied Targa installation video into accurate written explanation, embed/stills and owner FAQs; link Porsche Services, Targa service and Porsche Work.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": [
+        {
+          "keyword": "porsche targa rear window tint installation",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null,
+          "nationalContext": {
+            "monthlyEstimate": null,
+            "metricStatus": "unavailable",
+            "sourceId": "src-provider-89e306a9af24f67659d29605",
+            "scope": "United States; not local demand"
+          }
+        },
+        {
+          "keyword": "how to tint porsche targa rear glass",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null,
+          "nationalContext": {
+            "monthlyEstimate": null,
+            "metricStatus": "unavailable",
+            "sourceId": "src-provider-89e306a9af24f67659d29605",
+            "scope": "United States; not local demand"
+          }
+        },
+        {
+          "keyword": "911 targa rear window tint",
+          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
+          "monthlyEstimate": null,
+          "metricStatus": "unavailable",
+          "cpcUsd": null,
+          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
+          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
+          "capturedAt": "2026-10-08T21:17:02+00:00",
+          "historyStart": null,
+          "historyEnd": null,
+          "nationalContext": {
+            "monthlyEstimate": null,
+            "metricStatus": "unavailable",
+            "sourceId": "src-provider-89e306a9af24f67659d29605",
+            "scope": "United States; not local demand"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Sluftgekuhlt 6",
+      "path": "/gallery/sluftgekuhlt-6/",
+      "section": "Retained galleries",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": []
+    },
+    {
+      "title": "Irstrip Attack 2019",
+      "path": "/gallery/irstrip-attack-2019/",
+      "section": "Retained galleries",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": []
+    },
+    {
+      "title": "Drive Oz 2019",
+      "path": "/gallery/drive-oz-2019/",
+      "section": "Retained galleries",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": []
+    },
+    {
+      "title": "Pikes Peak Hill Climb 2019",
+      "path": "/gallery/pikes-peak-hill-climb-2019/",
+      "section": "Retained galleries",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": []
+    },
+    {
+      "title": "Pikes Peak Hill Climb 2019 Porsche",
+      "path": "/gallery/pikes-peak-hill-climb-2019-porsche/",
+      "section": "Retained galleries",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": []
+    },
+    {
+      "title": "Porsche 918 Flash Photography",
+      "path": "/gallery/porsche-918-flash-photography/",
+      "section": "Retained galleries",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": []
+    },
+    {
+      "title": "Porsche 356 Sc Flash Photography",
+      "path": "/gallery/porsche-356-sc-flash-photography/",
+      "section": "Retained galleries",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": []
+    },
+    {
+      "title": "Porsche Safari Day In The Dirt",
+      "path": "/gallery/porsche-safari-day-in-the-dirt/",
+      "section": "Retained galleries",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": []
+    },
+    {
+      "title": "Pikes Peak Hill Climb Paul Kolinski",
+      "path": "/gallery/pikes-peak-hill-climb-paul-kolinski/",
+      "section": "Retained galleries",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
+      "status": "included; not yet implemented or verified for release",
+      "keywordEvidence": []
+    },
+    {
+      "title": "Porsche window tint",
+      "path": "/services/window-tint/porsche/",
+      "section": "Vehicle services",
+      "primaryKeyword": "porsche window tint colorado springs",
+      "supportingKeywords": [
+        "porsche window tint"
+      ],
+      "purpose": "Explain window tint for Porsche owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {
+        "porsche window tint colorado springs": "unavailable",
+        "porsche window tint": "zero_estimate"
+      }
+    },
+    {
+      "title": "BMW window tint",
+      "path": "/services/window-tint/bmw/",
+      "section": "Vehicle services",
+      "primaryKeyword": "bmw window tint colorado springs",
+      "supportingKeywords": [
+        "bmw window tint"
+      ],
+      "purpose": "Explain window tint for BMW owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {
+        "bmw window tint colorado springs": "unavailable",
+        "bmw window tint": "positive_estimate"
+      }
+    },
+    {
+      "title": "Tesla window tint",
+      "path": "/services/window-tint/tesla/",
+      "section": "Vehicle services",
+      "primaryKeyword": "tesla window tint colorado springs",
+      "supportingKeywords": [
+        "tesla window tint"
+      ],
+      "purpose": "Explain window tint for Tesla owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {
+        "tesla window tint colorado springs": "unavailable",
+        "tesla window tint": "positive_estimate"
+      }
+    },
+    {
+      "title": "Porsche paint protection film",
+      "path": "/services/paint-protection-film/porsche/",
+      "section": "Vehicle services",
+      "primaryKeyword": "porsche ppf colorado springs",
+      "supportingKeywords": [
+        "porsche ppf"
+      ],
+      "purpose": "Explain paint protection film for Porsche owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {
+        "porsche ppf colorado springs": "unavailable",
+        "porsche ppf": "positive_estimate"
+      }
+    },
+    {
+      "title": "BMW paint protection film",
+      "path": "/services/paint-protection-film/bmw/",
+      "section": "Vehicle services",
+      "primaryKeyword": "bmw ppf colorado springs",
+      "supportingKeywords": [
+        "bmw ppf"
+      ],
+      "purpose": "Explain paint protection film for BMW owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {
+        "bmw ppf colorado springs": "unavailable",
+        "bmw ppf": "positive_estimate"
+      }
+    },
+    {
+      "title": "Tesla paint protection film",
+      "path": "/services/paint-protection-film/tesla/",
+      "section": "Vehicle services",
+      "primaryKeyword": "tesla ppf colorado springs",
+      "supportingKeywords": [
+        "tesla ppf"
+      ],
+      "purpose": "Explain paint protection film for Tesla owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {
+        "tesla ppf colorado springs": "unavailable",
+        "tesla ppf": "positive_estimate"
+      }
+    },
+    {
+      "title": "Porsche ceramic coating",
+      "path": "/services/ceramic-coating/porsche/",
+      "section": "Vehicle services",
+      "primaryKeyword": "porsche ceramic coating colorado springs",
+      "supportingKeywords": [
+        "porsche ceramic coating"
+      ],
+      "purpose": "Explain ceramic coating for Porsche owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {
+        "porsche ceramic coating colorado springs": "unavailable",
+        "porsche ceramic coating": "positive_estimate"
+      }
+    },
+    {
+      "title": "BMW ceramic coating",
+      "path": "/services/ceramic-coating/bmw/",
+      "section": "Vehicle services",
+      "primaryKeyword": "bmw ceramic coating colorado springs",
+      "supportingKeywords": [
+        "bmw ceramic coating"
+      ],
+      "purpose": "Explain ceramic coating for BMW owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {
+        "bmw ceramic coating colorado springs": "unavailable",
+        "bmw ceramic coating": "positive_estimate"
+      }
+    },
+    {
+      "title": "Tesla ceramic coating",
+      "path": "/services/ceramic-coating/tesla/",
+      "section": "Vehicle services",
+      "primaryKeyword": "tesla ceramic coating colorado springs",
+      "supportingKeywords": [
+        "tesla ceramic coating"
+      ],
+      "purpose": "Explain ceramic coating for Tesla owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {
+        "tesla ceramic coating colorado springs": "unavailable",
+        "tesla ceramic coating": "positive_estimate"
+      }
+    },
+    {
+      "title": "Insurance and existing protection",
+      "path": "/insurance/",
+      "section": "Owner guidance",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Help owners ask about film/coating replacement after repairs. No insurance coverage or claims-handling promise; final wording depends on Caleb\u2019s actual process.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {}
+    },
+    {
+      "title": "Guides and questions",
+      "path": "/resources/",
+      "section": "Resources",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Browse the six included guides and installation walkthroughs; useful owner questions, not a generic blog.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {}
+    },
+    {
+      "title": "Porsche 997 front-fender PPF installation",
+      "path": "/resources/porsche-997-front-fender-ppf-installation/",
+      "section": "Video stories",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "First additional story slot: verified text walkthrough, real stills and the supplied 2012 Porsche 997 Carrera XPEL Ultimate Plus video.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {}
+    },
+    {
+      "title": "2024 INEOS Grenadier tint and PPF",
+      "path": "/work/ineos-grenadier-tint-ppf/",
+      "section": "Video stories",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Second additional story slot: the supplied Grenadier installation walk-around and written project account. This is work evidence, not a truck/SUV sales page.",
+      "status": "included; owner facts and media pending",
+      "keywordEvidence": {}
+    },
+    {
+      "title": "Porsche window tint work",
+      "path": "/work/window-tint/porsche/",
+      "section": "Work & proof",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Service-and-brand index of genuine supplied projects/reviews. Publish only when source verification and photo permissions are complete.",
+      "status": "included conditional work index; publish only with verified examples",
+      "keywordEvidence": {}
+    },
+    {
+      "title": "Porsche paint protection film work",
+      "path": "/work/paint-protection-film/porsche/",
+      "section": "Work & proof",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Service-and-brand index of genuine supplied projects/reviews. Publish only when source verification and photo permissions are complete.",
+      "status": "included conditional work index; publish only with verified examples",
+      "keywordEvidence": {}
+    },
+    {
+      "title": "Bmw paint protection film work",
+      "path": "/work/paint-protection-film/bmw/",
+      "section": "Work & proof",
+      "primaryKeyword": "",
+      "supportingKeywords": [],
+      "purpose": "Service-and-brand index of genuine supplied projects/reviews. Publish only when source verification and photo permissions are complete.",
+      "status": "included conditional work index; publish only with verified examples",
+      "keywordEvidence": {}
+    }
+  ],
+  "plannedScopeRevision": "2026-10-08 approved service/brand matrix; one-time $1,000 fee; no payment method specified; conditional publication gates remain.",
+  "referenceRoadmapCoverage": [
+    {
+      "page": "Home",
+      "referencePath": "/",
+      "plannedPath": "/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "PPF",
+      "referencePath": "/paint-protection-film-colorado-springs",
+      "plannedPath": "/paint-protection-film-colorado-springs",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Ceramic coating",
+      "referencePath": "/ceramic-coating-colorado-springs",
+      "plannedPath": "/ceramic-coating-colorado-springs/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Window tint",
+      "referencePath": "/window-tint-colorado-springs",
+      "plannedPath": "/window-tint-colorado-springs/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Paint correction & detailing",
+      "referencePath": "/paint-correction-detailing",
+      "plannedPath": "/paint-correction-detailing/",
+      "treatment": "Excluded today by explicit user instruction; not part of this engagement.",
+      "status": "excluded"
+    },
+    {
+      "page": "Tesla & EV PPF",
+      "referencePath": "/tesla-ppf-colorado-springs",
+      "plannedPath": "/services/tesla/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Porsche PPF",
+      "referencePath": "/porsche-ppf-colorado-springs",
+      "plannedPath": "/services/porsche/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Lexus PPF",
+      "referencePath": "/lexus-ppf-colorado-springs",
+      "plannedPath": "/services/lexus/",
+      "treatment": "Excluded today by explicit user instruction; not part of this engagement.",
+      "status": "excluded"
+    },
+    {
+      "page": "Mercedes PPF",
+      "referencePath": "/mercedes-ppf-colorado-springs",
+      "plannedPath": "/services/mercedes/",
+      "treatment": "Excluded today by explicit user instruction; not part of this engagement.",
+      "status": "excluded"
+    },
+    {
+      "page": "BMW PPF",
+      "referencePath": "/bmw-ppf-colorado-springs",
+      "plannedPath": "/services/bmw/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Truck & SUV PPF",
+      "referencePath": "/truck-suv-ppf-colorado-springs",
+      "plannedPath": "/services/truck-suv/",
+      "treatment": "Excluded today by explicit user instruction; not part of this engagement.",
+      "status": "excluded"
+    },
+    {
+      "page": "Ceramic window tint",
+      "referencePath": "/ceramic-window-tint",
+      "plannedPath": "/ceramic-window-tint/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Windshield tint & protection",
+      "referencePath": "/windshield-tint-colorado-springs",
+      "plannedPath": "/windshield-tint-colorado-springs/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Project gallery",
+      "referencePath": "/gallery",
+      "plannedPath": "/gallery/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Reviews",
+      "referencePath": "/reviews",
+      "plannedPath": "/reviews/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "About & team",
+      "referencePath": "/about",
+      "plannedPath": "/about/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Contact",
+      "referencePath": "/contact",
+      "plannedPath": "/contact/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Request a quote",
+      "referencePath": "/get-a-quote",
+      "plannedPath": "/get-a-quote/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Merchandise",
+      "referencePath": "/shop",
+      "plannedPath": "https://shop.theautovos.com/",
+      "treatment": "Retained on Squarespace; confirm hostname and all 11 product URLs before launch.",
+      "status": "included"
+    },
+    {
+      "page": "Old services duplicate",
+      "referencePath": "/Services-Auto-Vos",
+      "plannedPath": "/paint-protection-film-colorado-springs",
+      "treatment": "Additional case-sensitive legacy path identified by attachment. Verify current intent; 301 to equivalent PPF page if duplicate as described. Retain the separate /services/ overview.",
+      "status": "redirect verification"
+    },
+    {
+      "page": "Colorado tint laws & percentage chart",
+      "referencePath": "/resources/colorado-window-tint-laws",
+      "plannedPath": "/resources/colorado-window-tint-laws/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Window tint cost in Colorado Springs",
+      "referencePath": "/resources/window-tint-cost-colorado-springs",
+      "plannedPath": "/resources/window-tint-cost-colorado-springs/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "PPF cost guide",
+      "referencePath": "/resources/ppf-cost-guide",
+      "plannedPath": "/resources/ppf-cost-guide/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "PPF vs ceramic coating",
+      "referencePath": "/resources/ppf-vs-ceramic-coating",
+      "plannedPath": "/resources/ppf-vs-ceramic-coating/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Ceramic vs carbon tint",
+      "referencePath": "/resources/ceramic-vs-carbon-tint",
+      "plannedPath": "/resources/ceramic-vs-carbon-tint/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    },
+    {
+      "page": "Does PPF protect against hail?",
+      "referencePath": "/resources/does-ppf-protect-against-hail",
+      "plannedPath": "/resources/does-ppf-protect-against-hail/",
+      "treatment": "Included; one canonical page, no duplicate SEO landing page.",
+      "status": "included"
+    }
+  ],
+  "plannedRedirects": [
+    {
+      "to": "/about/",
+      "from": "/studio-info"
+    },
+    {
+      "to": "/about/",
+      "from": "/team"
+    },
+    {
+      "to": "/services/ceramic-coating/",
+      "from": "/colorado-springs-ceramic-coating-auto-vos"
+    },
+    {
+      "to": "/services/window-tint/",
+      "from": "/colorado-springs-window-tinting-auto-vos"
+    },
+    {
+      "to": "/get-a-quote/",
+      "from": "/get-a-quote-auto-vos"
+    },
+    {
+      "to": "/about/",
+      "from": "/studio/"
+    },
+    {
+      "to": "/services/tesla/",
+      "from": "/tesla-ppf-colorado-springs"
+    },
+    {
+      "to": "/services/porsche/",
+      "from": "/porsche-ppf-colorado-springs"
+    },
+    {
+      "to": "/services/bmw/",
+      "from": "/bmw-ppf-colorado-springs"
+    },
+    {
+      "to": "/paint-protection-film-colorado-springs",
+      "from": "/Services-Auto-Vos"
+    },
+    {
+      "to": "/services/window-tint/",
+      "from": "/window-tint-colorado-springs/"
+    },
+    {
+      "to": "/services/paint-protection-film/",
+      "from": "/paint-protection-film-colorado-springs"
+    },
+    {
+      "to": "/services/ceramic-coating/",
+      "from": "/ceramic-coating-colorado-springs/"
+    },
+    {
+      "to": "/services/window-tint/ceramic/",
+      "from": "/ceramic-window-tint/"
+    },
+    {
+      "to": "/services/windshield-protection-film/",
+      "from": "/windshield-tint-colorado-springs/"
+    },
+    {
+      "to": "/services/window-tint/porsche/911-targa/",
+      "from": "/services/porsche/targa-rear-window-tint/"
+    },
+    {
+      "to": "/care-and-warranty/",
+      "from": "/care/"
+    },
+    {
+      "to": "/gallery/sluftgekuhlt-6/",
+      "from": "/sluftgekuhlt-6"
+    },
+    {
+      "to": "/gallery/irstrip-attack-2019/",
+      "from": "/irstrip-attack-2019"
+    },
+    {
+      "to": "/gallery/drive-oz-2019/",
+      "from": "/drive-oz-2019"
+    },
+    {
+      "to": "/gallery/pikes-peak-hill-climb-2019/",
+      "from": "/pikes-peak-hill-climb-2019"
+    },
+    {
+      "to": "/gallery/pikes-peak-hill-climb-2019-porsche/",
+      "from": "/pikes-peak-hill-climb-2019-porsche"
+    },
+    {
+      "to": "/gallery/porsche-918-flash-photography/",
+      "from": "/porsche-918-flash-photography"
+    },
+    {
+      "to": "/gallery/porsche-356-sc-flash-photography/",
+      "from": "/porsche-356-sc-flash-photography"
+    },
+    {
+      "to": "/gallery/porsche-safari-day-in-the-dirt/",
+      "from": "/porsche-safari-day-in-the-dirt"
+    },
+    {
+      "to": "/gallery/pikes-peak-hill-climb-paul-kolinski/",
+      "from": "/pikes-peak-hill-climb-paul-kolinski"
+    },
+    {
+      "to": "/services/#porsche",
+      "from": "/services/porsche/"
+    },
+    {
+      "to": "/services/#bmw",
+      "from": "/services/bmw/"
+    },
+    {
+      "to": "/services/#tesla",
+      "from": "/services/tesla/"
+    }
+  ],
+  "deferredPages": [
+    {
+      "title": "Paint correction & prep detailing",
+      "path": "/paint-correction-detailing/",
+      "section": "Core services",
+      "primaryKeyword": "paint correction colorado springs",
+      "supportingKeywords": [
+        "paint correction and ceramic coating",
+        "car detailing colorado springs"
+      ],
+      "purpose": "Explain actual correction and preparation sold. Confirm standalone versus coating-prep scope before advertising either.",
+      "status": "excluded from current engagement by explicit user instruction",
+      "keywordEvidence": [
+        {
+          "keyword": "paint correction colorado springs",
+          "basis": "existing DataForSEO Colorado Springs query; volume may be null or zero"
+        },
+        {
+          "keyword": "paint correction and ceramic coating",
+          "basis": "proposed intent target; local volume not validated"
+        },
+        {
+          "keyword": "car detailing colorado springs",
+          "basis": "proposed intent target; local volume not validated"
+        }
+      ],
+      "disposition": "Excluded from current $1,000 engagement by user; reconsider only if Caleb elects later"
+    },
+    {
+      "title": "Lexus PPF",
+      "path": "/services/lexus/",
+      "section": "Vehicle services",
+      "primaryKeyword": "lexus ppf colorado springs",
+      "supportingKeywords": [
+        "lexus paint protection film",
+        "lexus rx ppf",
+        "lexus gx ppf"
+      ],
+      "purpose": "RX/GX/ES coverage and long-term ownership considerations only where substantiated; verified work and quote.",
+      "status": "excluded from current engagement by explicit user instruction",
+      "keywordEvidence": [
+        {
+          "keyword": "lexus ppf colorado springs",
+          "basis": "proposed intent target; local volume not validated"
+        },
+        {
+          "keyword": "lexus paint protection film",
+          "basis": "proposed intent target; local volume not validated"
+        },
+        {
+          "keyword": "lexus rx ppf",
+          "basis": "proposed intent target; local volume not validated"
+        },
+        {
+          "keyword": "lexus gx ppf",
+          "basis": "proposed intent target; local volume not validated"
+        }
+      ],
+      "disposition": "Excluded from current $1,000 engagement by user; reconsider only if Caleb elects later"
+    },
+    {
+      "title": "Mercedes PPF",
+      "path": "/services/mercedes/",
+      "section": "Vehicle services",
+      "primaryKeyword": "mercedes ppf colorado springs",
+      "supportingKeywords": [
+        "mercedes paint protection film",
+        "g wagon ppf",
+        "mercedes amg paint protection"
+      ],
+      "purpose": "GLE/GLC/G-Class/C-Class and AMG coverage where supported; no guessed fitment or projects.",
+      "status": "excluded from current engagement by explicit user instruction",
+      "keywordEvidence": [
+        {
+          "keyword": "mercedes ppf colorado springs",
+          "basis": "proposed intent target; local volume not validated"
+        },
+        {
+          "keyword": "mercedes paint protection film",
+          "basis": "proposed intent target; local volume not validated"
+        },
+        {
+          "keyword": "g wagon ppf",
+          "basis": "proposed intent target; local volume not validated"
+        },
+        {
+          "keyword": "mercedes amg paint protection",
+          "basis": "proposed intent target; local volume not validated"
+        }
+      ],
+      "disposition": "Excluded from current $1,000 engagement by user; reconsider only if Caleb elects later"
+    },
+    {
+      "title": "Truck & SUV PPF",
+      "path": "/services/truck-suv/",
+      "section": "Vehicle services",
+      "primaryKeyword": "truck ppf colorado springs",
+      "supportingKeywords": [
+        "suv paint protection film colorado springs",
+        "toyota tacoma ppf",
+        "4runner ppf",
+        "ford bronco ppf"
+      ],
+      "purpose": "Real road-debris and coverage decisions; Tacoma/4Runner/F-150/Bronco/Jeep examples only when supplied.",
+      "status": "excluded from current engagement by explicit user instruction",
+      "keywordEvidence": [
+        {
+          "keyword": "truck ppf colorado springs",
+          "basis": "proposed intent target; local volume not validated"
+        },
+        {
+          "keyword": "suv paint protection film colorado springs",
+          "basis": "proposed intent target; local volume not validated"
+        },
+        {
+          "keyword": "toyota tacoma ppf",
+          "basis": "proposed intent target; local volume not validated"
+        },
+        {
+          "keyword": "4runner ppf",
+          "basis": "proposed intent target; local volume not validated"
+        },
+        {
+          "keyword": "ford bronco ppf",
+          "basis": "proposed intent target; local volume not validated"
+        }
+      ],
+      "disposition": "Excluded from current $1,000 engagement by user; reconsider only if Caleb elects later"
+    }
+  ]
 }

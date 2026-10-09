@@ -44,6 +44,10 @@
     {
       "id": "confirmation",
       "kind": "success"
+    },
+    {
+      "id": "uncertain",
+      "kind": "recoverable-error"
     }
   ],
   "events": [
@@ -123,6 +127,7 @@
     "status": "active"
   },
   "x-autovos": {
-    "note": "Static source: src/components.mjs, src/pages.mjs, src/interactions.js. Specimen: templates/quote.html. Verification: scripts/browser-proof.mjs. No framework adapter conformance claimed."
+    "note": "Static source: src/components.mjs, src/pages.mjs, src/interactions.js. Specimen: templates/quote.html. Verification: scripts/browser-proof.mjs. No framework adapter conformance claimed.",
+    "serviceSite": "src/site/pages.mjs and client.js; server/inquiry.mjs. Production acceptance only after provider accepts. Uncertain delivery prevents blind resubmit. Demo never calls providers."
   }
 }

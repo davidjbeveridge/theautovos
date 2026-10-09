@@ -1,0 +1,13 @@
+{
+  "name": "auto-vos-demo-7c4e9a",
+  "account_id": "2e778d60d9f80f40c6af6f499c52acc8",
+  "main": "server/demo-worker.mjs",
+  "compatibility_date": "2026-10-02",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{"pattern": "7c4e9a.demos.beveridge.io", "custom_domain": true}],
+  "assets": {"directory": "./dist-hosted-demo", "binding": "ASSETS", "run_worker_first": true, "not_found_handling": "404-page"},
+  "ratelimits": [{"name": "INQUIRY_RATE_LIMITER", "namespace_id": "814659", "simple": {"limit": 5, "period": 60}}],
+  "vars": {"SITE_ORIGIN": "https://7c4e9a.demos.beveridge.io"},
+  "observability": {"enabled": false}
+}

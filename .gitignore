@@ -10,3 +10,19 @@ design-artifacts/
 dist/
 .jacques/
 reports/
+
+# Generated static candidates and local provider state
+dist-demo/
+dist-production/
+.wrangler/
+.dev.vars*
+.env*
+!server/
+!server/*.mjs
+!assets/gallery/
+!assets/gallery/*.jpg
+!assets/migrated/
+!assets/migrated/*
+!handoff/intake-log.csv
+
+dist-hosted-demo/

@@ -1,0 +1,89 @@
+{
+  "/studio-info": {
+    "source": "https://www.theautovos.com/studio-info",
+    "text": "Blaq Rocket Media | We are an automotive enthusiast driven digital media team.  Client List \u2014   RS1  Apex Racing Parts  Fastest Pastor  Ehrlich Motorwerks  Luftkraft Fabrication  Alpine Mechanisms  Porsche Colorado Springs #block-yui_3_17_2_1_1578260332839_17068 .sqs-gallery-block-grid .sqs-gallery-design-grid { margin-right: -38px; }\n#block-yui_3_17_2_1_1578260332839_17068 .sqs-gallery-block-grid .sqs-gallery-design-grid-slide .margin-wrapper { margin-right: 38px; margin-bottom: 38px; } Connect \u2014 #block-yui_3_17_2_1_1578260332839_8309 {\n        --social-icons-justify-content: center;\n        --social-icons-dimension: 20px;--social-icons-gap: 12px;\n        \n      }\n\n      \n      #block-yui_3_17_2_1_1578260332839_8309 .sqs-svg-icon--wrapper {\n        --si-border-radius: 0;--si-scale: 2;--si-box-shadow: none;--si-fill-icon: var(--si-primary);--si-fill-icon-fade: var(--si-primary-faded);--si-fill-icon-hover: var(--si-primary);--si-fill-mask: transparent;--si-fill-mask-fade: transparent;--si-fill-mask-hover: transparent;--si-bg: transparent;--si-bg-fade: transparent;--si-bg-hover: transparent;\n      }\n\n      \n      #block-yui_3_17_2_1_1578260332839_8309 .sqs-svg-icon--list {\n        justify-content: var(--social-icons-justify-content, center);\n        column-gap: var(--social-icons-gap, 12px);\n        row-gap: var(--social-icons-gap, 12px);\n      }\n      #block-yui_3_17_2_1_1578260332839_8309 .sqs-svg-icon--wrapper {\n        width: var(--social-icons-dimension, 20px);\n        height: var(--social-icons-dimension, 20px);\n        margin: 0;\n        border: none; \n        background-color: var(--si-bg, transparent);\n        box-shadow: var(--si-box-shadow, none);\n        border-radius: var(--si-border-radius, 0);\n      }\n      #block-yui_3_17_2_1_1578260332839_8309 .sqs-svg-icon--wrapper > div {\n        transform: scale(var(--si-scale, 1));\n      }\n      #block-yui_3_17_2_1_1578260332839_8309 .sqs-use--icon {\n        fill: var(--si-fill-icon, transparent);\n      }\n      #block-yui_3_17_2_1_1578260332839_8309 .sqs-use--mask {\n        fill: var(--si-fill-mask, transparent);\n      }\n      #block-yui_3_17_2_1_1578260332839_8309 .sqs-svg-icon--list:hover .sqs-svg-icon--wrapper {\n        background-color: var(--si-bg-fade, var(--si-bg, transparent));\n      }\n      #block-yui_3_17_2_1_1578260332839_8309 .sqs-svg-icon--list:hover .sqs-svg-icon--wrapper .sqs-use--icon {\n        fill: var(--si-fill-icon-fade, var(--si-fill-icon, transparent));\n      }\n      #block-yui_3_17_2_1_1578260332839_8309 .sqs-svg-icon--list:hover .sqs-svg-icon--wrapper .sqs-use--mask {\n        fill: var(--si-fill-mask-fade, var(--si-fill-mask, transparent));\n      }\n      #block-yui_3_17_2_1_1578260332839_8309 .sqs-svg-icon--list:hover .sqs-svg-icon--wrapper:hover {\n        background-color: var(--si-bg-hover, var(--si-bg, transparent));\n      }\n      #block-yui_3_17_2_1_1578260332839_8309 .sqs-svg-icon--list:hover .sqs-svg-icon--wrapper:hover .sqs-use--icon {\n        fill: var(--si-fill-icon-hover, var(--si-fill-icon, transparent));\n      }\n      #block-yui_3_17_2_1_1578260332839_8309 .sqs-svg-icon--list:hover .sqs-svg-icon--wrapper:hover .sqs-use--mask {\n        fill: var(--si-fill-mask-hover, var(--si-fill-mask, transparent));\n      } \n  \n    \n #block-yui_3_17_2_1_1578260332839_8309 {\n    \n    \n    \n  }\n\n  #block-yui_3_17_2_1_1578260332839_8309 .sqs-block-socialaccountlinks-content {\n    \n    }\n\n  #block-yui_3_17_2_1_1578260332839_8309 {\n      mix-blend-mode: var(--tweak-social-links-block-blend);\n      border-radius: var(--tweak-social-links-block-radius);\n  } \n\n @media screen and (max-width: 767px) {\n          \n            \n\n#block-yui_3_17_2_1_1578260332839_8309 {\n            \n            }\n        }\n    \n  \n    @media screen and (max-width: 767px) {\n          #block-yui_3_17_2_1_1578260332839_8309 .sqs-block-socialaccountlinks-content {\n            \n            }\n        }\n    \n  @media screen and (max-width: 767px) {\n          \n          \n\n          \n          \n          \n        }",
+    "images": [
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1578261512019-TG98S0TMC2SCS35QYH0M/RS1.png",
+        "alt": "RS1.png"
+      },
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1578261594445-AZZ3RCOWYIZ2WM1J2CW8/ApexRacingParts.png",
+        "alt": "ApexRacingParts.png"
+      },
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1578261816783-OEONCQJ17ZRTAPDCXUP3/Ehirlich+Motorwerks.png",
+        "alt": "Ehirlich Motorwerks.png"
+      },
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1578262241554-PXL1R9A4SHONAGHFDDOY/AlpineMech.png",
+        "alt": "AlpineMech.png"
+      },
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1578262333005-D9U77G83GD8BPWJ4XZ5Q/LuftKraft+Fab.png",
+        "alt": "LuftKraft Fab.png"
+      },
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1578262577301-CEHH755P2VDT241NIAR0/FastestPastor.png",
+        "alt": "FastestPastor.png"
+      }
+    ]
+  },
+  "/team": {
+    "source": "https://www.theautovos.com/team",
+    "text": "Caleb Brown \n              \n\n              \n                 Founder | Film Technician | Auto Vos @thecalebdbrown With experience in the car industry for the last decade and a half, Caleb has an eye for detail when if comes to final results. Working in customer service with Porsche and the Missile Defense Agency has helped him in his pursuit of delivering an overall professional experience with a few smiles a long the way.  Mason Moore \n              \n\n              \n                 Film Technician  | Auto Vos @masonnmooree With 4 years of experience in the window tinting and paint protection film industry, Mason is ready to take on your projects. He loves working out and exploring all that Colorado has to offer.  J King \n              \n\n              \n                 Film Technician  | Auto Vos @whyjay_colorado With 20 years of experience as an Army Apache mechanic and a growing background in cybersecurity and computer science, J. brings precision and discipline to every project. His focus on clean results and consistent workmanship helps him deliver a professional experience every time. Outside the shop, he enjoys snowboarding, working on his Jeep, and continuing his computer science studies..",
+    "images": [
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/58e643cd-f874-45df-a495-b1b718b90951/Caleb+Brown+Owner+Auto+Vos+Paint+Protection+Film+Window+Tinting+Colorado+Springs.jpg",
+        "alt": "",
+        "src": "/assets/migrated/team-1.jpg"
+      },
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/88bd4d9d-b1c6-447b-a55d-068704dfecab/Mason+Moore+Auto+Vos+Paint+Protection+Film+Window+Tinting+Colorado+Springs.jpg",
+        "alt": "",
+        "src": "/assets/migrated/team-2.jpg"
+      },
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/90718262-9eab-4240-8ba7-530213522fd4/J+King+Auto+Vos+Paint+Protection+Film+Window+Tinting+Colorado+Springs.jpg",
+        "alt": "",
+        "src": "/assets/migrated/team-3.jpg"
+      }
+    ]
+  },
+  "/art": {
+    "source": "https://www.theautovos.com/art",
+    "text": "Art Studio \n    \n\n      \n       Automotive Design Art \n      \n\n      \n\n    \n\n      \n       Pikes Peak Hill Climb 2019 | Tyspeed | Apex Racing Parts \n      \n\n      \n\n    \n\n      \n       Drive OZ | Porsche Air Cooled \n      \n\n      \n\n    \n\n      \n       Porsche Safari Day in the Dirt \n      \n\n      \n\n    \n\n      \n       luftgekuhlt 6 | Black & White 35mm \n      \n\n      \n\n    \n\n      \n       Pikes Peak Hill Climb 2019 | Porsche \n      \n\n      \n\n    \n\n      \n       Pikes Peak Airstrip Attack 2019 \n      \n\n      \n\n    \n\n      \n       Porsche 356 | Studio Flash Photography \n      \n\n      \n\n    \n\n      \n       Pikes Peak Hill Climb | Paul Kolinski \n      \n\n      \n\n    \n\n      \n       Porsche 918 | Studio Flash Photography Get a Quote \n\n\n\n #block-yui_3_17_2_1_1627060134388_28574 {\n    --sqs-block-content-flex: 0;\n  }  What we offer We will work with you to make the best possible vecter illustration of your car. We all need some more art around our offices. What you get is an original vector drawing, the EPS file, PNG, and JPG. Then you can find a local printer or have stickers made.  Our process We need a photo of your car from the middle. We need details of what makes your car unique. Be available for sending more photos upon request so we can make it look authentic.",
+    "images": [
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1627062626123-TCQGYH4J6ONXRVE37J3V/1975+VW+Porsche+Parts+Van+for+print.jpg",
+        "alt": "",
+        "src": "/assets/migrated/art-1.jpg"
+      },
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1627059911027-NPYTNOBQ6NVRBKPH7IEZ/1bus+truck.png",
+        "alt": "",
+        "src": "/assets/migrated/art-2.png"
+      },
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1627059970290-Y0VUY5Y9ATPVE09Y00WU/1rhino.png",
+        "alt": "",
+        "src": "/assets/migrated/art-3.png"
+      },
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1627060002237-123LX4F7YZ1AK4REHUEZ/550+syder.png",
+        "alt": "",
+        "src": "/assets/migrated/art-4.png"
+      },
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1627060008166-256W731IMLVFPOZH9J5D/1911+r.png",
+        "alt": "",
+        "src": "/assets/migrated/art-5.png"
+      },
+      {
+        "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1627061438544-BHVSJ6QZXPICFLWJ8N2G/86+Audi.png",
+        "alt": "",
+        "src": "/assets/migrated/art-6.png"
+      }
+    ]
+  }
+}
