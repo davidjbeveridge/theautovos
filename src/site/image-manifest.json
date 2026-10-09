@@ -4289,6 +4289,28 @@
       }
     ]
   },
+  "/assets/targa-guide/step-01-graded.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/assets/responsive/targa-guide--step-01-graded-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-01-graded-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-01-graded-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-01-graded-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
   "/assets/targa-guide/step-01.jpg": {
     "width": 1920,
     "height": 1080,
@@ -4304,6 +4326,32 @@
       {
         "src": "/assets/responsive/targa-guide--step-01-1600.webp",
         "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-01-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "/assets/targa-guide/step-02-graded.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/assets/responsive/targa-guide--step-02-graded-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-02-graded-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-02-graded-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-02-graded-1920.webp",
+        "width": 1920
       }
     ]
   },
@@ -4322,6 +4370,32 @@
       {
         "src": "/assets/responsive/targa-guide--step-02-1600.webp",
         "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-02-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "/assets/targa-guide/step-03-graded.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/assets/responsive/targa-guide--step-03-graded-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-03-graded-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-03-graded-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-03-graded-1920.webp",
+        "width": 1920
       }
     ]
   },
@@ -4340,6 +4414,32 @@
       {
         "src": "/assets/responsive/targa-guide--step-03-1600.webp",
         "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-03-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "/assets/targa-guide/step-04-graded.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/assets/responsive/targa-guide--step-04-graded-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-04-graded-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-04-graded-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-04-graded-1920.webp",
+        "width": 1920
       }
     ]
   },
@@ -4358,6 +4458,32 @@
       {
         "src": "/assets/responsive/targa-guide--step-04-1600.webp",
         "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-04-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "/assets/targa-guide/step-05-graded.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/assets/responsive/targa-guide--step-05-graded-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-05-graded-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-05-graded-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-05-graded-1920.webp",
+        "width": 1920
       }
     ]
   },
@@ -4376,6 +4502,32 @@
       {
         "src": "/assets/responsive/targa-guide--step-05-1600.webp",
         "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-05-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "/assets/targa-guide/step-06-graded.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/assets/responsive/targa-guide--step-06-graded-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-06-graded-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-06-graded-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-06-graded-1920.webp",
+        "width": 1920
       }
     ]
   },
@@ -4394,6 +4546,32 @@
       {
         "src": "/assets/responsive/targa-guide--step-06-1600.webp",
         "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-06-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "/assets/targa-guide/step-07-graded.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/assets/responsive/targa-guide--step-07-graded-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-07-graded-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-07-graded-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-07-graded-1920.webp",
+        "width": 1920
       }
     ]
   },
@@ -4412,6 +4590,32 @@
       {
         "src": "/assets/responsive/targa-guide--step-07-1600.webp",
         "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-07-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "/assets/targa-guide/step-08-graded.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/assets/responsive/targa-guide--step-08-graded-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-08-graded-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-08-graded-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-08-graded-1920.webp",
+        "width": 1920
       }
     ]
   },
@@ -4430,6 +4634,32 @@
       {
         "src": "/assets/responsive/targa-guide--step-08-1600.webp",
         "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-08-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "/assets/targa-guide/step-09-graded.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/assets/responsive/targa-guide--step-09-graded-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-09-graded-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-09-graded-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-09-graded-1920.webp",
+        "width": 1920
       }
     ]
   },
@@ -4448,6 +4678,32 @@
       {
         "src": "/assets/responsive/targa-guide--step-09-1600.webp",
         "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-09-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "/assets/targa-guide/step-10-graded.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/assets/responsive/targa-guide--step-10-graded-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-10-graded-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-10-graded-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-10-graded-1920.webp",
+        "width": 1920
       }
     ]
   },
@@ -4466,6 +4722,52 @@
       {
         "src": "/assets/responsive/targa-guide--step-10-1600.webp",
         "width": 1600
+      },
+      {
+        "src": "/assets/responsive/targa-guide--step-10-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "/assets/xpel/fusion-plus.webp": {
+    "width": 800,
+    "height": 640,
+    "variants": [
+      {
+        "src": "/assets/responsive/xpel--fusion-plus-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/xpel--fusion-plus-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/xpel/paint-protection-film.webp": {
+    "width": 800,
+    "height": 640,
+    "variants": [
+      {
+        "src": "/assets/responsive/xpel--paint-protection-film-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/xpel--paint-protection-film-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/xpel/prime-xr-plus.webp": {
+    "width": 800,
+    "height": 640,
+    "variants": [
+      {
+        "src": "/assets/responsive/xpel--prime-xr-plus-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/xpel--prime-xr-plus-800.webp",
+        "width": 800
       }
     ]
   }

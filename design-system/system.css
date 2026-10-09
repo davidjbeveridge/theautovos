@@ -1633,6 +1633,21 @@ h1,h2,h3 {
 ::selection{background:var(--av-selection-background);color:var(--av-selection-text)}
 :where(.av-dark,.av-footer,.av-header,.ds-inline-dark) ::selection{background:var(--av-selection-text);color:var(--av-selection-background)}
 
+/* Shared XPEL partner banner: product links retain card styling. */
+.av-xpel-heading{display:grid;grid-template-columns:minmax(180px,1fr) 3fr;gap:48px;align-items:center;margin-bottom:40px}
+.av-xpel-logo{display:block;max-width:240px}
+.av-xpel-logo img{width:100%;height:auto;display:block}
+.av-xpel-heading p:last-child{max-width:65ch;margin-bottom:0}
+.av-xpel-products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.av-xpel-product{display:flex;flex-direction:column;align-items:flex-start;color:inherit;text-decoration:none}
+.av-xpel-product img{width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;margin-bottom:24px}
+.av-xpel-product h3{margin:8px 0;font-size:24px}
+.av-xpel-product p{margin:0 0 16px}
+.av-xpel-product-link{margin-top:auto;font-weight:700;border-bottom:1px solid currentColor}
+.av-xpel-product:hover .av-xpel-product-link{border-bottom-width:2px}
+.av-xpel-credit{margin-top:32px}
+@media(max-width:640px){.av-xpel-heading{grid-template-columns:1fr;gap:24px}.av-xpel-logo{max-width:160px}.av-xpel-products{grid-template-columns:1fr;gap:40px}}
+
 /* Shared reading links: generated into the site, catalog and original homepage. */
 :root { --av-inline-color: var(--av-color-link); }
 :where(.av-dark,.av-footer,.ds-inline-dark,.legacy-home) { --av-inline-color: var(--av-color-link-inverse); }
