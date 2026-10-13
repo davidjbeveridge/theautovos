@@ -22,5 +22,47 @@
     "source": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1578263244361-EGI62HSG0IROKFXTF9PZ/2015+Porsche+918+%2821%29.jpg?format=1000w",
     "sourcePage": "https://www.theautovos.com/porsche-918-flash-photography",
     "use": "Local rebuild prototype only; confirm reuse rights before publication."
+  },
+  {
+    "path": "assets/shop-film-v5.mp4",
+    "source": "Approved six-car hero edit, revision 3; generated from owner-supplied and Auto Vos homepage photography",
+    "use": "Approved by David for hosted review site; client production release remains separate",
+    "durationSeconds": 33.6,
+    "vehicles": [
+      "Porsche 718 Cayman GT4 RS (yellow)",
+      "Audi RS3 (blue, window tint)",
+      "Mercedes Geotrek",
+      "INEOS Grenadier (satin Stealth PPF)",
+      "Porsche 911 GT3 RS (blue)",
+      "Porsche 911 Dakar (gray)"
+    ],
+    "openerIdentification": {
+      "model": "Porsche 718 Cayman GT4 RS",
+      "originalPhoto": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1776979313677-25LMXMQC89QCXRFEVHKD/Auto+Vos+Paint+Protection+Film+Window+Tint+Ceramic+Coating+Porsche+Ford+Tesla+Colorado+Springs+Caleb+Brown79.jpg",
+      "rearPhoto": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1776979306612-JC20OC994SOFB7Q4Q744/Auto+Vos+Paint+Protection+Film+Window+Tint+Ceramic+Coating+Porsche+Ford+Tesla+Colorado+Springs+Caleb+Brown82.jpg",
+      "evidence": "Original Auto Vos homepage photographs: GT4 RS door decal and rear badge, Cayman body and rear-quarter window intakes",
+      "correction": "Previously mislabeled Ford GT; corrected from original photographs"
+    }
+  },
+  {
+    "path": "assets/shop-film-mobile-v5.mp4",
+    "source": "Approved six-car hero edit, revision 3; generated from owner-supplied and Auto Vos homepage photography",
+    "use": "Approved by David for hosted review site; client production release remains separate",
+    "durationSeconds": 33.6,
+    "vehicles": [
+      "Porsche 718 Cayman GT4 RS (yellow)",
+      "Audi RS3 (blue, window tint)",
+      "Mercedes Geotrek",
+      "INEOS Grenadier (satin Stealth PPF)",
+      "Porsche 911 GT3 RS (blue)",
+      "Porsche 911 Dakar (gray)"
+    ],
+    "openerIdentification": {
+      "model": "Porsche 718 Cayman GT4 RS",
+      "originalPhoto": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1776979313677-25LMXMQC89QCXRFEVHKD/Auto+Vos+Paint+Protection+Film+Window+Tint+Ceramic+Coating+Porsche+Ford+Tesla+Colorado+Springs+Caleb+Brown79.jpg",
+      "rearPhoto": "https://images.squarespace-cdn.com/content/v1/5e0f8109ed56ac087c9cd645/1776979306612-JC20OC994SOFB7Q4Q744/Auto+Vos+Paint+Protection+Film+Window+Tint+Ceramic+Coating+Porsche+Ford+Tesla+Colorado+Springs+Caleb+Brown82.jpg",
+      "evidence": "Original Auto Vos homepage photographs: GT4 RS door decal and rear badge, Cayman body and rear-quarter window intakes",
+      "correction": "Previously mislabeled Ford GT; corrected from original photographs"
+    }
   }
 ]
