@@ -82,7 +82,7 @@ export const services=[
     "alt": "Christopher Jones’s silver Porsche GT3 Touring, described in his review as fully wrapped by Auto Vos",
     "summary": "Help protect your paint from small chips and everyday road wear. Cover the front end, the panels you worry about, or more of the car.",
     "mechanism": "PPF is a film applied over selected painted panels. It takes some of the contact that would otherwise reach the finish, while leaving the shape of the car visible.",
-    "product": "Auto Vos uses XPEL paint protection film. Choose the panels you want covered, then compare clear and satin finishes. We can show you what the film will look like and where its edges will sit.",
+    "product": "Auto Vos uses XPEL paint protection film. Choose the panels you want covered, then compare clear gloss film with XPEL STEALTH, the matte-finish option. STEALTH is XPEL’s product name; matte describes the finish. We can show you what the film will look like and where its edges will sit.",
     "benefits": [
       [
         "Road debris",
@@ -94,7 +94,7 @@ export const services=[
       ],
       [
         "Appearance you choose",
-        "Discuss how clear or satin film changes the look of your specific paint. View material and edge details before deciding."
+        "Discuss how clear gloss or XPEL STEALTH matte film changes the look of your specific paint. View material and edge details before deciding."
       ]
     ],
     "scope": [

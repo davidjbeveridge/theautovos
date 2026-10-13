@@ -1,0 +1,22 @@
+{
+  "checked": "2026-10-12",
+  "photoFolder": "https://drive.google.com/drive/folders/1HRNi1H-HABnZXmwVh0My7SiP_Vp-iFn1",
+  "photos": {
+    "tint": "1mmO0AXgSy4V3cq2xCwX0IdxfiZ1VW3oL",
+    "windshieldEdge": "1emP1c8x_xAbxRb8E24ULrBKCI7Ybvic0",
+    "windshieldLowerEdge": "1Z5Kswo3257d8oA8YdN363jEhj-6t3oqP",
+    "windshieldFitting": "1VEx4L08e_ZsueuLyxMKERxhQpiuJrXBj",
+    "windshieldFinished": "1K_SZFLFdgjV08dv-UMswE7u6NFJep3kz"
+  },
+  "video": {
+    "url": "https://www.youtube.com/watch?v=DFrqoozu5S0",
+    "frames": "1280x720 HLS source, actual timestamps in src/site/fender-steps.json",
+    "clips": "silent source excerpts, no generated imagery, no upscaling"
+  },
+  "warranty": "https://www.xpel.com/warranty-information",
+  "pending": [
+    "PPF and Ceramic folders empty",
+    "Corvette exterior contact photograph unavailable",
+    "Exact current coating and windshield-film product names and workmanship written terms"
+  ]
+}

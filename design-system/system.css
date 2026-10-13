@@ -1742,6 +1742,16 @@ h1,h2,h3 {
 
 .site-review .site-review-text summary,.site-review .site-review-text summary:hover,.site-review .site-review-excerpt{text-decoration:none}.site-review-expand{text-decoration:none}
 
+.site-review-carousel{overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0;overscroll-behavior-inline:contain;padding-bottom:16px}
+.site-review-carousel .site-review-grid{display:flex;gap:24px}
+.site-review-carousel .site-review{flex:0 0 calc((100% - 48px)/3);scroll-snap-align:start}
+.site-review-controls{display:flex;align-items:center;justify-content:flex-end;gap:16px;margin-top:16px}
+.site-review-controls[hidden]{display:none}
+.site-review-controls button{background:transparent;color:inherit;border:1px solid currentColor;border-radius:50%;width:48px;height:48px;cursor:pointer}
+.site-review-controls button:disabled{opacity:.4;cursor:default}
+@media(max-width:1000px){.site-review-carousel .site-review{flex-basis:calc((100% - 24px)/2)}}
+@media(max-width:640px){.site-review-carousel .site-review{flex-basis:100%}}
+
 /* Dark, image-first viewer. The frame never adds a white mat around the image. */
 .av-media-viewer,#photo-viewer.av-media-viewer{margin:auto;padding:8px;width:min(94vw,1120px);max-width:94vw;max-height:94dvh;overflow:auto;border:1px solid var(--av-color-review-border);background:var(--av-color-ink);color:var(--av-color-inverse);box-shadow:none}
 .av-media-viewer::backdrop{background:rgb(0 0 0/.88)}

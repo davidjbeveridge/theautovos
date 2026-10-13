@@ -97,7 +97,7 @@ export const education={
     "benefits": [
       "A replaceable barrier against small stone impacts and everyday abrasion.",
       "Protection focused on exposed panels or extended across the body.",
-      "Clear film can retain a gloss appearance; satin film can change the finish.",
+      "Clear gloss film preserves a glossy look. XPEL STEALTH gives a matte finish; STEALTH is the XPEL name for that finish.",
       "Some films can recover from light surface swirls when warmed; deep damage still needs assessment."
     ],
     "questions": [
