@@ -14,7 +14,7 @@
       "source": "https://www.theautovos.com/sluftgekuhlt-6",
       "path": "/sluftgekuhlt-6",
       "template": "story",
-      "proposedDestination": "/gallery/sluftgekuhlt-6/",
+      "proposedDestination": "/gallery/",
       "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
       "productionAction": "rebuild_redirect"
     },
@@ -22,7 +22,7 @@
       "source": "https://www.theautovos.com/irstrip-attack-2019",
       "path": "/irstrip-attack-2019",
       "template": "story",
-      "proposedDestination": "/gallery/irstrip-attack-2019/",
+      "proposedDestination": "/gallery/",
       "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
       "productionAction": "rebuild_redirect"
     },
@@ -30,7 +30,7 @@
       "source": "https://www.theautovos.com/drive-oz-2019",
       "path": "/drive-oz-2019",
       "template": "story",
-      "proposedDestination": "/gallery/drive-oz-2019/",
+      "proposedDestination": "/gallery/",
       "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
       "productionAction": "rebuild_redirect"
     },
@@ -38,7 +38,7 @@
       "source": "https://www.theautovos.com/pikes-peak-hill-climb-2019",
       "path": "/pikes-peak-hill-climb-2019",
       "template": "story",
-      "proposedDestination": "/gallery/pikes-peak-hill-climb-2019/",
+      "proposedDestination": "/gallery/",
       "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
       "productionAction": "rebuild_redirect"
     },
@@ -46,7 +46,7 @@
       "source": "https://www.theautovos.com/pikes-peak-hill-climb-2019-porsche",
       "path": "/pikes-peak-hill-climb-2019-porsche",
       "template": "story",
-      "proposedDestination": "/gallery/pikes-peak-hill-climb-2019-porsche/",
+      "proposedDestination": "/gallery/",
       "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
       "productionAction": "rebuild_redirect"
     },
@@ -54,7 +54,7 @@
       "source": "https://www.theautovos.com/porsche-918-flash-photography",
       "path": "/porsche-918-flash-photography",
       "template": "story",
-      "proposedDestination": "/gallery/porsche-918-flash-photography/",
+      "proposedDestination": "/gallery/",
       "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
       "productionAction": "rebuild_redirect"
     },
@@ -62,7 +62,7 @@
       "source": "https://www.theautovos.com/porsche-356-sc-flash-photography",
       "path": "/porsche-356-sc-flash-photography",
       "template": "story",
-      "proposedDestination": "/gallery/porsche-356-sc-flash-photography/",
+      "proposedDestination": "/gallery/",
       "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
       "productionAction": "rebuild_redirect"
     },
@@ -70,7 +70,7 @@
       "source": "https://www.theautovos.com/porsche-safari-day-in-the-dirt",
       "path": "/porsche-safari-day-in-the-dirt",
       "template": "story",
-      "proposedDestination": "/gallery/porsche-safari-day-in-the-dirt/",
+      "proposedDestination": "/gallery/",
       "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
       "productionAction": "rebuild_redirect"
     },
@@ -78,7 +78,7 @@
       "source": "https://www.theautovos.com/pikes-peak-hill-climb-paul-kolinski",
       "path": "/pikes-peak-hill-climb-paul-kolinski",
       "template": "story",
-      "proposedDestination": "/gallery/pikes-peak-hill-climb-paul-kolinski/",
+      "proposedDestination": "/gallery/",
       "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
       "productionAction": "rebuild_redirect"
     },
@@ -1103,7 +1103,7 @@
       ]
     },
     {
-      "title": "About & team",
+      "title": "Our Team",
       "path": "/about/",
       "section": "Trust & conversion",
       "primaryKeyword": "about auto vos",
@@ -1769,96 +1769,6 @@
       ]
     },
     {
-      "title": "Sluftgekuhlt 6",
-      "path": "/gallery/sluftgekuhlt-6/",
-      "section": "Retained galleries",
-      "primaryKeyword": "",
-      "supportingKeywords": [],
-      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
-      "status": "included; not yet implemented or verified for release",
-      "keywordEvidence": []
-    },
-    {
-      "title": "Irstrip Attack 2019",
-      "path": "/gallery/irstrip-attack-2019/",
-      "section": "Retained galleries",
-      "primaryKeyword": "",
-      "supportingKeywords": [],
-      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
-      "status": "included; not yet implemented or verified for release",
-      "keywordEvidence": []
-    },
-    {
-      "title": "Drive Oz 2019",
-      "path": "/gallery/drive-oz-2019/",
-      "section": "Retained galleries",
-      "primaryKeyword": "",
-      "supportingKeywords": [],
-      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
-      "status": "included; not yet implemented or verified for release",
-      "keywordEvidence": []
-    },
-    {
-      "title": "Pikes Peak Hill Climb 2019",
-      "path": "/gallery/pikes-peak-hill-climb-2019/",
-      "section": "Retained galleries",
-      "primaryKeyword": "",
-      "supportingKeywords": [],
-      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
-      "status": "included; not yet implemented or verified for release",
-      "keywordEvidence": []
-    },
-    {
-      "title": "Pikes Peak Hill Climb 2019 Porsche",
-      "path": "/gallery/pikes-peak-hill-climb-2019-porsche/",
-      "section": "Retained galleries",
-      "primaryKeyword": "",
-      "supportingKeywords": [],
-      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
-      "status": "included; not yet implemented or verified for release",
-      "keywordEvidence": []
-    },
-    {
-      "title": "Porsche 918 Flash Photography",
-      "path": "/gallery/porsche-918-flash-photography/",
-      "section": "Retained galleries",
-      "primaryKeyword": "",
-      "supportingKeywords": [],
-      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
-      "status": "included; not yet implemented or verified for release",
-      "keywordEvidence": []
-    },
-    {
-      "title": "Porsche 356 Sc Flash Photography",
-      "path": "/gallery/porsche-356-sc-flash-photography/",
-      "section": "Retained galleries",
-      "primaryKeyword": "",
-      "supportingKeywords": [],
-      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
-      "status": "included; not yet implemented or verified for release",
-      "keywordEvidence": []
-    },
-    {
-      "title": "Porsche Safari Day In The Dirt",
-      "path": "/gallery/porsche-safari-day-in-the-dirt/",
-      "section": "Retained galleries",
-      "primaryKeyword": "",
-      "supportingKeywords": [],
-      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
-      "status": "included; not yet implemented or verified for release",
-      "keywordEvidence": []
-    },
-    {
-      "title": "Pikes Peak Hill Climb Paul Kolinski",
-      "path": "/gallery/pikes-peak-hill-climb-paul-kolinski/",
-      "section": "Retained galleries",
-      "primaryKeyword": "",
-      "supportingKeywords": [],
-      "purpose": "Preserve original gallery, ordering, credits and crawlable captions. Photography/event archive; no new commercial keyword target or implied installation claim.",
-      "status": "included; not yet implemented or verified for release",
-      "keywordEvidence": []
-    },
-    {
       "title": "Porsche window tint",
       "path": "/services/window-tint/porsche/",
       "section": "Vehicle services",
@@ -1994,16 +1904,6 @@
       }
     },
     {
-      "title": "Insurance and existing protection",
-      "path": "/insurance/",
-      "section": "Owner guidance",
-      "primaryKeyword": "",
-      "supportingKeywords": [],
-      "purpose": "Help owners ask about film/coating replacement after repairs. No insurance coverage or claims-handling promise; final wording depends on Caleb\u2019s actual process.",
-      "status": "included; owner facts and media pending",
-      "keywordEvidence": {}
-    },
-    {
       "title": "Guides and questions",
       "path": "/resources/",
       "section": "Resources",
@@ -2062,6 +1962,21 @@
       "purpose": "Service-and-brand index of genuine supplied projects/reviews. Publish only when source verification and photo permissions are complete.",
       "status": "included conditional work index; publish only with verified examples",
       "keywordEvidence": {}
+    },
+    {
+      "path": "/gallery/window-tint/",
+      "title": "Window tint installations",
+      "purpose": "Verified Auto Vos work photos with descriptive captions and source credit."
+    },
+    {
+      "path": "/gallery/windshield-protection-film/",
+      "title": "Windshield protection film installations",
+      "purpose": "Verified Auto Vos work photos with descriptive captions and source credit."
+    },
+    {
+      "path": "/gallery/paint-protection-film/",
+      "title": "Paint protection film projects",
+      "purpose": "Verified Auto Vos work photos with descriptive captions and source credit."
     }
   ],
   "plannedScopeRevision": "2026-10-08 approved service/brand matrix; one-time $1,000 fee; no payment method specified; conditional publication gates remain.",
@@ -2319,39 +2234,39 @@
       "from": "/care/"
     },
     {
-      "to": "/gallery/sluftgekuhlt-6/",
+      "to": "/gallery/",
       "from": "/sluftgekuhlt-6"
     },
     {
-      "to": "/gallery/irstrip-attack-2019/",
+      "to": "/gallery/",
       "from": "/irstrip-attack-2019"
     },
     {
-      "to": "/gallery/drive-oz-2019/",
+      "to": "/gallery/",
       "from": "/drive-oz-2019"
     },
     {
-      "to": "/gallery/pikes-peak-hill-climb-2019/",
+      "to": "/gallery/",
       "from": "/pikes-peak-hill-climb-2019"
     },
     {
-      "to": "/gallery/pikes-peak-hill-climb-2019-porsche/",
+      "to": "/gallery/",
       "from": "/pikes-peak-hill-climb-2019-porsche"
     },
     {
-      "to": "/gallery/porsche-918-flash-photography/",
+      "to": "/gallery/",
       "from": "/porsche-918-flash-photography"
     },
     {
-      "to": "/gallery/porsche-356-sc-flash-photography/",
+      "to": "/gallery/",
       "from": "/porsche-356-sc-flash-photography"
     },
     {
-      "to": "/gallery/porsche-safari-day-in-the-dirt/",
+      "to": "/gallery/",
       "from": "/porsche-safari-day-in-the-dirt"
     },
     {
-      "to": "/gallery/pikes-peak-hill-climb-paul-kolinski/",
+      "to": "/gallery/",
       "from": "/pikes-peak-hill-climb-paul-kolinski"
     },
     {
@@ -2365,6 +2280,46 @@
     {
       "to": "/services/#tesla",
       "from": "/services/tesla/"
+    },
+    {
+      "from": "/insurance/",
+      "to": "/care-and-warranty/#after-a-repair"
+    },
+    {
+      "from": "/gallery/sluftgekuhlt-6/",
+      "to": "/gallery/"
+    },
+    {
+      "from": "/gallery/irstrip-attack-2019/",
+      "to": "/gallery/"
+    },
+    {
+      "from": "/gallery/drive-oz-2019/",
+      "to": "/gallery/"
+    },
+    {
+      "from": "/gallery/pikes-peak-hill-climb-2019/",
+      "to": "/gallery/"
+    },
+    {
+      "from": "/gallery/pikes-peak-hill-climb-2019-porsche/",
+      "to": "/gallery/"
+    },
+    {
+      "from": "/gallery/porsche-918-flash-photography/",
+      "to": "/gallery/"
+    },
+    {
+      "from": "/gallery/porsche-356-sc-flash-photography/",
+      "to": "/gallery/"
+    },
+    {
+      "from": "/gallery/porsche-safari-day-in-the-dirt/",
+      "to": "/gallery/"
+    },
+    {
+      "from": "/gallery/pikes-peak-hill-climb-paul-kolinski/",
+      "to": "/gallery/"
     }
   ],
   "deferredPages": [

@@ -143,6 +143,132 @@
       }
     ]
   },
+  "/assets/fender-guide/step-01.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "src": "/assets/responsive/fender-guide--step-01-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-01-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-01-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/assets/fender-guide/step-02.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "src": "/assets/responsive/fender-guide--step-02-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-02-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-02-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/assets/fender-guide/step-03.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "src": "/assets/responsive/fender-guide--step-03-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-03-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-03-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/assets/fender-guide/step-04.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "src": "/assets/responsive/fender-guide--step-04-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-04-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-04-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/assets/fender-guide/step-05.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "src": "/assets/responsive/fender-guide--step-05-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-05-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-05-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/assets/fender-guide/step-06.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "src": "/assets/responsive/fender-guide--step-06-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-06-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-06-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/assets/fender-guide/step-07.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "src": "/assets/responsive/fender-guide--step-07-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-07-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/fender-guide--step-07-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
   "/assets/gallery/00276bcff7127432.jpg": {
     "width": 1500,
     "height": 1000,
@@ -4726,6 +4852,96 @@
       {
         "src": "/assets/responsive/targa-guide--step-10-1920.webp",
         "width": 1920
+      }
+    ]
+  },
+  "/assets/work/porsche-914-windshield-film-edge.jpg": {
+    "width": 1800,
+    "height": 2400,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--porsche-914-windshield-film-edge-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--porsche-914-windshield-film-edge-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--porsche-914-windshield-film-edge-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/porsche-914-windshield-film-fitting.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--porsche-914-windshield-film-fitting-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--porsche-914-windshield-film-fitting-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--porsche-914-windshield-film-fitting-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/porsche-914-windshield-film-lower-edge.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--porsche-914-windshield-film-lower-edge-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--porsche-914-windshield-film-lower-edge-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--porsche-914-windshield-film-lower-edge-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/porsche-914-windshield-protection.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--porsche-914-windshield-protection-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--porsche-914-windshield-protection-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--porsche-914-windshield-protection-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/porsche-taycan-window-tint.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--porsche-taycan-window-tint-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--porsche-taycan-window-tint-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--porsche-taycan-window-tint-1600.webp",
+        "width": 1600
       }
     ]
   },
