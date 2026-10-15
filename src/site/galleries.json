@@ -2,12 +2,149 @@
   {
     "path": "/window-tint",
     "title": "Window tint installations",
-    "credit": "Auto Vos",
+    "description": "Side glass, rear windows and installation details from our Colorado Springs shop.",
+    "credit": "Auto Vos \u00b7 Caleb-supplied project photographs",
+    "cover": {
+      "src": "/assets/work/porsche-taycan-window-tint.jpg",
+      "title": "Rose-colored Porsche Taycan with tinted side windows at Auto Vos",
+      "alt": "Rose-colored Porsche Taycan with tinted side windows at Auto Vos",
+      "caption": "Porsche Taycan window tint at our Colorado Springs shop. A side view shows the glass against the car\u2019s rose-colored paint.",
+      "width": 2400,
+      "height": 1800
+    },
     "images": [
       {
+        "src": "/assets/work/oct15/hero-window-tint-installation.jpg",
+        "alt": "A technician shapes window film on a glass panel in the Auto Vos studio.",
+        "title": "A technician shapes window film on a glass panel in the Auto Vos studio",
+        "caption": "A technician shapes window film on a glass panel in the Auto Vos studio.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/green-coupe-outdoor-profile.jpg",
+        "alt": "A low green coupe photographed outside the studio, showing its side glass and clean profile.",
+        "title": "A low green coupe photographed outside the studio, showing its side glass and clean profile",
+        "caption": "A low green coupe photographed outside the studio, showing its side glass and clean profile.",
+        "width": 1800,
+        "height": 2400
+      },
+      {
+        "src": "/assets/work/oct15/green-coupe-open-door-interior.jpg",
+        "alt": "An open door frames the cabin and side glass of a green coupe.",
+        "title": "An open door frames the cabin and side glass of a green coupe",
+        "caption": "An open door frames the cabin and side glass of a green coupe.",
+        "width": 1800,
+        "height": 2400
+      },
+      {
+        "src": "/assets/work/oct15/orange-sports-car-studio.jpg",
+        "alt": "An orange sports car photographed inside the Auto Vos studio.",
+        "title": "An orange sports car photographed inside the Auto Vos studio",
+        "caption": "An orange sports car photographed inside the Auto Vos studio.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/dark-cabin-dashboard-detail.jpg",
+        "alt": "A close interior view across the dashboard and front seats.",
+        "title": "A close interior view across the dashboard and front seats",
+        "caption": "A close interior view across the dashboard and front seats.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/silver-coupe-side-detail.jpg",
+        "alt": "A close side view highlights the door glass and sculpted bodywork of a silver coupe.",
+        "title": "A close side view highlights the door glass and sculpted bodywork of a silver coupe",
+        "caption": "A close side view highlights the door glass and sculpted bodywork of a silver coupe.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/blue-coupe-side-profile.jpg",
+        "alt": "Blue two-door coupe in side profile outside Auto Vos",
+        "title": "Blue two-door coupe in side profile outside Auto Vos",
+        "caption": "The side-window profile of a blue coupe in Caleb\u2019s Colorado Springs window tint collection.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/blue-coupe-open-door.jpg",
+        "alt": "An open blue door gives a clear view of the side glass and cabin.",
+        "title": "An open blue door gives a clear view of the side glass and cabin",
+        "caption": "An open blue door gives a clear view of the side glass and cabin.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/rose-coupe-outdoor-profile.jpg",
+        "alt": "Rose-colored Porsche Taycan rear quarter and window glass inside Auto Vos",
+        "title": "Rose-colored Porsche Taycan rear quarter and window glass inside Auto Vos",
+        "caption": "A rear view of the rose-colored Porsche Taycan in Caleb\u2019s window tint collection.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/red-sports-car-front-three-quarter.jpg",
+        "alt": "Rear wing, glass and taillights of a red Porsche 911 inside Auto Vos",
+        "title": "Rear wing, glass and taillights of a red Porsche 911 inside Auto Vos",
+        "caption": "Rear glass and bodywork on a red Porsche 911 from the Auto Vos window tint collection.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/red-sports-car-cabin.jpg",
+        "alt": "A view into the cabin of a red coupe with the door open.",
+        "title": "A view into the cabin of a red coupe with the door open",
+        "caption": "A view into the cabin of a red coupe with the door open.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/silver-coupe-outdoor-front.jpg",
+        "alt": "A silver coupe photographed outside the workshop in bright daylight.",
+        "title": "A silver coupe photographed outside the workshop in bright daylight",
+        "caption": "A silver coupe photographed outside the workshop in bright daylight.",
+        "width": 1512,
+        "height": 2016
+      },
+      {
+        "src": "/assets/work/oct15/white-van-outdoor-front.jpg",
+        "alt": "A white van photographed outside the Auto Vos workshop.",
+        "title": "A white van photographed outside the Auto Vos workshop",
+        "caption": "A white van photographed outside the Auto Vos workshop.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/olive-sports-car-studio.jpg",
+        "alt": "An olive-colored sports car photographed inside the studio.",
+        "title": "An olive-colored sports car photographed inside the studio",
+        "caption": "An olive-colored sports car photographed inside the studio.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/blue-suv-studio.jpg",
+        "alt": "Blue Chevrolet Corvette coupe in the Auto Vos studio",
+        "title": "Blue Chevrolet Corvette coupe in the Auto Vos studio",
+        "caption": "Side glass and roofline on a blue Corvette in Caleb\u2019s window tint collection.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/dark-car-window-detail.jpg",
+        "alt": "A close view of side glass on a dark car inside the studio.",
+        "title": "A close view of side glass on a dark car inside the studio",
+        "caption": "A close view of side glass on a dark car inside the studio.",
+        "width": 1800,
+        "height": 2400
+      },
+      {
         "src": "/assets/work/porsche-taycan-window-tint.jpg",
-        "title": "Rose-colored Porsche Taycan with tinted side windows at Auto Vos",
         "alt": "Rose-colored Porsche Taycan with tinted side windows at Auto Vos",
+        "title": "Rose-colored Porsche Taycan with tinted side windows at Auto Vos",
         "caption": "Porsche Taycan window tint at our Colorado Springs shop. A side view shows the glass against the car\u2019s rose-colored paint.",
         "width": 2400,
         "height": 1800
@@ -16,38 +153,79 @@
   },
   {
     "path": "/windshield-protection-film",
-    "title": "Windshield protection film installations",
-    "credit": "Auto Vos",
+    "title": "Windshield protection film",
+    "description": "See exterior film fitting, glass edges and the vehicles in Caleb\u2019s project collection.",
+    "credit": "Auto Vos \u00b7 Caleb-supplied project photographs",
+    "cover": {
+      "src": "/assets/work/oct15/windshield-film-installation-hero.jpg",
+      "alt": "Squeegee working windshield protection film along the lower glass of a green Porsche 914",
+      "title": "Squeegee working windshield protection film along the lower glass of a green Porsche 914",
+      "caption": "Windshield protection film is fitted to the outside of the Porsche 914 glass. The installer works solution toward the lower edge.",
+      "width": 2400,
+      "height": 1800
+    },
     "images": [
       {
-        "src": "/assets/work/porsche-914-windshield-film-fitting.jpg",
-        "title": "Installer fitting clear windshield protection film to a green Porsche 914",
-        "alt": "Installer fitting clear windshield protection film to a green Porsche 914",
-        "caption": "Clear windshield protection film being fitted to a Porsche 914 at Auto Vos in Colorado Springs.",
+        "src": "/assets/work/oct15/black-suv-studio-side.jpg",
+        "alt": "Windshield and side glass of a black Mercedes-Benz G-Class inside Auto Vos",
+        "title": "Windshield and side glass of a black Mercedes-Benz G-Class inside Auto Vos",
+        "caption": "A close view of the G-Class windshield from Caleb\u2019s windshield protection film collection.",
         "width": 2400,
         "height": 1800
       },
       {
-        "src": "/assets/work/porsche-914-windshield-film-edge.jpg",
-        "title": "Installer working along the Porsche 914 windshield film edge",
-        "alt": "Installer working along the Porsche 914 windshield film edge",
-        "caption": "Close access to the windshield edge helps the installer check the film\u2019s fit against the trim.",
+        "src": "/assets/work/oct15/black-suv-studio-front.jpg",
+        "alt": "Front view of a black Mercedes-Benz G-Class in the Auto Vos studio",
+        "title": "Front view of a black Mercedes-Benz G-Class in the Auto Vos studio",
+        "caption": "The upright windshield on a Mercedes-Benz G-Class in the windshield protection collection.",
         "width": 1800,
         "height": 2400
       },
       {
-        "src": "/assets/work/porsche-914-windshield-film-lower-edge.jpg",
-        "title": "Squeegee pressing windshield protection film along the lower glass on a Porsche 914",
-        "alt": "Squeegee pressing windshield protection film along the lower glass on a Porsche 914",
-        "caption": "A close look at solution being worked toward the lower edge of the windshield protection film.",
+        "src": "/assets/work/oct15/windshield-film-technician-close.jpg",
+        "alt": "Installer fitting windshield protection film at the upper corner of a green Porsche 914",
+        "title": "Installer fitting windshield protection film at the upper corner of a green Porsche 914",
+        "caption": "A close look at fitting the exterior film around the Porsche 914 windshield edge.",
+        "width": 1800,
+        "height": 2400
+      },
+      {
+        "src": "/assets/work/oct15/windshield-installation-wide-view.jpg",
+        "alt": "Installer working across the green Porsche 914 windshield",
+        "title": "Installer working across the green Porsche 914 windshield",
+        "caption": "A wider view of the Porsche 914 windshield protection film installation at Auto Vos.",
         "width": 2400,
         "height": 1800
       },
       {
-        "src": "/assets/work/porsche-914-windshield-protection.jpg",
-        "title": "Green Porsche 914 inside the Auto Vos vehicle protection shop",
-        "alt": "Green Porsche 914 inside the Auto Vos vehicle protection shop",
-        "caption": "The green Porsche 914 in Caleb\u2019s windshield protection film project photos, photographed inside Auto Vos.",
+        "src": "/assets/work/oct15/red-sports-car-outside-studio.jpg",
+        "alt": "Red Chevrolet Corvette outside the Auto Vos entrance",
+        "title": "Red Chevrolet Corvette outside the Auto Vos entrance",
+        "caption": "A red Corvette outside the studio, from Caleb\u2019s windshield protection film collection.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/red-sports-car-studio-view.jpg",
+        "alt": "Red Chevrolet Corvette in an Auto Vos work bay",
+        "title": "Red Chevrolet Corvette in an Auto Vos work bay",
+        "caption": "The Corvette photographed inside the shop from above.",
+        "width": 1800,
+        "height": 2400
+      },
+      {
+        "src": "/assets/work/oct15/green-classic-car-studio.jpg",
+        "alt": "Green Porsche 914 inside the Auto Vos studio",
+        "title": "Green Porsche 914 inside the Auto Vos studio",
+        "caption": "The green Porsche 914 in Caleb\u2019s windshield protection film project collection.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/windshield-film-installation-hero.jpg",
+        "alt": "Squeegee working windshield protection film along the lower glass of a green Porsche 914",
+        "title": "Squeegee working windshield protection film along the lower glass of a green Porsche 914",
+        "caption": "Windshield protection film is fitted to the outside of the Porsche 914 glass. The installer works solution toward the lower edge.",
         "width": 2400,
         "height": 1800
       }
@@ -55,16 +233,345 @@
   },
   {
     "path": "/paint-protection-film",
-    "title": "Paint protection film projects",
-    "credit": "Auto Vos customers; used with permission",
+    "title": "Clear paint protection film",
+    "description": "Clear PPF installation details and finished vehicles, from individual panels to wider coverage.",
+    "credit": "Auto Vos \u00b7 Caleb-supplied project photographs",
+    "cover": {
+      "src": "/assets/work/oct15/blue-porsche-cayman-shop-39.jpg",
+      "alt": "Blue Porsche Cayman with bronze wheels in the Auto Vos workshop",
+      "title": "Blue Porsche Cayman with bronze wheels in the Auto Vos workshop",
+      "caption": "A blue Porsche Cayman beneath the Auto Vos sign in our Colorado Springs workshop.",
+      "width": 2400,
+      "height": 1800
+    },
     "images": [
       {
-        "src": "/assets/reviews/jonathan-1.jpg",
-        "title": "BMW M8 with XPEL STEALTH matte paint protection film",
-        "alt": "Silver BMW M8 with a matte finish inside Auto Vos",
-        "caption": "Jonathan\u2019s BMW M8 with full-body XPEL STEALTH PPF, as described in his Google review. STEALTH is XPEL\u2019s matte-finish film. Customer photo: Jonathan.",
-        "width": 5712,
-        "height": 4284
+        "src": "/assets/work/oct15/porsche-cayman-hood-film-install-319.jpg",
+        "alt": "Installer using a pink squeegee on wet film over a silver Porsche Cayman hood",
+        "title": "Installer using a pink squeegee on wet film over a silver Porsche Cayman hood",
+        "caption": "An installer works a squeegee across wet paint protection film on the Cayman hood.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/porsche-spyder-rear-deck-film-377.jpg",
+        "alt": "Wet clear film laid over the rear deck of a silver Porsche convertible",
+        "title": "Wet clear film laid over the rear deck of a silver Porsche convertible",
+        "caption": "Clear film is positioned over the sculpted rear deck, with solution still visible underneath.",
+        "width": 1512,
+        "height": 2016
+      },
+      {
+        "src": "/assets/work/oct15/porsche-rear-spoiler-film-299.jpg",
+        "alt": "Wet clear film draped over a blue-gray Porsche rear spoiler",
+        "title": "Wet clear film draped over a blue-gray Porsche rear spoiler",
+        "caption": "A close view of PPF being fitted around the rear spoiler and its curved edges.",
+        "width": 1512,
+        "height": 2016
+      },
+      {
+        "src": "/assets/work/oct15/porsche-headlamp-opening-film-edge-9.jpg",
+        "alt": "Hand holding a gray Porsche panel with film folded around the empty headlamp opening",
+        "title": "Hand holding a gray Porsche panel with film folded around the empty headlamp opening",
+        "caption": "With the headlamp removed, the film edge is visible around the opening.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/porsche-macan-front-film-install-8.jpg",
+        "alt": "Dark Porsche Macan with wet film hanging across its front bumper",
+        "title": "Dark Porsche Macan with wet film hanging across its front bumper",
+        "caption": "Wet film extends beyond the Macan bumper while the front installation is in progress.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/classic-porsche-911-hood-film-288.jpg",
+        "alt": "Dark blue classic Porsche 911 with wet clear film across its hood",
+        "title": "Dark blue classic Porsche 911 with wet clear film across its hood",
+        "caption": "Clear film and installation solution cover the hood of this classic 911.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/white-porsche-lower-door-work-57.jpg",
+        "alt": "Gloved hand wiping the lower door of a white Porsche beside its front wheel",
+        "title": "Gloved hand wiping the lower door of a white Porsche beside its front wheel",
+        "caption": "A gloved hand wipes the lower door while the white Porsche is in the work bay.",
+        "width": 1512,
+        "height": 2016
+      },
+      {
+        "src": "/assets/work/oct15/autovos-workshop-team-overhead-24.jpg",
+        "alt": "Overhead view of technicians working beside white and blue Porsches",
+        "title": "Overhead view of technicians working beside white and blue Porsches",
+        "caption": "An overhead view of the team at work among several Porsches.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/black-classic-roadster-outside-398.jpg",
+        "alt": "Black open-top classic roadster with cream wheels outside the workshop",
+        "title": "Black open-top classic roadster with cream wheels outside the workshop",
+        "caption": "An open-top roadster photographed outside Auto Vos.",
+        "width": 1512,
+        "height": 2016
+      },
+      {
+        "src": "/assets/work/oct15/orange-volkswagen-golf-outside-387.jpg",
+        "alt": "Orange Volkswagen Golf in side profile outside the workshop",
+        "title": "Orange Volkswagen Golf in side profile outside the workshop",
+        "caption": "The orange Volkswagen Golf outside the workshop, shown in profile.",
+        "width": 1512,
+        "height": 2016
+      },
+      {
+        "src": "/assets/work/oct15/silver-porsche-convertible-outside-378.jpg",
+        "alt": "Silver Porsche convertible with a black roof outside Auto Vos",
+        "title": "Silver Porsche convertible with a black roof outside Auto Vos",
+        "caption": "A rear three-quarter view of the silver Porsche in daylight.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/dark-green-porsche-911-shop-323.jpg",
+        "alt": "Dark green Porsche 911 with silver wheels in the workshop",
+        "title": "Dark green Porsche 911 with silver wheels in the workshop",
+        "caption": "The green 911 under the workshop lights.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/silver-ford-pickup-shop-309.jpg",
+        "alt": "Silver Ford pickup with black wheels inside the Auto Vos workshop",
+        "title": "Silver Ford pickup with black wheels inside the Auto Vos workshop",
+        "caption": "A silver Ford pickup photographed inside the workshop.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/turquoise-porsche-911-shop-281.jpg",
+        "alt": "Turquoise Porsche 911 with a large rear wing in the workshop",
+        "title": "Turquoise Porsche 911 with a large rear wing in the workshop",
+        "caption": "A front three-quarter view of the turquoise 911 in the shop.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/pink-porsche-mirror-detail-272.jpg",
+        "alt": "Pink Porsche side mirror and door in the workshop",
+        "title": "Pink Porsche side mirror and door in the workshop",
+        "caption": "A close view of the pink Porsche mirror and adjacent door panel.",
+        "width": 1512,
+        "height": 2016
+      },
+      {
+        "src": "/assets/work/oct15/orange-porsche-911-shop-235.jpg",
+        "alt": "Orange Porsche 911 with a dark hood and roof inside the workshop",
+        "title": "Orange Porsche 911 with a dark hood and roof inside the workshop",
+        "caption": "The orange 911 photographed from the front quarter under the shop lights.",
+        "width": 1800,
+        "height": 2400
+      },
+      {
+        "src": "/assets/work/oct15/red-porsche-911-rear-wing-221.jpg",
+        "alt": "Rear view of a red Porsche 911 with a large wing and dark rear bumper",
+        "title": "Rear view of a red Porsche 911 with a large wing and dark rear bumper",
+        "caption": "The rear wing, lights and bumper of the red 911.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/gray-porsche-911-overhead-213.jpg",
+        "alt": "Gray Porsche 911 with a rear wing viewed from above in the workshop",
+        "title": "Gray Porsche 911 with a rear wing viewed from above in the workshop",
+        "caption": "An elevated view of the gray 911 shows the hood, roof and rear wing.",
+        "width": 1512,
+        "height": 2016
+      },
+      {
+        "src": "/assets/work/oct15/blue-porsche-convertible-daylight-197.jpg",
+        "alt": "Light blue Porsche convertible outside the workshop with mountains behind it",
+        "title": "Light blue Porsche convertible outside the workshop with mountains behind it",
+        "caption": "A light blue Porsche convertible outside Auto Vos with the mountains in the background.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/white-porsche-cayman-shop-195.jpg",
+        "alt": "White Porsche Cayman with black wheels and side graphics in the workshop",
+        "title": "White Porsche Cayman with black wheels and side graphics in the workshop",
+        "caption": "A front three-quarter view of the white Cayman inside the shop.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/red-alfa-romeo-4c-outside-127.jpg",
+        "alt": "Red Alfa Romeo 4C parked outside Auto Vos",
+        "title": "Red Alfa Romeo 4C parked outside Auto Vos",
+        "caption": "A red Alfa Romeo 4C photographed outside the workshop.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/blue-porsche-911-carbon-hood-115.jpg",
+        "alt": "Dark blue Porsche 911 with a dark hood and rear wing in the workshop",
+        "title": "Dark blue Porsche 911 with a dark hood and rear wing in the workshop",
+        "caption": "A dark blue 911 with contrasting hood details inside the workshop.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/green-porsche-914-shop-110.jpg",
+        "alt": "Green Porsche 914 with a black roof in the workshop",
+        "title": "Green Porsche 914 with a black roof in the workshop",
+        "caption": "A green Porsche 914 among the cars in the Auto Vos workshop.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/white-porsche-taycan-shop-37.jpg",
+        "alt": "White Porsche Taycan photographed from the front quarter inside the workshop",
+        "title": "White Porsche Taycan photographed from the front quarter inside the workshop",
+        "caption": "The white Taycan under the workshop lights.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/blue-porsche-cayman-shop-39.jpg",
+        "alt": "Blue Porsche Cayman with bronze wheels in the Auto Vos workshop",
+        "title": "Blue Porsche Cayman with bronze wheels in the Auto Vos workshop",
+        "caption": "A blue Porsche Cayman beneath the Auto Vos sign in our Colorado Springs workshop.",
+        "width": 2400,
+        "height": 1800
+      }
+    ]
+  },
+  {
+    "path": "/stealth-matte-ppf",
+    "title": "XPEL STEALTH / matte PPF",
+    "description": "STEALTH is XPEL\u2019s matte paint protection film. Explore the softer finish on real customer vehicles.",
+    "credit": "Auto Vos \u00b7 Caleb-supplied project photographs",
+    "cover": {
+      "src": "/assets/work/oct15/ineos-grenadier-matte-shop-185.jpg",
+      "alt": "Beige INEOS Grenadier with a satin finish inside the Auto Vos workshop",
+      "title": "Beige INEOS Grenadier with a satin finish inside the Auto Vos workshop",
+      "caption": "The Grenadier\u2019s satin body panels contrast with its black trim in the workshop.",
+      "width": 2016,
+      "height": 1512
+    },
+    "images": [
+      {
+        "src": "/assets/work/oct15/bmw-coupe-satin-gray-332.jpg",
+        "alt": "Satin gray BMW coupe with black wheels inside the workshop",
+        "title": "Satin gray BMW coupe with black wheels inside the workshop",
+        "caption": "Soft reflections follow the BMW coupe\u2019s hood and doors.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/white-ineos-grenadier-rear-daylight-264.jpg",
+        "alt": "White INEOS Grenadier seen from the rear quarter outside Auto Vos",
+        "title": "White INEOS Grenadier seen from the rear quarter outside Auto Vos",
+        "caption": "A rear three-quarter view of the white Grenadier outside the shop.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/white-ineos-grenadier-front-daylight-262.jpg",
+        "alt": "White INEOS Grenadier with roof rack and black trim outside the workshop",
+        "title": "White INEOS Grenadier with roof rack and black trim outside the workshop",
+        "caption": "The white Grenadier photographed from the front quarter in daylight.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/porsche-macan-satin-door-mirror-247.jpg",
+        "alt": "Satin lavender-gray Porsche Macan door and mirror in close-up",
+        "title": "Satin lavender-gray Porsche Macan door and mirror in close-up",
+        "caption": "A close look at the satin surface across the Macan doors and mirror.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/porsche-macan-satin-rear-246.jpg",
+        "alt": "Rear three-quarter view of a satin lavender-gray Porsche Macan",
+        "title": "Rear three-quarter view of a satin lavender-gray Porsche Macan",
+        "caption": "The Macan\u2019s satin finish across the rear hatch and quarter panel.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/porsche-macan-satin-front-detail-243.jpg",
+        "alt": "Satin lavender-gray Porsche Macan front quarter and wheel",
+        "title": "Satin lavender-gray Porsche Macan front quarter and wheel",
+        "caption": "A closer view of the Macan\u2019s front fender, lamp and bumper.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/ineos-grenadier-satin-door-hinge-191.jpg",
+        "alt": "Beige INEOS Grenadier door hinge, side marker and mirror in close-up",
+        "title": "Beige INEOS Grenadier door hinge, side marker and mirror in close-up",
+        "caption": "The satin finish around the Grenadier\u2019s front door hinge and side marker.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/ineos-grenadier-satin-hood-detail-190.jpg",
+        "alt": "Close-up of the Grenadier name embossed on a beige satin hood",
+        "title": "Close-up of the Grenadier name embossed on a beige satin hood",
+        "caption": "Soft light across the hood and its embossed Grenadier lettering.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/ineos-grenadier-satin-side-profile-187.jpg",
+        "alt": "Beige INEOS Grenadier with black wheels shown in side profile",
+        "title": "Beige INEOS Grenadier with black wheels shown in side profile",
+        "caption": "The beige Grenadier shown side-on beneath the workshop lights.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/ineos-grenadier-satin-rear-quarter-186.jpg",
+        "alt": "Beige INEOS Grenadier rear quarter with spare wheel and black trim",
+        "title": "Beige INEOS Grenadier rear quarter with spare wheel and black trim",
+        "caption": "The rear doors and quarter panels of the satin beige Grenadier.",
+        "width": 2016,
+        "height": 1512
+      },
+      {
+        "src": "/assets/work/oct15/tesla-matte-front-51.jpg",
+        "alt": "Dark matte Tesla photographed from the front quarter",
+        "title": "Dark matte Tesla photographed from the front quarter",
+        "caption": "The Model Y\u2019s dark matte body under the workshop lights.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/tesla-matte-rear-49.jpg",
+        "alt": "Dark matte Tesla photographed from the rear quarter",
+        "title": "Dark matte Tesla photographed from the rear quarter",
+        "caption": "A rear view of the matte Tesla, with its contrasting glass roof and lights.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/tesla-matte-side-48.jpg",
+        "alt": "Dark matte Tesla in side profile inside the workshop",
+        "title": "Dark matte Tesla in side profile inside the workshop",
+        "caption": "The matte surface across the Model Y\u2019s doors and rear quarter.",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "src": "/assets/work/oct15/ineos-grenadier-matte-shop-185.jpg",
+        "alt": "Beige INEOS Grenadier with a satin finish inside the Auto Vos workshop",
+        "title": "Beige INEOS Grenadier with a satin finish inside the Auto Vos workshop",
+        "caption": "The Grenadier\u2019s satin body panels contrast with its black trim in the workshop.",
+        "width": 2016,
+        "height": 1512
       }
     ]
   }

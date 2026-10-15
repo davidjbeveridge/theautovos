@@ -4855,6 +4855,1284 @@
       }
     ]
   },
+  "/assets/work/oct15/auto-vos-installation-work-bays.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--auto-vos-installation-work-bays-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--auto-vos-installation-work-bays-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--auto-vos-installation-work-bays-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/auto-vos-waiting-room-visualization.jpg": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--auto-vos-waiting-room-visualization-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--auto-vos-waiting-room-visualization-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--auto-vos-waiting-room-visualization-1448.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "/assets/work/oct15/autovos-workshop-team-overhead-24.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--autovos-workshop-team-overhead-24-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--autovos-workshop-team-overhead-24-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--autovos-workshop-team-overhead-24-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/black-classic-roadster-outside-398.jpg": {
+    "width": 1512,
+    "height": 2016,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--black-classic-roadster-outside-398-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--black-classic-roadster-outside-398-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--black-classic-roadster-outside-398-1512.webp",
+        "width": 1512
+      }
+    ]
+  },
+  "/assets/work/oct15/black-suv-studio-front.jpg": {
+    "width": 1800,
+    "height": 2400,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--black-suv-studio-front-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--black-suv-studio-front-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--black-suv-studio-front-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/black-suv-studio-side.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--black-suv-studio-side-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--black-suv-studio-side-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--black-suv-studio-side-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/blue-coupe-open-door.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--blue-coupe-open-door-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--blue-coupe-open-door-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--blue-coupe-open-door-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/blue-coupe-side-profile.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--blue-coupe-side-profile-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--blue-coupe-side-profile-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--blue-coupe-side-profile-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/blue-porsche-911-carbon-hood-115.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--blue-porsche-911-carbon-hood-115-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--blue-porsche-911-carbon-hood-115-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--blue-porsche-911-carbon-hood-115-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/blue-porsche-cayman-shop-39.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--blue-porsche-cayman-shop-39-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--blue-porsche-cayman-shop-39-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--blue-porsche-cayman-shop-39-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/blue-porsche-convertible-daylight-197.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--blue-porsche-convertible-daylight-197-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--blue-porsche-convertible-daylight-197-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--blue-porsche-convertible-daylight-197-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/blue-suv-studio.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--blue-suv-studio-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--blue-suv-studio-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--blue-suv-studio-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/bmw-coupe-satin-gray-332.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--bmw-coupe-satin-gray-332-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--bmw-coupe-satin-gray-332-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--bmw-coupe-satin-gray-332-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/ceramic-coating-red-car-polishing.jpg": {
+    "width": 1800,
+    "height": 2400,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--ceramic-coating-red-car-polishing-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ceramic-coating-red-car-polishing-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ceramic-coating-red-car-polishing-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/ceramic-coating-surface-application.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--ceramic-coating-surface-application-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ceramic-coating-surface-application-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ceramic-coating-surface-application-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/classic-porsche-911-hood-film-288.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--classic-porsche-911-hood-film-288-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--classic-porsche-911-hood-film-288-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--classic-porsche-911-hood-film-288-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/corvette-outside-auto-vos.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--corvette-outside-auto-vos-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--corvette-outside-auto-vos-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--corvette-outside-auto-vos-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/dark-cabin-dashboard-detail.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--dark-cabin-dashboard-detail-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--dark-cabin-dashboard-detail-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--dark-cabin-dashboard-detail-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/dark-car-window-detail.jpg": {
+    "width": 1800,
+    "height": 2400,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--dark-car-window-detail-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--dark-car-window-detail-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--dark-car-window-detail-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/dark-green-porsche-911-shop-323.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--dark-green-porsche-911-shop-323-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--dark-green-porsche-911-shop-323-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--dark-green-porsche-911-shop-323-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/gray-porsche-911-overhead-213.jpg": {
+    "width": 1512,
+    "height": 2016,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--gray-porsche-911-overhead-213-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--gray-porsche-911-overhead-213-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--gray-porsche-911-overhead-213-1512.webp",
+        "width": 1512
+      }
+    ]
+  },
+  "/assets/work/oct15/green-classic-car-studio.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--green-classic-car-studio-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--green-classic-car-studio-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--green-classic-car-studio-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/green-coupe-open-door-interior.jpg": {
+    "width": 1800,
+    "height": 2400,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--green-coupe-open-door-interior-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--green-coupe-open-door-interior-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--green-coupe-open-door-interior-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/green-coupe-outdoor-profile.jpg": {
+    "width": 1800,
+    "height": 2400,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--green-coupe-outdoor-profile-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--green-coupe-outdoor-profile-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--green-coupe-outdoor-profile-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/green-porsche-914-shop-110.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--green-porsche-914-shop-110-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--green-porsche-914-shop-110-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--green-porsche-914-shop-110-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/hero-window-tint-installation.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--hero-window-tint-installation-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--hero-window-tint-installation-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--hero-window-tint-installation-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/ineos-grenadier-matte-shop-185.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-matte-shop-185-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-matte-shop-185-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-matte-shop-185-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/ineos-grenadier-satin-door-hinge-191.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-satin-door-hinge-191-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-satin-door-hinge-191-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-satin-door-hinge-191-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/ineos-grenadier-satin-hood-detail-190.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-satin-hood-detail-190-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-satin-hood-detail-190-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-satin-hood-detail-190-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/ineos-grenadier-satin-rear-quarter-186.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-satin-rear-quarter-186-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-satin-rear-quarter-186-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-satin-rear-quarter-186-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/ineos-grenadier-satin-side-profile-187.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-satin-side-profile-187-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-satin-side-profile-187-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ineos-grenadier-satin-side-profile-187-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/olive-sports-car-studio.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--olive-sports-car-studio-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--olive-sports-car-studio-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--olive-sports-car-studio-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/orange-porsche-911-shop-235.jpg": {
+    "width": 1800,
+    "height": 2400,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--orange-porsche-911-shop-235-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--orange-porsche-911-shop-235-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--orange-porsche-911-shop-235-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/orange-sports-car-studio.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--orange-sports-car-studio-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--orange-sports-car-studio-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--orange-sports-car-studio-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/orange-volkswagen-golf-outside-387.jpg": {
+    "width": 1512,
+    "height": 2016,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--orange-volkswagen-golf-outside-387-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--orange-volkswagen-golf-outside-387-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--orange-volkswagen-golf-outside-387-1512.webp",
+        "width": 1512
+      }
+    ]
+  },
+  "/assets/work/oct15/pink-porsche-mirror-detail-272.jpg": {
+    "width": 1512,
+    "height": 2016,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--pink-porsche-mirror-detail-272-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--pink-porsche-mirror-detail-272-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--pink-porsche-mirror-detail-272-1512.webp",
+        "width": 1512
+      }
+    ]
+  },
+  "/assets/work/oct15/porsche-cayman-hood-film-install-319.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--porsche-cayman-hood-film-install-319-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-cayman-hood-film-install-319-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-cayman-hood-film-install-319-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/porsche-headlamp-opening-film-edge-9.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--porsche-headlamp-opening-film-edge-9-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-headlamp-opening-film-edge-9-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-headlamp-opening-film-edge-9-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/porsche-macan-front-film-install-8.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--porsche-macan-front-film-install-8-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-macan-front-film-install-8-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-macan-front-film-install-8-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/porsche-macan-satin-door-mirror-247.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--porsche-macan-satin-door-mirror-247-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-macan-satin-door-mirror-247-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-macan-satin-door-mirror-247-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/porsche-macan-satin-front-detail-243.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--porsche-macan-satin-front-detail-243-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-macan-satin-front-detail-243-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-macan-satin-front-detail-243-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/porsche-macan-satin-rear-246.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--porsche-macan-satin-rear-246-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-macan-satin-rear-246-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-macan-satin-rear-246-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/porsche-rear-spoiler-film-299.jpg": {
+    "width": 1512,
+    "height": 2016,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--porsche-rear-spoiler-film-299-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-rear-spoiler-film-299-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-rear-spoiler-film-299-1512.webp",
+        "width": 1512
+      }
+    ]
+  },
+  "/assets/work/oct15/porsche-spyder-rear-deck-film-377.jpg": {
+    "width": 1512,
+    "height": 2016,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--porsche-spyder-rear-deck-film-377-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-spyder-rear-deck-film-377-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--porsche-spyder-rear-deck-film-377-1512.webp",
+        "width": 1512
+      }
+    ]
+  },
+  "/assets/work/oct15/ppf-front-bumper-fitting.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--ppf-front-bumper-fitting-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ppf-front-bumper-fitting-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--ppf-front-bumper-fitting-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/red-alfa-romeo-4c-outside-127.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--red-alfa-romeo-4c-outside-127-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-alfa-romeo-4c-outside-127-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-alfa-romeo-4c-outside-127-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/red-car-gloss-detail.jpg": {
+    "width": 1800,
+    "height": 2400,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--red-car-gloss-detail-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-car-gloss-detail-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-car-gloss-detail-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/red-porsche-911-rear-wing-221.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--red-porsche-911-rear-wing-221-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-porsche-911-rear-wing-221-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-porsche-911-rear-wing-221-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/red-sports-car-cabin.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--red-sports-car-cabin-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-sports-car-cabin-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-sports-car-cabin-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/red-sports-car-front-three-quarter.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--red-sports-car-front-three-quarter-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-sports-car-front-three-quarter-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-sports-car-front-three-quarter-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/red-sports-car-outside-studio.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--red-sports-car-outside-studio-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-sports-car-outside-studio-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-sports-car-outside-studio-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/red-sports-car-studio-view.jpg": {
+    "width": 1800,
+    "height": 2400,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--red-sports-car-studio-view-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-sports-car-studio-view-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--red-sports-car-studio-view-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/rose-coupe-outdoor-profile.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--rose-coupe-outdoor-profile-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--rose-coupe-outdoor-profile-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--rose-coupe-outdoor-profile-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/silver-coupe-outdoor-front.jpg": {
+    "width": 1512,
+    "height": 2016,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--silver-coupe-outdoor-front-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--silver-coupe-outdoor-front-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--silver-coupe-outdoor-front-1512.webp",
+        "width": 1512
+      }
+    ]
+  },
+  "/assets/work/oct15/silver-coupe-side-detail.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--silver-coupe-side-detail-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--silver-coupe-side-detail-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--silver-coupe-side-detail-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/silver-ford-pickup-shop-309.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--silver-ford-pickup-shop-309-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--silver-ford-pickup-shop-309-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--silver-ford-pickup-shop-309-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/silver-porsche-convertible-outside-378.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--silver-porsche-convertible-outside-378-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--silver-porsche-convertible-outside-378-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--silver-porsche-convertible-outside-378-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/tesla-matte-front-51.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--tesla-matte-front-51-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--tesla-matte-front-51-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--tesla-matte-front-51-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/tesla-matte-rear-49.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--tesla-matte-rear-49-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--tesla-matte-rear-49-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--tesla-matte-rear-49-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/tesla-matte-side-48.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--tesla-matte-side-48-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--tesla-matte-side-48-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--tesla-matte-side-48-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/turquoise-porsche-911-shop-281.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--turquoise-porsche-911-shop-281-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--turquoise-porsche-911-shop-281-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--turquoise-porsche-911-shop-281-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/white-ineos-grenadier-front-daylight-262.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--white-ineos-grenadier-front-daylight-262-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--white-ineos-grenadier-front-daylight-262-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--white-ineos-grenadier-front-daylight-262-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/white-ineos-grenadier-rear-daylight-264.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--white-ineos-grenadier-rear-daylight-264-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--white-ineos-grenadier-rear-daylight-264-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--white-ineos-grenadier-rear-daylight-264-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/white-porsche-cayman-shop-195.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--white-porsche-cayman-shop-195-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--white-porsche-cayman-shop-195-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--white-porsche-cayman-shop-195-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/white-porsche-lower-door-work-57.jpg": {
+    "width": 1512,
+    "height": 2016,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--white-porsche-lower-door-work-57-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--white-porsche-lower-door-work-57-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--white-porsche-lower-door-work-57-1512.webp",
+        "width": 1512
+      }
+    ]
+  },
+  "/assets/work/oct15/white-porsche-taycan-shop-37.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--white-porsche-taycan-shop-37-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--white-porsche-taycan-shop-37-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--white-porsche-taycan-shop-37-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/white-van-outdoor-front.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--white-van-outdoor-front-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--white-van-outdoor-front-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--white-van-outdoor-front-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/window-tint-side-glass-installation.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--window-tint-side-glass-installation-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--window-tint-side-glass-installation-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--window-tint-side-glass-installation-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/windshield-film-installation-hero.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--windshield-film-installation-hero-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--windshield-film-installation-hero-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--windshield-film-installation-hero-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/windshield-film-technician-close.jpg": {
+    "width": 1800,
+    "height": 2400,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--windshield-film-technician-close-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--windshield-film-technician-close-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--windshield-film-technician-close-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/work/oct15/windshield-installation-wide-view.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct15--windshield-installation-wide-view-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct15--windshield-installation-wide-view-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct15--windshield-installation-wide-view-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
   "/assets/work/porsche-914-windshield-film-edge.jpg": {
     "width": 1800,
     "height": 2400,

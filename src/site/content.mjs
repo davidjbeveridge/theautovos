@@ -5,6 +5,8 @@ export const quotePath=paths.quote;
 export const services=[
   {
     "id": "tint",
+    "cardImage": "/assets/work/oct15/window-tint-side-glass-installation.jpg",
+    "cardAlt": "Installer working window tint across a car\u2019s side glass",
     "name": "Window tint",
     "path": "/services/window-tint/",
     "title": "A more comfortable\ndrive.",
@@ -74,12 +76,14 @@ export const services=[
   },
   {
     "id": "ppf",
+    "cardImage": "/assets/work/oct15/ppf-front-bumper-fitting.jpg",
+    "cardAlt": "Two installers positioning clear paint protection film around a car\u2019s front bumper",
     "name": "Paint protection film",
     "path": "/services/paint-protection-film/",
     "title": "Keep the road.\nLose some of the wear.",
     "description": "Paint protection film in Colorado Springs. Compare panel coverage, preparation, physical protection, limitations and custom PPF quotes.",
-    "image": "reviews/christopher-jones-md-4.jpg",
-    "alt": "Christopher Jones’s silver Porsche GT3 Touring, described in his review as fully wrapped by Auto Vos",
+    "image": "/assets/work/oct15/blue-porsche-cayman-shop-39.jpg",
+    "alt": "Blue Porsche Cayman with bronze wheels in the Auto Vos workshop",
     "summary": "Help protect your paint from small chips and everyday road wear. Cover the front end, the panels you worry about, or more of the car.",
     "mechanism": "PPF is a film applied over selected painted panels. It takes some of the contact that would otherwise reach the finish, while leaving the shape of the car visible.",
     "product": "Auto Vos uses XPEL paint protection film. Choose the panels you want covered, then compare clear gloss film with XPEL STEALTH, the matte-finish option. STEALTH is XPEL’s product name; matte describes the finish. We can show you what the film will look like and where its edges will sit.",

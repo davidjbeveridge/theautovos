@@ -2,17 +2,29 @@ import {fenderGuide} from './fender-guide.mjs';
 import {targaGuide} from './targa-guide.mjs';
 import {serviceDiagram} from './service-media.mjs';
 import {serviceEducation,serviceQuestions} from './education.mjs';
+import {editorialRows,splitHeader} from '../editorial.mjs';
 import fs from 'node:fs';
 import {escape as e,link,sectionHeading,faq} from '../components.mjs';
 import {services,business,quotePath} from './content.mjs';
 import {routeRegistry,paths,eligible} from './routes.mjs';
 const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url)));
+const approved=read('./approved-media.json');
 const videos=read('../../handoff/video-content.json');
 const reviews=read('../../handoff/review-content.json').reviews;
 const videoPaths=['/resources/porsche-targa-rear-window-tint-installation/','/resources/porsche-997-front-fender-ppf-installation/','/work/ineos-grenadier-tint-ppf/'];
 export const videoStories=videos.map((v,i)=>({...v,path:videoPaths[i]}));
 const intro=(label,title,desc)=>`<section class="av-frame av-intro"><p class="av-eyebrow">${e(label)}</p><h1 class="av-display">${e(title)}</h1><p class="av-lead">${e(desc)}</p></section>`;
 const prose=sections=>`<div class="av-reading">${sections.map(s=>`<section><h2>${e(s.title)}</h2><p>${e(s.text)}</p></section>`).join('')}</div>`;
+const resourceMedia={
+ 'porsche-targa-rear-window-tint-installation':{src:'/assets/targa-guide/step-04-graded.jpg',alt:'Auto Vos fitting window tint to the curved rear glass of a Porsche 911 Targa',width:1920,height:1080},
+ 'porsche-997-front-fender-ppf-installation':{src:'/assets/fender-guide/step-03.jpg',alt:'Auto Vos positioning clear PPF on a Porsche 997 Carrera front fender',width:1280,height:720},
+ 'colorado-window-tint-laws':{src:'/assets/work/porsche-taycan-window-tint.jpg',alt:'Rose-colored Porsche Taycan with tinted side windows at Auto Vos',width:1280,height:800},
+ 'window-tint-cost-colorado-springs':approved.tintCard,
+ 'ppf-cost-guide':approved.ppfExplanation,
+ 'ppf-vs-ceramic-coating':{src:'/assets/services/fusion-plus-kit.jpg',alt:'XPEL FUSION PLUS Paint and PPF ceramic coating bottle and application kit at Auto Vos',width:2500,height:1875},
+ 'ceramic-vs-carbon-tint':{src:'/assets/services/cabin-side-glass.jpg',alt:'View from inside a car through the front side window',width:2500,height:1875},
+ 'does-ppf-protect-against-hail':approved.ppfHero
+};
 const cta=(service='',brand='')=>`<section class="av-invitation av-dark"><div class="av-frame"><div><h2 class="av-title">Tell us about your ${e(brand||'car')}.</h2><p>Share the model, what you want to protect and any existing film or coating. We’ll talk through the options and quote the work.</p></div>${link('Get a quote',quotePath+'?'+new URLSearchParams({service:service||'choose',make:brand}),'inverse')}</div></section>`;
 const pending=(config,text)=>config.demo?`<aside class="av-frame site-pending"><strong>Preview note:</strong> ${e(text)}</aside>`:'';
 export const mapModule=(id='map')=>`<section class="site-map" aria-label="Map to Auto Vos"><h2>Find Auto Vos</h2><p>${e(business.street)} · Colorado Springs, CO ${business.postal}</p><div class="site-map-frame" id="${id}"><button type="button" class="av-button av-button--secondary" data-map="${id}">Load interactive map</button><p class="av-caption">Loads Google Maps when selected.</p></div><a href="https://www.google.com/maps/search/?api=1&amp;query=Auto%20Vos&amp;query_place_id=ChIJ8_wKDA1bE4cR2t0X4b81mzQ">Open directions in Google Maps</a></section>`;
@@ -35,6 +47,29 @@ export function expandedPages(config){let pages=[];for(const row of routeRegistr
  for(const brand of ['porsche','bmw','tesla']){const name=brand==='bmw'?'BMW':brand[0].toUpperCase()+brand.slice(1);const stories=brand==='porsche'?videoStories.slice(0,2):[];pages.push({path:'/work/'+brand+'/',title:stories.length?name+' installation work | Auto Vos':name+' protection options | Auto Vos',description:stories.length?'Verified '+name+' project stories and installation process from Auto Vos.':'Explore '+name+' protection services and see real Auto Vos installations on other vehicles.',body:intro(stories.length?'Our work':'Your protection options',stories.length?name+' at Auto Vos.':'Protection for your '+name+'.',stories.length?'Watch actual installations and see the care involved.':'Explore '+name+' services and see real installation examples. The illustrated guides below feature Porsche and Grenadier projects.')+(stories.length?`<section class="av-frame av-section">${storyLinks(stories)}<p class="site-spaced"><a href="/work/window-tint/porsche/">Porsche tint work</a> · <a href="/work/paint-protection-film/porsche/">Porsche PPF work</a></p></section>`:`<section class="av-frame av-section"><h2 class="av-title">Services for your ${name}.</h2><ul class="av-bullet-list">${services.map(s=>`<li><a href="${s.path+brand+'/'}">${s.name} for ${name}</a></li>`).join('')}</ul>${brand==='bmw'?'<p class="site-spaced"><a href="/work/paint-protection-film/bmw/">See Jonathan’s BMW M8 PPF review and photos</a></p>':''}</section><section class="av-frame av-section"><h2 class="av-title">See how we work.</h2><p>These Porsche and Grenadier installations show the process on other vehicles. They are not ${name} project examples.</p>${storyLinks(videoStories)}<p class="site-spaced"><a href="/gallery/">Browse our work galleries</a> for installation details and customer projects.</p></section>`)+cta('',name)});}
  for(const [slug,brand,i] of [['window-tint','porsche',0],['paint-protection-film','porsche',1],['paint-protection-film','bmw',-1]])pages.push({path:`/work/${slug}/${brand}/`,title:`${brand==='bmw'?'BMW':'Porsche'} ${slug.replaceAll('-',' ')} work`,description:'Actual Auto Vos installation evidence, organized by service and vehicle.',body:intro('Our work',`${brand==='bmw'?'BMW':'Porsche'} ${slug.replaceAll('-',' ')}.`,i>=0?'Follow a real installation from the Auto Vos workshop.':'Jonathan shares his experience with full-body XPEL STEALTH (matte-finish) PPF on his BMW M8, with his original customer photos.')+(i>=0?`<section class="av-frame av-section">${storyLinks([videoStories[i]])}</section>`:`<section class="av-section av-dark"><div class="av-frame site-customer-project"><h2 class="av-title">A customer’s BMW M8.</h2><p class="site-spaced">Jonathan’s original Google review and photos. Select a photo to inspect it full size.</p>${reviewCard(reviews.find(r=>r.author==='Jonathan'),2)}</div></section><section class="av-frame av-section"><h2 class="av-title">PPF for your BMW.</h2><p><a href="/services/paint-protection-film/bmw/">Explore BMW paint protection film</a>, or <a href="/gallery/">browse our work galleries</a> for installation details and customer photos.</p></section>`)+cta(slug==='window-tint'?'tint':'ppf',brand==='bmw'?'BMW':'Porsche')});
  pages.push({path:'/reviews/',title:'Selected customer reviews | Auto Vos',description:'Selected Auto Vos Google reviews with original customer photos and links to each review.',body:intro('Customer stories','In their own words.','Selected customer reviews, not a live feed or a representation of every review.')+reviewSection(config)+cta()});
- const resourceFile=new URL('./resource-guides.json',import.meta.url);if(fs.existsSync(resourceFile)){for(const a of read('./resource-guides.json'))pages.push({path:'/resources/'+a.slug+'/',title:a.title,description:a.description,body:`<header class="av-frame av-section site-guide-header"><p class="av-eyebrow">Guides & questions</p><h1 class="av-title">${e(a.title)}</h1><p class="av-lead">${e(a.description)}</p><img class="av-image" src="${a.slug.includes('ppf')?'/assets/fender-guide/step-05.jpg':'/assets/work/porsche-taycan-window-tint.jpg'}" alt="${a.slug.includes('ppf')?'PPF being fitted around a Porsche 997 front fender':'Porsche Taycan with tinted side windows at Auto Vos'}" width="1280" height="720" fetchpriority="high"></header>`+`<section class="av-frame av-section av-section--first">${prose(a.sections)}${serviceDiagram(a.slug==='ppf-vs-ceramic-coating'?'combination':a.slug.includes('ppf')?'ppf':'tint')}<aside class="site-sources"><h2>Sources and further reading</h2><p>Reviewed October 8, 2026. Product and legal requirements can change.</p><ul>${a.sources.map(s=>`<li><a href="${e(s.url)}">${e(s.label)}</a></li>`).join('')}</ul></aside></section>`+cta(a.slug.includes('tint')?'tint':a.slug.includes('ppf')?'ppf':'choose')});}
- const guides=pages.filter(p=>p.path.startsWith('/resources/'));pages.push({path:paths.resources,title:'Vehicle protection guides and questions | Auto Vos',description:'Practical answers about window tint, PPF, coatings, pricing and actual installations.',body:intro('Guides & questions','Before you decide.','Read practical answers, compare the options and watch actual work in the studio.')+`<section class="av-frame av-section av-section--first"><div class="site-story-grid">${guides.map(p=>`<article><h2><a href="${p.path}">${e(p.title)}</a></h2><p>${e(p.description)}</p></article>`).join('')}</div></section>`+cta()});
+ const resourceFile=new URL('./resource-guides.json',import.meta.url);
+ const articleDiagram={
+  'colorado-window-tint-laws':[2,'tint'],
+  'window-tint-cost-colorado-springs':[1,'tint'],
+  'ppf-cost-guide':[1,'ppf'],
+  'ppf-vs-ceramic-coating':[2,'combination'],
+  'does-ppf-protect-against-hail':[1,'ppf']
+ };
+ if(fs.existsSync(resourceFile)){
+  for(const a of read('./resource-guides.json')){
+   const image=resourceMedia[a.slug];
+   const [mediaIndex,diagramId]=articleDiagram[a.slug]||[];
+   const sections=a.sections.map((s,i)=>`<section class="site-guide-prose__section"><h2>${e(s.title)}</h2><p>${e(s.text)}</p></section>${i===mediaIndex?serviceDiagram(diagramId):''}`).join('');
+   pages.push({path:'/resources/'+a.slug+'/',title:a.title,description:a.description,body:splitHeader({label:'Guides & questions',title:a.title,description:a.description,image})+`<section class="av-frame av-section av-section--first"><div class="site-guide-prose">${sections}</div><aside class="site-sources"><h2>Sources and further reading</h2><p>Reviewed October 8, 2026. Product and legal requirements can change.</p><ul>${a.sources.map(s=>`<li><a href="${e(s.url)}">${e(s.label)}</a></li>`).join('')}</ul></aside></section>`+cta(a.slug.includes('tint')?'tint':a.slug.includes('ppf')?'ppf':'choose')});
+  }
+ }
+ const guides=pages.filter(p=>p.path.startsWith('/resources/'));
+ const guideRows=guides.map(p=>{
+  const slug=p.path.split('/').filter(Boolean).at(-1);
+  const source=resourceMedia[slug];
+  const still=p.video?.stills?.[0];
+  const image=source||{src:`/${still.path}`,alt:still.alt,width:1280,height:720};
+  return {title:p.title,text:p.description,href:p.path,image};
+ });
+ pages.push({path:paths.resources,title:'Vehicle protection guides and questions | Auto Vos',description:'Practical answers about window tint, PPF, coatings, pricing and actual installations.',body:splitHeader({label:'Guides & questions',title:'Before you decide.',description:'Read practical answers, compare the options and watch actual work in the studio.',image:approved.ppfCard})+`<section class="av-section av-section--first">${editorialRows(guideRows,{className:'site-guide-index'})}</section>`+cta()});
  return pages.filter(p=>eligible(p.path,config)).map(p=>{if(!p.path.startsWith('/services/'))return p;const id=p.path.includes('/window-tint/')?'tint':p.path.includes('/paint-protection-film/')?'ppf':p.path.includes('/ceramic-coating/')?'ceramic':'windshield';const source=services.find(s=>s.id===id);p.body=p.body.replace('</section>','</section>'+serviceEducation(id,p.path));const marker='<section class="av-invitation av-dark">';p.body=p.body.replace(marker,serviceQuestions(id,source?.faq||[])+marker);return p;});}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "jacques-component-contract",
+  "version": "0.1.0",
+  "ownership": "shared",
+  "layer": "application-pattern",
+  "behavior": {
+    "variants": [
+      "primary"
+    ],
+    "sizes": [
+      "default"
+    ],
+    "polymorphism": "forbidden"
+  },
+  "states": [
+    {
+      "id": "default",
+      "kind": "ready"
+    },
+    {
+      "id": "long-content",
+      "kind": "ready"
+    }
+  ],
+  "accessibility": {
+    "requirements": [
+      "keyboard-navigation",
+      "visible-focus",
+      "correct-semantics",
+      "programmatic-labels",
+      "meaningful-image-alternatives"
+    ]
+  },
+  "responsive": {
+    "capabilityProfiles": [
+      "authoring",
+      "compact"
+    ],
+    "collapseOrder": [
+      "preserve-primary-content",
+      "preserve-critical-context",
+      "preserve-accessible-names"
+    ]
+  },
+  "platformBehavior": [
+    {
+      "platform": "web",
+      "behaviors": [
+        "native-focus"
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "editorial-row-specimen",
+      "stressModes": [
+        "normal",
+        "long",
+        "missing",
+        "unusual-punctuation",
+        "long-word"
+      ],
+      "states": [
+        "default",
+        "long-content"
+      ]
+    }
+  ],
+  "implementations": [
+    {
+      "surfaceId": "web",
+      "status": "implemented"
+    }
+  ],
+  "consumers": [],
+  "deprecation": {
+    "status": "active"
+  },
+  "id": "editorial-row",
+  "semanticName": "Editorial collection row",
+  "purpose": "Present one guide, project or collection entry with a short lead and relevant image.",
+  "contentSlots": [
+    {
+      "id": "title",
+      "semanticKind": "heading",
+      "required": true,
+      "overflowPolicy": "wrap"
+    },
+    {
+      "id": "lead",
+      "semanticKind": "text",
+      "required": true,
+      "overflowPolicy": "wrap"
+    },
+    {
+      "id": "image",
+      "semanticKind": "image",
+      "required": true,
+      "overflowPolicy": "preserve"
+    },
+    {
+      "id": "destination",
+      "semanticKind": "link",
+      "required": true,
+      "overflowPolicy": "wrap"
+    }
+  ],
+  "presentationVariables": [
+    "space.section",
+    "layout.max",
+    "color.line"
+  ],
+  "x-autovos": {
+    "note": "Copy is first in DOM order. Alternate image side only at wide widths; on compact screens keep title and lead before image. Link names describe the destination."
+  }
+}

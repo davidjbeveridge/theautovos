@@ -115,6 +115,60 @@
         "space",
         "control"
       ]
+    },
+    {
+      "id": "split-header",
+      "contractPath": "contracts/components/split-header.yaml",
+      "contractVersion": "0.1.0",
+      "status": "active",
+      "ownership": "shared",
+      "layer": "application-pattern",
+      "consumers": [
+        "src/site/expanded.mjs",
+        "src/site/service-media.mjs",
+        "src/catalog.mjs"
+      ],
+      "impactRoots": [
+        "color",
+        "space",
+        "control"
+      ]
+    },
+    {
+      "id": "editorial-row",
+      "contractPath": "contracts/components/editorial-row.yaml",
+      "contractVersion": "0.1.0",
+      "status": "active",
+      "ownership": "shared",
+      "layer": "application-pattern",
+      "consumers": [
+        "src/site/expanded.mjs",
+        "src/site/service-media.mjs",
+        "src/catalog.mjs"
+      ],
+      "impactRoots": [
+        "color",
+        "space",
+        "control"
+      ]
+    },
+    {
+      "id": "media-explanation",
+      "contractPath": "contracts/components/media-explanation.yaml",
+      "contractVersion": "0.1.0",
+      "status": "active",
+      "ownership": "shared",
+      "layer": "application-pattern",
+      "consumers": [
+        "src/site/expanded.mjs",
+        "src/site/service-media.mjs",
+        "src/catalog.mjs"
+      ],
+      "impactRoots": [
+        "color",
+        "space",
+        "control"
+      ]
     }
   ]
 }

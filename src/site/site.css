@@ -72,3 +72,16 @@
 #site-hero-video{opacity:0;transition:opacity var(--av-motion-enter) ease}#site-hero-video.is-playing{opacity:1}.site-hero-toggle{display:inline-flex;align-items:center;justify-content:center;background:transparent;color:inherit;border:0;padding:14px;width:48px;height:48px;flex:0 0 48px;cursor:pointer}.site-hero-toggle svg{display:block;width:20px;height:20px}.site-hero-toggle svg [hidden]{display:none}.site-hero-toggle[hidden]{display:none}.av-home-bottom{flex-wrap:wrap;gap:16px}
 
 .site-guide-header{background:var(--av-color-surface);padding-inline:clamp(20px,4vw,48px);margin-top:32px}.site-guide-header img{margin-top:32px;aspect-ratio:16/9;object-fit:cover}.site-step-clip{display:block;width:100%;height:auto;margin-top:24px;background:#111}
+
+/* Paired media keeps each instruction with its own evidence, in one ordered sequence. */
+.site-targa-guide{max-width:var(--av-layout-max)}
+.site-guide-header{max-width:1000px;margin-inline:auto}
+.site-guide-header>img{max-height:420px;object-fit:cover;margin-top:32px}
+.site-targa-film{max-width:1000px;margin-inline:auto}
+.site-support-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--av-space-lg);margin-top:32px}
+.site-support-photos .av-image{aspect-ratio:4/3;object-fit:cover}
+@media(max-width:760px){.site-step-layout,.site-support-photos{grid-template-columns:minmax(0,1fr)}.site-targa-steps>li{padding-block:32px}.site-guide-header>img{max-height:300px}}
+
+.site-guide-introduction{max-width:75ch;margin:40px auto}.site-targa-guide>.site-split-header{margin-top:32px}.site-targa-guide>.site-split-header .av-display{font-size:clamp(34px,4vw,58px)}
+
+.site-step-video{margin-top:24px}.site-step-video summary{font-weight:700;cursor:pointer;text-decoration:underline;text-underline-offset:.2em;padding-block:16px}.site-step-video[open] summary{margin-bottom:16px}
