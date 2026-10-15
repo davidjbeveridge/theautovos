@@ -1,0 +1,108 @@
+{
+  "ppfCard": {
+    "src": "/assets/work/oct15/ppf-front-bumper-fitting.jpg",
+    "alt": "Two installers positioning clear paint protection film around a car\u2019s front bumper",
+    "title": "Two installers positioning clear paint protection film around a car\u2019s front bumper",
+    "caption": "Fitting a sheet of clear PPF around the front bumper at Auto Vos in Colorado Springs.",
+    "width": 2400,
+    "height": 1800
+  },
+  "tintCard": {
+    "src": "/assets/work/oct15/window-tint-side-glass-installation.jpg",
+    "alt": "Installer working window tint across a car\u2019s side glass",
+    "title": "Installer working window tint across a car\u2019s side glass",
+    "caption": "Window tint installation at Auto Vos: shaping the film to fit the side glass.",
+    "width": 2400,
+    "height": 1800
+  },
+  "purpose": {
+    "src": "/assets/work/oct15/auto-vos-installation-work-bays.jpg",
+    "alt": "Vehicles in the Auto Vos work bays, seen from above",
+    "title": "Vehicles in the Auto Vos work bays, seen from above",
+    "caption": "A view across the Auto Vos work bays in Colorado Springs.",
+    "width": 2016,
+    "height": 1512
+  },
+  "contact": {
+    "src": "/assets/work/oct15/corvette-outside-auto-vos.jpg",
+    "alt": "Red Chevrolet Corvette parked outside the Auto Vos entrance",
+    "title": "Red Chevrolet Corvette parked outside the Auto Vos entrance",
+    "caption": "Look for the entrance shown here at 2130 Spectra Drive, Suite 100, in Colorado Springs.",
+    "width": 2400,
+    "height": 1800
+  },
+  "waiting": {
+    "src": "/assets/work/oct15/auto-vos-waiting-room-visualization.jpg",
+    "alt": "Auto Vos waiting-room visualization with people seated on the left, chairs and display shelves",
+    "title": "Auto Vos waiting-room visualization with people seated on the left, chairs and display shelves",
+    "caption": "Auto Vos waiting room. Client-supplied visualization; the seated people were added with AI.",
+    "width": 1448,
+    "height": 1086
+  },
+  "windshieldHero": {
+    "src": "/assets/work/oct15/windshield-film-installation-hero.jpg",
+    "alt": "Squeegee working windshield protection film along the lower glass of a green Porsche 914",
+    "title": "Squeegee working windshield protection film along the lower glass of a green Porsche 914",
+    "caption": "Windshield protection film is fitted to the outside of the Porsche 914 glass. The installer works solution toward the lower edge.",
+    "width": 2400,
+    "height": 1800
+  },
+  "windshieldExplanation": {
+    "src": "/assets/work/oct15/windshield-film-technician-close.jpg",
+    "alt": "Installer fitting windshield protection film at the upper corner of a green Porsche 914",
+    "title": "Installer fitting windshield protection film at the upper corner of a green Porsche 914",
+    "caption": "A close look at fitting the exterior film around the Porsche 914 windshield edge.",
+    "width": 1800,
+    "height": 2400
+  },
+  "ppfHero": {
+    "src": "/assets/work/oct15/blue-porsche-cayman-shop-39.jpg",
+    "alt": "Blue Porsche Cayman with bronze wheels in the Auto Vos workshop",
+    "title": "Blue Porsche Cayman with bronze wheels in the Auto Vos workshop",
+    "caption": "A blue Porsche Cayman beneath the Auto Vos sign in our Colorado Springs workshop.",
+    "width": 2400,
+    "height": 1800
+  },
+  "ppfExplanation": {
+    "src": "/assets/work/oct15/porsche-cayman-hood-film-install-319.jpg",
+    "alt": "Installer using a pink squeegee on wet film over a silver Porsche Cayman hood",
+    "title": "Installer using a pink squeegee on wet film over a silver Porsche Cayman hood",
+    "caption": "An installer works a squeegee across wet paint protection film on the Cayman hood.",
+    "width": 2016,
+    "height": 1512
+  },
+  "ceramicPreparation": {
+    "src": "/assets/work/oct15/ceramic-coating-surface-application.jpg",
+    "alt": "Technician using a machine polisher on the green Porsche 914 cowl",
+    "title": "Technician using a machine polisher on the green Porsche 914 cowl",
+    "caption": "Paint preparation on a Porsche 914 before coating: a small machine polisher works along the cowl. This shows polishing, not application of the liquid coating.",
+    "width": 2016,
+    "height": 1512
+  },
+  "ceramicSupport": [
+    {
+      "src": "/assets/work/oct15/ceramic-coating-surface-application.jpg",
+      "alt": "Technician using a machine polisher on the green Porsche 914 cowl",
+      "title": "Technician using a machine polisher on the green Porsche 914 cowl",
+      "caption": "Paint preparation on a Porsche 914 before coating: a small machine polisher works along the cowl. This shows polishing, not application of the liquid coating.",
+      "width": 2016,
+      "height": 1512
+    },
+    {
+      "src": "/assets/work/oct15/ceramic-coating-red-car-polishing.jpg",
+      "alt": "Machine polisher working on the red door of a Porsche",
+      "title": "Machine polisher working on the red door of a Porsche",
+      "caption": "The inspection light shows the paint while a small polisher works along the door. Preparation is assessed before applying a ceramic coating.",
+      "width": 1800,
+      "height": 2400
+    },
+    {
+      "src": "/assets/work/oct15/red-car-gloss-detail.jpg",
+      "alt": "A close view of reflections across the side glass and paint of a red car.",
+      "title": "A close view of reflections across the side glass and paint of a red car",
+      "caption": "A close view of reflections across the side glass and paint of a red car.",
+      "width": 1800,
+      "height": 2400
+    }
+  ]
+}

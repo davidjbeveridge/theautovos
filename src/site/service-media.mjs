@@ -1,9 +1,12 @@
+import {readFileSync} from 'node:fs';
+const approved=JSON.parse(readFileSync(new URL('./approved-media.json',import.meta.url)));
 import {escape as e} from '../components.mjs';
+import {mediaExplanation} from '../editorial.mjs';
 const photos={
  tint:{src:'/assets/services/cabin-side-glass.jpg',alt:'View from inside a car through the front side window',caption:'A view through side glass from the Auto Vos tint gallery. Shade changes the view; a photograph cannot measure heat rejection. Photo: Auto Vos.'},
- ppf:{src:'/assets/reviews/jonathan-1.jpg',alt:'Jonathan’s silver BMW M8 with a satin finish in the Auto Vos studio',caption:'Jonathan’s BMW M8 after the full-body XPEL STEALTH matte PPF installation described in his review. STEALTH is XPEL’s matte-finish film; it changes the finish while keeping the paint underneath. Customer photo: Jonathan.'},
+ ppf:approved.ppfExplanation,
  ceramic:{src:'/assets/services/fusion-plus-kit.jpg',alt:'XPEL FUSION PLUS Paint and PPF ceramic coating bottle and application kit at Auto Vos',caption:'FUSION PLUS is applied as a liquid. The product shown is labeled for paint and PPF; your quote will identify the coating selected for your car. Photo: Auto Vos.'},
- windshield:{src:'/assets/porsche-silver.webp',alt:'Silver Porsche 911 at the Auto Vos studio, with its curved windshield visible',caption:'A Porsche 911 at the Auto Vos studio. The diagram below uses the same silver 911 body style to explain where exterior film sits; this photo does not document a windshield-film installation. Photo: Auto Vos.'}
+ windshield:approved.windshieldExplanation
 };
 export function educationPhoto(id,path=''){
  let photo=photos[id];
@@ -21,7 +24,18 @@ const diagrams={
  ceramic:{file:'ceramic-layers',title:'How ceramic coating covers a prepared surface',alt:'Exploded illustration of water droplets and dirt above ceramic coating, prepared paint or compatible film, and a metal body panel.',caption:'A liquid-applied coating cures into a thin layer on prepared paint or compatible film. Layers are separated and greatly exaggerated here for clarity: coating is not a peelable sheet or a cushion against stone impacts.'},
  combination:{file:'ceramic-over-ppf',title:'Ceramic coating goes over compatible PPF',alt:'Exploded diagram showing ceramic coating over polyurethane PPF, followed by adhesive, clear coat, color coat, primer and the body panel.',caption:'Ceramic coating goes on top of compatible PPF. The film’s adhesive holds it over the car’s clear coat and paint. The film protects against some physical wear; the coating helps with cleaning. Educational illustration supplied for this guide, not to scale. The coating is liquid-applied; the separated layers do not represent air gaps.'}
 };
-export function serviceDiagram(id){const d=diagrams[id];if(!d)return '';return `<figure class="site-service-diagram site-spaced" data-diagram="${id}"><h3>${e(d.title)}</h3><a data-lightbox href="/assets/diagrams/${d.file}.png" aria-label="Enlarge diagram: ${e(d.title)}"><img src="/assets/diagrams/${d.file}.png" title="${e(d.title)}" alt="${e(d.alt)}" width="1448" height="1086" loading="lazy" decoding="async"></a><figcaption class="av-caption">${e(d.caption)} <a data-lightbox href="/assets/diagrams/${d.file}.png" aria-label="Enlarge diagram: ${e(d.title)}">View full-size diagram</a></figcaption></figure>`;}
+const diagramExplanations={
+ windshield:'Clear protection film adheres to the outside of the windshield as a replaceable layer. It can help with road wear, but it cannot prevent every chip or crack.',
+ tint:'Window tint is applied to the cabin side of the glass. The selected film and the vehicle’s existing glass affect light, UV and solar-heat performance.',
+ ppf:'Paint protection film sits over the paint and clear coat. Some light surface marks can recover with warmth; deep cuts and punctures do not heal.',
+ ceramic:'Ceramic coating is liquid-applied to prepared paint or compatible film. It helps with cleaning; it is not a peelable sheet or a barrier against stone impacts.',
+ combination:'PPF provides a physical layer against some road wear. A compatible ceramic coating goes over the film to help with cleaning; the two products serve different purposes.'
+};
+export function serviceDiagram(id){
+ const d=diagrams[id];if(!d)return '';
+ const html=mediaExplanation({title:d.title,text:diagramExplanations[id],image:{src:`/assets/diagrams/${d.file}.png`,alt:d.alt,width:1448,height:1086},caption:d.caption,lightboxLabel:`Enlarge diagram: ${d.title}`,className:'site-service-diagram'});
+ return html.replace('class="site-media-explanation site-service-diagram"','class="site-media-explanation site-service-diagram" data-diagram="'+e(id)+'"');
+}
 export const combinationQuestions=[
   [
     "Can I use PPF and ceramic coating together?",

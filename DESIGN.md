@@ -16,7 +16,13 @@ Use one 1440px max content frame with fluid 24–64px gutters. Reading measure i
 Keep motion restrained and optional. Scroll entrances translate at most 12px over 420ms without ever hiding undiscovered content. Gallery images scale by at most 1.02 on precise-pointer hover; touch and keyboard use explicit lightboxes. Disclosures and dialogs enter over 180ms. All motion uses shared registry tokens and respects a live reduced-motion preference. The Targa article embeds the YouTube player above its steps without autoplay, with a persistent external fallback. The service-site home hero uses the existing muted looping film with a compact 20px pause/play icon in a 48px tap target, a changing accessible action label and visible keyboard focus. Reduced motion and data-saving preferences default to the complete poster; offscreen or hidden-tab video pauses. Template film playback remains explicit. Reduced motion removes transitions. Hover changes an underline or image scale by at most 1.02 over 180ms. No parallax, scroll lock, forced intro or cursor effects. Use the homepage's 24px SVG line family, 1.5px strokes, shown at 20px with text labels and minimum 48px control targets.
 
 ## Components
-`src/components.mjs` owns semantic rendering functions; `src/system.css` owns component styles; `src/interactions.js` owns progressive behavior. `contracts/components/registry.yaml` catalogs contracts. Use native a, button, details, summary, input, select, textarea, fieldset and table. There is no framework or private headless dependency to wrap. Complex composite widgets are deferred; native disclosure navigation and ordinary radio controls suffice.
+`src/components.mjs` owns semantic rendering functions; `src/editorial.mjs` owns shared image-led page patterns; `src/system.css` and `src/editorial.css` own their styles; `src/interactions.js` owns progressive behavior. `contracts/components/registry.yaml` catalogs contracts. Use native a, button, details, summary, input, select, textarea, fieldset and table. There is no framework or private headless dependency to wrap. Complex composite widgets are deferred; native disclosure navigation and ordinary radio controls suffice.
+
+### Shared editorial patterns
+- `splitHeader({label,title,description,image,headingLevel?})` pairs one page heading and short purpose with a real photograph on an ink surface. The text precedes the image in DOM order; the image sits beside it on wide screens and follows it on narrow screens.
+- `editorialRows(rows)` renders one spacious entry per row. Each row accepts `{title,text,lead?,href?,image,caption?,action?}`. Copy comes first in DOM order; wide layouts alternate the image side; compact layouts keep copy before image.
+- `mediaExplanation({title,text,image,caption,lightboxLabel?,className?})` pairs a bounded image with its explanation. The image opens the scoped photo viewer; a plain link to the original remains in the caption as a no-script fallback. Do not add a second viewer trigger for the same image.
+- Collection pages use one row per entry; explanatory articles use media only where it clarifies the point; service pages pair diagrams with their explanation; installation instructions remain one ordered sequence.
 
 ## Content and language
 Use direct questions and concrete answers: what the service does, what it does not do, examples, next step. Preserve product names and source credits. Avoid generic luxury claims and invented urgency. Legacy site content is an October 7 audit snapshot, not proof of current facts. Staff, contact details, rights, commerce data and policy copy need owner verification before release. Clearly label fixture data in commerce and forms.
@@ -44,6 +50,7 @@ Do not add Tailwind, utility-class strings, shadcn, runtime CSS-in-JS, generic B
 - `design/assets.json`: image provenance and publication boundary.
 - `src/content.mjs`: editable template fixture content.
 - `src/components.mjs`, `src/pages.mjs`, `src/catalog.mjs`: canonical implementation.
+- `src/editorial.mjs`, `src/editorial.css`: shared editorial page patterns used by the service site and catalog.
 - `design-system/index.html`: generated visual catalog, storyboard and component specimens.
 - `templates/`: generated example pages; edit source, then rebuild.
 - `jacques.yaml` and `jacques.lock.json`: governance and deterministic lock.
@@ -65,3 +72,5 @@ The shared XPEL banner closes every service-site page before the footer. Use the
 Repeated side-by-side content uses shared grid rows for media, headings, descriptions and actions. Wrapped headings must not stagger the start of adjacent body text. Use CSS subgrid at each component's multi-column breakpoint, with natural content height and independent rows for wrapped collections; restore ordinary flow when stacked. This applies to services, galleries, benefits, process/installation steps, guides, comparisons and XPEL products.
 
 Selected customer reviews use a manually controlled, scroll-snap carousel: three cards on desktop, two on tablet and one on mobile. Never autoplay; retain native scrolling and keyboard controls. Desktop disclosure menus open on hover and focus, while touch retains native tap behavior.
+
+Installation walkthroughs keep one numbered sequence. Use `.site-step-layout` to pair each instruction and quality note with its exact still; short clips may open in an adjacent native disclosure to avoid showing the same frame twice. Below 760px, preserve text → still → optional clip order. The catalog includes this pattern.

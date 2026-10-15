@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "jacques-component-contract",
+  "version": "0.1.0",
+  "ownership": "shared",
+  "layer": "application-pattern",
+  "behavior": {
+    "variants": [
+      "primary"
+    ],
+    "sizes": [
+      "default"
+    ],
+    "polymorphism": "forbidden"
+  },
+  "states": [
+    {
+      "id": "default",
+      "kind": "ready"
+    },
+    {
+      "id": "long-content",
+      "kind": "ready"
+    }
+  ],
+  "accessibility": {
+    "requirements": [
+      "keyboard-navigation",
+      "visible-focus",
+      "correct-semantics",
+      "programmatic-labels",
+      "meaningful-image-alternatives"
+    ]
+  },
+  "responsive": {
+    "capabilityProfiles": [
+      "authoring",
+      "compact"
+    ],
+    "collapseOrder": [
+      "preserve-primary-content",
+      "preserve-critical-context",
+      "preserve-accessible-names"
+    ]
+  },
+  "platformBehavior": [
+    {
+      "platform": "web",
+      "behaviors": [
+        "native-focus"
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "media-explanation-specimen",
+      "stressModes": [
+        "normal",
+        "long",
+        "missing",
+        "unusual-punctuation",
+        "long-word"
+      ],
+      "states": [
+        "default",
+        "long-content"
+      ]
+    }
+  ],
+  "implementations": [
+    {
+      "surfaceId": "web",
+      "status": "implemented"
+    }
+  ],
+  "consumers": [],
+  "deprecation": {
+    "status": "active"
+  },
+  "id": "media-explanation",
+  "semanticName": "Explanatory media row",
+  "purpose": "Explain a service diagram or photograph beside concise supporting text.",
+  "contentSlots": [
+    {
+      "id": "title",
+      "semanticKind": "heading",
+      "required": true,
+      "overflowPolicy": "wrap"
+    },
+    {
+      "id": "text",
+      "semanticKind": "text",
+      "required": true,
+      "overflowPolicy": "wrap"
+    },
+    {
+      "id": "image",
+      "semanticKind": "image",
+      "required": true,
+      "overflowPolicy": "preserve"
+    },
+    {
+      "id": "caption",
+      "semanticKind": "text",
+      "required": true,
+      "overflowPolicy": "wrap"
+    }
+  ],
+  "presentationVariables": [
+    "space.section",
+    "layout.max",
+    "color.line",
+    "color.focus"
+  ],
+  "x-autovos": {
+    "note": "Bound image with contain sizing. Image activation opens the scoped accessible viewer; a plain original-image link remains available as fallback. Pair media beside copy on wide screens and stack in DOM order on compact screens."
+  }
+}

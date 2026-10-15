@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "jacques-component-contract",
+  "version": "0.1.0",
+  "ownership": "shared",
+  "layer": "application-pattern",
+  "behavior": {
+    "variants": [
+      "primary"
+    ],
+    "sizes": [
+      "default"
+    ],
+    "polymorphism": "forbidden"
+  },
+  "states": [
+    {
+      "id": "default",
+      "kind": "ready"
+    },
+    {
+      "id": "long-content",
+      "kind": "ready"
+    }
+  ],
+  "accessibility": {
+    "requirements": [
+      "keyboard-navigation",
+      "visible-focus",
+      "correct-semantics",
+      "programmatic-labels",
+      "meaningful-image-alternatives"
+    ]
+  },
+  "responsive": {
+    "capabilityProfiles": [
+      "authoring",
+      "compact"
+    ],
+    "collapseOrder": [
+      "preserve-primary-content",
+      "preserve-critical-context",
+      "preserve-accessible-names"
+    ]
+  },
+  "platformBehavior": [
+    {
+      "platform": "web",
+      "behaviors": [
+        "native-focus"
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "split-header-specimen",
+      "stressModes": [
+        "normal",
+        "long",
+        "missing",
+        "unusual-punctuation",
+        "long-word"
+      ],
+      "states": [
+        "default",
+        "long-content"
+      ]
+    }
+  ],
+  "implementations": [
+    {
+      "surfaceId": "web",
+      "status": "implemented"
+    }
+  ],
+  "consumers": [],
+  "deprecation": {
+    "status": "active"
+  },
+  "id": "split-header",
+  "semanticName": "Split image header",
+  "purpose": "Establish page identity and purpose beside a meaningful photograph.",
+  "contentSlots": [
+    {
+      "id": "label",
+      "semanticKind": "label",
+      "required": true,
+      "overflowPolicy": "wrap"
+    },
+    {
+      "id": "title",
+      "semanticKind": "heading",
+      "required": true,
+      "overflowPolicy": "wrap"
+    },
+    {
+      "id": "description",
+      "semanticKind": "text",
+      "required": true,
+      "overflowPolicy": "wrap"
+    },
+    {
+      "id": "image",
+      "semanticKind": "image",
+      "required": true,
+      "overflowPolicy": "preserve"
+    }
+  ],
+  "presentationVariables": [
+    "color.ink",
+    "color.inverse",
+    "space.section",
+    "layout.max"
+  ],
+  "x-autovos": {
+    "note": "Text and one H1 precede the image in DOM order. Place copy beside the image on wide screens and stack text before image on compact screens. Do not crop meaningful detail."
+  }
+}
