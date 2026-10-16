@@ -18,7 +18,7 @@ try{for(const width of [390,768,1440]){
  const v=page.locator('video.site-step-clip').first();await v.scrollIntoViewIfNeeded();await v.evaluate(e=>e.play());await page.waitForTimeout(400);assert(await v.evaluate(e=>e.currentTime)>0);await v.evaluate(e=>e.pause());
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
  await page.locator('.site-targa-steps a[data-lightbox]').first().click();assert(await page.locator('#photo-viewer').evaluate(e=>e.open));await page.keyboard.press('Escape');assert(!(await page.locator('#photo-viewer').evaluate(e=>e.open)));
- if(width===768){await page.locator('.site-guide-header').screenshot({path:'design-artifacts/site/fender-guide-header.png'});}
+ if(width===768){await page.locator('.site-split-header').screenshot({path:'design-artifacts/site/fender-guide-header.png'});}
  await page.goto('http://127.0.0.1:8790/gallery/windshield-protection-film/');for(const img of await page.locator('.site-gallery img').all()){await img.scrollIntoViewIfNeeded();await img.evaluate(e=>e.decode());}assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
  results.push({width,visibleReviewCards:visible,steps:7,clips:7,playback:true,lightbox:true});await page.close();
 }

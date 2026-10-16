@@ -9,3 +9,7 @@ Use case: compositing / infographic-diagram. EDIT TARGET: the supplied real Auto
 ## Final correction prompt
 
 Edit this diagram only: remove the LOWEST of the three floating transparent sheets, the one currently labeled 'Windshield glass'. Keep exactly TWO floating layers: 'Exterior protection film' above 'Adhesive layer'. Redirect the leader line for 'Windshield glass' to the actual intact windshield on the photographed car below, NOT to any floating sheet. Preserve the real Porsche photograph, original steering wheel position and U.S. left-hand drive, all body/cabin/background details, colors, crop, label typography and other two overlay layers unchanged. No new objects. The actual windshield remains installed in the car.
+
+
+## October 15 — green Porsche 914, version 3
+Source: assets/work/porsche-914-windshield-protection.jpg. Style references: ppf-layers.png and prior windshield-protection-photo-v2.png. Built-in imagegen produced windshield-protection-914-v3.png. Preserve the real green car, tan cabin and left-hand-drive geometry. Show exterior film, adhesive and existing windshield glass with three leader-line labels. No generated humans or unsupported performance numbers. The composite is educational; layer separation and thickness are exaggerated. Visually checked the car, labels, outside-to-inside layer order and absence of invented vehicle features. Responsive derivatives never upscale.

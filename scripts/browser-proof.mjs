@@ -18,7 +18,7 @@ async function inspect(){return page.evaluate(()=>{
  const errors=[];if(document.documentElement.scrollWidth>innerWidth+1)errors.push({kind:'overflow',width:document.documentElement.scrollWidth});
  const h1=document.querySelectorAll('h1');if(h1.length!==1)errors.push({kind:'h1-count',count:h1.length});
  const ids=[...document.querySelectorAll('[id]')].map(el=>el.id);if(new Set(ids).size!==ids.length)errors.push({kind:'duplicate-ids'});
- for(const img of document.images){if(!img.hasAttribute('alt'))errors.push({kind:'missing-alt',src:img.src});if(img.complete&&!img.naturalWidth)errors.push({kind:'broken-image',src:img.src});}
+ for(const img of document.images){if(!img.hasAttribute('alt'))errors.push({kind:'missing-alt',src:img.src});if(img.complete&&!img.naturalWidth&&!(img.matches('[data-photo-image]:not([src])')&&img.closest('dialog:not([open])')))errors.push({kind:'broken-image',src:img.src});}
  for(const el of document.querySelectorAll('button,a,input,select,textarea,summary')){if(!visible(el)||el.type==='hidden')continue;const name=el.getAttribute('aria-label')||el.getAttribute('aria-labelledby')||el.innerText||el.querySelector('img')?.alt||el.labels?.[0]?.innerText;if(!name?.trim())errors.push({kind:'unnamed-control',tag:el.tagName,id:el.id});}
  return {width:innerWidth,height:innerHeight,errors};
  });}
@@ -47,7 +47,7 @@ try {
  await page.locator('[data-simulate-error]').uncheck();await page.getByRole('button',{name:'Preview request',exact:true}).click();await page.locator('[data-form-success]').waitFor();check('local-confirmation',await page.locator('[data-form-success]').innerText().then(s=>s.includes('Nothing was sent')));await page.screenshot({path:`${out}/quote-complete.png`,fullPage:true});
  check('no-personal-data-storage',await page.evaluate(()=>!JSON.stringify({...localStorage,...sessionStorage}).includes('example.test')));
  // Gallery empty/reset and native FAQ keyboard.
- await ready('/templates/work.html');await page.getByRole('button',{name:'Events',exact:true}).click();check('gallery-empty',await page.locator('[data-gallery-empty]').isVisible());await page.screenshot({path:`${out}/work-empty.png`,fullPage:true});await page.getByRole('button',{name:'Show all work'}).click();check('gallery-reset',await page.locator('[data-gallery-grid] article:visible').count()===6);
+ await ready('/templates/work.html');await page.getByRole('button',{name:'Window tint installations',exact:true}).click();check('gallery-filter',await page.locator('[data-gallery-grid] article:visible').count()===1);await page.screenshot({path:`${out}/work-empty.png`,fullPage:true});await page.getByRole('button',{name:'All',exact:true}).click();check('gallery-reset',await page.locator('[data-gallery-grid] article:visible').count()===4);
  await ready('/templates/service-ppf.html');const summary=page.locator('.av-faq summary').first();await summary.focus();await page.keyboard.press('Enter');check('keyboard-faq',await page.locator('.av-faq details').first().getAttribute('open')!==null);
  // Native mobile navigation.
  await page.locator('.av-mobile-menu summary').focus();await page.keyboard.press('Enter');check('mobile-menu-keyboard',await page.locator('.av-mobile-menu nav').isVisible());
@@ -63,6 +63,6 @@ try {
  fs.writeFileSync(`${out}/inspection.json`,JSON.stringify({reports,errors,runtimeErrors},null,2));
  fs.writeFileSync(`${out}/render-manifest.json`,JSON.stringify({browser:'Google Chrome',captures},null,2));
  fs.writeFileSync(`${out}/functional.json`,JSON.stringify({passed:checks.every(c=>c.passed)&&errors.length===0,checks,errors},null,2));
- console.log(JSON.stringify({viewports:5,pages:20,inspections:reports.length,checks:checks.length,errorCount:errors.length,errors:errors.slice(0,10)},null,2));
+ console.log(JSON.stringify({viewports:5,pages:JSON.parse(fs.readFileSync('design/template-manifest.json')).pages.length,inspections:reports.length,checks:checks.length,errorCount:errors.length,errors:errors.slice(0,10)},null,2));
  assert.equal(errors.length,0,'Runtime layout/semantics defects');
 } finally {await browser.close();}

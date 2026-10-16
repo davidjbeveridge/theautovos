@@ -21,7 +21,7 @@ Keep motion restrained and optional. Scroll entrances translate at most 12px ove
 ### Shared editorial patterns
 - `splitHeader({label,title,description,image,headingLevel?})` pairs one page heading and short purpose with a real photograph on an ink surface. The text precedes the image in DOM order; the image sits beside it on wide screens and follows it on narrow screens.
 - `editorialRows(rows)` renders one spacious entry per row. Each row accepts `{title,text,lead?,href?,image,caption?,action?}`. Copy comes first in DOM order; wide layouts alternate the image side; compact layouts keep copy before image.
-- `mediaExplanation({title,text,image,caption,lightboxLabel?,className?})` pairs a bounded image with its explanation. The image opens the scoped photo viewer; a plain link to the original remains in the caption as a no-script fallback. Do not add a second viewer trigger for the same image.
+- `mediaExplanation({title,text,image,caption,lightboxLabel?,className?,headingLevel?})` pairs a bounded image with its explanation. The image opens the scoped photo viewer; a plain link to the original remains in the caption as a no-script fallback. Do not add a second viewer trigger for the same image.
 - Collection pages use one row per entry; explanatory articles use media only where it clarifies the point; service pages pair diagrams with their explanation; installation instructions remain one ordered sequence.
 
 ## Content and language
@@ -61,7 +61,7 @@ The main branch is authoritative. The owner-facing catalog at `design-system/ind
 `scripts/package-preview.mjs` creates the explicit publication allowlist in `dist/`. GitHub Pages publishes that artifact from main; never publish the repository root, reports or local proof files.
 
 ## Full static service-site extension — October 7
-The current task extends this identity into a registry-driven service site (52 demo pages; production publication gates recorded separately). `src/site/` owns the service-site shell, content, page families and progressive behavior; it reuses canonical tokens, primitives and `src/system.css`. The historical catalog/fixtures remain unchanged. `scripts/build-site.mjs` creates separate allowlisted demo and production candidates.
+The current task extends this identity into a registry-driven service site (46 demo pages; production publication gates recorded separately). `src/site/` owns the service-site shell, content, page families and progressive behavior; it reuses canonical tokens, primitives and `src/system.css`. Work, Guides and explanatory-article templates share the live editorial renderers. Legacy commerce fixtures remain clearly labeled. `scripts/build-site.mjs` creates separate allowlisted demo and production candidates.
 
 `design/site-brief.json` is the scoped Xenia extension brief; `design/site-design-run.json` records design evidence. `server/inquiry.mjs` is the sole runtime exception, packaged by `server/worker.mjs` for Cloudflare Workers Static Assets. No live email or analytics runs in the local demo. See `handoff/README.md` for configuration and release gates. The user authorized the isolated temporary Beveridge demo. Client production launch, shop cutover and production DNS changes still require their release gates. Automotive art is excluded; no art page, links, inquiry context or agent guidance ships in the service-site artifact.
 
@@ -74,3 +74,5 @@ Repeated side-by-side content uses shared grid rows for media, headings, descrip
 Selected customer reviews use a manually controlled, scroll-snap carousel: three cards on desktop, two on tablet and one on mobile. Never autoplay; retain native scrolling and keyboard controls. Desktop disclosure menus open on hover and focus, while touch retains native tap behavior.
 
 Installation walkthroughs keep one numbered sequence. Use `.site-step-layout` to pair each instruction and quality note with its exact still; short clips may open in an adjacent native disclosure to avoid showing the same frame twice. Below 760px, preserve text → still → optional clip order. The catalog includes this pattern.
+
+Evergreen guide sections are mapped explicitly in `src/site/guide-media.mjs`. Each has a relevant photo/diagram or a recorded text-only reason. Article headings use level 2; embedded service explanations use level 3. The Work template shows four installation categories; the Guides template demonstrates alternating rows; the explanatory guide demonstrates bounded media. Use these templates and their catalog previews for future additions.
