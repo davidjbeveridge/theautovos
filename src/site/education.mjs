@@ -74,7 +74,7 @@ export const education={
       ],
       [
         "Ceramic vs. carbon tint: which should I choose?",
-        "Compare heat rejection, visibility and the price of the actual films. Auto Vos’s published tint offering is XPEL PRIME XR Plus ceramic window film. Carbon tint is a comparison option here, not a confirmed Auto Vos product."
+        "Compare heat rejection, visibility and the price of the actual films. We install XPEL PRIME XR Plus ceramic window film. If you are also considering carbon tint from another shop, compare the exact film and shade in each quote."
       ]
     ]
   },
@@ -248,8 +248,8 @@ export const education={
     ],
     "benefits": [
       "A replaceable exterior layer between the glass and some road debris.",
-      "Potential reduction of some surface wear, depending on the product and conditions.",
-      "An option to assess for exposed windshields; it cannot guarantee a chip-free or crack-free screen."
+      "Helps reduce wear on the glass from everyday road debris.",
+      "Can be removed and replaced when worn; a hard impact can still chip or crack the glass."
     ],
     "questions": [
       [
@@ -295,5 +295,5 @@ export const education={
     ]
   }
 };
-export function serviceEducation(id,path=''){const d=education[id];return `<section class="av-section av-frame site-education"><div class="av-editorial-grid"><div><p class="av-eyebrow">How it works</p><h2 class="av-title">What is ${e(d.name)}?</h2><p class="av-lead site-spaced">${e(d.definition)}</p></div>${photoFigure(educationPhoto(id,path))}</div>${serviceDiagram(id)}<h3 class="site-spaced">What happens during installation?</h3><ol class="site-education-steps">${d.steps.map(([h,p])=>`<li><h4>${e(h)}</h4><p>${e(p)}</p></li>`).join('')}</ol><h3 class="site-spaced">What are the benefits?</h3><ul class="av-bullet-list">${d.benefits.map(b=>`<li>${e(b)}</li>`).join('')}</ul>${combinationSection(id,path)}${id==='ceramic'?`<section class="site-spaced"><h3>Preparation and finish details</h3><p>The paint is assessed and prepared before coating. These photographs show the polishing and finish details, rather than application of the liquid coating.</p><div class="site-support-photos" data-photo-gallery="coating-preparation">${approved.ceramicSupport.map(photoFigure).join('')}</div></section>`:''}${id==='windshield'?'<p class="site-spaced"><a href="/gallery/windshield-protection-film/">See our windshield protection film installation photos</a></p>':''}</section>`;}
+export function serviceEducation(id,path=''){const d=education[id];return `<section class="av-section av-frame site-education"><div class="av-editorial-grid"><div><p class="av-eyebrow">How it works</p><h2 class="av-title">What is ${e(d.name)}?</h2><p class="av-lead site-spaced">${e(d.definition)}</p></div>${photoFigure(educationPhoto(id,path))}</div>${serviceDiagram(id)}<h3 class="site-spaced">What happens during installation?</h3><ol class="site-education-steps">${d.steps.map(([h,p])=>`<li><h4>${e(h)}</h4><p>${e(p)}</p></li>`).join('')}</ol><h3 class="site-spaced">What are the benefits?</h3><ul class="av-bullet-list">${d.benefits.map(b=>`<li>${e(b)}</li>`).join('')}</ul>${combinationSection(id,path)}${id==='ceramic'?`<section class="site-spaced"><h3>Preparation and finish details</h3><p>Coating goes over the finish that is already there. We inspect and prepare the paint first, including any polishing agreed for your car.</p><div class="site-support-photos" data-photo-gallery="coating-preparation">${approved.ceramicSupport.map(photoFigure).join('')}</div></section>`:''}${id==='windshield'?'<p class="site-spaced"><a href="/gallery/windshield-protection-film/">See our windshield protection film installation photos</a></p>':''}</section>`;}
 export function serviceQuestions(id,existing=[]){const d=education[id];return `<section class="av-section av-frame site-service-questions"><h2 class="av-title">${e(d.name[0].toUpperCase()+d.name.slice(1))}: questions and answers</h2><div class="site-spaced">${faq([...existing,...d.questions.filter(([q])=>q!=='Can I add a ceramic coating over PPF?'),...(['ppf','ceramic'].includes(id)?combinationQuestions:[]),['How do I get a quote and book?','Send us your car’s year, make and model and tell us what you’d like done. Photos help if there’s old film or paint damage. We’ll work out the price and available dates with you before booking; sending the form does not book an appointment.'],['What’s included in my quote, and what does the warranty cover?','Your quote should list the product, windows or panels covered, preparation, price and expected timing. Warranty coverage depends on the product and is separate from installation workmanship. Ask us for the written terms for your installation, including exclusions, registration and how to make a claim.']])}</div></section>`;}

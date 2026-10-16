@@ -13,7 +13,7 @@ const textOnly = reason => ({textOnlyReason: reason});
 export const guideMedia = {
   'colorado-window-tint-laws': [
     {diagram: 'tint'},
-    {image: photo('dark-cabin-dashboard-detail.jpg'), caption: 'A view of the cabin and glass from Caleb’s tint folder. A photograph cannot establish legal light transmission.'},
+    {image: photo('dark-cabin-dashboard-detail.jpg'), caption: 'A view through the side glass from inside the cabin. Legal light transmission is measured through the glass and film together.'},
     textOnly('No verified meter photograph or measurement is available; preserve the measurement explanation without implying a test.'),
     textOnly('The quote checklist is clearer as text.')
   ],
@@ -26,7 +26,7 @@ export const guideMedia = {
   'ppf-cost-guide': [
     {image: approved.ppfCard},
     {diagram: 'ppf'},
-    {image: approved.ceramicSupport[1], caption: 'Polishing a red car at Auto Vos. Preparation is separate from installing film; this photo does not show PPF being applied.'},
+    {image: approved.ceramicSupport[1], caption: 'A small polisher works along a red Porsche door. Any polishing needed to improve the paint happens before we cover it with PPF.'},
     textOnly('The itemized quote checklist needs no decorative image.')
   ],
   'ppf-vs-ceramic-coating': [
@@ -34,15 +34,15 @@ export const guideMedia = {
     textOnly('Coverage depends on the customer’s priorities; the preceding three diagrams explain the physical differences.')
   ],
   'ceramic-vs-carbon-tint': [
-    {diagram: 'tint', caption: 'Ceramic window-film illustration, not a carbon-film cross-section. Both types are compared by the specifications of the actual film and shade; no carbon product is presented as an Auto Vos offering.'},
+    {diagram: 'tint', caption: 'This illustration shows ceramic tint bonded to the inside of the glass. The film you choose affects heat reduction and visibility. Layers are enlarged for clarity.'},
     textOnly('Use the linked manufacturer data; an invented comparison chart would imply unsupported product specifications.'),
-    {image: photo('green-coupe-open-door-interior.jpg'), caption: 'Side glass and the cabin of a green coupe in Caleb’s tint photographs. Shade and visibility need to be considered together; the image does not measure heat rejection.'},
+    {image: photo('green-coupe-open-door-interior.jpg'), caption: 'An open door shows the side glass and cabin of a green coupe. Consider how the shade affects your view from inside, especially after dark.'},
     textOnly('This answer distinguishes the confirmed offering from a comparison topic.')
   ],
   'does-ppf-protect-against-hail': [
     {diagram: 'ppf'},
     textOnly('No supplied photo documents hail damage or an impact test. Do not manufacture visual evidence.'),
-    {image: photo('porsche-headlamp-opening-film-edge-9.jpg'), caption: 'Film being fitted around a Porsche headlamp opening. This is an installation detail, not hail damage or a storm repair; an installer must inspect the actual damage before deciding whether to replace film.'},
+    {image: photo('porsche-headlamp-opening-film-edge-9.jpg'), caption: 'Fitting PPF around a Porsche headlamp opening. If a panel needs repair after hail, its replacement film must be fitted around these edges again.'},
     textOnly('Keep the answer direct: PPF is not hail protection.')
   ]
 };

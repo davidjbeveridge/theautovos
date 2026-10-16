@@ -10,16 +10,16 @@ export const services=[
     "name": "Window tint",
     "path": "/services/window-tint/",
     "title": "A more comfortable\ndrive.",
-    "description": "Explore automotive window tint in Colorado Springs: cabin comfort, UV exposure, privacy, film choices and custom quote factors.",
+    "description": "Window tint in Colorado Springs. Reduce heat and glare with XPEL ceramic film. Compare shades, see our work and request a quote for your car.",
     "image": "services/bmw-side-glass.jpg",
-    "alt": "Side view of a blue BMW showing the window tint in Auto Vos’s existing gallery",
+    "alt": "Blue BMW in side profile, showing its tinted front and rear windows",
     "summary": "Less heat and glare on sunny drives. Choose a shade that feels comfortable and keeps your view clear.",
-    "mechanism": "Window film changes how light and solar energy pass through glass. The right specification matters more than simply choosing the darkest appearance.",
-    "product": "Auto Vos’s published window-tint offering is XPEL PRIME XR Plus. Tell us which windows get too hot, where glare bothers you and how you drive at night. We will help you compare the available film and shade options.",
+    "mechanism": "Window film changes how light and solar energy pass through glass. A darker shade does not always block more heat.",
+    "product": "We install XPEL PRIME XR Plus ceramic window tint. Tell us which windows get too hot, where glare bothers you and how you drive at night. We will help you compare the available film and shade options.",
     "benefits": [
       [
         "Comfort on sunny drives",
-        "Reduce solar heat and glare for a more comfortable cabin. Discuss the glass that bothers you most and how you use the vehicle."
+        "Reduce solar heat and glare for a more comfortable cabin. Tell us which windows let in the most heat or glare on your usual drives."
       ],
       [
         "Care for your interior",
@@ -27,28 +27,28 @@ export const services=[
       ],
       [
         "Privacy with visibility",
-        "Choose the look and level of privacy you want while preserving visibility and suitable light transmission. Tint does not prevent theft."
+        "Choose a shade you like without making it hard to see after dark. Tint can add daytime privacy, but it does not prevent theft."
       ]
     ],
     "scope": [
       [
         "Side and rear glass",
-        "Discuss front side windows, rear windows or a wider set of glass. Existing film and glass shape affect preparation and fit."
+        "Choose the windows you want tinted, from the front pair to the rear glass. Tell us if there is old film to remove."
       ],
       [
         "Film and shade",
-        "Compare film specifications and visible light transmission. A darker shade does not by itself establish better heat performance."
+        "Compare how much heat each film rejects and how much light it lets through. You do not have to choose the darkest shade to reduce heat."
       ],
       [
         "Special glass",
-        "Ask about windshields, sunroofs and factory glass compatibility. Suitability and applicable requirements must be checked before installation."
+        "Want film on a windshield or sunroof? Tell us your model and year so we can check the glass, suitable films and legal requirements."
       ]
     ],
     "limits": "Tint cannot make a parked car safe for children or pets. Never leave them unattended. It does not replace air conditioning, eliminate all glare or guarantee security.",
     "factors": [
       "Your vehicle and the number, size and shape of windows",
-      "Film specification and chosen coverage",
-      "Removal of existing film and the condition of the glass"
+      "The film and shade you choose",
+      "Old-film removal and glass condition"
     ],
     "faq": [
       [
@@ -72,7 +72,7 @@ export const services=[
         "Peeling, bubbling or faded window tint needs a closer look before replacement. Send us photos with your quote request. Rear-window defroster lines need particular care during tint removal."
       ]
     ],
-    "care": "Follow the installer’s specific curing instructions before opening treated windows or cleaning the glass. Ask which cleaner and cloth are appropriate for your film. Contact the studio about lifting, persistent bubbles or damage rather than trying to repair it yourself."
+    "care": "Wait until the date we give you before opening tinted windows or cleaning them. Use a soft cloth and a cleaner approved for your film. If an edge lifts or a bubble stays after drying, send us a photo before trying to fix it."
   },
   {
     "id": "ppf",
@@ -80,7 +80,7 @@ export const services=[
     "cardAlt": "Two installers positioning clear paint protection film around a car\u2019s front bumper",
     "name": "Paint protection film",
     "path": "/services/paint-protection-film/",
-    "title": "Keep the road.\nLose some of the wear.",
+    "title": "Paint protection for\nthe roads you drive.",
     "description": "Paint protection film (PPF / clear bra) in Colorado Springs. Compare clear and STEALTH matte film, panel coverage and custom Auto Vos quotes.",
     "image": "/assets/work/oct15/blue-porsche-cayman-shop-39.jpg",
     "alt": "Blue Porsche Cayman with bronze wheels in the Auto Vos workshop",
@@ -94,33 +94,33 @@ export const services=[
       ],
       [
         "The areas you use most",
-        "Talk through front-end exposure, mirrors, rocker panels and loading or contact areas instead of buying coverage you do not understand."
+        "Focus on the places that take the most wear: the front bumper, mirrors, lower sides or the edge where you load the trunk."
       ],
       [
         "Appearance you choose",
-        "Discuss how clear gloss or XPEL STEALTH matte film changes the look of your specific paint. View material and edge details before deciding."
+        "Keep a glossy look with clear film or choose XPEL STEALTH for a matte finish. See a sample and where the film edges will sit before deciding."
       ]
     ],
     "scope": [
       [
-        "Selected high-wear panels",
-        "Target the areas most exposed in your routine. The written quote should name each included panel."
+        "The panels that take the most wear",
+        "Protect the panels that pick up chips or scuffs on your daily drives. We\u2019ll list each one in your quote."
       ],
       [
         "Front-end coverage",
-        "Discuss hood, bumper, fenders and mirrors as a coverage plan. Partial versus full panels, edges and seams belong in the quote."
+        "Cover the hood, front bumper, front fenders and mirrors. We\u2019ll explain partial and full-panel options and show where the film ends."
       ],
       [
-        "Broader coverage",
-        "Ask about additional panels or full-body coverage when you want a more extensive barrier. Complexity and finish condition affect the work."
+        "More of the car",
+        "Add the doors, lower sides and other exposed panels, or ask about full-body PPF. We\u2019ll check the paint before covering it."
       ]
     ],
-    "limits": "Film is not armor. It cannot prevent every chip, scratch or collision, and it does not repair damage already in the paint. Panel edges, seams and material characteristics should be discussed before work begins.",
+    "limits": "PPF helps with small chips and scuffs, but a hard impact can still damage the paint. It cannot repair existing chips or scratches. We\u2019ll explain any visible edges and seams before you book.",
     "factors": [
       "Vehicle shape and installation complexity",
-      "Named panels and partial versus full-panel coverage",
+      "How many panels you cover, and whether each is covered in full",
       "Paint condition, existing protection and preparation",
-      "Film finish, edge treatment and agreed scope"
+      "Clear or matte finish, and how the edges are fitted"
     ],
     "faq": [
       [
@@ -144,19 +144,19 @@ export const services=[
         "You do not have to add it. PPF provides the physical protection; a compatible ceramic coating can make the film easier to wash. It is worth considering if easier cleaning is part of what you want."
       ]
     ],
-    "care": "Use the installer’s curing and washing instructions. Avoid picking at edges or directing aggressive pressure at them. Remove contamination with the recommended products, and contact the studio if an edge lifts or the film is damaged."
+    "care": "Follow the waiting period before your first wash. Keep pressure-washer jets away from the film edges and use cleaners approved for your PPF. If film lifts or gets damaged, contact us before picking at it or attempting a repair."
   },
   {
     "id": "ceramic",
     "name": "Ceramic coating",
     "path": "/services/ceramic-coating/",
-    "title": "More enjoyment.\nEasier upkeep.",
-    "description": "Ceramic coating in Colorado Springs. Understand preparation, maintenance, coating versus PPF and factors behind a custom quote.",
+    "title": "Make your car\neasier to wash.",
+    "description": "Ceramic coating in Colorado Springs for easier washing and paint care. See how XPEL FUSION PLUS works on paint and compatible PPF, and get a quote.",
     "image": "ceramic-application.webp",
     "alt": "Coating applied by hand to a vehicle finish",
     "summary": "Spend less effort washing and more time enjoying your car. A coating helps dirt and water release from a properly prepared finish.",
     "mechanism": "A coating bonds to a prepared surface and changes how water and contamination behave on it. Preparation and ongoing care matter as much as the coating itself.",
-    "product": "Auto Vos features XPEL FUSION PLUS ceramic coating. Start with the paint, then tell us if you want to discuss wheels, glass, trim or existing PPF. Each surface needs the right product.",
+    "product": "We apply XPEL FUSION PLUS ceramic coating. Start with the paint, then tell us if you want to discuss wheels, glass, trim or existing PPF. Each surface needs the right product.",
     "benefits": [
       [
         "Simpler cleaning",
@@ -167,30 +167,30 @@ export const services=[
         "The paint is cleaned and prepared before coating. Tell us about scratches or swirl marks you want addressed; coating alone will not remove them."
       ],
       [
-        "A maintenance plan",
-        "Get clear care guidance for your actual coating, driving conditions and washing habits. Protection works best with ongoing attention."
+        "Help looking after it",
+        "Know when to wash your car, which cleaners to use and how to look after the coating between washes."
       ]
     ],
     "scope": [
       [
         "Painted surfaces",
-        "Start with vehicle condition and your appearance goals. Confirm included preparation rather than assuming every mark will disappear."
+        "Tell us about scratches or swirl marks you want addressed. We\u2019ll inspect the paint and explain what preparation can improve before coating it."
       ],
       [
-        "Film compatibility",
-        "Discuss coating over existing or newly installed PPF using a suitable product and application process."
+        "Over paint protection film",
+        "A coating made for your PPF can make it easier to wash. Tell us which film is on the car so we can check the right product."
       ],
       [
         "Other surfaces",
-        "Ask which glass, wheel or trim applications are available and appropriate. These are only included when named in your quote."
+        "Want wheels, glass or trim coated too? Ask us which products suit those surfaces so we can include them in your quote."
       ]
     ],
     "limits": "Ceramic coating does not replace PPF for chip protection, make paint scratch-proof, or remove the need to wash. Water spotting and contamination are still possible.",
     "factors": [
       "Vehicle size and surface condition",
-      "Preparation required for the agreed result",
-      "The surfaces and product included",
-      "Existing film or coating and compatibility"
+      "Cleaning and any polishing needed before coating",
+      "The coating and surfaces you choose",
+      "Existing film or coating that needs preparation or removal"
     ],
     "faq": [
       [
@@ -214,7 +214,7 @@ export const services=[
         "That depends on the coating, how the car is used and how it is washed and maintained. Ask for the exact product and its care instructions. The written warranty should explain any required inspections or maintenance."
       ]
     ],
-    "care": "Follow the product-specific curing and first-wash instructions provided at handoff. Use recommended washing products and methods. Ask about inspections or maintenance requirements associated with your installed product and any warranty."
+    "care": "Follow the first-wash date and care instructions we give you when you collect the car. Use cleaners recommended for your coating, and check whether its warranty requires inspections or maintenance."
   }
 ];
 export const team=[
