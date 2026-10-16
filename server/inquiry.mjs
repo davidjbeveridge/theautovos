@@ -40,7 +40,7 @@ export async function handleInquiry(request,{origin,verifySpam,limit,deliver,ava
  const id=crypto.randomUUID(),source=context(data.context);
  const lead={id,createdAt:new Date().toISOString(),to:RECIPIENT,service:data.service,reply:data.reply,consent:true,source};
  for(const [key,max]of Object.entries({name:100,email:254,phone:40,message:2000,vehicle:120,timing:100}))lead[key]=clean(data[key],max);
- try{const result=await deliver(lead);if(result?.accepted!==true)return json(502,{state:'failed',message:'The email provider did not accept the inquiry. Your details are still here. Please call or email.'});return json(200,{state:demo?'simulated':'accepted',id,message:demo?'Demo complete. No email was sent and no inquiry was saved.':'Your inquiry was accepted for delivery. This is not a booking. If you do not hear back, contact the studio with this reference.'});}
+ try{const result=await deliver(lead);if(result?.accepted!==true)return json(502,{state:'failed',message:'Your inquiry could not be sent. Your details are still here. Please call or email us.'});return json(200,{state:demo?'simulated':'accepted',id,message:demo?'Demo complete. No email was sent and no inquiry was saved.':'Your inquiry was accepted for delivery. This is not a booking. If you do not hear back, contact the studio with this reference.'});}
  catch{return json(504,{state:'uncertain',id,message:'We could not confirm delivery. It may have gone through. Please call or email with this reference before sending again.'});}
 }
 export function productionDependencies(env,fetcher=fetch){let host;try{host=new URL(env.SITE_ORIGIN).hostname;}catch{}
