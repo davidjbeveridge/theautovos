@@ -15,7 +15,7 @@
       "path": "/sluftgekuhlt-6",
       "template": "story",
       "proposedDestination": "/gallery/",
-      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "decision": "Consolidated into installation-focused gallery index per October feedback; legacy photography is retained in source archives, not presented as installation proof.",
       "productionAction": "rebuild_redirect"
     },
     {
@@ -23,7 +23,7 @@
       "path": "/irstrip-attack-2019",
       "template": "story",
       "proposedDestination": "/gallery/",
-      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "decision": "Consolidated into installation-focused gallery index per October feedback; legacy photography is retained in source archives, not presented as installation proof.",
       "productionAction": "rebuild_redirect"
     },
     {
@@ -31,7 +31,7 @@
       "path": "/drive-oz-2019",
       "template": "story",
       "proposedDestination": "/gallery/",
-      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "decision": "Consolidated into installation-focused gallery index per October feedback; legacy photography is retained in source archives, not presented as installation proof.",
       "productionAction": "rebuild_redirect"
     },
     {
@@ -39,7 +39,7 @@
       "path": "/pikes-peak-hill-climb-2019",
       "template": "story",
       "proposedDestination": "/gallery/",
-      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "decision": "Consolidated into installation-focused gallery index per October feedback; legacy photography is retained in source archives, not presented as installation proof.",
       "productionAction": "rebuild_redirect"
     },
     {
@@ -47,7 +47,7 @@
       "path": "/pikes-peak-hill-climb-2019-porsche",
       "template": "story",
       "proposedDestination": "/gallery/",
-      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "decision": "Consolidated into installation-focused gallery index per October feedback; legacy photography is retained in source archives, not presented as installation proof.",
       "productionAction": "rebuild_redirect"
     },
     {
@@ -55,7 +55,7 @@
       "path": "/porsche-918-flash-photography",
       "template": "story",
       "proposedDestination": "/gallery/",
-      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "decision": "Consolidated into installation-focused gallery index per October feedback; legacy photography is retained in source archives, not presented as installation proof.",
       "productionAction": "rebuild_redirect"
     },
     {
@@ -63,7 +63,7 @@
       "path": "/porsche-356-sc-flash-photography",
       "template": "story",
       "proposedDestination": "/gallery/",
-      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "decision": "Consolidated into installation-focused gallery index per October feedback; legacy photography is retained in source archives, not presented as installation proof.",
       "productionAction": "rebuild_redirect"
     },
     {
@@ -71,7 +71,7 @@
       "path": "/porsche-safari-day-in-the-dirt",
       "template": "story",
       "proposedDestination": "/gallery/",
-      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "decision": "Consolidated into installation-focused gallery index per October feedback; legacy photography is retained in source archives, not presented as installation proof.",
       "productionAction": "rebuild_redirect"
     },
     {
@@ -79,7 +79,7 @@
       "path": "/pikes-peak-hill-climb-paul-kolinski",
       "template": "story",
       "proposedDestination": "/gallery/",
-      "decision": "Retain entire gallery beneath /gallery/; permanent redirect from old path; preserve credits.",
+      "decision": "Consolidated into installation-focused gallery index per October feedback; legacy photography is retained in source archives, not presented as installation proof.",
       "productionAction": "rebuild_redirect"
     },
     {
@@ -299,30 +299,33 @@
     "confirmation",
     "not-found"
   ],
-  "releaseNote": "39 included planned pages after explicit exclusion of Lexus, Mercedes, truck/SUV and paint correction. Current deployed baseline stays 21 until implemented/verified. $1,000 paid by one check; no installment plan. Two optional supplied installation stories remain. Raw 36-URL crawl unchanged.",
+  "releaseNote": "October 15: 46 included static pages and four installation galleries. One-time $1,000 fee, payment method unspecified. Detailed products, warranty and insurance follow-up deferred by Caleb. Preview remains simulated and noindex; production release gates are separate.",
   "productionAdditions": [
     {
       "path": "/protection-options/",
-      "purpose": "new protection comparison and approved packages"
+      "purpose": "Service comparison"
     },
     {
       "path": "/work/",
-      "purpose": "index with separate installation work and photography/events sections"
+      "purpose": "Actual installation galleries and brand projects"
     },
     {
-      "path": "/care/",
-      "purpose": "service-specific care and FAQs"
+      "path": "/care-and-warranty/",
+      "purpose": "Verified general guidance; detailed policies follow in the next segment"
     },
     {
       "path": "/privacy/",
-      "purpose": "approved production privacy information"
+      "purpose": "Privacy reflects actual production providers before launch"
     }
   ],
   "conditionalAdditions": [
     {
-      "path": "/work/<approved-project-slug>/",
-      "count": 2,
-      "purpose": "up to two genuinely new supplied installation case studies; not a cap on migrating existing nine galleries"
+      "path": "/resources/porsche-997-front-fender-ppf-installation/",
+      "purpose": "Included video walkthrough, implemented"
+    },
+    {
+      "path": "/work/ineos-grenadier-tint-ppf/",
+      "purpose": "Included verified project story, implemented"
     }
   ],
   "utilitySurfaces": [
@@ -371,7 +374,7 @@
         "vehicle protection colorado springs"
       ],
       "purpose": "Core service choices, selected galleries/reviews/video, approved XPEL identity and quote/call actions.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "auto vos",
@@ -419,8 +422,8 @@
       "supportingKeywords": [
         "window tint ppf ceramic coating colorado springs"
       ],
-      "purpose": "Primary services, sub-services and all six vehicle service pages; keep this useful overview.",
-      "status": "included; not yet implemented or verified for release",
+      "purpose": "Primary services, sub-services and all nine service-by-brand pages.",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "car protection services colorado springs",
@@ -459,7 +462,7 @@
         "tint shop near me"
       ],
       "purpose": "Film choices, price factors, heat/UV/privacy limitations, legal context, process, care, proof and inquiry.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "window tint colorado springs",
@@ -522,7 +525,7 @@
         "ppf near me"
       ],
       "purpose": "Verified coverage packages, installed film, self-healing limits, price factors, care, warranty and genuine examples.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "ppf colorado springs",
@@ -584,7 +587,7 @@
         "xpel fusion plus colorado springs"
       ],
       "purpose": "Actual coating/preparation choices, durability and maintenance, approved price factors, proof and inquiry.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "ceramic coating colorado springs",
@@ -636,7 +639,7 @@
         "ceramic tint heat rejection"
       ],
       "purpose": "Installed ceramic film choices, verified manufacturer data, comfort versus darkness and links to tint/comparison guide.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "ceramic tint colorado springs",
@@ -710,8 +713,8 @@
         "windshield film",
         "windshield protection film cost"
       ],
-      "purpose": "Confirmed exterior windshield protection film service; explain installation, benefits, care and vehicle-specific quotes. Product details and warranty terms still require Caleb\u2019s input.",
-      "status": "included; offering confirmed; product, care and warranty details pending",
+      "purpose": "Confirmed exterior windshield protection film service; explain installation, benefits, care and vehicle-specific quotes. Product details and warranty terms still require Caleb’s input.",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "windshield tint colorado springs",
@@ -776,7 +779,7 @@
       ],
       "offeringConfirmation": {
         "status": "confirmed",
-        "source": "David relayed Caleb\u2019s verbal confirmation, October 9, 2026"
+        "source": "David relayed Caleb’s verbal confirmation, October 9, 2026"
       }
     },
     {
@@ -789,7 +792,7 @@
         "targa rear glass tint"
       ],
       "purpose": "Complimentary service subpage under Porsche: specialized rear glass, model/year suitability, scope and quote; links to installation guide.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "porsche targa rear window tint",
@@ -849,8 +852,8 @@
       "supportingKeywords": [
         "auto vos installation portfolio"
       ],
-      "purpose": "Index genuine installation examples and dedicated Porsche/BMW/Tesla Work pages; link the separate archive/gallery index.",
-      "status": "included; not yet implemented or verified for release",
+      "purpose": "Installation photographs, verified project stories and brand work hubs.",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "auto vos work",
@@ -888,7 +891,7 @@
         "porsche tint before and after"
       ],
       "purpose": "Separate proof page under Work: verified vehicle/service/coverage captions, original project media and relevant reviews; link to Porsche Services and quote. Do not duplicate the sales page or present event photos as installations.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "auto vos porsche work",
@@ -937,8 +940,8 @@
         "bmw ppf installation photos colorado springs",
         "bmw tint before and after"
       ],
-      "purpose": "Separate proof page under Work: verified vehicle/service/coverage captions, original project media and relevant reviews; link to BMW Services and quote. Do not duplicate the sales page or present event photos as installations.",
-      "status": "included; not yet implemented or verified for release",
+      "purpose": "Caleb-supplied BMW STEALTH / matte PPF photographs plus Jonathan’s BMW M8 review.",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "auto vos bmw work",
@@ -987,8 +990,8 @@
         "tesla ppf installation photos colorado springs",
         "tesla tint before and after"
       ],
-      "purpose": "Separate proof page under Work: verified vehicle/service/coverage captions, original project media and relevant reviews; link to Tesla Services and quote. Do not duplicate the sales page or present event photos as installations.",
-      "status": "included; publication blocked on genuine Tesla project evidence",
+      "purpose": "Caleb-supplied Tesla matte PPF photographs and related service pages.",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "auto vos tesla work",
@@ -1036,8 +1039,8 @@
       "supportingKeywords": [
         "auto vos installation photos"
       ],
-      "purpose": "Curated installation photos plus clearly separated links to all nine retained automotive/event archives; responsive viewer and captions.",
-      "status": "included; not yet implemented or verified for release",
+      "purpose": "Four substantial installation galleries: window tint, windshield protection film, PPF and STEALTH / matte PPF.",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "auto vos gallery",
@@ -1074,7 +1077,7 @@
         "auto vos testimonials"
       ],
       "purpose": "Up to six verified selected Google reviews with accurate attribution, original links and approved expandable photos; reuse relevant excerpts elsewhere.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "auto vos reviews",
@@ -1111,8 +1114,8 @@
         "auto vos team",
         "auto vos colorado springs shop"
       ],
-      "purpose": "Caleb/Mason, verified background, location and current team; legacy studio/team redirects here.",
-      "status": "included; not yet implemented or verified for release",
+      "purpose": "Our Team: people, approach and the shop, with approved photography.",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "about auto vos",
@@ -1162,7 +1165,7 @@
         "auto vos directions"
       ],
       "purpose": "Verified phone/address/hours, directions and request-appointment action; existing scheduler link only if supplied and verified.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "auto vos contact",
@@ -1212,7 +1215,7 @@
         "ppf quote colorado springs"
       ],
       "purpose": "One working form to theautovos@gmail.com, year/make/model and requested scope, validation/spam/delivery proof; no uploads or booking engine.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "auto vos quote",
@@ -1261,7 +1264,7 @@
         "window tint vs ppf vs ceramic coating"
       ],
       "purpose": "Concise three-service decision hub, scope/coverage choices and Help me choose; route detailed PPF/coating comparison to its resource guide.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "car protection options colorado springs",
@@ -1298,8 +1301,8 @@
         "ppf aftercare",
         "window tint aftercare"
       ],
-      "purpose": "Product-specific care, warranty coverage/exclusions and the confirmed two-week check-in. Written terms from Caleb required; no universal ten-year promise.",
-      "status": "included; not yet implemented or verified for release",
+      "purpose": "Verified general care guidance; detailed product, workmanship and check-in terms deferred to the next segment.",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "ceramic coating maintenance",
@@ -1346,7 +1349,7 @@
       "primaryKeyword": "auto vos privacy",
       "supportingKeywords": [],
       "purpose": "Accurate form, hosting, analytics and activated video/embed disclosures; policy content, not a keyword landing page.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "auto vos privacy",
@@ -1373,7 +1376,7 @@
         "colorado windshield tint law"
       ],
       "purpose": "Current official legal sources, dated review and a qualified percentage chart; do not infer legality from the supplied roadmap. This is one of six included launch articles, not a recurring publishing retainer.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "colorado window tint laws",
@@ -1435,7 +1438,7 @@
         "ceramic tint cost colorado springs"
       ],
       "purpose": "Explain vehicle/film/coverage/removal factors, owner-approved minimums or ranges and how to request an actual quote. This is one of six included launch articles, not a recurring publishing retainer.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "window tint cost colorado springs",
@@ -1486,7 +1489,7 @@
         "paint protection film cost"
       ],
       "purpose": "Partial/full-front/track/full-body only if sold; distinguish coverage and preparation; approved price context and quote links. This is one of six included launch articles, not a recurring publishing retainer.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "ppf cost colorado springs",
@@ -1548,7 +1551,7 @@
         "ppf and ceramic coating together"
       ],
       "purpose": "Impact versus cleaning/chemical benefits and limits; explain when combining is appropriate and link both services. This is one of six included launch articles, not a recurring publishing retainer.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "ppf vs ceramic coating",
@@ -1598,7 +1601,7 @@
         "ceramic tint vs dyed tint"
       ],
       "purpose": "Compare supported film properties using attributable product data; do not imply every compared film is sold. This is one of six included launch articles, not a recurring publishing retainer.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "ceramic vs carbon tint",
@@ -1654,7 +1657,7 @@
         "paint protection film hail damage"
       ],
       "purpose": "Answer honestly using product evidence: no dent-prevention or insurance guarantee; explain limits and relevant protection choices. This is one of six included launch articles, not a recurring publishing retainer.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "does ppf protect against hail",
@@ -1710,7 +1713,7 @@
         "911 targa rear window tint"
       ],
       "purpose": "Complimentary conversion of one supplied Targa installation video into accurate written explanation, embed/stills and owner FAQs; link Porsche Services, Targa service and Porsche Work.",
-      "status": "included; not yet implemented or verified for release",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
         {
           "keyword": "porsche targa rear window tint installation",
@@ -1777,7 +1780,7 @@
         "porsche window tint"
       ],
       "purpose": "Explain window tint for Porsche owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
-      "status": "included; owner facts and media pending",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {
         "porsche window tint colorado springs": "unavailable",
         "porsche window tint": "zero_estimate"
@@ -1792,7 +1795,7 @@
         "bmw window tint"
       ],
       "purpose": "Explain window tint for BMW owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
-      "status": "included; owner facts and media pending",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {
         "bmw window tint colorado springs": "unavailable",
         "bmw window tint": "positive_estimate"
@@ -1807,7 +1810,7 @@
         "tesla window tint"
       ],
       "purpose": "Explain window tint for Tesla owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
-      "status": "included; owner facts and media pending",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {
         "tesla window tint colorado springs": "unavailable",
         "tesla window tint": "positive_estimate"
@@ -1822,7 +1825,7 @@
         "porsche ppf"
       ],
       "purpose": "Explain paint protection film for Porsche owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
-      "status": "included; owner facts and media pending",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {
         "porsche ppf colorado springs": "unavailable",
         "porsche ppf": "positive_estimate"
@@ -1837,7 +1840,7 @@
         "bmw ppf"
       ],
       "purpose": "Explain paint protection film for BMW owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
-      "status": "included; owner facts and media pending",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {
         "bmw ppf colorado springs": "unavailable",
         "bmw ppf": "positive_estimate"
@@ -1852,7 +1855,7 @@
         "tesla ppf"
       ],
       "purpose": "Explain paint protection film for Tesla owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
-      "status": "included; owner facts and media pending",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {
         "tesla ppf colorado springs": "unavailable",
         "tesla ppf": "positive_estimate"
@@ -1867,7 +1870,7 @@
         "porsche ceramic coating"
       ],
       "purpose": "Explain ceramic coating for Porsche owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
-      "status": "included; owner facts and media pending",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {
         "porsche ceramic coating colorado springs": "unavailable",
         "porsche ceramic coating": "positive_estimate"
@@ -1882,7 +1885,7 @@
         "bmw ceramic coating"
       ],
       "purpose": "Explain ceramic coating for BMW owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
-      "status": "included; owner facts and media pending",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {
         "bmw ceramic coating colorado springs": "unavailable",
         "bmw ceramic coating": "positive_estimate"
@@ -1897,7 +1900,7 @@
         "tesla ceramic coating"
       ],
       "purpose": "Explain ceramic coating for Tesla owners: vehicle considerations, coverage, quote factors, verified examples and a vehicle-aware inquiry. Distinct useful copy, not a cloned city-keyword page.",
-      "status": "included; owner facts and media pending",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {
         "tesla ceramic coating colorado springs": "unavailable",
         "tesla ceramic coating": "positive_estimate"
@@ -1910,7 +1913,7 @@
       "primaryKeyword": "",
       "supportingKeywords": [],
       "purpose": "Browse the six included guides and installation walkthroughs; useful owner questions, not a generic blog.",
-      "status": "included; owner facts and media pending",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {}
     },
     {
@@ -1920,7 +1923,7 @@
       "primaryKeyword": "",
       "supportingKeywords": [],
       "purpose": "First additional story slot: verified text walkthrough, real stills and the supplied 2012 Porsche 997 Carrera XPEL Ultimate Plus video.",
-      "status": "included; owner facts and media pending",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {}
     },
     {
@@ -1930,7 +1933,7 @@
       "primaryKeyword": "",
       "supportingKeywords": [],
       "purpose": "Second additional story slot: the supplied Grenadier installation walk-around and written project account. This is work evidence, not a truck/SUV sales page.",
-      "status": "included; owner facts and media pending",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {}
     },
     {
@@ -1940,7 +1943,7 @@
       "primaryKeyword": "",
       "supportingKeywords": [],
       "purpose": "Service-and-brand index of genuine supplied projects/reviews. Publish only when source verification and photo permissions are complete.",
-      "status": "included conditional work index; publish only with verified examples",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {}
     },
     {
@@ -1950,7 +1953,7 @@
       "primaryKeyword": "",
       "supportingKeywords": [],
       "purpose": "Service-and-brand index of genuine supplied projects/reviews. Publish only when source verification and photo permissions are complete.",
-      "status": "included conditional work index; publish only with verified examples",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {}
     },
     {
@@ -1960,31 +1963,35 @@
       "primaryKeyword": "",
       "supportingKeywords": [],
       "purpose": "Service-and-brand index of genuine supplied projects/reviews. Publish only when source verification and photo permissions are complete.",
-      "status": "included conditional work index; publish only with verified examples",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": {}
     },
     {
       "path": "/gallery/window-tint/",
       "title": "Window tint installations",
-      "purpose": "Verified Auto Vos work photos with descriptive captions and source credit."
+      "purpose": "Verified Auto Vos work photos with descriptive captions and source credit.",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome"
     },
     {
       "path": "/gallery/windshield-protection-film/",
       "title": "Windshield protection film installations",
-      "purpose": "Verified Auto Vos work photos with descriptive captions and source credit."
+      "purpose": "Verified Auto Vos work photos with descriptive captions and source credit.",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome"
     },
     {
       "path": "/gallery/paint-protection-film/",
       "title": "Paint protection film projects",
-      "purpose": "Verified Auto Vos work photos with descriptive captions and source credit."
+      "purpose": "Verified Auto Vos work photos with descriptive captions and source credit.",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome"
     },
     {
       "path": "/gallery/stealth-matte-ppf/",
       "title": "XPEL STEALTH / matte PPF gallery",
-      "purpose": "Caleb-supplied matte paint protection film project photographs."
+      "purpose": "Caleb-supplied matte paint protection film project photographs.",
+      "status": "implemented; independent release verification in progress; owner factual corrections remain welcome"
     }
   ],
-  "plannedScopeRevision": "2026-10-08 approved service/brand matrix; one-time $1,000 fee; no payment method specified; conditional publication gates remain.",
+  "plannedScopeRevision": "2026-10-15 transcript reconciliation; four installation galleries; no dedicated insurance page; confirmed windshield service; no production evidence gates remain on BMW/Tesla/reviews.",
   "referenceRoadmapCoverage": [
     {
       "page": "Home",

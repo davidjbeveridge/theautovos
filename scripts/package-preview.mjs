@@ -5,17 +5,18 @@ import {execFileSync} from 'node:child_process';
 
 // Publish only the owner-facing site. Internal source, audits and tools stay out.
 const destination = 'dist';
+const retired = new Set(['ppf-installation.webp', 'shop-film.mp4', 'shop-film-mobile.mp4', 'shop-film-v2.mp4', 'shop-film-mobile-v2.mp4', 'shop-film-v3.mp4', 'shop-film-mobile-v3.mp4', 'shop-film-v4.mp4', 'shop-film-mobile-v4.mp4', 'shop-film-v5.mp4', 'shop-film-mobile-v5.mp4']);
 const allowed = ['index.html', 'styles.css', 'app.js', 'robots.txt', '.nojekyll', 'assets', 'design-system', 'templates'];
 fs.rmSync(destination, {recursive: true, force: true});
 fs.mkdirSync(destination);
-for (const file of allowed) fs.cpSync(file, path.join(destination, file), {recursive: true});
+for (const file of allowed) fs.cpSync(file, path.join(destination, file), {recursive: true, filter: source => !retired.has(path.basename(source))});
 const walk = dir => fs.readdirSync(dir, {withFileTypes: true}).flatMap(entry => {
   const file = path.join(dir, entry.name);
   assert.ok(!entry.isSymbolicLink(), `Symlink in preview: ${file}`);
   return entry.isDirectory() ? walk(file) : [file];
 });
 const files = walk(destination);
-const retired = new Set(['ppf-installation.webp', 'shop-film.mp4', 'shop-film-mobile.mp4', 'shop-film-v2.mp4', 'shop-film-mobile-v2.mp4', 'shop-film-v5.mp4', 'shop-film-mobile-v5.mp4']);
+
 assert.ok(!files.some(file => retired.has(path.basename(file))), 'Retired media must not be published');
 for (const file of files.filter(file => file.endsWith('.html'))) {
   const html = fs.readFileSync(file, 'utf8');

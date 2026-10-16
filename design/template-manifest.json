@@ -24,6 +24,9 @@
       "path": "templates/story.html"
     },
     {
+      "path": "templates/guides.html"
+    },
+    {
       "path": "templates/studio.html"
     },
     {

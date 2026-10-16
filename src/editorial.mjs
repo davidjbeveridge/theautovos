@@ -25,10 +25,11 @@ export function editorialRows(rows, {className = ''} = {}) {
   }).join('')}</div>`;
 }
 
-export function mediaExplanation({title, text, image, caption = '', lightboxLabel, className = ''}) {
+export function mediaExplanation({title, text, image, caption = '', lightboxLabel, className = '', headingLevel = 3}) {
   if (!title || !text) throw new TypeError('Media explanations need a title and explanatory text.');
+  const level = Math.max(2, Math.min(6, Number(headingLevel) || 3));
   const src = e(image?.src || '');
   const label = e(lightboxLabel || `Enlarge: ${image?.alt || title}`);
   const img = imageMarkup(image, {className: 'av-image'});
-  return `<section class="site-media-explanation${className ? ` ${e(className)}` : ''}"><div class="site-media-explanation__copy"><h3>${e(title)}</h3><p>${e(text)}</p></div><figure class="site-media-explanation__media"><a data-lightbox href="${src}" aria-label="${label}">${img}</a>${caption ? `<figcaption class="av-caption">${e(caption)} <a href="${src}">Open full-size image</a></figcaption>` : `<figcaption class="av-caption"><a href="${src}">Open full-size image</a></figcaption>`}</figure></section>`;
+  return `<section class="site-media-explanation${className ? ` ${e(className)}` : ''}"><div class="site-media-explanation__copy"><h${level}>${e(title)}</h${level}><p>${e(text)}</p></div><figure class="site-media-explanation__media"><a data-lightbox href="${src}" aria-label="${label}">${img}</a>${caption ? `<figcaption class="av-caption">${e(caption)} <a href="${src}">Open full-size image</a></figcaption>` : `<figcaption class="av-caption"><a href="${src}">Open full-size image</a></figcaption>`}</figure></section>`;
 }

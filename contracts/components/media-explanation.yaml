@@ -73,7 +73,24 @@
       "status": "implemented"
     }
   ],
-  "consumers": [],
+  "consumers": [
+    {
+      "id": "service-education",
+      "versionRequirement": "^0.1.0"
+    },
+    {
+      "id": "evergreen-guides",
+      "versionRequirement": "^0.1.0"
+    },
+    {
+      "id": "guide-template",
+      "versionRequirement": "^0.1.0"
+    },
+    {
+      "id": "catalog",
+      "versionRequirement": "^0.1.0"
+    }
+  ],
   "deprecation": {
     "status": "active"
   },

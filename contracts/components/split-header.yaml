@@ -73,7 +73,36 @@
       "status": "implemented"
     }
   ],
-  "consumers": [],
+  "consumers": [
+    {
+      "id": "work-site",
+      "versionRequirement": "^0.1.0"
+    },
+    {
+      "id": "guides-site",
+      "versionRequirement": "^0.1.0"
+    },
+    {
+      "id": "evergreen-guides",
+      "versionRequirement": "^0.1.0"
+    },
+    {
+      "id": "work-template",
+      "versionRequirement": "^0.1.0"
+    },
+    {
+      "id": "guides-template",
+      "versionRequirement": "^0.1.0"
+    },
+    {
+      "id": "guide-template",
+      "versionRequirement": "^0.1.0"
+    },
+    {
+      "id": "catalog",
+      "versionRequirement": "^0.1.0"
+    }
+  ],
   "deprecation": {
     "status": "active"
   },
