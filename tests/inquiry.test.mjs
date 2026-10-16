@@ -11,3 +11,24 @@ test('failure, uncertainty and demo have distinct truthful states',async()=>{for
 const env={SITE_ORIGIN:origin,TURNSTILE_SECRET:'unit-test-only',RESEND_API_KEY:'unit-test-only',MAIL_FROM:'Auto Vos <forms@example.com>',INQUIRY_RATE_LIMITER:{limit:async()=>({success:true})}};
 test('provider adapter verifies hostname and action, uses fixed recipient and verified sender',async()=>{const calls=[];const adapter=productionDependencies(env,async(url,options)=>{calls.push({url,options});return Response.json(url.includes('siteverify')?{success:true,hostname:'www.theautovos.com',action:'inquiry'}:{id:'test-provider-id'});});assert.equal(await adapter.verifySpam('x',req()),true);await adapter.deliver({...valid,id:'test-id',source:{}});const payload=JSON.parse(calls[1].options.body);assert.deepEqual(payload.to,[RECIPIENT]);assert.equal(payload.from,env.MAIL_FROM);assert.equal(payload.reply_to,valid.email);assert.equal(payload.html,undefined);for(const mismatch of [{hostname:'evil.example',action:'inquiry'},{hostname:'www.theautovos.com',action:'login'}]){const d=productionDependencies(env,async()=>Response.json({success:true,...mismatch}));assert.equal(await d.verifySpam('x',req()),false);}});
 test('missing rate binding/config disables production; upstream 500 is uncertain',async()=>{assert.equal(productionDependencies({}).available,false);const d=productionDependencies(env,async()=>new Response('',{status:500}));await assert.rejects(d.deliver({...valid,id:'id',source:{}}));});
+
+test('Cloudflare delivery fixes the destination and requires an actual provider receipt',async()=>{
+ const calls=[];const cf={...env,MAIL_PROVIDER:'cloudflare',RESEND_API_KEY:undefined,INQUIRY_EMAIL:{send:async body=>{calls.push(body);return {messageId:'provider-receipt'};}}};
+ const adapter=productionDependencies(cf);assert.equal(adapter.available,true);
+ assert.deepEqual(await adapter.deliver({...valid,to:'attacker@example.com',id:'test-reference',source:{},vehicle:'2024 Porsche 911',timing:'Next month'}),{accepted:true});
+ assert.equal(calls.length,1);assert.deepEqual(calls[0].to,[RECIPIENT]);assert.equal(calls[0].from,env.MAIL_FROM);assert.equal(calls[0].replyTo,valid.email);assert.equal(calls[0].reply_to,undefined);assert.match(calls[0].text,/2024 Porsche 911/);assert.match(calls[0].text,/test-reference/);
+ const noEmail={...valid,email:'',reply:'phone',phone:'719-555-0100',id:'phone-reference',source:{}};
+ await adapter.deliver(noEmail);assert.equal(calls[1].replyTo,undefined);
+ assert.equal(productionDependencies({...cf,INQUIRY_EMAIL:undefined}).available,false);
+ assert.equal(productionDependencies({...cf,MAIL_PROVIDER:'typo'}).available,false);
+ await assert.rejects(productionDependencies({...cf,INQUIRY_EMAIL:{send:async()=>({})}}).deliver(noEmail));
+});
+test('Cloudflare explicit rejection and ambiguous errors preserve truthful delivery states',async()=>{
+ const cf={...env,MAIL_PROVIDER:'cloudflare'};
+ for(const code of ['E_SENDER_NOT_VERIFIED','E_DELIVERY_FAILED','E_DAILY_LIMIT_EXCEEDED','E_RECIPIENT_SUPPRESSED']){
+  const adapter=productionDependencies({...cf,INQUIRY_EMAIL:{send:async()=>{throw Object.assign(Error('provider'),{code});}}});
+  assert.deepEqual(await adapter.deliver({...valid,id:'reference',source:{}}),{accepted:false});
+ }
+ const uncertain=productionDependencies({...cf,INQUIRY_EMAIL:{send:async()=>{throw Error('connection closed');}}});
+ await assert.rejects(uncertain.deliver({...valid,id:'reference',source:{}}));
+});

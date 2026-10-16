@@ -1,10 +1,12 @@
-import {handleInquiry} from './inquiry.mjs';
+import {handleInquiry,productionDependencies} from './inquiry.mjs';
 
-// Isolated preview transport. No email binding, provider secret, storage or PII logs.
+// Preview indexing stays disabled even when explicitly configured for live inquiries.
+// No inquiry storage or application logs. Local/catalog previews remain simulated.
 export default {async fetch(request,env){
  const path=new URL(request.url).pathname;
  let response;
- if(path==='/api/inquiry')response=await handleInquiry(request,{
+ if(path==='/api/inquiry')response=await handleInquiry(request,env.INQUIRY_MODE==='live'?productionDependencies(env):{
+  available:!env.INQUIRY_MODE||env.INQUIRY_MODE==='simulated',
   origin:env.SITE_ORIGIN,demo:true,
   limit:async request=>{const ip=request.headers.get('cf-connecting-ip');return !!ip&&(await env.INQUIRY_RATE_LIMITER.limit({key:ip})).success;},
   verifySpam:async token=>token==='local-demo',

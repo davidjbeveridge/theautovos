@@ -44,10 +44,27 @@ export async function handleInquiry(request,{origin,verifySpam,limit,deliver,ava
  catch{return json(504,{state:'uncertain',id,message:'We could not confirm delivery. It may have gone through. Please call or email with this reference before sending again.'});}
 }
 export function productionDependencies(env,fetcher=fetch){let host;try{host=new URL(env.SITE_ORIGIN).hostname;}catch{}
- const available=!!(host&&env.TURNSTILE_SECRET&&env.RESEND_API_KEY&&env.MAIL_FROM&&env.INQUIRY_RATE_LIMITER?.limit);
+ const provider=env.MAIL_PROVIDER||'resend';
+ const transportReady=provider==='cloudflare'?typeof env.INQUIRY_EMAIL?.send==='function':provider==='resend'&&!!env.RESEND_API_KEY;
+ const available=!!(host&&env.TURNSTILE_SECRET&&transportReady&&env.MAIL_FROM&&env.INQUIRY_RATE_LIMITER?.limit);
  return {origin:env.SITE_ORIGIN,available,
  limit:async request=>{const ip=request.headers.get('cf-connecting-ip');if(!ip)return false;return (await env.INQUIRY_RATE_LIMITER.limit({key:ip})).success;},
- verifySpam:async(token,request)=>{const response=await fetcher('https://challenges.cloudflare.com/turnstile/v0/siteverify',{method:'POST',body:new URLSearchParams({secret:env.TURNSTILE_SECRET,response:token,remoteip:request.headers.get('cf-connecting-ip')||''}),signal:AbortSignal.timeout(8000)});if(!response.ok)return false;const value=await response.json();return value.success===true&&value.hostname===host&&value.action==='inquiry';},
- deliver:async lead=>{const body={from:env.MAIL_FROM,to:[RECIPIENT],subject:'Auto Vos inquiry: '+lead.service,text:`Inquiry reference: ${lead.id}\nReceived: ${lead.createdAt}\nName: ${lead.name}\nPreferred reply: ${lead.reply}\nEmail: ${lead.email}\nPhone: ${lead.phone}\nService: ${lead.service}\nVehicle: ${lead.vehicle}\nTiming: ${lead.timing}\nPermission to reply: yes\nSource: ${JSON.stringify(lead.source)}\n\n${lead.message}`,...(lead.email?{reply_to:lead.email}:{})};const response=await fetcher('https://api.resend.com/emails',{method:'POST',headers:{authorization:'Bearer '+env.RESEND_API_KEY,'content-type':'application/json','idempotency-key':lead.id},body:JSON.stringify(body),signal:AbortSignal.timeout(10000)});if(!response.ok){if(response.status>=500)throw Error('uncertain provider result');return {accepted:false};}const value=await response.json();if(typeof value.id!=='string'||!value.id)throw Error('unconfirmed provider receipt');return {accepted:true};}
+ verifySpam:async(token,request)=>{if(!token||token==='local-demo')return false;const response=await fetcher('https://challenges.cloudflare.com/turnstile/v0/siteverify',{method:'POST',body:new URLSearchParams({secret:env.TURNSTILE_SECRET,response:token,remoteip:request.headers.get('cf-connecting-ip')||''}),signal:AbortSignal.timeout(8000)});if(!response.ok)return false;const value=await response.json();return value.success===true&&value.hostname===host&&value.action==='inquiry';},
+ deliver:async lead=>{const body={from:env.MAIL_FROM,to:[RECIPIENT],subject:'Auto Vos inquiry: '+lead.service,text:`Inquiry reference: ${lead.id}\nReceived: ${lead.createdAt}\nName: ${lead.name}\nPreferred reply: ${lead.reply}\nEmail: ${lead.email}\nPhone: ${lead.phone}\nService: ${lead.service}\nVehicle: ${lead.vehicle}\nTiming: ${lead.timing}\nPermission to reply: yes\nSource: ${JSON.stringify(lead.source)}\n\n${lead.message}`,...(lead.email?{reply_to:lead.email}:{})};
+ if(provider==='cloudflare'){
+  const {reply_to,...message}=body;
+  // Native binding is also restricted to RECIPIENT in Wrangler configuration.
+  let timer;
+  try{
+   const result=await Promise.race([env.INQUIRY_EMAIL.send({...message,...(reply_to?{replyTo:reply_to}:{})}),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('unconfirmed provider receipt')),10000);})]);
+   if(typeof result?.messageId!=='string'||!result.messageId)throw Error('unconfirmed provider receipt');
+   return {accepted:true};
+  }catch(error){
+   // Only explicit rejection codes are safe to retry. Unknown results may already be sent.
+   if(['E_VALIDATION_ERROR','E_FIELD_MISSING','E_SENDER_NOT_VERIFIED','E_RECIPIENT_NOT_ALLOWED','E_RECIPIENT_SUPPRESSED','E_SENDER_DOMAIN_NOT_AVAILABLE','E_CONTENT_TOO_LARGE','E_DELIVERY_FAILED','E_RATE_LIMIT_EXCEEDED','E_DAILY_LIMIT_EXCEEDED'].includes(error.code))return {accepted:false};
+   throw Error('uncertain provider result');
+  }finally{clearTimeout(timer);}
+ }
+ const response=await fetcher('https://api.resend.com/emails',{method:'POST',headers:{authorization:'Bearer '+env.RESEND_API_KEY,'content-type':'application/json','idempotency-key':lead.id},body:JSON.stringify(body),signal:AbortSignal.timeout(10000)});if(!response.ok){if(response.status>=500)throw Error('uncertain provider result');return {accepted:false};}const value=await response.json();if(typeof value.id!=='string'||!value.id)throw Error('unconfirmed provider receipt');return {accepted:true};}
  };
 }
