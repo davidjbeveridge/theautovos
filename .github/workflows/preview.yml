@@ -19,6 +19,8 @@ jobs:
           node-version: '22'
       - name: Verify canonical source and generated pages
         run: node scripts/verify.mjs
+      - name: Verify intake, release guards and search metadata
+        run: node --test tests/*.test.mjs
       - name: Package owner-facing preview
         run: node scripts/package-preview.mjs
       - name: Configure Pages

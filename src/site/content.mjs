@@ -81,7 +81,7 @@ export const services=[
     "name": "Paint protection film",
     "path": "/services/paint-protection-film/",
     "title": "Keep the road.\nLose some of the wear.",
-    "description": "Paint protection film in Colorado Springs. Compare panel coverage, preparation, physical protection, limitations and custom PPF quotes.",
+    "description": "Paint protection film (PPF / clear bra) in Colorado Springs. Compare clear and STEALTH matte film, panel coverage and custom Auto Vos quotes.",
     "image": "/assets/work/oct15/blue-porsche-cayman-shop-39.jpg",
     "alt": "Blue Porsche Cayman with bronze wheels in the Auto Vos workshop",
     "summary": "Help protect your paint from small chips and everyday road wear. Cover the front end, the panels you worry about, or more of the car.",

@@ -710,24 +710,12 @@
       "primaryKeyword": "windshield protection film colorado springs",
       "supportingKeywords": [
         "windshield protection film",
-        "windshield film",
+        "exterior windshield protection film",
         "windshield protection film cost"
       ],
       "purpose": "Confirmed exterior windshield protection film service; explain installation, benefits, care and vehicle-specific quotes. Product details and warranty terms still require Caleb’s input.",
       "status": "implemented; independent release verification in progress; owner factual corrections remain welcome",
       "keywordEvidence": [
-        {
-          "keyword": "windshield tint colorado springs",
-          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
-          "monthlyEstimate": null,
-          "metricStatus": "unavailable",
-          "cpcUsd": null,
-          "sourceId": "src-provider-bece36f6b9bd00733011ea50",
-          "rawPath": "reports/audit-2026-10-07/raw/providers/bece36f6b9bd00733011ea50.json",
-          "capturedAt": "2026-10-07T21:11:42+00:00",
-          "historyStart": null,
-          "historyEnd": null
-        },
         {
           "keyword": "windshield protection film colorado springs",
           "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
@@ -753,24 +741,6 @@
           "historyEnd": "2026-08",
           "nationalContext": {
             "monthlyEstimate": 6600,
-            "metricStatus": "positive_estimate",
-            "sourceId": "src-provider-89e306a9af24f67659d29605",
-            "scope": "United States; not local demand"
-          }
-        },
-        {
-          "keyword": "windshield visor strip",
-          "basis": "DataForSEO Google Ads, Colorado Springs, English, search partners off",
-          "monthlyEstimate": 10,
-          "metricStatus": "positive_estimate",
-          "cpcUsd": null,
-          "sourceId": "src-provider-5737eb3a64d0ed51e2e149ee",
-          "rawPath": "reports/audit-2026-10-07/raw/providers/5737eb3a64d0ed51e2e149ee.json",
-          "capturedAt": "2026-10-08T21:17:02+00:00",
-          "historyStart": "2025-09",
-          "historyEnd": "2026-08",
-          "nationalContext": {
-            "monthlyEstimate": 170,
             "metricStatus": "positive_estimate",
             "sourceId": "src-provider-89e306a9af24f67659d29605",
             "scope": "United States; not local demand"

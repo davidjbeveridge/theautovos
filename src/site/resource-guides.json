@@ -6,7 +6,7 @@
     "sections": [
       {
         "title": "Start with the actual Colorado rule",
-        "text": "Colorado Revised Statutes section 42-4-227 is the place to start. In the current official title-42 printout, the windshield must allow at least 70% light transmittance. For a vehicle registered in Colorado, windows other than the windshield generally may not allow less than 27% light transmittance. Those numbers describe the light passing through the installed window combination, not a promise that a film labeled with a number will produce that result on every vehicle. Factory glass, existing film and the new film all affect the reading."
+        "text": "Colorado Revised Statutes section 42-4-227 is the place to start. In the linked 2024 Title 42 text, the windshield must allow at least 70% light transmittance. For a vehicle registered in Colorado, windows other than the windshield generally may not allow less than 27% light transmittance. Those numbers describe the light passing through the installed window combination, not a promise that a film labeled with a number will produce that result on every vehicle. Factory glass, existing film and the new film all affect the reading."
       },
       {
         "title": "Rear glass has a specific exception",
@@ -23,7 +23,7 @@
     ],
     "sources": [
       {
-        "label": "Colorado Revised Statutes, Title 42, §42-4-227",
+        "label": "Colorado Revised Statutes 2024, Title 42, §42-4-227 — check current statute and amendments below",
         "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-42.pdf"
       },
       {
@@ -143,10 +143,6 @@
       {
         "label": "XPEL FUSION PLUS automotive ceramic coating",
         "url": "https://www.xpel.com/products/automotive-ceramic-coating"
-      },
-      {
-        "label": "XPEL FUSION PLUS technical data sheet",
-        "url": "https://www.xpel.com/web-assets/downloads/XPEL-FUSION-PLUS-Technical-Data-Sheet-V1.2-Rev1.3.pdf"
       }
     ],
     "status": "ready-owner-review"
