@@ -1,7 +1,7 @@
 # Auto Vos interface system
 
 ## Overview
-The canonical design system for the Auto Vos rebuild, designated by the user on October 7, 2026. The approved root homepage is the visual reference, including removal of its hero watch button. This delivery is a **prototype/template library**, published for owner review, with no connected commerce or lead processing.
+The canonical design system for the Auto Vos rebuild, designated by the user on October 7, 2026. The approved root homepage is the visual reference, including removal of its hero watch button. The template catalog remains a prototype with simulated forms. The separate service-site preview can use verified live inquiry delivery while remaining excluded from indexing; its mode contract is defined below.
 
 ## Brand expression
 Drive it. Love it. Protect it. Keep the supplied winged-fox wordmark intact. Use the real studio and cars as evidence. Do not fabricate staff, completed installations, reviews, results, prices, certifications, warranties or policies.
