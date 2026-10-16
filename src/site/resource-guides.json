@@ -56,7 +56,13 @@
       },
       {
         "title": "Film choice changes the job",
-        "text": "Film is more than darkness. XPEL's PRIME specification sheet lists variant-specific visible light transmission, solar-energy, infrared and UV values. That means a darker appearance does not automatically tell you how a film will perform in heat, glare or UV rejection. Ask what the proposed film is designed to do and what the measured specification means on your vehicle. If comfort is the priority, compare the film's performance data and the glass coverage rather than shopping by shade alone."
+        "text": "Film is more than darkness. XPEL's PRIME specification sheet lists variant-specific visible light transmission, solar-energy, infrared and UV values. That means a darker appearance does not automatically tell you how a film will perform in heat, glare or UV rejection. Ask what the proposed film is designed to do and what the measured specification means on your vehicle. If comfort is the priority, compare the film's performance data and the glass coverage rather than shopping by shade alone.",
+        "sourceLinks": [
+          {
+            "text": "XPEL's PRIME specification sheet",
+            "source": "XPEL PRIME USA specification sheet"
+          }
+        ]
       },
       {
         "title": "Preparation belongs in the quote",
@@ -158,7 +164,13 @@
       },
       {
         "title": "What the verified XPEL data shows",
-        "text": "XPEL's PRIME USA specification sheet lists separate values for VLT, solar energy, IR rejection, UV rejection and glare reduction by variant. The listed XR PLUS variants show 99% UV rejection in that specification, while VLT and infrared values vary by shade. That is the useful comparison habit: ask for the actual product data and compare the variant you are considering. Do not turn one manufacturer's table into a promise for every ceramic or carbon film."
+        "text": "XPEL's PRIME USA specification sheet lists separate values for VLT, solar energy, IR rejection, UV rejection and glare reduction by variant. The listed XR PLUS variants show 99% UV rejection in that specification, while VLT and infrared values vary by shade. That is the useful comparison habit: ask for the actual product data and compare the variant you are considering. Do not turn one manufacturer's table into a promise for every ceramic or carbon film.",
+        "sourceLinks": [
+          {
+            "text": "XPEL's PRIME USA specification sheet",
+            "source": "XPEL PRIME USA specification sheet"
+          }
+        ]
       },
       {
         "title": "Match the choice to your drive",

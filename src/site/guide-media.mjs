@@ -1,6 +1,6 @@
 import {readFileSync} from 'node:fs';
 import {escape as e} from '../components.mjs';
-import {mediaExplanation} from '../editorial.mjs';
+import {mediaExplanation, textWithSources} from '../editorial.mjs';
 import {diagrams} from './service-media.mjs';
 
 const approved = JSON.parse(readFileSync(new URL('./approved-media.json', import.meta.url)));
@@ -51,6 +51,11 @@ export function guideSections(article) {
   const mapping = guideMedia[article.slug];
   if (!mapping || mapping.length !== article.sections.length) throw new Error(`Incomplete guide media mapping: ${article.slug}`);
   return article.sections.map((section, index) => {
+    const sources = (section.sourceLinks || []).map(reference => {
+      const source = article.sources.find(source => source.label === reference.source);
+      if (!source) throw new Error(`Unknown guide source: ${reference.source}`);
+      return {text: reference.text, url: source.url};
+    });
     const placement = mapping[index];
     let image = placement.image;
     let caption = placement.caption || image?.caption;
@@ -61,8 +66,8 @@ export function guideSections(article) {
     }
     if (!image && !placement.textOnlyReason) throw new Error(`Missing media/reason: ${article.slug}:${index}`);
     const html = image
-      ? mediaExplanation({title: section.title, text: section.text, image, caption, headingLevel: 2})
-      : `<section class="site-guide-prose__section"><h2>${e(section.title)}</h2><p>${e(section.text)}</p></section>`;
+      ? mediaExplanation({title: section.title, text: section.text, image, caption, headingLevel: 2, sources})
+      : `<section class="site-guide-prose__section"><h2>${e(section.title)}</h2><p>${textWithSources(section.text, sources)}</p></section>`;
     return html.replace('<section ', `<section data-guide-section="${index + 1}" `);
   }).join('');
 }
