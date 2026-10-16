@@ -1,5 +1,20 @@
 import {escape as e} from './components.mjs';
 
+// Keep editorial copy plain text; link only explicitly identified source phrases.
+export function textWithSources(text, sources = []) {
+  for (const source of sources) {
+    if (!source.text || !text.includes(source.text) || new URL(source.url).protocol !== 'https:') throw new TypeError('Source links need a matching phrase and HTTPS URL.');
+  }
+  let result = '', cursor = 0;
+  while (cursor < text.length) {
+    const next = sources.map(source => ({...source, at: text.indexOf(source.text, cursor)})).filter(source => source.at >= 0).sort((a, b) => a.at - b.at || b.text.length - a.text.length)[0];
+    if (!next) return result + e(text.slice(cursor));
+    result += e(text.slice(cursor, next.at)) + `<a href="${e(next.url)}" target="_blank" rel="noopener noreferrer" title="Opens in a new tab">${e(next.text)}</a>`;
+    cursor = next.at + next.text.length;
+  }
+  return result;
+}
+
 function imageMarkup(image, {className = '', loading = 'lazy', decoding = 'async'} = {}) {
   if (!image?.src || !image?.alt) throw new TypeError('Editorial images need a source and descriptive alt text.');
   const width = Number(image.width) || 1280;
@@ -25,11 +40,11 @@ export function editorialRows(rows, {className = ''} = {}) {
   }).join('')}</div>`;
 }
 
-export function mediaExplanation({title, text, image, caption = '', lightboxLabel, className = '', headingLevel = 3}) {
+export function mediaExplanation({title, text, image, caption = '', lightboxLabel, className = '', headingLevel = 3, sources = []}) {
   if (!title || !text) throw new TypeError('Media explanations need a title and explanatory text.');
   const level = Math.max(2, Math.min(6, Number(headingLevel) || 3));
   const src = e(image?.src || '');
   const label = e(lightboxLabel || `Enlarge: ${image?.alt || title}`);
   const img = imageMarkup(image, {className: 'av-image'});
-  return `<section class="site-media-explanation${className ? ` ${e(className)}` : ''}"><div class="site-media-explanation__copy"><h${level}>${e(title)}</h${level}><p>${e(text)}</p></div><figure class="site-media-explanation__media"><a data-lightbox href="${src}" aria-label="${label}">${img}</a>${caption ? `<figcaption class="av-caption">${e(caption)} <a href="${src}">Open full-size image</a></figcaption>` : `<figcaption class="av-caption"><a href="${src}">Open full-size image</a></figcaption>`}</figure></section>`;
+  return `<section class="site-media-explanation${className ? ` ${e(className)}` : ''}"><div class="site-media-explanation__copy"><h${level}>${e(title)}</h${level}><p>${textWithSources(text, sources)}</p></div><figure class="site-media-explanation__media"><a data-lightbox href="${src}" aria-label="${label}">${img}</a>${caption ? `<figcaption class="av-caption">${e(caption)} <a href="${src}">Open full-size image</a></figcaption>` : `<figcaption class="av-caption"><a href="${src}">Open full-size image</a></figcaption>`}</figure></section>`;
 }

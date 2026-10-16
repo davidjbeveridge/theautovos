@@ -79,3 +79,5 @@ Evergreen guide sections are mapped explicitly in `src/site/guide-media.mjs`. Ea
 
 ## Search and agent context
 Public page metadata comes from `src/site/seo.mjs`; `src/site/agent-reference.mjs` builds the registry-backed llms.txt. Use the actual visible page image, content type and verified entity facts. Service pages describe offerings; guides use Article/VideoObject and galleries use ImageGallery. Keep brand/model proof links factual. No duplicate empty descriptions, fabricated ratings, dates or keyword-permutation pages. Run the SEO tests and rendered proof when changing page metadata or route intent.
+
+When prose names an XPEL specification or technical data sheet, link that exact phrase to its verified manufacturer document. Guide section `sourceLinks` reference the article’s named sources; both illustrated and text-only sections render these as inline links opening a new tab with `noopener noreferrer`. Keep source-list links too.
