@@ -4873,6 +4873,24 @@
       }
     ]
   },
+  "/assets/video-previews/ineos-grenadier-tint-ppf.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "src": "/assets/responsive/video-previews--ineos-grenadier-tint-ppf-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/video-previews--ineos-grenadier-tint-ppf-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/video-previews--ineos-grenadier-tint-ppf-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
   "/assets/work/oct15/auto-vos-installation-work-bays.jpg": {
     "width": 2016,
     "height": 1512,

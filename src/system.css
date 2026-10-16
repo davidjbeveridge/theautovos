@@ -1631,7 +1631,10 @@ h1,h2,h3 {
 
 /* Monochrome text selection, inverted within dark chapters. */
 ::selection{background:var(--av-selection-background);color:var(--av-selection-text)}
-:where(.av-dark,.av-footer,.av-header,.ds-inline-dark) ::selection{background:var(--av-selection-text);color:var(--av-selection-background)}
+:where(.av-dark,.av-footer,.av-header,.av-mobile-menu nav,.site-split-header,.site-review,.av-media-viewer,#gallery-dialog,.site-story-preview,.ds-inline-dark,.ds-cover-image,.ds-swatch--ink,.ds-journeys,.ds-command,.ds-footer)::selection,
+:where(.av-dark,.av-footer,.av-header,.av-mobile-menu nav,.site-split-header,.site-review,.av-media-viewer,#gallery-dialog,.site-story-preview,.ds-inline-dark,.ds-cover-image,.ds-swatch--ink,.ds-journeys,.ds-command,.ds-footer) ::selection{background:var(--av-selection-text);color:var(--av-selection-background)}
+:is(.av-button--inverse,.av-surface,.av-notice)::selection,
+:is(.av-button--inverse,.av-surface,.av-notice) ::selection{background:var(--av-selection-background);color:var(--av-selection-text)}
 
 /* Shared XPEL partner banner: product links retain card styling. */
 .av-xpel-heading{display:grid;grid-template-columns:minmax(180px,1fr) 3fr;gap:48px;align-items:center;margin-bottom:40px}

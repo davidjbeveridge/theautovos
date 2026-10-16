@@ -6,7 +6,8 @@
   "layer": "application-pattern",
   "behavior": {
     "variants": [
-      "primary"
+      "primary",
+      "image-first"
     ],
     "sizes": [
       "default"
@@ -89,6 +90,10 @@
     {
       "id": "catalog",
       "versionRequirement": "^0.1.0"
+    },
+    {
+      "id": "contact-visitor-information",
+      "versionRequirement": "^0.1.0"
     }
   ],
   "deprecation": {
@@ -130,6 +135,6 @@
     "color.focus"
   ],
   "x-autovos": {
-    "note": "Bound image with contain sizing. Image activation opens the scoped accessible viewer; a plain original-image link remains available as fallback. Pair media beside copy on wide screens and stack in DOM order on compact screens."
+    "note": "Bound image with contain sizing. Image activation opens the scoped accessible viewer; a plain original-image link remains available as fallback. Pair media beside copy on wide screens and stack in DOM order on compact screens. The image-first variant places media left on wide screens, while preserving text-first DOM and compact order."
   }
 }

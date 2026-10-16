@@ -54,6 +54,11 @@
   padding-block: var(--av-space-lg);
   border-block: 1px solid var(--av-color-line);
 }
+@media (min-width: 761px) {
+  .site-media-explanation--image-first { grid-template-columns: minmax(0, 0.82fr) minmax(0, 1fr); }
+  .site-media-explanation--image-first .site-media-explanation__copy { grid-column: 2; grid-row: 1; }
+  .site-media-explanation--image-first .site-media-explanation__media { grid-column: 1; grid-row: 1; }
+}
 .site-media-explanation__copy { max-width: 62ch; }
 .site-media-explanation__copy :is(h2,h3) { max-width: 28ch; margin-bottom: var(--av-space-sm); font-size: clamp(22px, 2.5vw, 32px); line-height: 1.2; }
 .site-media-explanation__copy p { line-height: 1.7; }
@@ -84,3 +89,17 @@
 .site-step-media video{display:block;width:100%;height:auto}
 
 @media(max-width:760px){.site-step-layout{grid-template-columns:minmax(0,1fr)}}
+
+/* Guide links show navigation, not an in-place video playback control. */
+.site-story-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--av-space-lg);row-gap:var(--av-space-lg);margin-block:var(--av-space-lg)}
+.site-story-grid article{display:grid;gap:var(--av-space-sm);min-width:0;align-content:start}
+.site-story-grid h3{font-size:28px;line-height:1.15;letter-spacing:-.7px;margin:0}
+.site-story-grid p{margin:0}
+.site-story-grid .site-text-link{display:inline-block;min-height:48px;padding-block:12px}
+.site-story-preview{position:relative;display:block;overflow:hidden;background:var(--av-color-ink);color:var(--av-color-inverse)}
+.site-story-preview img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.site-story-preview__action{position:absolute;inset:auto 0 0;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 20px;background:var(--av-color-ink);color:var(--av-color-inverse);font-weight:700;font-size:16px;line-height:1.4}
+.site-story-preview:focus-visible{outline:3px solid var(--av-color-focus);outline-offset:4px}
+.site-story-preview:is(:hover,:focus-visible) .site-story-preview__action{text-decoration:underline;text-underline-offset:4px}
+@media(min-width:761px){.site-story-grid>article{grid-template-rows:subgrid;grid-row:span 4}}
+@media(max-width:760px){.site-story-grid{grid-template-columns:minmax(0,1fr)}}

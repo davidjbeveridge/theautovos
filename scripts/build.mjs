@@ -1,3 +1,4 @@
+import {externalLinks} from '../src/external-links.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -8,8 +9,8 @@ const write=(p,s)=>{fs.mkdirSync(path.dirname(path.join(root,p)),{recursive:true
 const registry=JSON.parse(fs.readFileSync(path.join(root,'design/presentation.yaml'),'utf8'));
 write('design-system/tokens.css','/* Generated from design/presentation.yaml. Do not edit. */\n:root {\n'+registry.variables.map(v=>`  ${v.projections.css.customProperty}: ${v.values.base};`).join('\n')+'\n}\n');
 for(const name of ['system.css','interactions.js','inline-links.css','photo-viewer.css'])write('design-system/'+name,fs.readFileSync(path.join(root,'src',name),'utf8')+(name==='system.css'?'\n'+fs.readFileSync(path.join(root,'src/editorial.css'),'utf8')+'\n'+fs.readFileSync(path.join(root,'src/inline-links.css'),'utf8')+'\n'+fs.readFileSync(path.join(root,'src/motion.css'),'utf8')+'\n'+fs.readFileSync(path.join(root,'src/reviews.css'),'utf8')+'\n'+fs.readFileSync(path.join(root,'src/photo-viewer.css'),'utf8'):name==='interactions.js'?'\n'+fs.readFileSync(path.join(root,'src/motion.js'),'utf8')+'\n'+fs.readFileSync(path.join(root,'src/photo-viewer.js'),'utf8')+'\n'+fs.readFileSync(path.join(root,'src/browse-interactions.js'),'utf8'):''));
-for(const [name,html] of Object.entries(pages))write('templates/'+name,html);
-write('design-system/index.html',catalog());
+for(const [name,html] of Object.entries(pages))write('templates/'+name,externalLinks(html));
+write('design-system/index.html',externalLinks(catalog()));
 write('design-system/catalog.css',fs.readFileSync(path.join(root,'src/catalog.css'),'utf8')+'\n'+fs.readFileSync(path.join(root,'src/editorial.css'),'utf8'));
 write('design/template-manifest.json',JSON.stringify({stage:'prototype',generatedBy:'scripts/build.mjs',pages:Object.keys(pages).map(path=>({path:'templates/'+path}))},null,2)+'\n');
 console.log(`Built ${Object.keys(pages).length} template examples and the design-system catalog.`);
