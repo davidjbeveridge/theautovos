@@ -1,6 +1,6 @@
 import {paths} from './routes.mjs';
 // Public website evidence, 2026-10-07. Owner confirmation remains a release gate.
-export const business = {name:'Auto Vos', legalName:'Auto Vos LLC', email:'theautovos@gmail.com', phone:'720.675.8038', tel:'+17206758038', street:'2130 Spectra Drive, Suite 100', city:'Colorado Springs', region:'CO', postal:'80904', hours:'Monday–Friday, 9am–6pm. Visits by appointment. Saturday by appointment; closed Sunday.'};
+export const business = {name:'Auto Vos', legalName:'Auto Vos LLC', email:'theautovos@gmail.com', phone:'720.675.8038', tel:'+17206758038', street:'2130 Spectra Drive, Suite 100', city:'Colorado Springs', region:'CO', postal:'80904', hours:'Monday–Friday, 9am–6pm. By appointment only. Saturday by appointment; closed Sunday.'};
 export const quotePath=paths.quote;
 export const services=[
   {
