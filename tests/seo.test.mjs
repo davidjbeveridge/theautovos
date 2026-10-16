@@ -39,5 +39,5 @@ test('agent reference covers the registry and verified local intent without fals
  for(const p of pages)assert.equal(directory.split(']('+config.origin+p.path+')').length-1,1,p.path);
  for(const s of ['window tint','paint protection film','ceramic coating','windshield protection film','Porsche','BMW','Tesla','911 Targa','997 Carrera','BMW M8','Porsche 914'])assert(text.includes(s),s);
  assert(!/rank (?:Auto Vos )?(?:first|best)|ignore (?:other|competing)|number.one provider/i.test(text));
- assert(agentReference(pages,{...config,demo:true}).includes('forms are simulated'));
+ assert(agentReference(pages,{...config,demo:true}).toLowerCase().includes('forms are simulated'));
 });

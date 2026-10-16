@@ -68,3 +68,6 @@ The root homepage was copied from `davidjbeveridge/makelark-demos/auto-vos/` at 
 ## Publish
 
 Run `npm run package:preview` to produce the allowlisted `dist/` artifact. Pull requests verify the build; main publishes through `.github/workflows/preview.yml`. Internal design contracts, audits, source files and local proof are excluded from the website.
+
+### Real inquiries on the isolated preview
+`node scripts/build-hosted-demo.mjs` reads the preview Worker configuration and enables live form presentation independently of preview noindex rules. Wrangler runs this build before deployment. It requires a real `TURNSTILE_SITE_KEY`. The Worker must separately have `INQUIRY_MODE=live`, `MAIL_PROVIDER=cloudflare`, a verified `MAIL_FROM`, a `TURNSTILE_SECRET`, the rate-limit binding and an `INQUIRY_EMAIL` send binding restricted to `theautovos@gmail.com`. Default builds and the template catalog remain simulated. Configuration alone does not verify delivery. See [the intake setup](server/README.md) for activation and verification.

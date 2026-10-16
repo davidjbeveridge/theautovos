@@ -38,6 +38,6 @@ async function submit(origin,body){return fetch(base+'/api/inquiry',{method:'POS
 const wrong=await submit('https://example.com',payload);assert.equal(wrong.status,403);checks.push({id:'cross-origin-rejected'});
 const invalid=await submit(base,{});assert.equal(invalid.status,422);checks.push({id:'validation'});
 const art=await submit(base,{...payload,service:'art'});assert.equal(art.status,422);checks.push({id:'removed-art-service-rejected'});
-const result=await submit(base,payload);assert.equal(result.status,200);assert.equal((await result.json()).state,'simulated');checks.push({id:'simulated-no-delivery'});
-fs.writeFileSync('design-artifacts/site/hosted-demo-proof.json',JSON.stringify({origin:base,verifiedAt:new Date().toISOString(),checks,form:'Simulation only. No email sent.'},null,2));
+const result=await submit(base,payload);if(m.config.inquiryMode==='live'){assert.equal(result.status,400);assert.equal((await result.json()).state,'rejected');checks.push({id:'live-form-rejects-simulation-token'});}else{assert.equal(result.status,200);assert.equal((await result.json()).state,'simulated');checks.push({id:'simulated-no-delivery'});}
+fs.writeFileSync('design-artifacts/site/hosted-demo-proof.json',JSON.stringify({origin:base,verifiedAt:new Date().toISOString(),checks,form:m.config.inquiryMode==='live'?'Live transport configured; invalid-token check sent no email. Actual delivery tested separately.':'Simulation only. No email sent.'},null,2));
 console.log(`${checks.length} hosted HTTPS checks passed.`);
