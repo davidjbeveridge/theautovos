@@ -2,12 +2,20 @@
 
 **Canonical design baseline, October 7, 2026.** The approved site concept remains at `index.html`. The rebuild system is at **`design-system/index.html`**: foundations, six-scene visitor storyboard, live component specimens, and 20 working examples across 16 page families.
 
-## Share with the owner
+## Live website
+
+- Main site: https://theautovos.com/ (canonical apex; www redirects).
+- Merchandise store: https://shop.theautovos.com/ (existing Squarespace catalog and checkout).
+- Owner review: https://7c4e9a.demos.beveridge.io/ (separate, noindex).
+
+Production runs as `auto-vos-site` in the Cloudflare `admin@makelark.com` account. `wrangler.jsonc` binds that account and the apex/www zone routes. Use `npm run build:production` and the intended account credentials; the guarded build prevents accidental deployment to the personal or OptionLab account. Production is indexable and has no preview banner. Real inquiries use Cloudflare Email Sending and a hostname-bound Turnstile widget. See [operations and verification](server/README.md).
+
+## Design catalog
 
 - Site concept: https://davidjbeveridge.github.io/theautovos/
 - Design system and storyboard: https://davidjbeveridge.github.io/theautovos/design-system/
 
-Main is the authoritative source. The Owner preview workflow verifies and publishes only the site, catalog, templates and assets. `preview-version.json` identifies the deployed revision. This preview does not replace the existing business website.
+Main is the authoritative source. The Owner preview workflow verifies and publishes only the site, catalog, templates and assets. `preview-version.json` identifies the deployed revision. This historical design catalog is separate from the live business website.
 
 ## Preview
 
@@ -57,9 +65,9 @@ The default test origin is `http://127.0.0.1:8787`; set `PREVIEW_URL` to change 
 
 The installed JACQUES CLI validates the manifest, design contract, presentation registry, component contracts and lockfile. Its UI runner does **not** support this static HTML adapter. The explicit repository browser proof supplies runtime evidence; no JACQUES adapter conformance is claimed.
 
-## Prototype boundary
+## Design catalog boundary
 
-All pages remain `noindex,nofollow`. Forms validate locally and do not send or persist personal information. The demo bag stores merchandise selection only in session storage. Prices and options are labeled fixtures; checkout never collects payment. Policy pages are content shells, not active legal terms. Verify staff/contact details and image rights before publication. Production delivery, payment provider, inventory, tax, shipping, policy approval, redirects and deployment remain rebuild integration work.
+The design catalog and default local/demo builds remain `noindex,nofollow`. Their forms validate locally and do not send or persist personal information. The demo bag stores merchandise selection only in session storage. Prices and options are labeled fixtures; checkout never collects payment. Policy pages are content shells, not active legal terms. Verify staff/contact details and image rights before publication. Production uses the live inquiry Worker and the existing Squarespace store; catalog commerce fixtures are never used for real orders.
 
 ## Homepage provenance
 

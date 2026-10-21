@@ -2,7 +2,19 @@
 
 The single allowed recipient is `theautovos@gmail.com`, set in `inquiry.mjs`. No submission can override it. Customer email is used as Reply-To; the sender must be verified. Phone-only inquiries omit Reply-To. The email contains the vehicle, service, timing, message, contact details, consent and bounded page/campaign context.
 
-## Activate the hosted preview
+## Production — October 21, 2026
+
+The live Worker is `auto-vos-site`, account `488e0d64df5803c663dd8c6e5c0c2049` (`admin@makelark.com`). `wrangler.jsonc` binds zone `28cdcb9a1b23fe98185597ecdb4ef4d0`, wildcard apex/www routes, the restricted email binding, and the public Turnstile widget. Neither workers.dev nor version previews are enabled. Do not deploy production through the personal account that hosts the owner preview.
+
+Use `npm run build:production`; it invokes the same guarded build as Wrangler. Deploy the merged main revision with credentials bound to this account, then compare live pages/assets with `dist-production`. The Worker redirects www and HTTP to `https://theautovos.com`, preserving path/query. Cloudflare nameservers are `maleah.ns.cloudflare.com` and `ricardo.ns.cloudflare.com`. The retained apex A and www Squarespace CNAME are proxied behind the Worker routes. The shop and Squarespace verification CNAMEs remain DNS-only. Do not replace shop with a Worker route or alter its commerce settings.
+
+Workers Paid is active under the approved $5/month plus metered-overages plan. Email Sending uses `inquiries@theautovos.com`, Cloudflare-managed SPF/DKIM/DMARC/bounce DNS, and the Gmail-only native binding. Message-preview storage and application logging are disabled. The Turnstile secret is stored in Worker secrets and the explicitly selected vault, never source. No apex inbound mail routing was added.
+
+Verification: all 46 production pages and referenced assets were compared with the merged build. One real browser submission with the production Turnstile widget was accepted; Cloudflare recorded `delivered` to the receiving mail server at `2026-10-21T22:01:37Z`. This establishes receiving-server delivery, not Gmail inbox placement or a human reply. Separate historical preview inbox confirmation does not prove production inbox placement. Private references, message IDs and DNS/product backups remain in ignored launch evidence. Do not resend tests automatically.
+
+Rollback: first prefer a previously verified production Worker version with the same account, routes, secrets and recipient. If reverting to Squarespace, unproxy apex/www and deliberately restore the prior Squarespace primary-domain/homepage configuration; merely changing DNS will otherwise redirect the old primary domain to shop. Keep the shop catalog intact. Restore removed marketing pages through Squarespace Deleted Pages within its 30-day recovery window or the private pre-cutover content exports. Never empty Deleted Pages as part of deployment. Owner-preview configuration and credentials stay separate.
+
+## Activate the separate hosted preview
 
 1. Onboard a dedicated sender domain with Cloudflare Email Service. Check the account plan/quota before changing billing; do not assume deployment access includes Email Sending access.
 2. Create a managed Turnstile widget for `7c4e9a.demos.beveridge.io`. Store the secret in Bitwarden and the preview Worker's `TURNSTILE_SECRET`; never commit it. The widget action is `inquiry` and the server verifies the exact hostname and action.
@@ -11,7 +23,7 @@ The single allowed recipient is `theautovos@gmail.com`, set in `inquiry.mjs`. No
 5. Run `node scripts/verify-hosted-demo.mjs`; in live mode it deliberately sends an invalid simulation token and must not deliver email. Then submit one clearly labeled test through the real form and actual Turnstile widget. Record the inquiry reference and delivery evidence. Do not use Turnstile test keys or bypass validation to claim an end-to-end pass.
 6. Verify receiving-server delivery or mailbox receipt separately. A binding message ID proves provider acceptance, not inbox placement. Do not fabricate inbox access. Confirm Reply-To allows a direct reply to the customer.
 
-The production-domain handler retains the existing Resend adapter by default. `MAIL_PROVIDER=cloudflare` selects the same native adapter for a later production deployment. Production DNS/shop cutover is separate from preview activation.
+The handler retains a Resend compatibility adapter, but production explicitly selects `MAIL_PROVIDER=cloudflare`. Preview activation and its domain/widget/account remain separate from production.
 
 ## Failure and rollback
 
