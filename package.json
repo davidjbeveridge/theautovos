@@ -12,7 +12,7 @@
     "package:preview": "node scripts/build.mjs && node scripts/verify.mjs && node scripts/package-preview.mjs",
     "test:preview": "node scripts/owner-preview-proof.mjs",
     "build:site": "node scripts/build-site.mjs",
-    "build:production": "node scripts/build-site.mjs --production",
+    "build:production": "node scripts/build-production.mjs",
     "demo": "node scripts/serve-site.mjs",
     "check:site": "node scripts/verify-site.mjs",
     "test:inquiry": "node --test tests/inquiry.test.mjs",
