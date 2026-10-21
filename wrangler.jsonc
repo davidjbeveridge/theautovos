@@ -5,9 +5,10 @@
   "main": "server/worker.mjs",
   "compatibility_date": "2026-10-02",
   "workers_dev": false,
+  "preview_urls": false,
   "routes": [
-    { "pattern": "theautovos.com", "custom_domain": true },
-    { "pattern": "www.theautovos.com", "custom_domain": true }
+    { "pattern": "theautovos.com/*", "zone_id": "28cdcb9a1b23fe98185597ecdb4ef4d0" },
+    { "pattern": "www.theautovos.com/*", "zone_id": "28cdcb9a1b23fe98185597ecdb4ef4d0" }
   ],
   "build": { "command": "node scripts/build-production.mjs" },
   "assets": { "directory": "./dist-production", "binding": "ASSETS", "run_worker_first": true, "not_found_handling": "404-page" },
