@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {execFileSync} from 'node:child_process';
+execFileSync(process.execPath,['scripts/verify-hero-motion.mjs'],{stdio:'inherit'});
 const base=process.env.SITE_PREVIEW_URL||'http://127.0.0.1:8790';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const browser=await chromium.launch({channel:'chrome',headless:true});
@@ -10,7 +12,7 @@ try{
   const page=await context.newPage();await page.goto(base);
   await page.waitForFunction(()=>{const v=document.querySelector('#site-hero-video');return !v.paused&&v.currentTime>.1&&v.videoWidth>0;});
   const v=page.locator('#site-hero-video'),toggle=page.locator('[data-hero-toggle]');
-  assert.ok((await v.getAttribute('src')).includes(width<700?'mobile-v7':'shop-film-v7'));
+  assert.ok((await v.getAttribute('src')).includes(width<700?'mobile-v8':'shop-film-v8'));
   assert.equal(await v.evaluate(e=>e.duration),36.0);assert.ok(await v.evaluate(e=>e.muted&&e.loop));
   const t=await v.evaluate(e=>e.currentTime);await page.waitForTimeout(300);assert.ok(await v.evaluate((e,t)=>e.currentTime>t,t));
   assert.equal(await toggle.getAttribute('aria-label'),'Pause background video');assert.equal((await toggle.textContent()).trim(),'');
@@ -32,7 +34,7 @@ try{
   for(const [i,time] of [0.8,3.5,4.8,9.8,11.2,16.0,17.6,22.4,24.0,28.9,30.4,35.0].entries()){
    await page.waitForFunction(t=>{const e=document.querySelector('#site-hero-video');return e.currentTime>=t&&e.currentTime<t+.75;},time);
    assert.ok(await v.evaluate(e=>e.classList.contains('is-playing')&&!e.paused));
-   await page.screenshot({path:`${out}/hero-raptor-${width}-${i+1}.png`});
+   await page.screenshot({path:`${out}/hero-smooth-${width}-${i+1}.png`});
   }
   await page.waitForFunction(()=>document.querySelector('#site-hero-video').currentTime>35.5);
   await page.waitForFunction(()=>document.querySelector('#site-hero-video').currentTime<1);

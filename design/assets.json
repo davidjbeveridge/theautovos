@@ -24,8 +24,8 @@
     "use": "Local rebuild prototype only; confirm reuse rights before publication."
   },
   {
-    "path": "assets/shop-film-v7.mp4",
-    "source": "Approved six-car hero edit, revision 5; generated from owner-supplied and Auto Vos homepage photography",
+    "path": "assets/shop-film-v8.mp4",
+    "source": "Approved six-car hero edit, revision 6; generated from owner-supplied and Auto Vos homepage photography",
     "use": "Approved by David for hosted review site; client production release remains separate",
     "durationSeconds": 36,
     "vehicles": [
@@ -46,7 +46,7 @@
     "dakarRevision": {
       "date": "2026-10-15",
       "source": "Original Auto Vos gray Porsche 911 Dakar photograph",
-      "treatment": "Restrained front-quarter camera movement; source 0\u20133.5 seconds slowed to 6.8 seconds without optical interpolation",
+      "treatment": "Reviewed source 0\u20133.5 seconds slowed to 6.8 seconds with motion-compensated 30 fps interpolation; both original hood vents retained",
       "review": "Both original front hood vents retained in selected excerpt; later generated frames with an added red grille feature rejected",
       "provenance": "design-artifacts/hero-2026-10-15/production.json"
     },
@@ -56,12 +56,18 @@
       "contextFolder": "https://drive.google.com/drive/folders/13olYELRjMSubRVf2-iM3MbdN0PKHilBO",
       "treatment": "Low front-quarter approach and front arc showcasing gloss PPF; preserve original truck details",
       "provenance": "design-artifacts/hero-2026-10-21/production.json",
-      "review": "Selected original-frame interval 0.25\u20133.8s; no altered marker lights; full-resolution grille/hood/lamps check; slowed to 6.8s without optical interpolation"
+      "review": "Reviewed source 0.25\u20133.8 seconds, excluding later lighting changes; slowed to 6.8 seconds with motion-compensated 30 fps interpolation"
+    },
+    "motionRepair": {
+      "date": "2026-10-21",
+      "method": "FFmpeg minterpolate: motion-compensated intermediate frames only for Raptor and Dakar; same vetted source intervals, four other exact segments unchanged",
+      "verification": "Cadence regression and sampled intermediate-frame geometry review",
+      "provenance": "design-artifacts/hero-2026-10-21/production.json#motion_repair"
     }
   },
   {
-    "path": "assets/shop-film-mobile-v7.mp4",
-    "source": "Approved six-car hero edit, revision 5; generated from owner-supplied and Auto Vos homepage photography",
+    "path": "assets/shop-film-mobile-v8.mp4",
+    "source": "Approved six-car hero edit, revision 6; generated from owner-supplied and Auto Vos homepage photography",
     "use": "Approved by David for hosted review site; client production release remains separate",
     "durationSeconds": 36,
     "vehicles": [
@@ -82,7 +88,7 @@
     "dakarRevision": {
       "date": "2026-10-15",
       "source": "Original Auto Vos gray Porsche 911 Dakar photograph",
-      "treatment": "Restrained front-quarter camera movement; source 0\u20133.5 seconds slowed to 6.8 seconds without optical interpolation",
+      "treatment": "Reviewed source 0\u20133.5 seconds slowed to 6.8 seconds with motion-compensated 30 fps interpolation; both original hood vents retained",
       "review": "Both original front hood vents retained in selected excerpt; later generated frames with an added red grille feature rejected",
       "provenance": "design-artifacts/hero-2026-10-15/production.json"
     },
@@ -92,7 +98,13 @@
       "contextFolder": "https://drive.google.com/drive/folders/13olYELRjMSubRVf2-iM3MbdN0PKHilBO",
       "treatment": "Low front-quarter approach and front arc showcasing gloss PPF; preserve original truck details",
       "provenance": "design-artifacts/hero-2026-10-21/production.json",
-      "review": "Selected original-frame interval 0.25\u20133.8s; no altered marker lights; full-resolution grille/hood/lamps check; slowed to 6.8s without optical interpolation"
+      "review": "Reviewed source 0.25\u20133.8 seconds, excluding later lighting changes; slowed to 6.8 seconds with motion-compensated 30 fps interpolation"
+    },
+    "motionRepair": {
+      "date": "2026-10-21",
+      "method": "FFmpeg minterpolate: motion-compensated intermediate frames only for Raptor and Dakar; same vetted source intervals, four other exact segments unchanged",
+      "verification": "Cadence regression and sampled intermediate-frame geometry review",
+      "provenance": "design-artifacts/hero-2026-10-21/production.json#motion_repair"
     }
   },
   {

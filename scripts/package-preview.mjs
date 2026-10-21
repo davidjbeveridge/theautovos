@@ -5,7 +5,7 @@ import {execFileSync} from 'node:child_process';
 
 // Publish only the owner-facing site. Internal source, audits and tools stay out.
 const destination = 'dist';
-const retired = new Set(['ppf-installation.webp', 'shop-film.mp4', 'shop-film-mobile.mp4', 'shop-film-v2.mp4', 'shop-film-mobile-v2.mp4', 'shop-film-v3.mp4', 'shop-film-mobile-v3.mp4', 'shop-film-v4.mp4', 'shop-film-mobile-v4.mp4', 'shop-film-v5.mp4', 'shop-film-mobile-v5.mp4', 'shop-film-v6.mp4', 'shop-film-mobile-v6.mp4']);
+const retired = new Set(['ppf-installation.webp', 'shop-film.mp4', 'shop-film-mobile.mp4', 'shop-film-v2.mp4', 'shop-film-mobile-v2.mp4', 'shop-film-v3.mp4', 'shop-film-mobile-v3.mp4', 'shop-film-v4.mp4', 'shop-film-mobile-v4.mp4', 'shop-film-v5.mp4', 'shop-film-mobile-v5.mp4', 'shop-film-v6.mp4', 'shop-film-mobile-v6.mp4', 'shop-film-v7.mp4', 'shop-film-mobile-v7.mp4']);
 const allowed = ['index.html', 'styles.css', 'app.js', 'robots.txt', '.nojekyll', 'assets', 'design-system', 'templates'];
 fs.rmSync(destination, {recursive: true, force: true});
 fs.mkdirSync(destination);
