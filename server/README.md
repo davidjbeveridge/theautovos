@@ -22,6 +22,12 @@ Shop is now proxied through Cloudflare, retaining its `ext-cust.squarespace.com`
 
 Ten valid-TLS CLI assertions passed for main 200, www308, recovery302, actual new-site HTML at the target, ordinary main-to-shop navigation, catalog/product/cart and loop guard. No browser was used for this incident. Preserve the current DNS/ruleset backup; to reverse this mitigation, deliberately disable the named rule and restore the shop's prior DNS-only state. Do not remove the apex/www Worker routes or edit commerce/email configuration. Recheck ordinary IPv4/IPv6 resolution separately from forced current-edge tests.
 
+## Shared footer inquiry
+
+The service-site shell now uses the same form and client handler on every page. The quote page keeps its main form; other pages put the sole form beside the lazy-loaded footer map. Load the configured live Turnstile script on all these pages. Never create a second set of form IDs or bypass the existing origin, rate limit, spam or recipient controls. The contact page's separate map remains click-to-load; privacy copy distinguishes it from the automatically lazy-loaded footer map.
+
+The October 21 footer release is application main `acfe1a2` (PR #31), verified on production and owner preview with their separate account/provider/widget configuration. Local response fixtures prove failure, retry and accepted UI states without delivery. Hosted invalid-token checks prove rejection, not inbox delivery; retain the separate real launch receipt evidence above. Release details and Worker versions are recorded in the canonical rebuild plan.
+
 ## Activate the separate hosted preview
 
 1. Onboard a dedicated sender domain with Cloudflare Email Service. Check the account plan/quota before changing billing; do not assume deployment access includes Email Sending access.
