@@ -80,6 +80,8 @@ Installation walkthroughs keep one numbered sequence. Use `.site-step-layout` to
 
 Evergreen guide sections are mapped explicitly in `src/site/guide-media.mjs`. Each has a relevant photo/diagram or a recorded text-only reason. Article headings use level 2; embedded service explanations use level 3. The Work page and template lead with two installation guide links and a clearly labeled project video immediately after the split header; the four installation galleries follow the video content and brand navigation. Shared story thumbnails fill their column, with a dark action caption and arrow, visible focus and a link to the guide. Never imply in-place playback with a play triangle. the Guides template demonstrates alternating rows; the explanatory guide demonstrates bounded media. Use these templates and their catalog previews for future additions.
 
+The shared footer pairs a lazy-loaded Google map on the left with the existing inquiry form on the right. At 900px and below, the form follows the map. Reuse the same validation, delivery mode, consent and spam protection as the quote page. The quote page keeps its existing main form and omits the duplicate footer form. Contact-page maps outside the footer remain click-to-load.
+
 ## Search and agent context
 Public page metadata comes from `src/site/seo.mjs`; `src/site/agent-reference.mjs` builds the registry-backed llms.txt. Use the actual visible page image, content type and verified entity facts. Service pages describe offerings; guides use Article/VideoObject and galleries use ImageGallery. Keep brand/model proof links factual. No duplicate empty descriptions, fabricated ratings, dates or keyword-permutation pages. Run the SEO tests and rendered proof when changing page metadata or route intent.
 
