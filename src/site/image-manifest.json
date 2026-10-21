@@ -6169,6 +6169,24 @@
       }
     ]
   },
+  "/assets/work/oct21/porsche-914-windshield-film-installation.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct21--porsche-914-windshield-film-installation-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct21--porsche-914-windshield-film-installation-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct21--porsche-914-windshield-film-installation-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
   "/assets/work/porsche-914-windshield-film-edge.jpg": {
     "width": 1800,
     "height": 2400,
