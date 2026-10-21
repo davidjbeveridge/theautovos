@@ -116,5 +116,25 @@
     "treatment": "EXIF orientation applied; resized to 2400 \u00d7 1800; metadata stripped; optimized JPEG with 480/960/1600-pixel WebP variants. No generative changes.",
     "width": 2400,
     "height": 1800
+  },
+  {
+    "path": "assets/work/oct21/orange-porsche-911-windshield-gallery-cover.jpg",
+    "source": "https://drive.google.com/file/d/1RcRzaLc7MzRwvdApUK4piTyEAAkRnumM/view",
+    "sourceFilename": "Auto Vos  (223).jpeg",
+    "originalSha256": "d71777bfde31aaead1d67ce76e895a666cb75673d1ac5d7df897ec8af0741fd8",
+    "use": "Owner-selected homepage windshield protection gallery cover, October 21, 2026. Existing gallery photographs and photo count are unchanged.",
+    "originalDimensions": [
+      2016,
+      1512
+    ],
+    "cropRectangle": [
+      320,
+      210,
+      1680,
+      1230
+    ],
+    "treatment": "4:3 master crop keeps the complete car in the mobile card; existing desktop 16:10 center crop removes excess floor. Optimized JPEG and 480/960/1360 WebP candidates; no upscaling or generative changes.",
+    "width": 1360,
+    "height": 1020
   }
 ]

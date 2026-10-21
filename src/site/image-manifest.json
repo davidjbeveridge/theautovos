@@ -6169,6 +6169,24 @@
       }
     ]
   },
+  "/assets/work/oct21/orange-porsche-911-windshield-gallery-cover.jpg": {
+    "width": 1360,
+    "height": 1020,
+    "variants": [
+      {
+        "src": "/assets/responsive/work--oct21--orange-porsche-911-windshield-gallery-cover-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/responsive/work--oct21--orange-porsche-911-windshield-gallery-cover-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/responsive/work--oct21--orange-porsche-911-windshield-gallery-cover-1360.webp",
+        "width": 1360
+      }
+    ]
+  },
   "/assets/work/oct21/porsche-914-windshield-film-installation.jpg": {
     "width": 2400,
     "height": 1800,
