@@ -10,8 +10,8 @@ try{
   const page=await context.newPage();await page.goto(base);
   await page.waitForFunction(()=>{const v=document.querySelector('#site-hero-video');return !v.paused&&v.currentTime>.1&&v.videoWidth>0;});
   const v=page.locator('#site-hero-video'),toggle=page.locator('[data-hero-toggle]');
-  assert.ok((await v.getAttribute('src')).includes(width<700?'mobile-v6':'shop-film-v6'));
-  assert.equal(await v.evaluate(e=>e.duration),33.6);assert.ok(await v.evaluate(e=>e.muted&&e.loop));
+  assert.ok((await v.getAttribute('src')).includes(width<700?'mobile-v7':'shop-film-v7'));
+  assert.equal(await v.evaluate(e=>e.duration),36.0);assert.ok(await v.evaluate(e=>e.muted&&e.loop));
   const t=await v.evaluate(e=>e.currentTime);await page.waitForTimeout(300);assert.ok(await v.evaluate((e,t)=>e.currentTime>t,t));
   assert.equal(await toggle.getAttribute('aria-label'),'Pause background video');assert.equal((await toggle.textContent()).trim(),'');
   assert.equal(await toggle.locator('svg').evaluate(e=>e.getBoundingClientRect().width),20);
@@ -29,16 +29,16 @@ try{
   await page.waitForFunction(()=>getComputedStyle(document.querySelector('#site-hero-video')).opacity==='1');
   // Observe real playback: the lightweight preview server does not support Range seeking.
   await v.evaluate(e=>{e.currentTime=0;});
-  for(const [i,time] of [0.8,3.5,4.8,9.8,11.2,16.0,18.5,21.6,26.5,28.0,32.6].entries()){
+  for(const [i,time] of [0.8,3.5,4.8,9.8,11.2,16.0,17.6,22.4,24.0,28.9,30.4,35.0].entries()){
    await page.waitForFunction(t=>{const e=document.querySelector('#site-hero-video');return e.currentTime>=t&&e.currentTime<t+.75;},time);
    assert.ok(await v.evaluate(e=>e.classList.contains('is-playing')&&!e.paused));
-   await page.screenshot({path:`${out}/hero-vents-${width}-${i+1}.png`});
+   await page.screenshot({path:`${out}/hero-raptor-${width}-${i+1}.png`});
   }
-  await page.waitForFunction(()=>document.querySelector('#site-hero-video').currentTime>33.1);
+  await page.waitForFunction(()=>document.querySelector('#site-hero-video').currentTime>35.5);
   await page.waitForFunction(()=>document.querySelector('#site-hero-video').currentTime<1);
   await v.evaluate(e=>e.play());await page.locator('.av-footer').scrollIntoViewIfNeeded();
   await page.waitForFunction(()=>document.querySelector('#site-hero-video').paused);
-  checks.push({width,playing:true,duration:33.6,mutedLoop:true,loopWrapped:true,pauseResume:true,simulatedVisibilityHandlerPauseResume:true,physicalWindowVisibility:'not verified: automation forces visibility',offscreenPause:true,selection:true,sixShotScreenshots:true,frontArcStartEndScreenshots:true});
+  checks.push({width,playing:true,duration:36.0,mutedLoop:true,loopWrapped:true,pauseResume:true,simulatedVisibilityHandlerPauseResume:true,physicalWindowVisibility:'not verified: automation forces visibility',offscreenPause:true,selection:true,sixShotScreenshots:true,frontArcStartEndScreenshots:true});
   await context.close();
  }
  const reduced=await browser.newPage({reducedMotion:'reduce'});await reduced.goto(base);
