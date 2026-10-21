@@ -1,7 +1,7 @@
 {
   // Cloudflare Workers Static Assets: static hosting plus the single inquiry endpoint.
   "name": "auto-vos-site",
-  "account_id": "PENDING_MAKELARK_ACCOUNT_VERIFICATION",
+  "account_id": "488e0d64df5803c663dd8c6e5c0c2049",
   "main": "server/worker.mjs",
   "compatibility_date": "2026-10-02",
   "workers_dev": false,
@@ -18,7 +18,7 @@
     "SHOP_URL": "https://shop.theautovos.com/",
     "MAIL_PROVIDER": "cloudflare",
     "MAIL_FROM": "Auto Vos <inquiries@theautovos.com>",
-    "TURNSTILE_SITE_KEY": ""
+    "TURNSTILE_SITE_KEY": "0x4AAAAAAFfs9M_kszjJv4lZ"
   },
   "observability": { "enabled": false }
 }
