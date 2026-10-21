@@ -57,6 +57,8 @@ Do not add Tailwind, utility-class strings, shadcn, runtime CSS-in-JS, generic B
 - `jacques.yaml` and `jacques.lock.json`: governance and deterministic lock.
 
 ## Canonical status and publication
+
+October 21 production launch: use `https://theautovos.com` as canonical; redirect www and HTTP to the same apex path/query; retain `https://shop.theautovos.com/` for the existing Squarespace catalog and checkout. Production pages have no preview banner and allow indexing; genuine error pages and temporary staging hosts remain excluded. The separate owner preview stays excluded. Production resources belong only to the new `admin@makelark.com` Cloudflare account, not the personal or OptionLab accounts. Shop appears in both desktop and mobile menus.
 The main branch is authoritative. The owner-facing catalog at `design-system/index.html` expresses the foundations, storyboard, component behavior, page patterns and usage rules. Keep tooling names, source paths, build commands and implementation contracts out of this visual guide. Repository documentation remains the implementation reference. Canonical design status does not mean the owner has approved every business fact or that forms/commerce are live.
 
 `scripts/package-preview.mjs` creates the explicit publication allowlist in `dist/`. GitHub Pages publishes that artifact from main; never publish the repository root, reports or local proof files.

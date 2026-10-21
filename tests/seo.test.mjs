@@ -5,7 +5,7 @@ import {pageData,render} from '../src/site/pages.mjs';
 import {pageSchema,primaryImage,textOnly} from '../src/site/seo.mjs';
 import {agentReference} from '../src/site/agent-reference.mjs';
 import {routeRegistry} from '../src/site/routes.mjs';
-const config={demo:false,origin:'https://www.theautovos.com',shop:'https://shop.theautovos.com/'};
+const config={demo:false,origin:'https://theautovos.com',shop:'https://shop.theautovos.com/'};
 const pages=pageData(config),canonical=new Set(pages.map(p=>p.path));
 test('every page has distinct useful metadata and a real contextual sharing image',()=>{
  const descriptions=new Set(),titles=new Set();
@@ -33,7 +33,7 @@ test('structured entities match visible services, articles, videos and canonical
  assert.equal(videos,3);assert.equal(articles,9);assert(questions.size>60);
 });
 test('agent reference covers the registry and verified local intent without false rankings',()=>{
- const text=agentReference(pages,config),urls=[...text.matchAll(/\]\((https:\/\/www\.theautovos\.com[^)]+)\)/g)].map(m=>new URL(m[1]).pathname);
+ const text=agentReference(pages,config),urls=[...text.matchAll(/\]\((https:\/\/theautovos\.com[^)]+)\)/g)].map(m=>new URL(m[1]).pathname);
  for(const path of urls)assert(canonical.has(path),'Unknown llms URL '+path);
  const directory=text.split('## Canonical page directory')[1];
  for(const p of pages)assert.equal(directory.split(']('+config.origin+p.path+')').length-1,1,p.path);
