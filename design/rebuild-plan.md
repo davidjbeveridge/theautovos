@@ -1,5 +1,15 @@
 # Rebuild system — plan and current state
 
+## October 21 — shared footer release
+
+Authorized scope: ship the staged map and inquiry form after redirect recovery, commit and merge, and deploy matching main to both the owner preview and production. Preserve the new production account binding, canonical apex, indexing rules, existing preview exclusion and temporary redirect recovery. Port only footer changes from the older root checkout; preserve private operator notes.
+
+The footer pairs a lazy-loaded Google map on the left with the existing quote form on the right, stacking at 900px. The quote page keeps its main form and omits a duplicate. Keep the existing delivery handler, fixed recipient, consent, validation, Turnstile, rate limit and failure recovery. Contact's separate map remains click-to-load. Update privacy copy, canonical design guidance and the catalog's form usage guidance.
+
+Release checks: canonical/site builds and verifiers, unit tests, Jacques governance, six-width footer and enlarged-text checks, quote/footer delivery-state fixtures, whole-site Chrome proof and local Worker routes. After merge and CI, deploy the existing preview and the admin@makelark.com production Worker; verify both hosted artifacts, all-page form composition, indexing and public routing. No new email receipt claim from fixture or invalid-token checks.
+
+Current state: ported to current main. Canonical/site builds and source checks, all 32 tests, Jacques fast checks and registry validation pass. The registry check exposed pre-existing string consumers; these now use named consumer/version objects. All 242 broad Chrome checks pass. Six footer widths, 200% text, focus/validation and quote/footer live-mode response fixtures pass; external map tiles and live delivery are excluded from fixtures. Local workerd checks use an explicit loopback-origin fixture to avoid the real canonical-host redirect; no deployment configuration is changed. Release follows commit, CI and merge. The DNS recovery rules remain active; ordinary requests reach the new site, but stale resolver/browser caches remain a separate limitation.
+
 ## Production launch — October 21, 2026
 
 David explicitly authorized production launch, saved credentials, necessary Cloudflare setup and Squarespace store separation. Confirmed canonical origin: `https://theautovos.com`; `www` redirects preserving path/query; `shop.theautovos.com` retains the existing Squarespace merchandise catalog and checkout. This supersedes the previous preview-only publication boundary and pending launch acceptance; it does not assert invoice payment.

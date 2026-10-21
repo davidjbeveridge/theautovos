@@ -124,9 +124,18 @@
       "ownership": "shared",
       "layer": "application-pattern",
       "consumers": [
-        "src/site/expanded.mjs",
-        "src/site/service-media.mjs",
-        "src/catalog.mjs"
+        {
+          "id": "service-site-pages",
+          "versionRequirement": "^0.1.0"
+        },
+        {
+          "id": "service-media",
+          "versionRequirement": "^0.1.0"
+        },
+        {
+          "id": "design-catalog",
+          "versionRequirement": "^0.1.0"
+        }
       ],
       "impactRoots": [
         "color",
@@ -142,9 +151,18 @@
       "ownership": "shared",
       "layer": "application-pattern",
       "consumers": [
-        "src/site/expanded.mjs",
-        "src/site/service-media.mjs",
-        "src/catalog.mjs"
+        {
+          "id": "service-site-pages",
+          "versionRequirement": "^0.1.0"
+        },
+        {
+          "id": "service-media",
+          "versionRequirement": "^0.1.0"
+        },
+        {
+          "id": "design-catalog",
+          "versionRequirement": "^0.1.0"
+        }
       ],
       "impactRoots": [
         "color",
@@ -160,9 +178,18 @@
       "ownership": "shared",
       "layer": "application-pattern",
       "consumers": [
-        "src/site/expanded.mjs",
-        "src/site/service-media.mjs",
-        "src/catalog.mjs"
+        {
+          "id": "service-site-pages",
+          "versionRequirement": "^0.1.0"
+        },
+        {
+          "id": "service-media",
+          "versionRequirement": "^0.1.0"
+        },
+        {
+          "id": "design-catalog",
+          "versionRequirement": "^0.1.0"
+        }
       ],
       "impactRoots": [
         "color",

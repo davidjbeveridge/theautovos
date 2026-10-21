@@ -108,6 +108,6 @@
     "status": "active"
   },
   "x-autovos": {
-    "note": "Static source: src/components.mjs, src/pages.mjs, src/interactions.js. Specimen: templates/home.html. Verification: scripts/browser-proof.mjs. No framework adapter conformance claimed."
+    "note": "Static source: src/components.mjs, src/pages.mjs, src/interactions.js. Specimen: templates/home.html. Verification: scripts/browser-proof.mjs. No framework adapter conformance claimed. Service-site shell: src/site/pages.mjs; shared map: src/site/expanded.mjs. The footer pairs the map and inquiry form above 900px, stacks in that order below, and omits a second form on the quote page. Verification: scripts/footer-contact-proof.mjs and scripts/inquiry-browser-proof.mjs."
   }
 }
