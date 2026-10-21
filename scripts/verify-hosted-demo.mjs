@@ -9,6 +9,8 @@ const exec=promisify(execFile);
 async function fetch(url,options={}){
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'auto-vos-proof-'));
  try{const args=['--silent','--show-error','--max-time','20','--dump-header',dir+'/headers','--output',dir+'/body','--write-out','%{http_code}'];
+ // Retry transient transport failures only for idempotent reads, never submissions.
+ if(!options.method||options.method==='GET')args.push('--retry','2','--retry-all-errors','--retry-delay','1','--retry-max-time','45');
  if(options.method)args.push('--request',options.method);
  for(const [name,value] of Object.entries(options.headers||{}))args.push('--header',`${name}: ${value}`);
  if(options.body)args.push('--data-binary',options.body);
