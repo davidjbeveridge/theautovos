@@ -106,5 +106,15 @@
       "verification": "Cadence regression and sampled intermediate-frame geometry review",
       "provenance": "design-artifacts/hero-2026-10-21/production.json#motion_repair"
     }
+  },
+  {
+    "path": "assets/work/oct21/porsche-914-windshield-film-installation.jpg",
+    "source": "https://drive.google.com/file/d/1I6y4FjVAM6xXwXyHSmuK5-dMlmrotrnx/view",
+    "sourceFilename": "Auto Vos  (344).jpeg",
+    "originalSha256": "6a2826d8dccaf19e2551295af4631e3362fa39c49b15f34273be5c05a3586a5d",
+    "use": "Owner-selected photograph for the homepage windshield protection section, October 21, 2026. Other service and gallery photographs are unchanged.",
+    "treatment": "EXIF orientation applied; resized to 2400 \u00d7 1800; metadata stripped; optimized JPEG with 480/960/1600-pixel WebP variants. No generative changes.",
+    "width": 2400,
+    "height": 1800
   }
 ]

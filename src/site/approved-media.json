@@ -104,5 +104,13 @@
       "width": 1800,
       "height": 2400
     }
-  ]
+  ],
+  "homeWindshield": {
+    "src": "/assets/work/oct21/porsche-914-windshield-film-installation.jpg",
+    "alt": "Installer fitting clear windshield protection film along the top edge of a green Porsche 914",
+    "title": "Porsche 914 windshield protection film installation in Colorado Springs",
+    "caption": "Clear film is fitted to the outside of this Porsche 914\u2019s windshield, including the top edge.",
+    "width": 2400,
+    "height": 1800
+  }
 }

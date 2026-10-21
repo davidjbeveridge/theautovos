@@ -1,5 +1,11 @@
 # Rebuild system — plan and current state
 
+## October 21 — homepage photo and gallery label
+
+Scope: replace only the homepage windshield-support photo with owner-selected Drive file `1I6y4FjVAM6xXwXyHSmuK5-dMlmrotrnx` (installer at the upper edge of a green Porsche 914). Use an optimized original, 480/960/1600 WebP variants, factual alt/title/caption and the existing scoped lightbox. Keep service-page and gallery images unchanged. Rename the shared gallery heading “Clear paint protection film” to “Paint protection film.” Preserve the merged hero video.
+
+Current state: implemented from current main with the merged hero video preserved. Canonical build/verify, demo and production builds, deterministic route/image checks, 26 unit tests and Jacques fast governance checks pass. Explicit Google Chrome proof passes 242 site checks plus targeted 390/821/1440-pixel image/caption, responsive loading, viewer Escape/focus return and gallery-label checks. The 135-answer Q&A digest hash is unchanged and matches the existing sync proof. Evidence: `design-artifacts/homepage-oct21/`. Merge and isolated preview release pending; no production-domain change.
+
 ## Authorized outcome
 Extend the supplied homepage into a complete web design system, visitor storyboard, component catalog and page templates. Bootstrap JACQUES with strict-simple defaults. Publish a separate owner-review preview after commit and merge, as authorized October 7.
 
