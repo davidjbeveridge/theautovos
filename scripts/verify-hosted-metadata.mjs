@@ -6,11 +6,11 @@ for(const [mode,dist] of [['production','dist-production'],['hosted-demo','dist-
  const manifest=JSON.parse(fs.readFileSync(`design-artifacts/${mode}-manifest.json`)),base=manifest.config.origin,images=new Set();
  const pages=[...manifest.pages,{path:'/404.html'}];
  for(let i=0;i<pages.length;i+=6)await Promise.all(pages.slice(i,i+6).map(async p=>{
-  const r=await request(base+p.path),file=p.path==='/'?'index.html':p.path==='/404.html'?'404.html':p.path.slice(1)+'index.html';
+  const requestedPath=p.path==='/404.html'?'/metadata-audit-missing-page/':p.path,r=await request(base+requestedPath),file=p.path==='/'?'index.html':p.path==='/404.html'?'404.html':p.path.slice(1)+'index.html';
   assert.equal(r.status,p.path==='/404.html'?404:200,base+p.path);assert(r.headers.includes('content-type: text/html'));assert(r.body.equals(fs.readFileSync(dist+'/'+file)),base+p.path+' differs from merged build');
   const html=r.body.toString();assert.equal(r.headers.includes('x-robots-tag: noindex'),mode==='hosted-demo');assert.equal(html.includes('class="site-demo"'),mode==='hosted-demo');assert.equal((html.match(/<form id="inquiry"/g)||[]).length,1);
   const graph=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);assert.equal(graph['@context'],'https://schema.org');assert(html.includes(`rel="canonical" href="${base+p.path}"`));
-  const image=html.match(/<meta property="og:image" content="([^"]+)"/)[1];assert.equal(new URL(image).origin,base);images.add(new URL(image).pathname);checks.push({mode,path:p.path,status:r.status,exactBuild:true,metadataGraph:true});
+  const image=html.match(/<meta property="og:image" content="([^"]+)"/)[1];assert.equal(new URL(image).origin,base);images.add(new URL(image).pathname);checks.push({mode,path:p.path,requestedPath,status:r.status,exactBuild:true,metadataGraph:true});
  }));
  const paths=[...images,'/site/style.css','/site/client.js','/robots.txt','/llms.txt','/sitemap.xml'];
  for(let i=0;i<paths.length;i+=6)await Promise.all(paths.slice(i,i+6).map(async p=>{const r=await request(base+p);assert.equal(r.status,200,base+p);assert(r.body.equals(fs.readFileSync(dist+p)),base+p+' asset differs');if(images.has(p))assert(r.headers.includes('content-type: image/webp'),base+p);checks.push({mode,path:p,exactBuild:true});}));
