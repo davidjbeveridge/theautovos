@@ -1,0 +1,22 @@
+<!-- Auto Vos shop navigation: install in Squarespace Footer Code Injection. -->
+<script id="auto-vos-store-navigation">
+(() => {
+ if (location.hostname !== 'shop.theautovos.com') return;
+ const home = 'https://theautovos.com/?from=shop';
+ function updateLinks() {
+  document.querySelectorAll('#logoImage a').forEach(link => {
+   link.href = home;
+   link.removeAttribute('target');
+   link.setAttribute('aria-label', 'Auto Vos main website');
+  });
+  document.querySelectorAll('a').forEach(link => {
+   if (link.textContent.trim() !== 'Back to Auto Vos') return;
+   link.href = home;
+   link.removeAttribute('target');
+  });
+ }
+ updateLinks();
+ document.addEventListener('DOMContentLoaded', updateLinks, {once:true});
+ document.addEventListener('mercury:load', updateLinks);
+})();
+</script>

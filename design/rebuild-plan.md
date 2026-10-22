@@ -1,5 +1,13 @@
 # Rebuild system — plan and current state
 
+## October 22 — existing-browser shop return and logo
+
+The first navigation repair covered fresh browser sessions. Owner reports that the store return link still returns to shop in an existing session, while ordinary HTTPS requests and fresh Chrome reach the new main site. The historical Squarespace permanent redirect can survive the DNS fix in browser cache.
+
+Plan: update the store’s native Back to Auto Vos URL and logo to `https://theautovos.com/?from=shop`. Keep Shop and commerce links on the store. Add a narrowly scoped main-site cache refresh using Fetch `cache:reload`, then remove only the temporary `from=shop` parameter after a successful HTML response. Preserve cookies, storage, campaign parameters, indexing and canonical URLs. Test a real warmed 301 cache, fallback when refresh fails, native links and logo at desktop/mobile; update operator/design guidance, merge and deploy production and preview.
+
+Current state: native Squarespace return-link URL and exact maintained footer injection are published and verified via ordinary HTML readback. All 39 unit tests, source/site builds and deterministic checks, 141 metadata checks, 141 navigation artifact checks and Jacques governance pass. A real warmed 301 and previous one-hour script cache are reproduced and repaired at 390px and 1440px in Chrome. Version the built client URL by its content hash so existing visitors receive the repair. Live logo/return tests and hosted artifact matching follow merge/deployment. No commerce or DNS changes.
+
 ## October 22 — shop navigation repair
 
 Cause: the temporary Cloudflare launch-recovery rule redirects shop-root requests without an apex referrer; the shared outgoing-link helper strips that referrer, and preview points to the old www shop alias. Ordinary CLI requests reproduced the reported recovery URL.
