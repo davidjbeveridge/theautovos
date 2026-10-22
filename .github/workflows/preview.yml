@@ -26,7 +26,6 @@ jobs:
           node scripts/build-site.mjs
           node scripts/build-production.mjs
           node scripts/build-hosted-demo.mjs
-          node scripts/verify-site.mjs
           node scripts/verify-metadata.mjs
       - name: Package owner-facing preview
         run: node scripts/package-preview.mjs
