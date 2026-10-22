@@ -7,7 +7,7 @@ import {quotePath} from '../src/site/content.mjs';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const base=process.env.SITE_URL||'http://127.0.0.1:8790';
 if(!/^http:\/\/127\.0\.0\.1:\d+$/.test(base))throw Error('This fixture proof must run against a local preview');
-const config={demo:true,hostedDemo:true,inquiryMode:'live',mailProvider:'cloudflare',origin:'https://7c4e9a.demos.beveridge.io',shop:'https://www.theautovos.com/shop',turnstileSiteKey:'browser-fixture',analyticsId:''};
+const config={demo:true,hostedDemo:true,inquiryMode:'live',mailProvider:'cloudflare',origin:'https://7c4e9a.demos.beveridge.io',shop:'https://shop.theautovos.com/',turnstileSiteKey:'browser-fixture',analyticsId:''};
 const paths=[quotePath,'/contact/'];
 const browser=await chromium.launch({channel:'chrome',headless:true}),checks=[];
 fs.mkdirSync('design-artifacts/live-inquiry',{recursive:true});

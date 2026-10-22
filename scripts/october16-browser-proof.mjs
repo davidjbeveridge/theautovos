@@ -12,7 +12,7 @@ try {
  const page=await context.newPage();
  for(const route of manifest.pages){
   await page.goto(base+route.path);
-  const bad=await page.locator('a[href]').evaluateAll(as=>as.filter(a=>/^https?:/.test(a.href)&&new URL(a.href).origin!==location.origin).filter(a=>a.target!=='_blank'||!a.relList.contains('noopener')||!a.relList.contains('noreferrer')||a.getAttribute('aria-description')!=='Opens in a new tab').map(a=>a.href));
+  const bad=await page.locator('a[href]').evaluateAll(as=>as.filter(a=>/^https?:/.test(a.href)&&new URL(a.href).origin!==location.origin&&!['theautovos.com','www.theautovos.com','shop.theautovos.com'].includes(new URL(a.href).hostname)).filter(a=>a.target!=='_blank'||!a.relList.contains('noopener')||!a.relList.contains('noreferrer')||a.getAttribute('aria-description')!=='Opens in a new tab').map(a=>a.href));
   assert.deepEqual(bad,[],route.path);
   if(route.path.startsWith('/services/')){
    assert.equal(await page.locator('#customer-reviews').count(),1);
@@ -58,7 +58,7 @@ try {
  for(const route of ['/design-system/','/templates/work.html']){
   await page.goto('http://127.0.0.1:8787'+route);
   assert.equal(await page.locator('.site-story-preview__action').count(),3);
-  const bad=await page.locator('a[href^="http"]').evaluateAll(as=>as.filter(a=>a.target!=='_blank'||!a.relList.contains('noopener')).map(a=>a.href));assert.deepEqual(bad,[]);
+  const bad=await page.locator('a[href^="http"]').evaluateAll(as=>as.filter(a=>!['theautovos.com','www.theautovos.com','shop.theautovos.com'].includes(new URL(a.href).hostname)).filter(a=>a.target!=='_blank'||!a.relList.contains('noopener')).map(a=>a.href));assert.deepEqual(bad,[]);
   if(route.includes('templates'))await page.screenshot({path:out+'/work-template.png',fullPage:true});
   checks.push({route,templateParity:'passed'});
  }

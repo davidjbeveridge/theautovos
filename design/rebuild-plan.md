@@ -1,5 +1,13 @@
 # Rebuild system — plan and current state
 
+## October 22 — shop navigation repair
+
+Cause: the temporary Cloudflare launch-recovery rule redirects shop-root requests without an apex referrer; the shared outgoing-link helper strips that referrer, and preview points to the old www shop alias. Ordinary CLI requests reproduced the reported recovery URL.
+
+Plan: disable only the obsolete named recovery rule, retain shop proxy/origin/TLS and all main-site routes; use the shop root in production and preview; treat owned main/www/shop links as same-tab navigation while preserving third-party new-tab behavior. Add targeted source and live regression checks, update shared design/operator guidance, regenerate catalog/templates, run required build/source/Jacques/integration proofs, merge and deploy both Workers, then verify real desktop/mobile cross-navigation and exact hosted artifacts.
+
+Current state: recovery rule disabled and read back in the intended production account. Ordinary shop root, catalog and both referrer cases return 200 on the shop; main returns 200 and www redirects to apex. Source cleanup is complete. All 36 unit tests, 141 shop-link artifact checks, 141 metadata artifact checks, deterministic full site/source verification, Jacques governance and two local Chrome journeys (390px touch and 1440px desktop) pass. Local shop navigation uses an explicit fixture; live store clicks and exact hosted builds remain release checks. CI now checks shop links in every build mode. No DNS, product, checkout, form or credential changes.
+
 ## October 21 — all-page metadata audit and release
 
 Scope: all 46 registry pages plus the real 404, production and noindex owner-preview modes. Audit complete heads and parsed JSON-LD, then verify rendered Chrome DOM, actual sharing-image dimensions, static packaging, hosted headers/URLs and exact deployed build. Preserve footer forms, account boundaries and DNS recovery. Commit, CI, merge and deploy both existing Workers.

@@ -27,6 +27,7 @@ jobs:
           node scripts/build-production.mjs
           node scripts/build-hosted-demo.mjs
           node scripts/verify-metadata.mjs
+          node scripts/verify-shop-navigation.mjs --local-only
       - name: Package owner-facing preview
         run: node scripts/package-preview.mjs
       - name: Configure Pages
