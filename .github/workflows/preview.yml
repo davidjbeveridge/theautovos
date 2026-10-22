@@ -21,6 +21,13 @@ jobs:
         run: node scripts/verify.mjs
       - name: Verify intake, release guards and search metadata
         run: node --test tests/*.test.mjs
+      - name: Verify production and preview metadata artifacts
+        run: |
+          node scripts/build-site.mjs
+          node scripts/build-production.mjs
+          node scripts/build-hosted-demo.mjs
+          node scripts/verify-site.mjs
+          node scripts/verify-metadata.mjs
       - name: Package owner-facing preview
         run: node scripts/package-preview.mjs
       - name: Configure Pages

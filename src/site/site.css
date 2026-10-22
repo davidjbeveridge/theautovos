@@ -101,3 +101,8 @@
 .site-footer-inquiry .av-button{white-space:normal}
 .site-footer-inquiry .av-error-summary,.site-footer-inquiry .av-error-summary p{color:var(--av-color-ink)}
 @media(max-width:900px){.site-footer-contact{grid-template-columns:1fr}.site-footer-map .site-map-frame iframe{height:360px}}
+/* Article credit uses the same light/dark reading colors as its header. */
+.site-article-byline a{color:var(--av-color-link);font-weight:700;text-decoration:underline;text-underline-offset:.18em}
+.site-article-byline a:hover{text-decoration-thickness:.14em}
+.site-split-header .site-article-byline{color:var(--av-color-inverse-muted)}
+.site-split-header .site-article-byline a{color:var(--av-color-link-inverse)}
