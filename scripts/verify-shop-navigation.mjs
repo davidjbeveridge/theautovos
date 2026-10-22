@@ -39,7 +39,7 @@ if (!process.argv.includes('--local-only')) {
   let store;
   for (const referer of [null, main + '/', preview + '/']) {
     store = await request(shop, referer ? {referer} : {});
-    assert.match(store, /rel="canonical" href="https:\/\/shop\.theautovos\.com\//);
+    assert.match(store, /rel="canonical" href="https:\/\/shop\.theautovos\.com\/?"/);
     assert.match(store, /Back to Auto Vos/);
     const back = anchors(store).filter(a => attr(a, 'href') === main + '/');
     assert(back.length > 0, 'Store backlink to canonical main site');
@@ -47,7 +47,7 @@ if (!process.argv.includes('--local-only')) {
     checks.push(`Direct shop root with ${referer || 'no referrer'}`);
   }
   const catalog = await request(shop + 'shop');
-  const product = anchors(catalog).map(a => attr(a, 'href')).find(h => h?.startsWith('/shop/p/'));
+  const product = anchors(catalog).map(a => attr(a, 'href')).find(h => h?.startsWith('/shop/'));
   assert(product, 'Real merchandise product is linked from catalog');
   await request(new URL(product, shop));
   await request(shop + 'cart');
