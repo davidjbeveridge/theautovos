@@ -17,6 +17,7 @@
     "check:site": "node scripts/verify-site.mjs",
     "test:inquiry": "node --test tests/inquiry.test.mjs",
     "test:site": "node scripts/site-browser-proof.mjs",
-    "check:qa-digest": "python3 scripts/build-qa-digest.py --check --require-synced"
+    "check:qa-digest": "python3 scripts/build-qa-digest.py --check --require-synced",
+    "check:metadata": "node scripts/verify-metadata.mjs"
   }
 }

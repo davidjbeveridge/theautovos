@@ -1,5 +1,13 @@
 # Rebuild system — plan and current state
 
+## October 21 — all-page metadata audit and release
+
+Scope: all 46 registry pages plus the real 404, production and noindex owner-preview modes. Audit complete heads and parsed JSON-LD, then verify rendered Chrome DOM, actual sharing-image dimensions, static packaging, hosted headers/URLs and exact deployed build. Preserve footer forms, account boundaries and DNS recovery. Commit, CI, merge and deploy both existing Workers.
+
+Findings and fixes: replace three 320px sharing stills with existing high-resolution same-vehicle images, choose a BMW image for BMW PPF and a landscape shop image for Our Team, expand generic collection/review descriptions and add Colorado Springs to nine brand-service titles. Add image MIME/secure URL metadata and OG namespace. Link WebPage publisher, breadcrumbs, business contact points and collection main entities. Match Article headline to the visible H1. Credit Auto Vos visibly and in Article author metadata; do not invent personal authors or publication dates. Explicitly package sharing-only image dependencies. Retain verified video dates/durations, existing truthful FAQ ownership, no fabricated prices/ratings/accounts, correct production indexing and excluded previews/errors.
+
+Current state: source audit and implementation verified. All 35 tests, 141 complete artifact checks, 50 rendered Chrome metadata/brand-journey checks and Jacques governance pass. Sharing images decode at their declared dimensions; all article bylines pass at three widths. Audit and evidence guidance: `design/metadata-audit.md`. CI now includes all three site builds and the artifact audit. Release follows commit, CI, merge and both deployments; actual hosted receipts remain in ignored evidence. No rich-result eligibility, rankings or social cache refresh is guaranteed.
+
 ## October 21 — shared footer release
 
 Authorized scope: ship the staged map and inquiry form after redirect recovery, commit and merge, and deploy matching main to both the owner preview and production. Preserve the new production account binding, canonical apex, indexing rules, existing preview exclusion and temporary redirect recovery. Port only footer changes from the older root checkout; preserve private operator notes.
