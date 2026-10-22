@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 
 const shop = 'https://shop.theautovos.com/';
 const main = 'https://theautovos.com';
@@ -21,9 +22,13 @@ function checkLinks(html, label) {
 for (const mode of ['demo', 'production', 'hosted-demo']) {
   const manifest = JSON.parse(fs.readFileSync(`design-artifacts/${mode}-manifest.json`));
   assert.equal(manifest.config.shop, shop, `${mode}: canonical store URL`);
+  const version = createHash('sha256').update(fs.readFileSync(`dist-${mode}/site/client.js`)).digest('hex').slice(0,12);
+  assert.equal(manifest.config.clientVersion, version, `${mode}: script version follows actual content`);
   for (const page of [...manifest.pages, {path:'/404.html'}]) {
     const file = page.path === '/' ? 'index.html' : page.path === '/404.html' ? '404.html' : page.path.slice(1) + 'index.html';
-    checkLinks(fs.readFileSync(`dist-${mode}/${file}`, 'utf8'), `${mode} ${page.path}`);
+    const html = fs.readFileSync(`dist-${mode}/${file}`, 'utf8');
+    assert(html.includes(`src="/site/client.js?v=${version}"`), `${mode} ${page.path}: fresh script URL`);
+    checkLinks(html, `${mode} ${page.path}`);
   }
 }
 async function request(url, headers = {}) {
@@ -41,9 +46,12 @@ if (!process.argv.includes('--local-only')) {
     store = await request(shop, referer ? {referer} : {});
     assert.match(store, /rel="canonical" href="https:\/\/shop\.theautovos\.com\/?"/);
     assert.match(store, /Back to Auto Vos/);
-    const back = anchors(store).filter(a => attr(a, 'href') === main + '/');
+    const back = anchors(store).filter(a => attr(a, 'href') === main + '/?from=shop');
     assert(back.length > 0, 'Store backlink to canonical main site');
     assert(back.every(a => !attr(a, 'target') || attr(a, 'target') === '_self'), 'Store backlink stays in tab');
+    const injected = store.match(/<script id="auto-vos-store-navigation">([\s\S]*?)<\/script>/)?.[1];
+    const canonical = fs.readFileSync('src/store-navigation.html', 'utf8').match(/<script id="auto-vos-store-navigation">([\s\S]*?)<\/script>/)[1];
+    assert.equal(injected, canonical, 'Published shop logo script matches maintained source');
     checks.push(`Direct shop root with ${referer || 'no referrer'}`);
   }
   const catalog = await request(shop + 'shop');

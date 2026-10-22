@@ -38,6 +38,14 @@ try {
     await Promise.all([page.waitForURL(destination, {waitUntil:'domcontentloaded'}), back.click()]);
     assert.equal(context.pages().length, 1, 'Store backlink stays in existing tab');
     assert.equal(page.url(), destination);
+    if (live) {
+      await page.goto(shop, {waitUntil:'domcontentloaded'});
+      const logo = page.locator('#logoImage a');
+      assert.equal(await logo.getAttribute('href'), 'https://theautovos.com/?from=shop');
+      await Promise.all([page.waitForURL(destination, {waitUntil:'domcontentloaded'}), logo.click()]);
+      assert.equal(context.pages().length, 1, 'Shop logo returns in the same tab');
+      await page.screenshot({path:`${out}/${new URL(base).hostname}-logo-return-${width}.png`});
+    }
     await page.goto(base + '/contact/', {waitUntil:'domcontentloaded'});
     const footer = page.locator('.av-footer a[data-shop]');
     assert.equal(await footer.getAttribute('href'), shop);
@@ -48,7 +56,7 @@ try {
     const xpel = page.locator('a[href*="xpel.com"]').first();
     assert.equal(await xpel.getAttribute('target'), '_blank');
     assert.match(await xpel.getAttribute('rel'), /noopener noreferrer/);
-    checks.push({base, width, keyboardShop:'passed', shopRoot:'passed', backToMain:'passed', footer:'passed', xpelNewTab:'passed'});
+    checks.push({base, width, keyboardShop:'passed', shopRoot:'passed', backToMain:'passed', shopLogo:live ? 'passed' : 'live-only', footer:'passed', xpelNewTab:'passed'});
     await context.close();
   }
   fs.writeFileSync(`${out}/${live ? 'live' : 'local'}-browser-proof.json`, JSON.stringify({browser:'Google Chrome', checks, limits:live ? 'Anonymous existing-tab navigation only; no order or inquiry submitted.' : 'Local UI uses an explicit shop fixture; live store is verified separately.'}, null, 2));
