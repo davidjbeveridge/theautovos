@@ -31,7 +31,7 @@ try {
     await page.screenshot({path:`${out}/${live ? new URL(base).hostname : 'local'}-shop-${width}.png`});
     let back = page.getByRole('link', {name:'Back to Auto Vos', exact:true});
     if (live && !await back.first().isVisible()) {
-      await page.locator('.header-burger-btn').click();
+      await page.locator('.mobile-nav-toggle:visible').first().click();
     }
     back = page.getByRole('link', {name:'Back to Auto Vos', exact:true}).filter({visible:true}).first();
     const destination = live ? 'https://theautovos.com/' : base + '/';
