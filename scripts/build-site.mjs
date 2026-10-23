@@ -14,8 +14,11 @@ const liveInquiries=process.argv.includes('--live-inquiries');
 if(liveInquiries&&!hostedDemo)throw Error('Live preview inquiries require --hosted-demo');
 const origin=process.env.SITE_ORIGIN||'https://theautovos.com';
 if(!(hostedDemo?/^https:\/\/7c4e9a\.demos\.beveridge\.io$/:/^https:\/\/([a-z0-9-]+\.)*theautovos\.com$/).test(origin))throw Error('SITE_ORIGIN must be an approved HTTPS host without trailing slash');
+const registry=JSON.parse(fs.readFileSync('design/presentation.yaml','utf8'));
+const tokens=':root{'+registry.variables.map(v=>v.projections?.css?`${v.projections.css.customProperty}:${v.values.base};`:'').join('')+'}\n';
+const styles=['src/system.css','src/site/site.css','src/editorial.css','src/inline-links.css','src/motion.css','src/reviews.css','src/photo-viewer.css'].map(file=>fs.readFileSync(file,'utf8')).join('\n');
 const client=['src/site/client.js','src/motion.js','src/photo-viewer.js','src/browse-interactions.js','src/site/shop-return.js'].map(file=>fs.readFileSync(file,'utf8')).join('\n');
-const config={demo,hostedDemo,clientVersion:createHash('sha256').update(client).digest('hex').slice(0,12),inquiryMode:liveInquiries||!demo?'live':'simulated',mailProvider:process.env.MAIL_PROVIDER||(liveInquiries?'cloudflare':'resend'),origin,shop:process.env.SHOP_URL||'https://shop.theautovos.com/',turnstileSiteKey:process.env.TURNSTILE_SITE_KEY||'',analyticsId:demo?'':process.env.ANALYTICS_ID||''};
+const config={demo,hostedDemo,styleVersion:createHash('sha256').update(tokens+styles).digest('hex').slice(0,12),clientVersion:createHash('sha256').update(client).digest('hex').slice(0,12),inquiryMode:liveInquiries||!demo?'live':'simulated',mailProvider:process.env.MAIL_PROVIDER||(liveInquiries?'cloudflare':'resend'),origin,shop:process.env.SHOP_URL||'https://shop.theautovos.com/',turnstileSiteKey:process.env.TURNSTILE_SITE_KEY||'',analyticsId:demo?'':process.env.ANALYTICS_ID||''};
 if(!['cloudflare','resend'].includes(config.mailProvider))throw Error('Unsupported inquiry mail provider');
 if(liveInquiries&&!/^0x[A-Za-z0-9_-]+$/.test(config.turnstileSiteKey))throw Error('Live inquiries require a real Turnstile site key');
 if(!/^https:\/\/(shop|merch|www)\.theautovos\.com\//.test(config.shop))throw Error('Unapproved shop URL');
@@ -24,9 +27,8 @@ const out=hostedDemo?'dist-hosted-demo':demo?'dist-demo':'dist-production';fs.rm
 const write=(name,value)=>{const target=path.join(out,name);fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,value);};
 const pages=pageData(config);const planned=routeRegistry.filter(p=>eligible(p.path,config));if(new Set(pages.map(p=>p.path)).size!==pages.length)throw Error('Duplicate page route');if(pages.length!==planned.length||planned.some(r=>!pages.some(p=>p.path===r.path)))throw Error('Page coverage differs from canonical registry: '+planned.filter(r=>!pages.some(p=>p.path===r.path)).map(p=>p.path));
 for(const page of [...pages,notFound()]){const file=page.path==='/'?'index.html':page.path==='/404.html'?'404.html':page.path.endsWith('/')?page.path.slice(1)+'index.html':page.path.slice(1)+'.html';write(file,render(page,config));}
-const registry=JSON.parse(fs.readFileSync('design/presentation.yaml','utf8'));
-write('site/tokens.css',':root{'+registry.variables.map(v=>v.projections?.css?`${v.projections.css.customProperty}:${v.values.base};`:'').join('')+'}\n');
-write('site/style.css',fs.readFileSync('src/system.css','utf8')+'\n'+fs.readFileSync('src/site/site.css','utf8')+'\n'+fs.readFileSync('src/editorial.css','utf8')+'\n'+fs.readFileSync('src/inline-links.css','utf8')+'\n'+fs.readFileSync('src/motion.css','utf8')+'\n'+fs.readFileSync('src/reviews.css','utf8')+'\n'+fs.readFileSync('src/photo-viewer.css','utf8'));
+write('site/tokens.css',tokens);
+write('site/style.css',styles);
 write('site/client.js',client);
 // Only referenced public assets are packaged. No proposal, audit, catalog or secrets.
 const html=[...pages,notFound()].map(p=>render(p,config)).join('');const assets=new Set([...html.matchAll(/(?:src|href)="(\/assets\/[^"?#]+)"/g)].map(m=>m[1]));assets.add('/assets/hero-poster.webp');for(const m of html.matchAll(/srcset="([^"]+)"/g))for(const candidate of m[1].split(','))assets.add(candidate.trim().split(' ')[0]);
