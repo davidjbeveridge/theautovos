@@ -1,5 +1,11 @@
 # Rebuild system — plan and current state
 
+## October 23 — inquiry fields and dark contact panels
+
+Owner's screenshot requests removing Help me choose, making the message optional, requiring a nonblank free-text vehicle description, and dark map/form styling. Apply those rules to every shared footer and quote form, server/client validation and canonical template/catalog. Preserve delivery, fixed recipient, consent, spam protection, failure recovery and one form per page. Keep map attribution and a plain directions link. Use registry tokens for dark controls, readable error/focus/selection states and responsive composition. Verify optional-message submission and missing-vehicle errors, all-page form consistency, mobile/desktop plus enlarged text and actual map rendering. Run required source, site, Jacques and Worker checks; commit, merge, deploy both production and preview, and compare hosted artifacts. No new real inquiry is needed for validation.
+
+Current state: implementation and local verification complete. All 40 unit tests, required source/site builds and verifiers, 141 metadata artifact checks and Jacques governance pass. Explicit Chrome proofs cover 242 service-site checks at five widths, 109 canonical template/catalog inspections, six footer widths, 200% text, live-form failure/acceptance fixtures with a blank message, and eight ready/invalid/pending/simulated form captures. All 189 local Worker routing/configuration checks pass using an isolated local origin and no provider secrets. The actual Google embed is inspected in dark monochrome; map and form headings align on desktop and stack on mobile. The 135-answer Q&A digest is unchanged. Merge, deployment and hosted readback follow; private root notes remain outside the public change.
+
 ## October 22 — existing-browser shop return and logo
 
 The first navigation repair covered fresh browser sessions. Owner reports that the store return link still returns to shop in an existing session, while ordinary HTTPS requests and fresh Chrome reach the new main site. The historical Squarespace permanent redirect can survive the DNS fix in browser cache.

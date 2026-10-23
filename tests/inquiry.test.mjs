@@ -1,9 +1,9 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import {handleInquiry,productionDependencies,RECIPIENT} from '../server/inquiry.mjs';
-const origin='https://www.theautovos.com';const valid={name:'Demo Visitor',email:'visitor@example.com',phone:'',reply:'email',service:'ppf',message:'Sample inquiry only.',consent:true,token:'test'};
+const origin='https://www.theautovos.com';const valid={name:'Demo Visitor',email:'visitor@example.com',phone:'',reply:'email',service:'ppf',vehicle:'2024 Porsche 911',message:'Sample inquiry only.',consent:true,token:'test'};
 const req=(data=valid,headers={},method='POST')=>new Request(origin+'/api/inquiry',{method,headers:{origin,'content-type':'application/json',...headers},...(method==='GET'?{}:{body:JSON.stringify(data)})});
 const deps={origin,verifySpam:async()=>true,limit:async()=>true,deliver:async()=>({accepted:true})};
-test('all six contexts accept only through transport; recipient fixed, source bounded',async()=>{for(const service of ['tint','ppf','ceramic','windshield','choose','general']){let lead;const response=await handleInquiry(req({...valid,service,to:'attacker@example.com',context:{landing:'/services/',utm_source:'search',utm_campaign:'email@example.com',secret:'no',referrer:'google.com'}}),{...deps,deliver:async value=>{lead=value;return {accepted:true};}});assert.equal(response.status,200);assert.equal(lead.to,RECIPIENT);assert.deepEqual(lead.source,{utm_source:'search',landing:'/services/',referrer:'google.com'});assert.equal((await response.json()).state,'accepted');}});
-test('rejects invalid schema, injection and missing reply permission before delivery',async()=>{for(const change of [{name:''},{service:'anything'},{service:'art'},{reply:'sms'},{email:'ok@example.com\r\nBcc: bad@example.com'},{consent:false},{message:42},{message:'x'.repeat(2001)},{reply:'phone',phone:'123'}]){let called=false;const r=await handleInquiry(req({...valid,...change}),{...deps,deliver:async()=>{called=true;return {accepted:true};}});assert.equal(r.status,422);assert.equal(called,false);}});
+test('all five services/inquiry options accept only through transport; recipient fixed, source bounded',async()=>{for(const service of ['tint','ppf','ceramic','windshield','general']){let lead;const response=await handleInquiry(req({...valid,service,to:'attacker@example.com',context:{landing:'/services/',utm_source:'search',utm_campaign:'email@example.com',secret:'no',referrer:'google.com'}}),{...deps,deliver:async value=>{lead=value;return {accepted:true};}});assert.equal(response.status,200);assert.equal(lead.to,RECIPIENT);assert.deepEqual(lead.source,{utm_source:'search',landing:'/services/',referrer:'google.com'});assert.equal((await response.json()).state,'accepted');}});
+test('rejects invalid schema, injection and missing reply permission before delivery',async()=>{for(const change of [{vehicle:''},{vehicle:'   '},{vehicle:42},{vehicle:'x'.repeat(121)},{name:''},{service:'choose'},{service:'anything'},{service:'art'},{reply:'sms'},{email:'ok@example.com\r\nBcc: bad@example.com'},{consent:false},{message:42},{message:'x'.repeat(2001)},{reply:'phone',phone:'123'}]){let called=false;const r=await handleInquiry(req({...valid,...change}),{...deps,deliver:async()=>{called=true;return {accepted:true};}});assert.equal(r.status,422);assert.equal(called,false);}});
 test('phone route does not require email',async()=>{assert.equal((await handleInquiry(req({...valid,email:'',phone:'719-555-0100',reply:'phone'}),deps)).status,200);});
 test('method, type, origin, oversized and malformed bodies fail closed',async()=>{assert.equal((await handleInquiry(req(valid,{},'GET'),deps)).status,405);assert.equal((await handleInquiry(req(valid,{'content-type':'text/plain'}),deps)).status,415);assert.equal((await handleInquiry(req(valid,{origin:'https://evil.example'}),deps)).status,403);assert.equal((await handleInquiry(req({...valid,message:'x'.repeat(13000)}),deps)).status,413);assert.equal((await handleInquiry(req(null),deps)).status,400);});
 test('honeypot, rate limit, spam and unavailable config never send',async()=>{assert.equal((await handleInquiry(req({...valid,website:'spam'}),deps)).status,400);assert.equal((await handleInquiry(req(),{...deps,limit:async()=>false})).status,429);assert.equal((await handleInquiry(req(),{...deps,verifySpam:async()=>false})).status,400);assert.equal((await handleInquiry(req(),{...deps,available:false})).status,503);});
@@ -31,4 +31,20 @@ test('Cloudflare explicit rejection and ambiguous errors preserve truthful deliv
  }
  const uncertain=productionDependencies({...cf,INQUIRY_EMAIL:{send:async()=>{throw Error('connection closed');}}});
  await assert.rejects(uncertain.deliver({...valid,id:'reference',source:{}}));
+});
+
+
+test('a free-text vehicle is required, while a blank or omitted message can be delivered',async()=>{
+ for(const message of ['', '   ', undefined]){
+  let lead;
+  const response=await handleInquiry(req({...valid,vehicle:'My Porsche',message}),{...deps,deliver:async value=>{lead=value;return {accepted:true};}});
+  assert.equal(response.status,200);
+  assert.equal(lead.vehicle,'My Porsche');
+  assert.equal(lead.message,'');
+ }
+ let sent=false;
+ const response=await handleInquiry(req({...valid,vehicle:undefined}),{...deps,deliver:async()=>{sent=true;return {accepted:true};}});
+ assert.equal(response.status,422);
+ assert.match((await response.json()).errors.vehicle,/vehicle/);
+ assert.equal(sent,false);
 });

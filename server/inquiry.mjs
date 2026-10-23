@@ -1,15 +1,15 @@
 // Worker-compatible handler. No persistence, logging, client-controlled recipient or retries.
 export const RECIPIENT='theautovos@gmail.com';
-export const SERVICE_IDS=['tint','ppf','ceramic','windshield','choose','general'];
+export const SERVICE_IDS=['tint','ppf','ceramic','windshield','general'];
 const json=(status,data)=>new Response(JSON.stringify(data),{status,headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'}});
 const clean=(v,max)=>typeof v==='string'?v.trim().slice(0,max):'';
 export function validate(data){
  const errors={};const limits={name:100,email:254,phone:40,message:2000,vehicle:120,timing:100};
  for(const [key,max] of Object.entries(limits))if(data[key]!==undefined&&(typeof data[key]!=='string'||data[key].length>max))errors[key]='Please shorten this field and use plain text.';
  if(!clean(data.name,100))errors.name='Enter your name.';
- if(!SERVICE_IDS.includes(data.service))errors.service='Choose a service or help me choose.';
+ if(!SERVICE_IDS.includes(data.service))errors.service='Choose a service.';
  if(!['email','phone'].includes(data.reply))errors.reply='Choose email or phone.';
- if(!clean(data.message,2000))errors.message='Tell us what you would like help with.';
+ if(!clean(data.vehicle,120))errors.vehicle='Enter your vehicle year, make and model.';
  const email=clean(data.email,254),phone=clean(data.phone,40);
  if((data.reply==='email'||email)&&(!/^[^\s@<>\r\n]+@[^\s@<>\r\n]+\.[^\s@<>\r\n]+$/.test(email)||/[\r\n]/.test(data.email)))errors.email='Enter a valid email address.';
  if((data.reply==='phone'||phone)&&(!/^[+\d() .-]{7,40}$/.test(phone)||phone.replace(/\D/g,'').length<7))errors.phone='Enter a valid phone number.';

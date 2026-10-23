@@ -28,16 +28,20 @@ try{
   await page.goto(base+path+'?service=windshield&make=Porsche');
   assert.equal(await page.locator('#service').inputValue(),'windshield');assert.equal(await page.locator('#vehicle').inputValue(),'Porsche');
   assert(await page.locator('.site-demo').textContent().then(t=>t.includes('Quote requests are sent')));
-  await page.locator('#name').fill('Local browser fixture');await page.locator('#email').fill('fixture@example.com');await page.locator('#message').fill('Local fixture. No actual message sent.');await page.locator('#consent').check();
+  await page.locator('#vehicle').fill('');await page.locator('#send').click();
+  assert.equal(await page.locator('#vehicle').getAttribute('aria-invalid'),'true');
+  assert.equal(await page.locator('#message').getAttribute('aria-invalid'),null);
+  await page.locator('#vehicle').fill('My Porsche');
+  await page.locator('#name').fill('Local browser fixture');await page.locator('#email').fill('fixture@example.com');await page.locator('#message').fill('');await page.locator('#consent').check();
   await page.locator('#send').click();assert.match(await page.locator('#form-status').textContent(),/complete the spam check/);assert.equal(calls.length,0);
   await page.evaluate(()=>{const input=document.createElement('input');input.type='hidden';input.name='cf-turnstile-response';input.value='fixture-only-token';document.querySelector('.cf-turnstile').append(input);});
   await page.locator('#send').click();await page.waitForFunction(()=>document.querySelector('#form-status').textContent.includes('could not be sent'));
-  assert.equal(await page.locator('#message').inputValue(),'Local fixture. No actual message sent.');assert.equal(await page.locator('#send').isEnabled(),true);assert.equal(await page.evaluate(()=>window.resetCount),1);
+  assert.equal(await page.locator('#message').inputValue(),'');assert.equal(await page.locator('#send').isEnabled(),true);assert.equal(await page.evaluate(()=>window.resetCount),1);
   responseState='accepted';await page.locator('#send').click();await page.waitForFunction(()=>document.querySelector('#send').textContent==='Inquiry accepted');
-  assert.equal(await page.locator('#send').isDisabled(),true);assert.equal(calls.length,2);assert.equal(calls[1].token,'fixture-only-token');assert.equal(calls[1].service,'windshield');assert.equal(calls[1].vehicle,'Porsche');assert.equal(calls[1]['cf-turnstile-response'],undefined);
+  assert.equal(await page.locator('#send').isDisabled(),true);assert.equal(calls.length,2);assert.equal(calls[1].token,'fixture-only-token');assert.equal(calls[1].service,'windshield');assert.equal(calls[1].message,'');assert.equal(calls[1].vehicle,'My Porsche');assert.equal(calls[1]['cf-turnstile-response'],undefined);
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
   await page.locator('#inquiry').screenshot({path:`design-artifacts/live-inquiry/form-fixture-${path===quotePath?'quote':'footer'}-${width}.png`});
-  checks.push({path,width,status:'passed',checks:['real-mode labels','service and vehicle context','missing spam check blocks submission','failed delivery preserves fields','spam widget resets on retry','accepted delivery disables duplicate submission','no horizontal overflow']});await page.close();
+  checks.push({path,width,status:'passed',checks:['required free-text vehicle and optional blank message','real-mode labels','service and vehicle context','missing spam check blocks submission','failed delivery preserves fields','spam widget resets on retry','accepted delivery disables duplicate submission','no horizontal overflow']});await page.close();
  }
  fs.writeFileSync('design-artifacts/live-inquiry/browser-proof.json',JSON.stringify({checks,limits:'Local fixtures only. Turnstile and email responses mocked; no actual delivery.'},null,2));console.log('Quote and footer live-form UI fixtures passed at 390px and 1440px; no email sent.');
 }finally{await browser.close();}
