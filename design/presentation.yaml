@@ -490,6 +490,32 @@
           "customProperty": "--av-selection-text"
         }
       }
+    },
+    {
+      "id": "color.control-dark",
+      "type": "color",
+      "values": {
+        "base": "#242424"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-control-dark"
+        }
+      }
+    },
+    {
+      "id": "color.error-inverse",
+      "type": "color",
+      "values": {
+        "base": "#ffb4ab"
+      },
+      "editable": true,
+      "projections": {
+        "css": {
+          "customProperty": "--av-color-error-inverse"
+        }
+      }
     }
   ]
 }

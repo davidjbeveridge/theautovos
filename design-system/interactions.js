@@ -28,7 +28,7 @@
    event.preventDefault();if(submit.disabled)return;
    summary.hidden=true;success.hidden=true;status.textContent='';const errors=[];
    $$('[aria-invalid]',form).forEach(f=>f.removeAttribute('aria-invalid'));$$('.av-field-error',form).forEach(n=>{n.hidden=true;n.textContent='';});
-   $$('[required]',form).forEach(f=>{let message='';if(f.type==='checkbox'&&!f.checked){message='Confirm that this is a local preview.';f.id='acknowledge';}else if(!f.value.trim())message=`Enter ${$('label[for="'+f.id+'"]',form)?.textContent.replace('*','').trim().toLowerCase()||'a value'}.`;else if(f.type==='email'&&!f.validity.valid)message='Enter a valid email address.';else if(f.id==='year'&&!/^\d{4}$/.test(f.value.trim()))message='Enter a four-digit vehicle year.';if(message){f.setAttribute('aria-invalid','true');const error=$('#'+f.name+'-error',form);if(error){error.textContent=message;error.hidden=false;}errors.push({field:f,message});}});
+   $$('[required]',form).forEach(f=>{let message='';if(f.type==='checkbox'&&!f.checked){message='Confirm that this is a local preview.';f.id='acknowledge';}else if(!f.value.trim())message=`Enter ${$('label[for="'+f.id+'"]',form)?.textContent.replace('*','').trim().toLowerCase()||'a value'}.`;else if(f.type==='email'&&!f.validity.valid)message='Enter a valid email address.';if(message){f.setAttribute('aria-invalid','true');const error=$('#'+f.name+'-error',form);if(error){error.textContent=message;error.hidden=false;}errors.push({field:f,message});}});
    if(errors.length){showErrors(errors);return;}
    submit.disabled=true;form.setAttribute('aria-busy','true');status.textContent='Checking the sample request…';
    await new Promise(resolve=>setTimeout(resolve,450));

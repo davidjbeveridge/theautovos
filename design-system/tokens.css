@@ -37,4 +37,6 @@
   --av-review-radius: 12px;
   --av-selection-background: #121212;
   --av-selection-text: #ffffff;
+  --av-color-control-dark: #242424;
+  --av-color-error-inverse: #ffb4ab;
 }

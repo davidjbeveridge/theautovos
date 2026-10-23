@@ -4,20 +4,38 @@ import assert from 'node:assert/strict';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const base=process.env.SITE_PREVIEW_URL||'http://127.0.0.1:8790';
 assert.match(base,/^http:\/\/127\.0\.0\.1:\d+$/);
+const liveMap=process.argv.includes('--live-map');
 const browser=await chromium.launch({channel:'chrome',headless:true}),checks=[];
 try{
  const context=await browser.newContext({reducedMotion:'reduce'});
- await context.route('**/*',route=>new URL(route.request().url()).origin===base?route.continue():route.abort());
+ await context.route('**/*',route=>new URL(route.request().url()).origin===base||liveMap&&/(^|\.)(google\.com|gstatic\.com|googleapis\.com|googleusercontent\.com)$/.test(new URL(route.request().url()).hostname)?route.continue():route.abort());
  const page=await context.newPage();
  for(const width of [360,390,768,900,1024,1440]){
   await page.setViewportSize({width,height:1000});await page.goto(base+'/contact/');
   const map=await page.locator('.site-footer-contact>.site-map').boundingBox();
   const form=await page.locator('.site-footer-inquiry').boundingBox();
   assert(map&&form);assert.equal(await page.locator('#inquiry').count(),1);
-  for(const a of await page.locator('.site-footer-inquiry .site-text-link').all()){const style=await a.evaluate(el=>{const s=getComputedStyle(el);return {color:s.color,weight:s.fontWeight,line:s.textDecorationLine};});assert.equal(style.color,'rgb(21, 90, 182)');assert.equal(style.weight,'700');assert(style.line.includes('underline'));}
+  assert.equal(await page.locator('#vehicle').getAttribute('required'),'');
+  assert.equal(await page.locator('#message').getAttribute('required'),null);
+  assert.equal(await page.locator('#service option[value="choose"]').count(),0);
+  assert.equal(await page.locator('#vehicle').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(36, 36, 36)');
+  assert.equal(await page.locator('.site-footer-map .av-location-map').evaluate(el=>getComputedStyle(el).filter),'grayscale(1) invert(0.92)');
+
+  for(const a of await page.locator('.site-footer-inquiry .site-text-link').all()){const style=await a.evaluate(el=>{const s=getComputedStyle(el);return {color:s.color,weight:s.fontWeight,line:s.textDecorationLine};});assert.equal(style.color,'rgb(140, 196, 255)');assert.equal(style.weight,'700');assert(style.line.includes('underline'));}
   if(width>900){assert(Math.abs(map.y-form.y)<1);assert(map.x+map.width<form.x);}
   else{assert(form.y>=map.y+map.height);assert(Math.abs(map.x-form.x)<1);}
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+  if(liveMap&&[390,1440].includes(width)){
+   const frame=page.locator('.site-footer-contact .av-location-map');await frame.scrollIntoViewIfNeeded();
+   const embedded=await frame.elementHandle().then(el=>el.contentFrame());
+   await embedded.waitForURL(url=>url.hostname.endsWith('google.com')&&url.pathname.includes('maps'));
+   await embedded.locator('a').first().waitFor({state:'visible'});
+   await embedded.waitForLoadState('load');
+   await embedded.evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(img=>img.decode().catch(()=>{})));});
+   await embedded.waitForLoadState('networkidle',{timeout:15000}).catch(()=>{});
+   await frame.screenshot({path:`design-artifacts/site/dark-map-${width}.png`});
+   await page.locator('.site-footer-contact').screenshot({path:`design-artifacts/site/dark-footer-${width}.png`});
+  }
   await page.locator('#send').click();assert.equal(await page.locator('#errors').evaluate(el=>el===document.activeElement),true);
   await page.locator('#errors a[href="#name"]').click();assert.equal(await page.locator('#name').evaluate(el=>el===document.activeElement),true);
   if([390,1440].includes(width))await page.locator('.site-footer-contact').screenshot({path:`design-artifacts/site/footer-contact-${width}.png`});
@@ -26,7 +44,13 @@ try{
  await page.goto(base+'/contact/');await page.setViewportSize({width:390,height:1000});
  await page.evaluate(()=>{for(const [el,size]of [...document.querySelectorAll('body *')].map(el=>[el,parseFloat(getComputedStyle(el).fontSize)]))el.style.fontSize=(size*2)+'px';});
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
- await page.goto(base+'/get-a-quote/');assert.equal(await page.locator('#inquiry').count(),1);assert.equal(await page.locator('footer #inquiry').count(),0);
- fs.writeFileSync('design-artifacts/site/footer-contact-proof.json',JSON.stringify({checks,textScaling:'200% at 390px passed',quotePage:'one existing main form',limits:'Map iframe source checked; external map tiles blocked. Local simulated inquiries only.'},null,2));
+ await page.goto(base+'/get-a-quote/');assert.equal(await page.locator('#inquiry').count(),1);
+  assert.equal(await page.locator('#vehicle').getAttribute('required'),'');
+  assert.equal(await page.locator('#message').getAttribute('required'),null);
+  assert.equal(await page.locator('#service option[value="choose"]').count(),0);
+  assert.equal(await page.locator('#vehicle').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(36, 36, 36)');
+  assert.equal(await page.locator('.site-footer-map .av-location-map').evaluate(el=>getComputedStyle(el).filter),'grayscale(1) invert(0.92)');
+assert.equal(await page.locator('footer #inquiry').count(),0);
+ fs.writeFileSync('design-artifacts/site/footer-contact-proof.json',JSON.stringify({checks,textScaling:'200% at 390px passed',quotePage:'one existing main form',limits:liveMap?'Actual Google map rendering captured for visual inspection. No map interaction or real inquiry submitted.':'Map iframe source checked; external map tiles blocked. Local simulated inquiries only.'},null,2));
  console.log('Footer contact layout passed at six widths, 200% text scaling and validation focus.');
 }finally{await browser.close();}

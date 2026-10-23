@@ -37,7 +37,7 @@
   "presentationRegistry": {
     "path": "design/presentation.yaml",
     "schemaVersion": "1.0",
-    "digest": "9d39adc0804b9ccc25ab166c7417289fd86de9825cfe4422469530a75796c8d3"
+    "digest": "91d3199b33bc4cfdbd3c59655c5cef37c8ff7622ac98fdf1af6cacba20c5fb13"
   },
   "consumerRelationships": [],
   "compatibleSurfaceVersions": [

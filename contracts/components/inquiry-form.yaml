@@ -128,6 +128,7 @@
   },
   "x-autovos": {
     "note": "Static source: src/components.mjs, src/pages.mjs, src/interactions.js. Specimen: templates/quote.html. Verification: scripts/browser-proof.mjs. No framework adapter conformance claimed.",
-    "serviceSite": "src/site/pages.mjs and client.js; server/inquiry.mjs. Production acceptance only after provider accepts. Uncertain delivery prevents blind resubmit. Demo never calls providers."
+    "serviceSite": "src/site/pages.mjs and client.js; server/inquiry.mjs. Production acceptance only after provider accepts. Uncertain delivery prevents blind resubmit. Demo never calls providers.",
+    "fields": "Service, free-text vehicle, name, preferred reply/contact and consent required. Message and timing optional. Four services plus General inquiry; no Help me choose option. Dark shared panel and controls."
   }
 }

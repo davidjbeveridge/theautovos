@@ -892,6 +892,65 @@ p,li,dd {
 .av-error-summary a {
   text-decoration:underline
 }
+/* Inquiry and map panels share the site's ink chapter treatment. */
+.av-inquiry-panel,.av-map-panel {
+  background:var(--av-color-ink);
+  color:var(--av-color-inverse);
+  padding:clamp(24px,3vw,40px);
+  color-scheme:dark;
+  --av-inline-color:var(--av-color-link-inverse)
+}
+.av-inquiry-panel p,.av-map-panel p,.av-inquiry-panel .av-field small {
+  color:var(--av-color-inverse-muted)
+}
+.av-inquiry-panel .av-form legend,.av-inquiry-panel.av-form legend {
+  border-color:var(--av-color-control-border)
+}
+.av-inquiry-panel :is(input,select,textarea):not([type=checkbox]):not([type=hidden]) {
+  background:var(--av-color-control-dark);
+  color:var(--av-color-inverse);
+  border-color:var(--av-color-control-border)
+}
+.av-inquiry-panel :is(input,select,textarea)[aria-invalid=true] {
+  border-color:var(--av-color-error-inverse)
+}
+.av-inquiry-panel .av-field-error {
+  color:var(--av-color-error-inverse)
+}
+.av-inquiry-panel .av-consent input {accent-color:var(--av-color-inverse)}
+.av-inquiry-panel .av-button,.av-map-panel .av-button {
+  background:var(--av-color-inverse);
+  color:var(--av-color-ink);
+  border-color:var(--av-color-inverse)
+}
+.av-inquiry-panel .av-button:hover,.av-map-panel .av-button:hover {
+  background:var(--av-color-line);
+  border-color:var(--av-color-line)
+}
+.av-inquiry-panel :is(.av-notice,.av-error-summary),
+.av-inquiry-panel :is(.av-notice,.av-error-summary) p {
+  color:var(--av-color-ink);
+  --av-inline-color:var(--av-color-link)
+}
+.av-inquiry-panel .site-text-link {
+  color:var(--av-color-link-inverse);
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:.18em
+}
+.av-inquiry-panel .av-error-summary a {color:var(--av-color-ink)}
+.av-inquiry-panel :focus-visible,.av-map-panel :focus-visible {
+  outline-color:var(--av-color-link-inverse);
+  box-shadow:0 0 0 2px var(--av-color-ink)
+}
+.av-inquiry-panel::selection,.av-inquiry-panel ::selection,
+.av-map-panel::selection,.av-map-panel ::selection {
+  background:var(--av-selection-text);
+  color:var(--av-selection-background)
+}
+/* Google embed has no authored map-style config here; use readable monochrome. */
+.av-location-map {filter:grayscale(1) invert(.92);color-scheme:light}
+@media(forced-colors:active){.av-location-map{filter:none}}
 .av-form-success {
   margin-top:32px;
   border-top:2px solid var(--av-color-success);

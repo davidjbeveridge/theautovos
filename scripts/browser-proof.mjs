@@ -40,10 +40,10 @@ try {
  check('service-prefill',await page.locator('#service').inputValue()==='Paint protection film');
  await page.getByRole('button',{name:'Preview request',exact:true}).click();check('validation-summary',await page.locator('[data-error-summary]').isVisible());check('summary-focus',await page.locator('[data-error-summary]').evaluate(el=>document.activeElement===el));
  await page.screenshot({path:`${out}/quote-invalid.png`,fullPage:true});
- for(const [id,value] of Object.entries({year:'2024',make:'Porsche',model:'911',name:'Sample Driver',email:'sample@example.test'}))await page.locator('#'+id).fill(value);
+ for(const [id,value] of Object.entries({vehicle:'My Porsche 911',name:'Sample Driver',email:'sample@example.test'}))await page.locator('#'+id).fill(value);
  await page.locator('[name=acknowledge]').check();await page.locator('[data-simulate-error]').check();
  await page.getByRole('button',{name:'Preview request',exact:true}).click();await page.getByText('Your details are still here. Turn off',{exact:false}).waitFor();
- check('error-preserves-input',await page.locator('#model').inputValue()==='911');await page.screenshot({path:`${out}/quote-error.png`,fullPage:true});
+ check('error-preserves-input',await page.locator('#vehicle').inputValue()==='My Porsche 911');await page.screenshot({path:`${out}/quote-error.png`,fullPage:true});
  await page.locator('[data-simulate-error]').uncheck();await page.getByRole('button',{name:'Preview request',exact:true}).click();await page.locator('[data-form-success]').waitFor();check('local-confirmation',await page.locator('[data-form-success]').innerText().then(s=>s.includes('Nothing was sent')));await page.screenshot({path:`${out}/quote-complete.png`,fullPage:true});
  check('no-personal-data-storage',await page.evaluate(()=>!JSON.stringify({...localStorage,...sessionStorage}).includes('example.test')));
  // Gallery empty/reset and native FAQ keyboard.
