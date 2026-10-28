@@ -1,5 +1,11 @@
 # Rebuild system — plan and current state
 
+## October 28 — STEALTH gallery caption review
+
+The owner approved the prior tint and windshield captions; PR #41 was merged as f370c662 and deployed to production Worker a3a4c06e-1812-4e07-a7d1-0070b7ceceec, with all 25 captions and image identities verified. Apply the 14 supplied STEALTH captions by existing photo number, synchronize title/alt, retain all image assets/order/numbering, verify and publish preview only. Email Caleb the direct preview link and monitor for an explicit approval before merging and deploying these 14 captions to production.
+
+Current state: implementing STEALTH preview; approval for these new captions is pending.
+
 ## October 28 — Caleb's numbered gallery captions
 
 Apply the owner's exact 17 window-tint and eight windshield-protection captions to their existing photo numbers. Synchronize titles/alt text with those corrected vehicle descriptions; keep all image paths, dimensions, responsive assets, crops, covers, order and numbering unchanged. Check exact numbered text and image identity in built and rendered galleries, including the scoped photo viewer at desktop/mobile. Run canonical/site/Jacques release checks, preserve source in a reviewable branch, publish only the owner preview, then email Caleb direct preview-gallery links with one short confirmation question. Production publication and merging this review branch wait for confirmation. Evidence stays in ignored `design-artifacts/site/`; use this canonical plan for state.
