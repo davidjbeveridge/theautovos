@@ -19,6 +19,7 @@
     "SHOP_URL": "https://shop.theautovos.com/",
     "MAIL_PROVIDER": "cloudflare",
     "MAIL_FROM": "Auto Vos <inquiries@theautovos.com>",
+    "ANALYTICS_ID": "G-EPXNMKTC39",
     "TURNSTILE_SITE_KEY": "0x4AAAAAAFfs9M_kszjJv4lZ"
   },
   "observability": { "enabled": false }
