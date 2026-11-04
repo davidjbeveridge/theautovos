@@ -7,7 +7,7 @@ import {randomBytes} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {productionOrigin,validatePublication,changedURLs,digest,pageFile,normalizePublishedHTML} from '../src/site/publication.mjs';
-import {notifySearch} from './lib/search-publication.mjs';
+import {notifySearch,deploymentConfig} from './lib/search-publication.mjs';
 
 process.chdir(path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'));
 const args=new Set(process.argv.slice(2));
@@ -33,9 +33,10 @@ const privateWrite=(destination,value)=>{
 };
 const save=value=>privateWrite(stateFile,value);
 const run=(command,commandArgs,options={})=>execFileSync(command,commandArgs,{encoding:'utf8',timeout:120000,...options});
-const wrangler=commandArgs=>process.env.WRANGLER_BIN?
- run(process.execPath,[process.env.WRANGLER_BIN,...commandArgs],{stdio:'inherit'}):
- run('npx',['--yes','wrangler@4.152.0',...commandArgs],{stdio:'inherit'});
+const wrangler=commandArgs=>{
+ const options={stdio:'inherit',env:{...process.env,WRANGLER_LOG:'warn',WRANGLER_SEND_METRICS:'false'}};
+ return process.env.WRANGLER_BIN?run(process.execPath,[process.env.WRANGLER_BIN,...commandArgs],options):run('npx',['--yes','wrangler@4.152.0',...commandArgs],options);
+};
 async function get(resource){
  return fetch(productionOrigin+resource,{redirect:'manual',signal:AbortSignal.timeout(30000),headers:{'Cache-Control':'no-cache','User-Agent':'AutoVosPublicationVerification/1.0'}});
 }
@@ -87,7 +88,11 @@ try{
    const urls=changedURLs(publication,previous),active=new Set(publication.pages.map(page=>productionOrigin+page.path));
    job={version:1,revision,preparedAt:new Date().toISOString(),urls,removed:urls.filter(url=>!active.has(url)),files,complete:false};save(job);
   }
-  wrangler(['deploy','--config','wrangler.jsonc','--skip-build','--log-level','warn']);
+  // Wrangler has no skip-build switch. Preserve all runtime bindings while
+  // removing only the custom build hook from a private, path-resolved config.
+  const deployFile=path.join(stateDir,'deploy.json');
+  privateWrite(deployFile,deploymentConfig(JSON.parse(fs.readFileSync('wrangler.jsonc','utf8').replace(/^\s*\/\/.*$/gm,'')),process.cwd()));
+  wrangler(['deploy','--config',deployFile]);
   job.deployedAt=new Date().toISOString();save(job);
  }
  assert(job,'No prepared publication to notify');

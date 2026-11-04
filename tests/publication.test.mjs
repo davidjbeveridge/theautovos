@@ -1,10 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createPublication,changedURLs,sitemap,validatePublication,normalizePublishedHTML} from '../src/site/publication.mjs';
-import {notifySearch,validateURLs} from '../scripts/lib/search-publication.mjs';
+import {notifySearch,validateURLs,deploymentConfig} from '../scripts/lib/search-publication.mjs';
 const config={origin:'https://theautovos.com'},time='2026-11-04T19:00:00.000Z';
 const render=page=>`<html>${page.body}</html>`;
 const pages=[{path:'/',body:'Home'},{path:'/services/ceramic-coating/',body:'Coating'},{path:'/private/',body:'Private',noindex:true}];
+test('deployment preserves runtime bindings and publishes the verified artifact without rebuilding',()=>{
+ const original={name:'auto-vos-site',account_id:'production',main:'server/worker.mjs',assets:{directory:'dist-production',binding:'ASSETS'},build:{command:'rebuild'},routes:[{pattern:'theautovos.com/*'}],send_email:[{name:'INQUIRY_EMAIL'}],vars:{SITE_ORIGIN:config.origin}};
+ const deployed=deploymentConfig(original,'/checkout');assert(!deployed.build);assert.equal(deployed.main,'/checkout/server/worker.mjs');assert.equal(deployed.assets.directory,'/checkout/dist-production');
+ for(const field of ['name','account_id','routes','send_email','vars'])assert.deepEqual(deployed[field],original[field]);assert.equal(original.build.command,'rebuild');
+});
 test('first snapshot advertises only indexable pages without invented historical dates',()=>{
  const first=createPublication(pages,config,render,null,time);
  assert.equal(first.pages.length,2);assert(first.pages.every(page=>!page.lastModified));
