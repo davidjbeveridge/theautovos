@@ -53,3 +53,10 @@ test('Bing receipt survives Google failure and 202 is recorded as key verificati
 test('unchanged publication does not spend submission quota',async()=>{
  let called=false;const receipt={};await notifySearch({urls:[],key:'c'.repeat(64),receipt,save:()=>{},submitGoogle:()=>{called=true;},postIndexNow:()=>{called=true;}});assert(!called);assert(receipt.complete);
 });
+test('an existing public manifest is not a notification receipt; bootstrap once and retain that baseline',async()=>{
+ const current=createPublication(pages,config,render),receipt={notificationBaseline:false};let calls=0;
+ const urls=changedURLs(current,current,receipt.notificationBaseline);assert.equal(urls.length,2);
+ await notifySearch({urls,key:'d'.repeat(64),receipt,save:()=>{},submitGoogle:()=>{calls++;},postIndexNow:()=>{calls++;return 200;}});
+ assert(receipt.notificationBaseline);assert.equal(calls,2);
+ for(let release=0;release<3;release++)assert.deepEqual(changedURLs(current,current,receipt.notificationBaseline),[]);
+});

@@ -85,8 +85,9 @@ try{
    run(process.execPath,['scripts/verify-shop-navigation.mjs','--local-only'],{stdio:'inherit'});
    const publication=validatePublication(JSON.parse(fs.readFileSync('dist-production/site/publication.json','utf8')));
    const files=[...publication.pages.map(page=>({path:page.path,file:pageFile(page.path),html:true})),...['sitemap.xml','llms.txt','site/publication.json','site/style.css','site/tokens.css','site/client.js'].map(file=>({path:'/'+file,file,html:false}))].map(file=>({...file,hash:digest(file.html?normalizePublishedHTML(fs.readFileSync('dist-production/'+file.file,'utf8')):fs.readFileSync('dist-production/'+file.file,'utf8'))}));
-   const urls=changedURLs(publication,previous),active=new Set(publication.pages.map(page=>productionOrigin+page.path));
-   job={version:1,revision,preparedAt:new Date().toISOString(),urls,removed:urls.filter(url=>!active.has(url)),files,complete:false};save(job);
+   const notificationBaseline=job?.notificationBaseline||Boolean(job?.google&&job?.bing);
+   const urls=changedURLs(publication,previous,notificationBaseline),active=new Set(publication.pages.map(page=>productionOrigin+page.path));
+   job={version:1,revision,preparedAt:new Date().toISOString(),notificationBaseline,urls,removed:urls.filter(url=>!active.has(url)),files,complete:false};save(job);
   }
   // Wrangler has no skip-build switch. Preserve all runtime bindings while
   // removing only the custom build hook from a private, path-resolved config.
