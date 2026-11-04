@@ -1,5 +1,14 @@
 import assert from 'node:assert/strict';
+import path from 'node:path';
 import {productionOrigin} from '../../src/site/publication.mjs';
+
+export function deploymentConfig(config,root){
+ const result=structuredClone(config);
+ delete result.build;
+ result.main=path.resolve(root,config.main);
+ result.assets.directory=path.resolve(root,config.assets.directory);
+ return result;
+}
 
 export function validateURLs(urls){
  assert(Array.isArray(urls)&&urls.length<=10000);
