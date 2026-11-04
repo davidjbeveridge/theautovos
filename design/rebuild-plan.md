@@ -1,5 +1,13 @@
 # Rebuild system — plan and current state
 
+## November 4 — publication discovery and Caleb’s results report
+
+Scope: verify ceramic-coating crawlability and request Google indexing; make production publication regenerate and verify sitemap, llms.txt and JSON-LD, then submit the sitemap to Google and changed URLs to Bing IndexNow. Preserve preview noindex behavior and client source/changes. Research vehicle/protection keyword breadth and a one-page-per-week plan; prepare a short Caleb-facing improvements/results/next-steps report. Do not send it or promise rankings/revenue.
+
+Current state: Google live URL test passed (available and indexable, valid breadcrumb); Search Console visibly confirmed “Indexing requested” on November 4 at about 10:52 a.m. Mountain. No blocking page defect found. Google’s supported general-site automation is sitemap submission, not the jobs/livestream-only Indexing API. Bing supports IndexNow. Source automation is implemented on `codex/publication-indexing`; latest merged gallery source is retained at e33df35. Existing unrelated local plan/media/handoff changes are preserved; a recovery stash and the original plan copy remain in ignored task evidence.
+
+Verification: 48 tests, canonical/site builds and verifiers, 141 metadata checks, 141 navigation checks, Jacques fast governance, 50 Chrome SEO/brand checks and a real generated-artifact fixture for stable modification dates/ownership-file retention pass. No static HTML adapter conformance claim. Next: merge/deploy the publication path and verify hosted artifacts and both notification receipts. Then research current localized keywords/ranking factors and write Caleb’s short report, with separate supporting evidence. Initial measurement evidence: ignored `design-artifacts/traffic-seo-2026-11-04/findings.md` (62 page views/44 Cloudflare visits October 29–November 3 Mountain; 886 Google impressions/7 clicks October 26–November 2; two non-launch delivered submissions, not verified bookings or revenue).
+
 ## October 28 — STEALTH gallery caption review
 
 The owner approved the prior tint and windshield captions; PR #41 was merged as f370c662 and deployed to production Worker a3a4c06e-1812-4e07-a7d1-0070b7ceceec, with all 25 captions and image identities verified. Apply the 14 supplied STEALTH captions by existing photo number, synchronize title/alt, retain all image assets/order/numbering, verify and publish preview only. Email Caleb the direct preview link and monitor for an explicit approval before merging and deploying these 14 captions to production.

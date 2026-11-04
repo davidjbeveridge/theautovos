@@ -10,6 +10,8 @@
 
 Production runs as `auto-vos-site` in the Cloudflare `admin@makelark.com` account. `wrangler.jsonc` binds that account and the apex/www zone routes. Use `npm run build:production` and the intended account credentials; the guarded build prevents accidental deployment to the personal or OptionLab account. Production is indexable and has no preview banner. Real inquiries use Cloudflare Email Sending and a hostname-bound Turnstile widget. See [operations and verification](server/README.md).
 
+For an authorized production release, use `npm run publish:production`. Search files and page JSON-LD are generated from the same content on every build. After verifying the deployed pages and search files, publication submits the sitemap to Google Search Console and changed URLs to Bing IndexNow. Preview builds never send notifications. Notification failures are visible and can be retried with `npm run notify:production`; they do not roll back a successful website deployment. Indexing and rankings remain search-engine decisions.
+
 ## Design catalog
 
 - Site concept: https://davidjbeveridge.github.io/theautovos/
