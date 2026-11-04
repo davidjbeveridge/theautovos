@@ -1,5 +1,6 @@
 import {primaryImage} from '../src/site/seo.mjs';
 import {agentReference} from '../src/site/agent-reference.mjs';
+import {createPublication,sitemap} from '../src/site/publication.mjs';
 import {execFileSync} from 'node:child_process';
 import {redirects as buildRedirects,routeRegistry,eligible} from '../src/site/routes.mjs';
 import fs from 'node:fs';
@@ -36,7 +37,17 @@ const html=[...pages,notFound()].map(p=>render(p,config)).join('');const assets=
 for(const p of [...pages,notFound()])assets.add(primaryImage(p).src);
 for(const asset of assets){const source=asset.slice(1);if(!fs.existsSync(source))throw Error('Missing '+source);write(source,fs.readFileSync(source));}
 write('robots.txt',demo?'User-agent: *\nDisallow: /\n':`User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: ${origin}/sitemap.xml\n`);
-write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${pages.map(p=>`<url><loc>${origin+p.path}</loc></url>`).join('')}</urlset>\n`);
+const previous=!demo&&process.env.PREVIOUS_PUBLICATION_FILE?JSON.parse(fs.readFileSync(process.env.PREVIOUS_PUBLICATION_FILE,'utf8')):null;
+const publication=createPublication(pages,config,render,previous,!demo?process.env.PUBLICATION_TIME:null);
+write('sitemap.xml',sitemap(publication));
+if(!demo){
+ write('site/publication.json',JSON.stringify(publication,null,2)+'\n');
+ if(process.env.INDEXNOW_KEY_FILE){
+  const stat=fs.lstatSync(process.env.INDEXNOW_KEY_FILE);if(!stat.isFile()||stat.isSymbolicLink()||(stat.mode&0o077))throw Error('IndexNow key file must be a private regular file');
+  const key=fs.readFileSync(process.env.INDEXNOW_KEY_FILE,'utf8').trim();if(!/^[a-f0-9]{64}$/.test(key))throw Error('Invalid IndexNow ownership key');
+  write(key+'.txt',key+'\n');
+ }
+}
 const inventory=JSON.parse(fs.readFileSync('design/page-inventory.json','utf8'));
 const redirects=buildRedirects(config,pages);
 write('_redirects',redirects.map(r=>`${r.from} ${r.to} 301`).join('\n')+'\n');
