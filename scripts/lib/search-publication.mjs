@@ -39,5 +39,5 @@ export async function notifySearch({urls,key,receipt,save,submitGoogle,postIndex
   }catch{failures.push('Bing IndexNow submission failed');}
  }
  if(failures.length)throw Error(failures.join('; ')+'. Retry with npm run notify:production.');
- receipt.complete=true;save();return receipt;
+ receipt.notificationBaseline=true;receipt.complete=true;save();return receipt;
 }

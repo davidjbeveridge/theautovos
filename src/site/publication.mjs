@@ -34,11 +34,11 @@ export function createPublication(pages,config,render,previous=null,publishedAt=
  })};
  return validatePublication(result,config.origin);
 }
-export function changedURLs(current,previous=null){
+export function changedURLs(current,previous=null,notificationBaseline=true){
  validatePublication(current);
  if(previous)validatePublication(previous);
  const old=new Map(previous?.pages.map(page=>[page.path,page.hash])||[]),now=new Map(current.pages.map(page=>[page.path,page.hash]));
- return [...new Set([...current.pages.filter(page=>old.get(page.path)!==page.hash).map(page=>page.path),...(previous?.pages||[]).filter(page=>!now.has(page.path)).map(page=>page.path)])].map(path=>productionOrigin+path);
+ return [...new Set([...current.pages.filter(page=>!notificationBaseline||old.get(page.path)!==page.hash).map(page=>page.path),...(previous?.pages||[]).filter(page=>!now.has(page.path)).map(page=>page.path)])].map(path=>productionOrigin+path);
 }
 export function sitemap(publication){
  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${publication.pages.map(page=>`<url><loc>${publication.origin+page.path}</loc>${page.lastModified?`<lastmod>${page.lastModified}</lastmod>`:''}</url>`).join('')}</urlset>\n`;
